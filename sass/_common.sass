@@ -1,0 +1,87 @@
+*
+  box-sizing: border-box
+
+a
+  text-decoration: none
+  color: inherit
+
+.root
+  overflow-x: hidden
+  width: 100%
+  height: 1000px
+
+.container
+  margin: 0 auto
+  max-width: 1570px
+  padding: 0 15px
+
+.dd
+  position: relative
+  user-select: none
+  cursor: pointer
+  &.active
+    .dd-list
+      visibility: visible
+      opacity: 1
+      transform: translateY(0)
+  &-list
+    opacity: 0
+    visibility: hidden
+    position: absolute
+    top: 100%
+    left: 0
+    z-index: 100
+    min-width: 100%
+    list-style: none
+    margin: 0
+    padding: 0
+    overflow: hidden
+    transition: 0.15s ease-in-out
+    &.showDown
+      transform: translateY(-5px)
+    &.showUp
+      transform: translateY(5px)
+  &._scrolled
+    .dd-list
+      ul
+        margin: 0
+        padding: 0
+        list-style: none
+        padding-right: 10px
+        overflow-y: auto
+        &::-webkit-scrollbar-track
+          background-color: #E8EEF6
+      .dd-item
+        display: block
+        overflow: hidden
+        text-overflow: ellipsis
+        white-space: nowrap
+
+.btn
+  border: none
+  display: flex
+  align-items: center
+  cursor: pointer
+  &-blue
+    position: relative
+    background: linear-gradient(0deg, #0072ff 0%, #00f6ff 100%)
+    color: $white
+    transition: 0.3s
+    &:hover
+      background: linear-gradient(0deg, darken(#0072ff, 3%) 0%, darken(#00f6ff, 3%) 100%)
+      &::before
+        box-shadow: 0px -5px 25px 5px #00C9FF
+        width: 45%
+    &:active
+      transform: scale(0.99)
+      background: linear-gradient(0deg, lighten(#0072ff, 1%) 0%, lighten(#00f6ff, 1%) 100%)
+    &::before
+      content: ''
+      position: absolute
+      bottom: 0
+      left: 50%
+      transform: translateX(-50%)
+      display: block
+      width: 60%
+      box-shadow: 0px 0px 25px 5px #00C9FF
+      transition: 0.3s

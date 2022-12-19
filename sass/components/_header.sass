@@ -1,0 +1,280 @@
+.h
+  margin-bottom: 64px
+  &__inner
+    display: flex
+    align-items: flex-end
+    justify-content: space-between
+    gap: 10px
+  &-logo
+    transform: translateY(6px)
+    align-self: end
+    flex: 1 1 auto
+    max-width: 180px
+    line-height: 0
+    img, svg
+      width: 100%
+  &-lang
+    margin-right: auto
+    border-radius: 30px
+    padding: 15px
+    display: flex
+    align-items: center
+    gap: 10px
+    background-color: $grey3
+    &-item
+      display: flex
+      align-items: center
+      gap: 14px
+    &-icon
+      border-radius: 50%
+      width: 27px
+      height: 27px
+      img, svg
+        width: 100%
+        height: 100%
+    &-label
+      +futura-heavy
+      font-size: 16px
+      text-transform: uppercase
+      color: $grey1
+    &-arrow
+      color: $purple1
+    &-list
+      top: calc(100% + 5px)
+      border-radius: 20px
+      background-color: $grey3
+      padding: 10px 0
+      box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1)
+      .h-lang-item
+        padding: 8px 14px
+        transition: 0.3s
+        &:hover
+          background-color: darken($grey3, 4%)
+  &-nav
+    display: flex
+    align-items: center
+    flex-wrap: wrap
+    gap: 16px
+    &-item
+      padding-top: 90px
+      &__inner
+        border-radius: 30px
+        padding: 14px 20px
+        +futura-med
+        font-size: 23px
+        color: $grey1
+    &-link
+      position: relative
+      .h-nav-item__inner
+        transition: 0.3s
+      &:after
+        content: ''
+        position: absolute
+        top: 0
+        left: 0
+        display: block
+        width: 100%
+        height: 2px
+        background-color: $active
+        transform: scale(0)
+        transition: 0.3s
+      &:hover
+        &:after
+          transform: scale(1)
+        .h-nav-item__inner
+          background-color: $grey5
+          color: $active
+  &-select
+    display: flex
+    align-items: center
+    gap: 10px
+    &-arrow
+      border-right: 2px solid $grey1
+      border-bottom: 2px solid $grey1
+      width: 7px
+      height: 7px
+      transform: rotate(45deg)
+    &-list
+      border-radius: 20px
+      padding: 8px 0
+      background-color: $white
+      box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2)
+      .h-select-item
+        display: block
+        padding: 10px 14px
+        transition: 0.3s
+        &:hover
+          background-color: $grey5
+          color: $active
+  &-sign
+    border-radius: 30px
+    height: 58px
+    display: flex
+    align-items: center
+    background-color: $grey3
+    &-btn
+      padding: 0 20px
+      height: 100%
+      gap: 10px
+      +futura-heavy
+      text-transform: uppercase
+      font-size: 23px
+      &._in
+        border-radius: 30px
+        background-color: transparent
+        color: $grey1
+      &._up
+        border-radius: 30px
+    &-icon
+      width: 24px
+      max-height: 30px
+      &._in
+        fill: $active
+      &._up
+        fill: $white
+  &-menubtn
+    display: none
+
+@media ( max-width: 1600px )
+  .h
+    &-logo
+      transform: translateY(13px)
+    &-lang
+      padding: 10px 14px
+      gap: 5px
+      &-item
+        gap: 5px
+      &-icon
+        width: 23px
+        height: 23px
+    &-nav
+      &-item
+        &__inner
+          padding: 10px 14px
+          font-size: 20px
+    &-sign
+      height: 45px
+      &-btn
+        padding: 0 10px
+        gap: 5px
+        font-size: 18px
+
+@media ( max-width: 1365px )
+  .h
+    position: relative
+    padding-top: 20px
+    &-nav
+      position: absolute
+      top: calc(100% + 10px)
+      left: 0
+      z-index: 50
+      width: 100%
+      padding: 20px 10px
+      justify-content: center
+      gap: 10px
+      background-color: $white
+      box-shadow: 0px 10px 10px 2px rgba(0, 0, 0, 0.05)
+      visibility: hidden
+      opacity: 0
+      transition: 0.3s ease-in-out
+      &.active
+        visibility: visible
+        opacity: 1
+      &-item
+        padding-top: 0
+      &-link
+        &::after
+          display: none
+    &-menubtn
+      flex: 0 0 auto
+      border-radius: 50%
+      width: 45px
+      height: 45px
+      display: flex
+      flex-direction: column
+      align-items: center
+      justify-content: center
+      gap: 4px
+      background-color: $grey3
+      cursor: pointer
+      transition: 0.3s ease-in-out
+      span
+        border-radius: 3px
+        display: block
+        width: 22px
+        height: 3px
+        background-color: $active
+        transition: 0.3s ease-in-out
+      &.active
+        background-color: $active
+        span
+          background-color: $white
+          &:nth-of-type(2)
+            opacity: 0
+            visibility: hidden
+          &:nth-of-type(1)
+            transform: rotate(45deg) translate(4px, 5px)
+          &:nth-of-type(3)
+            transform: rotate(-45deg) translate(5px, -6px)
+
+@media ( max-width: 768px )
+  .h
+    &__inner
+      align-items: center
+    &-logo
+      transform: translateY(6px)
+    &-nav
+      left: 50%
+      transform: translateX(-50%)
+      border-radius: 10px
+      width: 95%
+      flex-direction: column
+      box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.1)
+    &-select
+      &-list
+        border-radius: 10px
+    &-sign
+      height: auto
+      &-btn
+        padding: 0
+        width: 45px
+        height: 45px
+        justify-content: center
+        &-text
+          display: none
+
+@media ( max-width: 520px )
+  .h
+    &-logo
+      flex: 0 1 48px
+      max-width: none
+      transform: none
+    &-lang
+      padding: 8px
+      &-label
+        font-size: 12px
+      &-list
+        padding: 5px 0
+        .h-lang-item
+          padding: 8px
+    &-sign
+      &-btn
+        width: 40px
+        height: 40px
+    &-menubtn
+      width: 40px
+      height: 40px
+      gap: 3px
+      span
+        width: 18px
+      &.active
+        span
+          &:nth-of-type(1)
+            transform: rotate(45deg) translate(4px, 4px)
+          &:nth-of-type(3)
+            transform: rotate(-45deg) translate(5px, -5px)
+    &-nav
+      gap: 4px
+      &-item
+        &__inner
+          font-size: 16px

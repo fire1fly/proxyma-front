@@ -1,0 +1,72 @@
+@font-face {
+  font-family: 'Futura PT Book';
+  src: url('../assets/fonts/FuturaPT-Book.eot');
+  src: url('../assets/fonts/FuturaPT-Book.eot?#iefix') format('embedded-opentype'),
+  url('../assets/fonts/FuturaPT-Book.woff') format('woff'),
+  url('../assets/fonts/FuturaPT-Book.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@mixin futura-book {
+  font-family: 'Futura PT Book';
+}
+
+@font-face {
+  font-family: 'Futura PT Medium';
+  src: url('../assets/fonts/FuturaPT-Medium.eot');
+  src: url('../assets/fonts/FuturaPT-Medium.eot?#iefix') format('embedded-opentype'),
+  url('../assets/fonts/FuturaPT-Medium.woff') format('woff'),
+  url('../assets/fonts/FuturaPT-Medium.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@mixin futura-med {
+  font-family: 'Futura PT Medium';
+}
+
+@font-face {
+  font-family: 'Futura PT Demi';
+  src: url('../assets/fonts/FuturaPT-Demi.eot');
+  src: url('../assets/fonts/FuturaPT-Demi.eot?#iefix') format('embedded-opentype'),
+  url('../assets/fonts/FuturaPT-Demi.woff') format('woff'),
+  url('../assets/fonts/FuturaPT-Demi.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@mixin futura-demi {
+  font-family: 'Futura PT Demi';
+}
+
+@font-face {
+  font-family: 'Futura PT Bold';
+  src: url('../assets/fonts/FuturaPT-Bold.eot');
+  src: url('../assets/fonts/FuturaPT-Bold.eot?#iefix') format('embedded-opentype'),
+  url('../assets/fonts/FuturaPT-Bold.woff') format('woff'),
+  url('../assets/fonts/FuturaPT-Bold.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@mixin futura-bold {
+  font-family: 'Futura PT Bold';
+}
+
+@font-face {
+  font-family: 'Futura PT Heavy';
+  src: url('../assets/fonts/FuturaPT-Heavy.eot');
+  src: url('../assets/fonts/FuturaPT-Heavy.eot?#iefix') format('embedded-opentype'),
+  url('../assets/fonts/FuturaPT-Heavy.woff') format('woff'),
+  url('../assets/fonts/FuturaPT-Heavy.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@mixin futura-heavy {
+  font-family: 'Futura PT Heavy';
+}
