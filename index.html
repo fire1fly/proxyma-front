@@ -10,6 +10,7 @@
 
   <script defer src="./js/dropdown.js"></script>
   <script defer src="./js/mobileMenu.js"></script>
+  <script defer src="./js/tabs.js"></script>
 
   <title>Proxyma</title>
 </head>
@@ -111,8 +112,211 @@
       </div>    
     </header>
 
-    <main class="main">
+    <main class="main pagemain">
+      <div class="ms">
+        <div class="container ms__inner">
+          <div class="ms-title__wrap">
+            <h1 class="ms-title page-title">The highest <span class="_active">quality</span> proxy</h1>
+            <div class="ms-title-sub">Of your choice</div>
+          </div>
+          <div class="ms-info">
+            <div class="ms-text ms__text">We invest in technological advancements to <b>create new</b> competitive data gathering solutions.</div>
 
+            <form action="#" class="fieldbtn ms__fieldbtn">
+              <input type="email" class="fieldbtn-input" placeholder="Enter your email">
+              <button type="button" class="btn btn-blue fieldbtn-btn">
+                <div class="fieldbtn-btn-icon">
+                  <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                    viewBox="0 0 489.888 489.888" xml:space="preserve">
+                      <path d="M25.383,290.5c-7.2-77.5,25.9-147.7,80.8-192.3c21.4-17.4,53.4-2.5,53.4,25l0,0c0,10.1-4.8,19.4-12.6,25.7
+                        c-38.9,31.7-62.3,81.7-56.6,136.9c7.4,71.9,65,130.1,136.8,138.1c93.7,10.5,173.3-62.9,173.3-154.5c0-48.6-22.5-92.1-57.6-120.6
+                        c-7.8-6.3-12.5-15.6-12.5-25.6l0,0c0-27.2,31.5-42.6,52.7-25.6c50.2,40.5,82.4,102.4,82.4,171.8c0,126.9-107.8,229.2-236.7,219.9
+                        C122.183,481.8,35.283,396.9,25.383,290.5z M244.883,0c-18,0-32.5,14.6-32.5,32.5v149.7c0,18,14.6,32.5,32.5,32.5
+                        s32.5-14.6,32.5-32.5V32.5C277.383,14.6,262.883,0,244.883,0z"/>
+                  </svg>
+                </div>
+                <div class="fieldbtn-btn-text">start now</div>
+              </button>
+            </form>
+
+          </div>
+          <div class="ms-pic _height-limit">
+            <img src="./assets/static/ms-pic-1.png" alt="picture">
+          </div>
+        </div>
+      </div>
+      <section class="section pagemain-pc">
+        <img src="./assets/static/mainpage-pc-bg-2.png" alt="background" class="pagemain-pc__bg">
+        <div class="container pagemain-pc__inner">
+          <h2 class="section-title section__title">Residential & Mobile Proxies</h2>
+          <div class="section-subtitle section__subtite">The cost starts from <span class="_active">$2.99</span> and above</div>
+
+          <div class="tabs pagemain-pc-tabs">
+            <div class="tabs-list pagemain-pc-tabs-list">
+              <input type="hidden" class="tabs-value" value="1">
+              <div class="tabs-item pagemain-pc-tabs-item active" data-value="datacenter" data-box-id="1">
+                <img src="./assets/static/icon-datacenter-red.png" alt="icon" class="icon">
+                Datacenter Proxies
+              </div>
+              <div class="tabs-item pagemain-pc-tabs-item" data-value="residential" data-box-id="2">
+                <img src="./assets/static/icon-residental-red.png" alt="icon" class="icon">
+                Residential Proxies
+              </div>
+              <div class="tabs-item pagemain-pc-tabs-item" data-value="mobile" data-box-id="3">
+                <img src="./assets/static/icon-mobile-red.svg" alt="icon" class="icon">
+                Mobile Proxies
+              </div>
+            </div>
+            
+            <div class="tabs-node-wrapper">
+              <div class="tabs-node hidden active" data-box-id="1">
+                <div class="pc-row _grid-4">
+                  <div class="pc-card _hover-1">
+                    <div class="pc-card-title">GALAXY PROXY</div>
+                    <div class="pc-card-price pc-card-price-block">
+                      <div class="price">$50.9</div>
+                      <div class="sub">Per month</div>
+                    </div>
+                    <div class="pc-card-b">
+                      <div class="pc-card-row">
+                        <div class="pc-card-label">Traffik</div>
+                        <div class="pc-card-value">
+                          8GB
+                          <img src="./assets/static/icon-check-blue.svg" alt="check" class="icon check">
+                        </div>
+                      </div>
+                      <div class="pc-card-row">
+                        <div class="pc-card-label">Price</div>
+                        <div class="pc-card-value">
+                          $12/GB
+                          <img src="./assets/static/icon-check-blue.svg" alt="check" class="icon check">
+                        </div>
+                      </div>
+                      <div class="pc-card-row">
+                        <div class="pc-card-label">Ports</div>
+                        <div class="pc-card-value">
+                          300
+                          <img src="./assets/static/icon-check-blue.svg" alt="check" class="icon check">
+                        </div>
+                      </div>
+                    </div>
+                    <a href="#" class="pc-card-btn _bottom btn btn-blue">
+                      <img src="./assets/static/icon-rocket-white.svg" alt="rocket" class="icon rocket">
+                      start now
+                    </a>
+                  </div>
+                  <div class="pc-card _hover-1">
+                    <div class="pc-card-title">GALAXY PROXY</div>
+                    <div class="pc-card-price pc-card-price-block">
+                      <div class="price">$50.9</div>
+                      <div class="sub">Per month</div>
+                    </div>
+                    <div class="pc-card-b">
+                      <div class="pc-card-row">
+                        <div class="pc-card-label">Traffik</div>
+                        <div class="pc-card-value">
+                          8GB
+                          <img src="./assets/static/icon-check-blue.svg" alt="check" class="icon check">
+                        </div>
+                      </div>
+                      <div class="pc-card-row">
+                        <div class="pc-card-label">Price</div>
+                        <div class="pc-card-value">
+                          $12/GB
+                          <img src="./assets/static/icon-check-blue.svg" alt="check" class="icon check">
+                        </div>
+                      </div>
+                      <div class="pc-card-row">
+                        <div class="pc-card-label">Ports</div>
+                        <div class="pc-card-value">
+                          300
+                          <img src="./assets/static/icon-check-blue.svg" alt="check" class="icon check">
+                        </div>
+                      </div>
+                    </div>
+                    <a href="#" class="pc-card-btn _bottom btn btn-blue">
+                      <img src="./assets/static/icon-rocket-white.svg" alt="rocket" class="icon rocket">
+                      start now
+                    </a>
+                  </div>
+                  <div class="pc-card _hover-1">
+                    <div class="pc-card-title">GALAXY PROXY</div>
+                    <div class="pc-card-price pc-card-price-block">
+                      <div class="price">$50.9</div>
+                      <div class="sub">Per month</div>
+                    </div>
+                    <div class="pc-card-b">
+                      <div class="pc-card-row">
+                        <div class="pc-card-label">Traffik</div>
+                        <div class="pc-card-value">
+                          8GB
+                          <img src="./assets/static/icon-check-blue.svg" alt="check" class="icon check">
+                        </div>
+                      </div>
+                      <div class="pc-card-row">
+                        <div class="pc-card-label">Price</div>
+                        <div class="pc-card-value">
+                          $12/GB
+                          <img src="./assets/static/icon-check-blue.svg" alt="check" class="icon check">
+                        </div>
+                      </div>
+                      <div class="pc-card-row">
+                        <div class="pc-card-label">Ports</div>
+                        <div class="pc-card-value">
+                          300
+                          <img src="./assets/static/icon-check-blue.svg" alt="check" class="icon check">
+                        </div>
+                      </div>
+                    </div>
+                    <a href="#" class="pc-card-btn _bottom btn btn-blue">
+                      <img src="./assets/static/icon-rocket-white.svg" alt="rocket" class="icon rocket">
+                      start now
+                    </a>
+                  </div>
+                  <div class="pc-card _hover-1">
+                    <div class="pc-card-title">GALAXY PROXY</div>
+                    <div class="pc-card-price pc-card-price-block">
+                      <div class="price">$50.9</div>
+                      <div class="sub">Per month</div>
+                    </div>
+                    <div class="pc-card-b">
+                      <div class="pc-card-row">
+                        <div class="pc-card-label">Traffik</div>
+                        <div class="pc-card-value">
+                          8GB
+                          <img src="./assets/static/icon-check-blue.svg" alt="check" class="icon check">
+                        </div>
+                      </div>
+                      <div class="pc-card-row">
+                        <div class="pc-card-label">Price</div>
+                        <div class="pc-card-value">
+                          $12/GB
+                          <img src="./assets/static/icon-check-blue.svg" alt="check" class="icon check">
+                        </div>
+                      </div>
+                      <div class="pc-card-row">
+                        <div class="pc-card-label">Ports</div>
+                        <div class="pc-card-value">
+                          300
+                          <img src="./assets/static/icon-check-blue.svg" alt="check" class="icon check">
+                        </div>
+                      </div>
+                    </div>
+                    <a href="#" class="pc-card-btn _bottom btn btn-blue">
+                      <img src="./assets/static/icon-rocket-white.svg" alt="rocket" class="icon rocket">
+                      start now
+                    </a>
+                  </div>
+                  
+                </div>
+              </div>
+              <div class="tabs-node hidden" data-box-id="2">2</div>
+              <div class="tabs-node hidden" data-box-id="3">3 </div>
+            </div>
+          </div>
+
+        </div>
+      </section>
     </main>
 
     <footer class="f">

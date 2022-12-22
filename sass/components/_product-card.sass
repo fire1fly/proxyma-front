@@ -1,0 +1,83 @@
+.pc
+  &-row
+    display: grid
+    &._grid
+      &-4
+        grid-template-columns: repeat(4, auto)
+        gap: 70px
+  &-card
+    border-radius: 15px
+    padding: 45px 35px 0
+    display: flex
+    align-items: center
+    flex-direction: column
+    background-color: $grey3
+    &._hover
+      &-1
+        transition: 0.3s
+        &:hover
+          background-color: $white
+    &-title
+      margin-bottom: 40px
+      text-align: center
+      text-transform: uppercase
+      +futura-heavy
+      font-size: 31px
+      color: $grey1
+    &-price
+      &-block
+        margin: 0 auto 40px
+        border-radius: 20px
+        padding: 20px
+        text-align: center
+        background-color: $grey4
+      .price
+        +futura-heavy
+        text-transform: uppercase
+        font-size: 48px
+        color: $active
+      .sub
+        +futura-med
+        font-size: 21px
+        color: $grey2
+    &-b
+      width: 100%
+      display: flex
+      flex-direction: column
+      gap: 18px
+    &-row
+      border-radius: 30px
+      min-height: 43px
+      display: flex
+      align-items: center
+      justify-content: space-between
+      background-color: $grey4
+    &-label
+      padding-left: 15px
+      +futura-demi
+      font-size: 19px
+      color: $grey1
+    &-value
+      padding-right: 15px
+      +futura-heavy
+      font-size: 19px
+      color: $grey1
+      .icon
+        display: inline-block
+        &.check
+          width: 17px
+          margin-left: 12px
+    &-btn
+      // flex: 0 0 auto
+      border-radius: 30px
+      height: 60px
+      padding: 0 15px
+      +futura-heavy
+      text-transform: uppercase
+      font-size: 23px
+      gap: 10px
+      &._bottom
+        transform: translateY(50%)
+      .icon
+        &.rocket
+          width: 27px

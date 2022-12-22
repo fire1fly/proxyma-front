@@ -1,0 +1,117 @@
+.ms
+  padding-top: 60px
+  &-title
+    margin-bottom: 15px
+    position: relative
+    z-index: 4
+    &-sub
+      +futura-med
+      font-size: 51px
+      color: $grey1
+  &__inner
+    display: grid
+    grid-template-columns: auto min-content
+    grid-template-rows: repeat(2, auto)
+    grid-auto-rows: min-content
+    .ms
+      &-title__wrap
+        align-self: start
+        grid-column: 1/3
+        grid-row: 1/2
+      &-info
+        grid-column: 1/2
+        grid-row: 2/3
+      &-pic
+        transform: translate(100px, -100px)
+        grid-column: 2/3
+        grid-row: 2/3
+  &-info
+    padding-top: 60px
+    flex: 0 1 auto
+  &-text
+    +futura-book
+    font-size: 30px
+    color: $grey1
+    b
+      +futura-med
+  &__text
+    margin-bottom: 85px
+  &-pic
+    flex: 0 1 auto
+    position: relative
+    z-index: 3
+    &._height-limit
+      max-height: 450px
+    img
+      width: 800px
+
+@media ( max-width: 1600px )
+  .ms
+    padding-top: 20px
+    &-title
+      &-sub
+        font-size: 40px
+    &-info
+      padding-top: 30px
+    &-text
+      font-size: 24px
+    &__text
+      margin-bottom: 50px
+    &-pic
+      img
+        width: 600px
+
+@media ( max-width: 1200px )
+  .ms
+    &__inner
+      .ms
+        &-pic
+          transform: none
+    &-pic
+      img
+        width: 400px
+    &__fieldbtn
+      max-width: 600px
+
+@media ( max-width: 991px )
+  .ms
+    padding-top: 0
+    &-title
+      &-sub
+        font-size: 30px
+    &-text
+      font-size: 20px
+    &-pic
+      img
+        width: 300px
+
+@media ( max-width: 768px )
+  .ms
+    &__inner
+      grid-template-rows: repeat(3, auto)
+      .ms
+        &-info
+          margin-bottom: 20px
+          grid-column: 1/3
+        &-pic
+          justify-self: end
+          grid-column: 1/3
+          grid-row: 3/4
+          img
+            max-width: 100%
+    &-title
+      margin-bottom: 0
+      &-sub
+        font-size: 24px
+    &__text
+      margin-bottom: 25px
+    &__fieldbtn
+      max-width: 400px
+
+@media ( max-width: 520px )
+  .ms
+    &-title
+      &-sub
+        font-size: 20px
+    &-info
+      padding-top: 15px
