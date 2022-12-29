@@ -152,9 +152,6 @@ input:focus, textarea:focus, a:focus, button:focus {
   width: 45%;
 }
 .btn-blue:active {
-  -webkit-transform: scale(0.99);
-      -ms-transform: scale(0.99);
-          transform: scale(0.99);
   background: -webkit-gradient(linear, left bottom, left top, from(#0575ff), to(#05f6ff));
   background: -o-linear-gradient(bottom, #0575ff 0%, #05f6ff 100%);
   background: linear-gradient(0deg, #0575ff 0%, #05f6ff 100%);
@@ -416,6 +413,39 @@ input:focus, textarea:focus, a:focus, button:focus {
 }
 .tabs-node.active {
   display: block;
+}
+
+.radiobtn {
+  border-radius: 50%;
+  border: 1px solid #ECF3F7;
+  width: 24px;
+  height: 24px;
+  background-color: #F3F7FA;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.radiobtn-check {
+  border-radius: 50%;
+  width: 10px;
+  height: 10px;
+  background-color: #FF376E;
+  opacity: 0;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+}
+.radiobtn input[type=radio] {
+  display: none;
+}
+.radiobtn input[type=radio]:checked + .radiobtn-check {
+  opacity: 1;
 }
 
 @media (max-width: 1600px) {
@@ -2841,6 +2871,441 @@ input:focus, textarea:focus, a:focus, button:focus {
   }
   .al1-card {
     border-width: 2px;
+  }
+}
+.sign {
+  position: relative;
+  z-index: 2;
+  margin: 0 auto;
+  max-width: 700px;
+  padding: 0 15px;
+  width: 100%;
+}
+.sign-bg-pic-1 {
+  position: absolute;
+  top: 15%;
+  left: 0;
+  z-index: 1;
+  max-width: 100%;
+}
+.sign-bg-pic-2 {
+  position: absolute;
+  bottom: 10%;
+  left: 18%;
+  z-index: 1;
+  max-width: 100%;
+}
+.sign-bg-pic-3 {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  z-index: 1;
+  max-width: 100%;
+}
+.sign .h-lang {
+  margin-right: 0;
+}
+.sign__wrap {
+  padding: 80px 0;
+  position: relative;
+  background-color: #F3F7FA;
+}
+.sign-form {
+  position: relative;
+  border-radius: 20px;
+  padding: 75px 20px 0;
+  background-color: #FFFFFF;
+  -webkit-box-shadow: 0 0 20px 5px #ecf3f8;
+          box-shadow: 0 0 20px 5px #ecf3f8;
+}
+.sign-form::before {
+  content: "";
+  position: absolute;
+  top: -25px;
+  left: 50%;
+  z-index: 1;
+  -webkit-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+          transform: translateX(-50%);
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  display: block;
+  width: 90%;
+  height: 25px;
+  background-color: #FCFDFE;
+}
+.sign-form::after {
+  content: "";
+  position: absolute;
+  bottom: -14px;
+  left: 50%;
+  z-index: 1;
+  -webkit-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+          transform: translateX(-50%);
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  display: block;
+  width: 90%;
+  height: 14px;
+  background-color: #FCFDFE;
+}
+.sign-form__inner {
+  position: relative;
+  z-index: 2;
+  margin: 0 auto;
+  max-width: 500px;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 50px;
+}
+.sign-form-text {
+  font-family: "Futura PT Medium";
+  font-size: 19px;
+  color: #525b6e;
+}
+.sign-form-text a {
+  color: #FF376E;
+}
+.sign-title {
+  font-family: "Futura PT Heavy";
+  font-size: 34px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #38313f;
+}
+.sign-sideserv {
+  border-radius: 20px;
+  border: 1px solid #ECF3F7;
+  width: 100%;
+  height: 70px;
+  padding: 0 10px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 16px;
+  background-color: #FFFFFF;
+  font-family: "Futura PT Bold";
+  font-size: 19px;
+  color: #38313f;
+  text-transform: uppercase;
+  -webkit-box-shadow: 0 10px 20px 3px #eef3f6;
+          box-shadow: 0 10px 20px 3px #eef3f6;
+  -webkit-transition: 0.15s;
+  -o-transition: 0.15s;
+  transition: 0.15s;
+}
+.sign-sideserv:hover {
+  background-color: #f7f7f7;
+}
+.sign-sideserv:active {
+  background-color: #fcfcfc;
+}
+.sign-sideserv-icon {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 auto;
+          flex: 0 0 auto;
+  width: 30px;
+  height: 30px;
+  line-height: 0;
+}
+.sign-field {
+  width: 100%;
+}
+.sign-field-label {
+  margin-bottom: 20px;
+  font-family: "Futura PT Medium";
+  font-size: 22px;
+  color: #38313f;
+}
+.sign-field-input {
+  border-radius: 20px;
+  border: 1px solid #ECF3F7;
+  width: 100%;
+  height: 70px;
+  padding: 0 30px;
+  background-color: #F3F7FA;
+  font-family: "Futura PT Demi";
+  font-size: 20px;
+  color: #38313f;
+}
+.sign-field-input::-webkit-input-placeholder {
+  color: #b7bcc7;
+}
+.sign-field-input::-moz-placeholder {
+  color: #b7bcc7;
+}
+.sign-field-input:-ms-input-placeholder {
+  color: #b7bcc7;
+}
+.sign-field-input::-ms-input-placeholder {
+  color: #b7bcc7;
+}
+.sign-field-input::placeholder {
+  color: #b7bcc7;
+}
+.sign-field-input._error {
+  border: 1px solid #FF376E;
+}
+.sign-field-input._error::-webkit-input-placeholder {
+  text-align: right;
+  font-size: 17px;
+  color: #FF376E;
+}
+.sign-field-input._error::-moz-placeholder {
+  text-align: right;
+  font-size: 17px;
+  color: #FF376E;
+}
+.sign-field-input._error:-ms-input-placeholder {
+  text-align: right;
+  font-size: 17px;
+  color: #FF376E;
+}
+.sign-field-input._error::-ms-input-placeholder {
+  text-align: right;
+  font-size: 17px;
+  color: #FF376E;
+}
+.sign-field-input._error::placeholder {
+  text-align: right;
+  font-size: 17px;
+  color: #FF376E;
+}
+.sign-radiobtn {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 auto;
+          flex: 0 0 auto;
+}
+.sign-radiobtn__wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 14px;
+  cursor: pointer;
+}
+.sign-radiobtn-label {
+  font-family: "Futura PT Medium";
+  font-size: 19px;
+  color: #525b6e;
+}
+.sign-radiobtn-label a {
+  text-decoration: underline;
+  color: #FF376E;
+}
+.sign-btn-submit {
+  -webkit-transform: translateY(50%);
+      -ms-transform: translateY(50%);
+          transform: translateY(50%);
+  border-radius: 35px;
+  width: 100%;
+  height: 70px;
+  padding: 0 10px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-family: "Futura PT Heavy";
+  font-size: 23px;
+  text-transform: uppercase;
+}
+.sign-sidelink {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.sign-sidelink-label {
+  font-family: "Futura PT Heavy";
+  font-size: 22px;
+  color: #38313f;
+}
+.sign-sidelink a {
+  font-family: "Futura PT Demi";
+  font-size: 20px;
+  color: #FF376E;
+}
+.sign__sidelink {
+  margin-top: 90px;
+}
+
+@media (max-width: 1400px) {
+  .sign__wrap {
+    padding: 40px 0 80px;
+  }
+  .sign-form {
+    padding: 40px 20px 0;
+  }
+  .sign-form__inner {
+    gap: 30px;
+  }
+  .sign-title {
+    font-size: 30px;
+  }
+}
+@media (max-width: 991px) {
+  .sign-sideserv {
+    height: 55px;
+  }
+  .sign-field-label {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  .sign-field-input {
+    height: 55px;
+    padding: 0 20px;
+    font-size: 16px;
+  }
+  .sign-field-input._error::-webkit-input-placeholder {
+    font-size: 15px;
+  }
+  .sign-field-input._error::-moz-placeholder {
+    font-size: 15px;
+  }
+  .sign-field-input._error:-ms-input-placeholder {
+    font-size: 15px;
+  }
+  .sign-field-input._error::-ms-input-placeholder {
+    font-size: 15px;
+  }
+  .sign-field-input._error::placeholder {
+    font-size: 15px;
+  }
+  .sign-radiobtn-label {
+    font-size: 16px;
+  }
+  .sign-btn-submit {
+    height: 55px;
+    font-size: 20px;
+  }
+}
+@media (max-width: 768px) {
+  .sign__wrap {
+    padding: 0 0 60px;
+  }
+  .sign-form {
+    margin-top: 60px;
+    padding: 20px 20px 0;
+  }
+  .sign-title {
+    font-size: 24px;
+  }
+  .sign-sideserv {
+    font-size: 16px;
+    gap: 10px;
+  }
+  .sign-sideserv-icon {
+    width: 22px;
+    height: 22px;
+  }
+  .sign-field-label {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  .sign-field-input {
+    height: 55px;
+    padding: 0 20px;
+    font-size: 16px;
+  }
+  .sign-field-input._error::-webkit-input-placeholder {
+    font-size: 15px;
+  }
+  .sign-field-input._error::-moz-placeholder {
+    font-size: 15px;
+  }
+  .sign-field-input._error:-ms-input-placeholder {
+    font-size: 15px;
+  }
+  .sign-field-input._error::-ms-input-placeholder {
+    font-size: 15px;
+  }
+  .sign-field-input._error::placeholder {
+    font-size: 15px;
+  }
+  .sign-radiobtn-label {
+    font-size: 16px;
+  }
+  .sign-btn-submit {
+    height: 55px;
+    font-size: 20px;
+  }
+  .sign-sidelink-label {
+    font-size: 18px;
+  }
+  .sign-sidelink a {
+    font-size: 16px;
+  }
+  .sign__sidelink {
+    margin-top: 60px;
+  }
+}
+@media (max-width: 520px) {
+  .sign-form__inner {
+    gap: 15px;
+  }
+  .sign-form-text {
+    font-size: 14px;
+  }
+  .sign-title {
+    font-size: 22px;
+  }
+  .sign-sideserv {
+    border-radius: 10px;
+    height: 50px;
+    font-size: 14px;
+    gap: 10px;
+  }
+  .sign-sideserv-icon {
+    width: 22px;
+    height: 22px;
+  }
+  .sign-field-label {
+    font-size: 14px;
+  }
+  .sign-field-input {
+    border-radius: 10px;
+    height: 50px;
+    padding: 0 15px;
+    font-size: 14px;
+  }
+  .sign-field-input._error::-webkit-input-placeholder {
+    font-size: 14px;
+  }
+  .sign-field-input._error::-moz-placeholder {
+    font-size: 14px;
+  }
+  .sign-field-input._error:-ms-input-placeholder {
+    font-size: 14px;
+  }
+  .sign-field-input._error::-ms-input-placeholder {
+    font-size: 14px;
+  }
+  .sign-field-input._error::placeholder {
+    font-size: 14px;
+  }
+  .sign-radiobtn-label {
+    font-size: 14px;
+  }
+  .sign-btn-submit {
+    height: 50px;
+    font-size: 18px;
   }
 }
 .pagemain-pc {

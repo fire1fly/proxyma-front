@@ -77,7 +77,6 @@ input, textarea, a, button
         box-shadow: 0px -5px 25px 5px #00C9FF
         width: 45%
     &:active
-      transform: scale(0.99)
       background: linear-gradient(0deg, lighten(#0072ff, 1%) 0%, lighten(#00f6ff, 1%) 100%)
     &::before
       content: ''
@@ -247,6 +246,27 @@ input, textarea, a, button
     display: none
   &.active
     display: block
+
+.radiobtn
+  border-radius: 50%
+  border: 1px solid $grey3
+  width: 24px
+  height: 24px
+  background-color: $grey4
+  display: flex
+  align-items: center
+  justify-content: center
+  &-check
+    border-radius: 50%
+    width: 10px
+    height: 10px
+    background-color: $active
+    opacity: 0
+    transition: 0.3s
+  input[type="radio"]
+    display: none
+    &:checked + .radiobtn-check
+      opacity: 1
 
 @media ( max-width: 1600px )
   .page
