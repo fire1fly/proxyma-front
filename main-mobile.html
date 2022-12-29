@@ -1,0 +1,2602 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="./css/normalize.css">
+  <link rel="stylesheet" href="./css/swiper-bundle.min.css">
+  <link rel="stylesheet" href="./css/styles.css">
+
+  <script defer src="./js/dropdown.js"></script>
+  <script defer src="./js/mobileMenu.js"></script>
+  <script defer src="./js/tabs.js"></script>
+  <script defer src="./js/counter.js"></script>
+  <script src="./js/swiper-bundle.min.js"></script>
+  <script defer src="./js/sliders.js"></script>
+  <script defer src="./js/sectionStepper.js"></script>
+
+  <title>Proxyma</title>
+</head>
+<body>
+  <div class="root">
+    <header class="h">
+      <div class="container h__inner">
+        <div class="h-logo">
+          <picture>
+            <source media="(min-width: 521px)" srcset="./assets/static/logo-header.webp">
+            <source media="(min-width: 0px)" srcset="./assets/static/logo-header-sm.png">
+            <img src="./assets/static/logo-header.webp" alt="proxyma">
+          </picture>
+        </div>
+
+        <div class="h-lang dd">
+          <div class="h-lang-item">
+            <div class="h-lang-icon">
+              <img src="./assets/static/eng.svg" alt="english">
+            </div>
+            <div class="h-lang-label">Eng</div>
+          </div>
+          <div class="h-lang-arrow">▾</div>
+          <ul class="h-lang-list dd-list showDown">
+            <li>
+              <a href="#" class="h-lang-item dd-item">
+                <div class="h-lang-icon">
+                  <img src="./assets/static/eng.svg" alt="english">
+                </div>
+                <div class="h-lang-label">Eng</div>
+              </a>
+            </li>
+            <li>
+              <a href="#" class="h-lang-item dd-item">
+                <div class="h-lang-icon">
+                  <img src="./assets/static/chn.svg" alt="chinese">
+                </div>
+                <div class="h-lang-label">Chn</div>
+              </a>
+            </li>
+            <li>
+              <a href="#" class="h-lang-item dd-item">
+                <div class="h-lang-icon">
+                  <img src="./assets/static/rus.svg" alt="russian">
+                </div>
+                <div class="h-lang-label">Rus</div>
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <nav class="h-nav">
+          <a href="./buy.html" class="h-nav-item h-nav-link"><div class="h-nav-item__inner">Buy now</div></a>
+          <a href="./proxy1.html" class="h-nav-item h-nav-link"><div class="h-nav-item__inner">Products</div></a>
+          <div class="h-nav-item">
+            <div class="h-nav-item__inner h-select dd select">
+              <div class="h-select-item">
+                <div class="h-select-label">Use cases</div>
+              </div>
+              <div class="h-select-arrow"></div>
+              <ul class="h-select-list dd-list showDown">
+                <li>
+                  <a class="h-select-item dd-item">Use case 1</a>
+                </li>
+                <li>
+                  <a class="h-select-item dd-item">Use case 2</a>
+                </li>
+                <li>
+                  <a class="h-select-item dd-item">Use case 3</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <a href="./proxy-cheker.html" class="h-nav-item h-nav-link"><div class="h-nav-item__inner">Checkers</div></a>
+          <a href="./faq.html" class="h-nav-item h-nav-link"><div class="h-nav-item__inner">Help center</div></a>
+          <a href="./about.html" class="h-nav-item h-nav-link"><div class="h-nav-item__inner">Company</div></a>
+        </nav>
+
+        <div class="h-sign">
+          <button type="button" class="btn h-sign-btn _in">
+            <svg class="h-sign-icon _in" enable-background="new 0 0 500 500" height="500px" version="1.1" viewBox="0 0 500 500" width="500px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+              <path clip-rule="evenodd" d="M68.29,431.711c0,20.078,16.264,36.34,36.343,36.34h290.734  c20.078,0,36.345-16.262,36.345-36.34V250c0-20.079-16.267-36.342-36.345-36.342H177.317v-63.597  c0-40.157,32.525-72.685,72.683-72.685c40.158,0,72.685,32.528,72.685,72.685v4.541c0,12.538,10.176,22.715,22.711,22.715  c12.537,0,22.717-10.177,22.717-22.715v-4.541c0-65.232-52.882-118.111-118.112-118.111c-65.24,0-118.111,52.879-118.111,118.111  v63.597h-27.256c-20.079,0-36.343,16.263-36.343,36.342V431.711z M213.658,313.599c0-20.078,16.263-36.341,36.342-36.341  s36.341,16.263,36.341,36.341c0,12.812-6.634,24.079-16.625,30.529c0,0,3.55,21.446,7.542,46.699  c0,7.538-6.087,13.625-13.629,13.625h-27.258c-7.541,0-13.627-6.087-13.627-13.625l7.542-46.699  C220.294,337.678,213.658,326.41,213.658,313.599z" fill-rule="evenodd"/>
+            </svg>
+            <span class="h-sign-btn-text">sign in</span>
+          </button>
+          <button type="button" class="btn btn-blue h-sign-btn _up">
+            <svg class="h-sign-icon _up" width="20px" height="20px" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+              <path d="M9.46727453,0 C12.6508009,0 15.2315589,2.56640935 15.2315589,5.73223573 C15.2315589,7.47655509 14.448084,9.03890148 13.2119914,10.0902571 C13.4822032,10.2238219 13.7275682,10.3582958 13.9497532,10.4930662 C14.4279751,10.7831407 14.9241978,11.1427602 15.4394636,11.5717392 C15.732385,11.8156078 15.7710449,12.2494418 15.5258128,12.5407346 C15.2805808,12.8320274 14.8443213,12.8704723 14.5513999,12.6266038 C14.0866111,12.2396488 13.6455819,11.9200289 13.2293546,11.6675584 C12.8528749,11.4391975 12.384017,11.2042359 11.8239965,10.9643237 C11.1032931,11.2862459 10.3062136,11.4644715 9.46727453,11.4644715 C8.53944258,11.4644715 7.66281089,11.2464759 6.88634681,10.8591798 L6.84481353,10.878634 L6.84481353,10.878634 C4.89437187,11.634739 3.4715441,12.752929 2.55274945,14.2369477 C1.63088171,15.7259301 1.25429819,17.3895789 1.42222738,19.2506112 C1.45637018,19.6289901 1.17559676,19.9632511 0.795102385,19.9972041 C0.414608014,20.031157 0.078478173,19.7519447 0.0443353722,19.3735658 C-0.149844712,17.2216146 0.29386687,15.2614114 1.37469861,13.5156736 C2.32539098,11.9801342 3.72215476,10.7855333 5.54907869,9.93439694 C4.41355013,8.88953631 3.70299014,7.39340475 3.70299014,5.73223573 C3.70299014,2.56640935 6.28374817,0 9.46727453,0 Z M16.868159,12.6926826 C17.2480582,12.6926826 17.5560273,13.0023735 17.5560273,13.3843967 L17.556,15.136 L19.3082859,15.1366553 C19.690309,15.1366553 20,15.4446244 20,15.8245236 C20,16.2044227 19.690309,16.5123919 19.3082859,16.5123919 L17.556,16.512 L17.5560273,18.2646504 C17.5560273,18.6466736 17.2480582,18.9563646 16.868159,18.9563646 C16.4882598,18.9563646 16.1802907,18.6466736 16.1802907,18.2646504 L16.18,16.512 L14.4280321,16.5123919 C14.046009,16.5123919 13.736318,16.2044227 13.736318,15.8245236 C13.736318,15.4446244 14.046009,15.1366553 14.4280321,15.1366553 L16.18,15.136 L16.1802907,13.3843967 C16.1802907,13.0023735 16.4882598,12.6926826 16.868159,12.6926826 Z M9.46727453,1.37573658 C7.04779449,1.37573658 5.08641839,3.32620768 5.08641839,5.73223573 C5.08641839,8.13826378 7.04779449,10.0887349 9.46727453,10.0887349 C11.8867546,10.0887349 13.8481307,8.13826378 13.8481307,5.73223573 C13.8481307,3.32620768 11.8867546,1.37573658 9.46727453,1.37573658 Z"/>
+            </svg>
+            <span class="h-sign-btn-text">sign up</span>
+          </button>
+        </div>
+
+        <div class="h-menubtn">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>    
+    </header>
+
+    <main class="main pagemain">
+
+      <div class="section-stepper">
+        <div class="section-stepper-item">
+          <span>1</span>
+        </div>
+        <div class="section-stepper-item">
+          <span>2</span>
+        </div>
+        <div class="section-stepper-item">
+          <span>3</span>
+        </div>
+        <div class="section-stepper-item">
+          <span>4</span>
+        </div>
+        <div class="section-stepper-item">
+          <span>5</span>
+        </div>
+        <div class="section-stepper-item">
+          <span>6</span>
+        </div>
+      </div>
+
+      <div class="section ms" data-section-index="1">
+        <img src="./assets/static/ms-pic-2.png" alt="picture" class="ms-backpic">
+        <div class="container ms__inner">
+          <div class="ms-title__wrap">
+            <h1 class="ms-title page-title">The highest <span class="_active">quality</span> proxy</h1>
+            <div class="ms-title-sub">Of your choice</div>
+          </div>
+          <div class="ms-info">
+            <div class="ms-text ms__text">We invest in technological advancements to <b>create new</b> competitive data gathering solutions.</div>
+
+            <form action="#" class="fieldbtn ms__fieldbtn _error">
+              <input type="email" class="fieldbtn-input" placeholder="Enter your email">
+              <div class="fieldbtn-msg _error">Enter the correct e-mail</div>
+              <button type="button" class="btn btn-blue fieldbtn-btn">
+                <div class="fieldbtn-btn-icon">
+                  <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                    viewBox="0 0 489.888 489.888" xml:space="preserve">
+                      <path d="M25.383,290.5c-7.2-77.5,25.9-147.7,80.8-192.3c21.4-17.4,53.4-2.5,53.4,25l0,0c0,10.1-4.8,19.4-12.6,25.7
+                        c-38.9,31.7-62.3,81.7-56.6,136.9c7.4,71.9,65,130.1,136.8,138.1c93.7,10.5,173.3-62.9,173.3-154.5c0-48.6-22.5-92.1-57.6-120.6
+                        c-7.8-6.3-12.5-15.6-12.5-25.6l0,0c0-27.2,31.5-42.6,52.7-25.6c50.2,40.5,82.4,102.4,82.4,171.8c0,126.9-107.8,229.2-236.7,219.9
+                        C122.183,481.8,35.283,396.9,25.383,290.5z M244.883,0c-18,0-32.5,14.6-32.5,32.5v149.7c0,18,14.6,32.5,32.5,32.5
+                        s32.5-14.6,32.5-32.5V32.5C277.383,14.6,262.883,0,244.883,0z"/>
+                  </svg>
+                </div>
+                <div class="fieldbtn-btn-text">start now</div>
+              </button>
+            </form>
+
+          </div>
+          <div class="ms-pic _height-limit">
+            <img src="./assets/static/ms-pic-1.png" alt="picture">
+          </div>
+        </div>
+      </div>
+
+      <section class="section pagemain-pc" data-section-index="2">
+        <img src="./assets/static/mainpage-pc-bg.png" alt="background" class="pagemain-pc__bg">
+        <div class="container pagemain-pc__inner">
+          <h2 class="section-title section__title">Residential & Mobile Proxies</h2>
+          <div class="section-subtitle section__subtite">The cost starts from <span class="_active">$2.99</span> and above</div>
+
+          <div class="tabs pc-tabs">
+            <div class="tabs-list pc-tabs-list">
+              <input type="hidden" class="tabs-value" value="1">
+              <div class="tabs-item pc-tabs-item active" data-value="datacenter" data-box-id="1">
+                <img src="./assets/static/icon-datacenter-red.png" alt="icon" class="icon">
+                Datacenter Proxies
+              </div>
+              <div class="tabs-item pc-tabs-item" data-value="residential" data-box-id="2">
+                <img src="./assets/static/icon-residental-red.png" alt="icon" class="icon">
+                Residential Proxies
+              </div>
+              <div class="tabs-item pc-tabs-item" data-value="mobile" data-box-id="3">
+                <img src="./assets/static/icon-mobile-red.svg" alt="icon" class="icon">
+                Mobile Proxies
+              </div>
+            </div>
+            
+            <div class="tabs-node-wrapper">
+              <div class="tabs-node hidden active" data-box-id="1">
+                <div class="pc-row _grid-5">
+
+                  <div class="pc-card _hover-2">
+                    <div class="pc-card-hint">
+                      <img src="./assets/static/icon-question-grey.svg" alt="question">
+                    </div>
+                    <div class="pc-card-subtitle">IPv4</div>
+                    <div class="pc-card-title">SHARED PROXIES</div>
+                    <div class="pc-card-b">
+                      
+                      <div class="pc-card-select pc-card-row _shadow dd select">
+                        <input type="hidden" class="dd-input" value="null">
+                        <div class="pc-card-select-item selected">
+                          <div class="pc-card-select-label">Country</div>
+                        </div>
+                        <div class="pc-card-select-arrow">▾</div>
+                        <ul class="pc-card-select-list dd-list showDown">
+                          <li>
+                            <div class="pc-card-select-item dd-item" data-value="1">Value 1</div>
+                          </li>
+                          <li>
+                            <div class="pc-card-select-item dd-item" data-value="2">Value 2</div>
+                          </li>
+                          <li>
+                            <div class="pc-card-select-item dd-item" data-value="3">Value 3</div>
+                          </li>
+                          <li>
+                            <div class="pc-card-select-item dd-item" data-value="4">Value 4</div>
+                          </li>
+                        </ul>
+                      </div>
+
+                      <div class="pc-card-row _border _white">
+                        <div class="pc-card-label">Quantity:</div>
+                        <div class="pc-card-counter counter" data-counter-step="1">
+                          <button class="pc-card-counter-sign counter-minus">-</button>
+                          <div class="pc-card-counter-value counter-value">3</div>
+                          <button class="pc-card-counter-sign counter-plus">+</button>
+                        </div>
+                      </div>
+
+                      <div class="pc-card-select pc-card-row _shadow dd select">
+                        <input type="hidden" class="dd-input" value="null">
+                        <div class="pc-card-select-item selected">
+                          <div class="pc-card-select-label">Period</div>
+                        </div>
+                        <div class="pc-card-select-arrow">▾</div>
+                        <ul class="pc-card-select-list dd-list showDown">
+                          <li>
+                            <div class="pc-card-select-item dd-item" data-value="1">Value 1</div>
+                          </li>
+                          <li>
+                            <div class="pc-card-select-item dd-item" data-value="2">Value 2</div>
+                          </li>
+                          <li>
+                            <div class="pc-card-select-item dd-item" data-value="3">Value 3</div>
+                          </li>
+                          <li>
+                            <div class="pc-card-select-item dd-item" data-value="4">Value 4</div>
+                          </li>
+                        </ul>
+                      </div>
+
+                      <div class="pc-card-select pc-card-row _shadow dd select">
+                        <input type="hidden" class="dd-input" value="null">
+                        <div class="pc-card-select-item selected">
+                          <div class="pc-card-select-label">Carrier</div>
+                        </div>
+                        <div class="pc-card-select-arrow">▾</div>
+                        <ul class="pc-card-select-list dd-list showDown">
+                          <li>
+                            <div class="pc-card-select-item dd-item" data-value="1">Value 1</div>
+                          </li>
+                          <li>
+                            <div class="pc-card-select-item dd-item" data-value="2">Value 2</div>
+                          </li>
+                          <li>
+                            <div class="pc-card-select-item dd-item" data-value="3">Value 3</div>
+                          </li>
+                          <li>
+                            <div class="pc-card-select-item dd-item" data-value="4">Value 4</div>
+                          </li>
+                        </ul>
+                      </div>
+
+                      <div class="pc-card-select pc-card-row _shadow dd select">
+                        <input type="hidden" class="dd-input" value="null">
+                        <div class="pc-card-select-item selected">
+                          <div class="pc-card-select-label">Location</div>
+                        </div>
+                        <div class="pc-card-select-arrow">▾</div>
+                        <ul class="pc-card-select-list dd-list showDown">
+                          <li>
+                            <div class="pc-card-select-item dd-item" data-value="1">Value 1</div>
+                          </li>
+                          <li>
+                            <div class="pc-card-select-item dd-item" data-value="2">Value 2</div>
+                          </li>
+                          <li>
+                            <div class="pc-card-select-item dd-item" data-value="3">Value 3</div>
+                          </li>
+                          <li>
+                            <div class="pc-card-select-item dd-item" data-value="4">Value 4</div>
+                          </li>
+                        </ul>
+                      </div>
+
+                    </div>
+                    <div class="pc-card-f _gap-0">
+                      <div class="pc-card-price">
+                        <div class="sub">Total price:</div>
+                        <div class="price">$500</div>
+                      </div>
+                      <a href="#" class="pc-card-btn _bottom btn btn-blue">
+                        <img src="./assets/static/icon-rocket-white.svg" alt="rocket" class="icon rocket">
+                        start now
+                      </a>
+                    </div>
+                  </div>
+
+                  <div class="pc-card _hover-2">
+                    <div class="pc-card-hint">
+                      <img src="./assets/static/icon-question-grey.svg" alt="question">
+                    </div>
+                    <div class="pc-card-subtitle">IPv4</div>
+                    <div class="pc-card-title">SHARED PROXIES</div>
+                    <div class="pc-card-b">
+                      
+                      <div class="pc-card-select pc-card-row _shadow dd select">
+                        <input type="hidden" class="dd-input" value="null">
+                        <div class="pc-card-select-item selected">
+                          <div class="pc-card-select-label">Country</div>
+                        </div>
+                        <div class="pc-card-select-arrow">▾</div>
+                        <ul class="pc-card-select-list dd-list showDown">
+                          <li>
+                            <div class="pc-card-select-item dd-item" data-value="1">Value 1</div>
+                          </li>
+                          <li>
+                            <div class="pc-card-select-item dd-item" data-value="2">Value 2</div>
+                          </li>
+                          <li>
+                            <div class="pc-card-select-item dd-item" data-value="3">Value 3</div>
+                          </li>
+                          <li>
+                            <div class="pc-card-select-item dd-item" data-value="4">Value 4</div>
+                          </li>
+                        </ul>
+                      </div>
+
+                      <div class="pc-card-row _border _white">
+                        <div class="pc-card-label">Quantity:</div>
+                        <div class="pc-card-counter counter" data-counter-step="1">
+                          <button class="pc-card-counter-sign counter-minus">-</button>
+                          <div class="pc-card-counter-value counter-value">3</div>
+                          <button class="pc-card-counter-sign counter-plus">+</button>
+                        </div>
+                      </div>
+
+                      <div class="pc-card-select pc-card-row _shadow dd select">
+                        <input type="hidden" class="dd-input" value="null">
+                        <div class="pc-card-select-item selected">
+                          <div class="pc-card-select-label">Period</div>
+                        </div>
+                        <div class="pc-card-select-arrow">▾</div>
+                        <ul class="pc-card-select-list dd-list showDown">
+                          <li>
+                            <div class="pc-card-select-item dd-item" data-value="1">Value 1</div>
+                          </li>
+                          <li>
+                            <div class="pc-card-select-item dd-item" data-value="2">Value 2</div>
+                          </li>
+                          <li>
+                            <div class="pc-card-select-item dd-item" data-value="3">Value 3</div>
+                          </li>
+                          <li>
+                            <div class="pc-card-select-item dd-item" data-value="4">Value 4</div>
+                          </li>
+                        </ul>
+                      </div>
+
+                      <div class="pc-card-select pc-card-row _shadow dd select">
+                        <input type="hidden" class="dd-input" value="null">
+                        <div class="pc-card-select-item selected">
+                          <div class="pc-card-select-label">Carrier</div>
+                        </div>
+                        <div class="pc-card-select-arrow">▾</div>
+                        <ul class="pc-card-select-list dd-list showDown">
+                          <li>
+                            <div class="pc-card-select-item dd-item" data-value="1">Value 1</div>
+                          </li>
+                          <li>
+                            <div class="pc-card-select-item dd-item" data-value="2">Value 2</div>
+                          </li>
+                          <li>
+                            <div class="pc-card-select-item dd-item" data-value="3">Value 3</div>
+                          </li>
+                          <li>
+                            <div class="pc-card-select-item dd-item" data-value="4">Value 4</div>
+                          </li>
+                        </ul>
+                      </div>
+
+                      <div class="pc-card-select pc-card-row _shadow dd select">
+                        <input type="hidden" class="dd-input" value="null">
+                        <div class="pc-card-select-item selected">
+                          <div class="pc-card-select-label">Location</div>
+                        </div>
+                        <div class="pc-card-select-arrow">▾</div>
+                        <ul class="pc-card-select-list dd-list showDown">
+                          <li>
+                            <div class="pc-card-select-item dd-item" data-value="1">Value 1</div>
+                          </li>
+                          <li>
+                            <div class="pc-card-select-item dd-item" data-value="2">Value 2</div>
+                          </li>
+                          <li>
+                            <div class="pc-card-select-item dd-item" data-value="3">Value 3</div>
+                          </li>
+                          <li>
+                            <div class="pc-card-select-item dd-item" data-value="4">Value 4</div>
+                          </li>
+                        </ul>
+                      </div>
+
+                    </div>
+                    <div class="pc-card-f _gap-0">
+                      <div class="pc-card-price">
+                        <div class="sub">Total price:</div>
+                        <div class="price">$500</div>
+                      </div>
+                      <a href="#" class="pc-card-btn _bottom btn btn-blue">
+                        <img src="./assets/static/icon-rocket-white.svg" alt="rocket" class="icon rocket">
+                        start now
+                      </a>
+                    </div>
+                  </div>
+
+                  <div class="pc-card _hover-2">
+                    <div class="pc-card-hint">
+                      <img src="./assets/static/icon-question-grey.svg" alt="question">
+                    </div>
+                    <div class="pc-card-subtitle">IPv4</div>
+                    <div class="pc-card-title">SHARED PROXIES</div>
+                    <div class="pc-card-b">
+                      
+                      <div class="pc-card-select pc-card-row _shadow dd select">
+                        <input type="hidden" class="dd-input" value="null">
+                        <div class="pc-card-select-item selected">
+                          <div class="pc-card-select-label">Country</div>
+                        </div>
+                        <div class="pc-card-select-arrow">▾</div>
+                        <ul class="pc-card-select-list dd-list showDown">
+                          <li>
+                            <div class="pc-card-select-item dd-item" data-value="1">Value 1</div>
+                          </li>
+                          <li>
+                            <div class="pc-card-select-item dd-item" data-value="2">Value 2</div>
+                          </li>
+                          <li>
+                            <div class="pc-card-select-item dd-item" data-value="3">Value 3</div>
+                          </li>
+                          <li>
+                            <div class="pc-card-select-item dd-item" data-value="4">Value 4</div>
+                          </li>
+                        </ul>
+                      </div>
+
+                      <div class="pc-card-row _border _white">
+                        <div class="pc-card-label">Quantity:</div>
+                        <div class="pc-card-counter counter" data-counter-step="1">
+                          <button class="pc-card-counter-sign counter-minus">-</button>
+                          <div class="pc-card-counter-value counter-value">3</div>
+                          <button class="pc-card-counter-sign counter-plus">+</button>
+                        </div>
+                      </div>
+
+                      <div class="pc-card-select pc-card-row _shadow dd select">
+                        <input type="hidden" class="dd-input" value="null">
+                        <div class="pc-card-select-item selected">
+                          <div class="pc-card-select-label">Period</div>
+                        </div>
+                        <div class="pc-card-select-arrow">▾</div>
+                        <ul class="pc-card-select-list dd-list showDown">
+                          <li>
+                            <div class="pc-card-select-item dd-item" data-value="1">Value 1</div>
+                          </li>
+                          <li>
+                            <div class="pc-card-select-item dd-item" data-value="2">Value 2</div>
+                          </li>
+                          <li>
+                            <div class="pc-card-select-item dd-item" data-value="3">Value 3</div>
+                          </li>
+                          <li>
+                            <div class="pc-card-select-item dd-item" data-value="4">Value 4</div>
+                          </li>
+                        </ul>
+                      </div>
+
+                      <div class="pc-card-select pc-card-row _shadow dd select">
+                        <input type="hidden" class="dd-input" value="null">
+                        <div class="pc-card-select-item selected">
+                          <div class="pc-card-select-label">Carrier</div>
+                        </div>
+                        <div class="pc-card-select-arrow">▾</div>
+                        <ul class="pc-card-select-list dd-list showDown">
+                          <li>
+                            <div class="pc-card-select-item dd-item" data-value="1">Value 1</div>
+                          </li>
+                          <li>
+                            <div class="pc-card-select-item dd-item" data-value="2">Value 2</div>
+                          </li>
+                          <li>
+                            <div class="pc-card-select-item dd-item" data-value="3">Value 3</div>
+                          </li>
+                          <li>
+                            <div class="pc-card-select-item dd-item" data-value="4">Value 4</div>
+                          </li>
+                        </ul>
+                      </div>
+
+                      <div class="pc-card-select pc-card-row _shadow dd select">
+                        <input type="hidden" class="dd-input" value="null">
+                        <div class="pc-card-select-item selected">
+                          <div class="pc-card-select-label">Location</div>
+                        </div>
+                        <div class="pc-card-select-arrow">▾</div>
+                        <ul class="pc-card-select-list dd-list showDown">
+                          <li>
+                            <div class="pc-card-select-item dd-item" data-value="1">Value 1</div>
+                          </li>
+                          <li>
+                            <div class="pc-card-select-item dd-item" data-value="2">Value 2</div>
+                          </li>
+                          <li>
+                            <div class="pc-card-select-item dd-item" data-value="3">Value 3</div>
+                          </li>
+                          <li>
+                            <div class="pc-card-select-item dd-item" data-value="4">Value 4</div>
+                          </li>
+                        </ul>
+                      </div>
+
+                    </div>
+                    <div class="pc-card-f _gap-0">
+                      <div class="pc-card-price">
+                        <div class="sub">Total price:</div>
+                        <div class="price">$500</div>
+                      </div>
+                      <a href="#" class="pc-card-btn _bottom btn btn-blue">
+                        <img src="./assets/static/icon-rocket-white.svg" alt="rocket" class="icon rocket">
+                        start now
+                      </a>
+                    </div>
+                  </div>
+
+                  <div class="pc-card _hover-2">
+                    <div class="pc-card-hint">
+                      <img src="./assets/static/icon-question-grey.svg" alt="question">
+                    </div>
+                    <div class="pc-card-subtitle">IPv4</div>
+                    <div class="pc-card-title">SHARED PROXIES</div>
+                    <div class="pc-card-b">
+                      
+                      <div class="pc-card-select pc-card-row _shadow dd select">
+                        <input type="hidden" class="dd-input" value="null">
+                        <div class="pc-card-select-item selected">
+                          <div class="pc-card-select-label">Country</div>
+                        </div>
+                        <div class="pc-card-select-arrow">▾</div>
+                        <ul class="pc-card-select-list dd-list showDown">
+                          <li>
+                            <div class="pc-card-select-item dd-item" data-value="1">Value 1</div>
+                          </li>
+                          <li>
+                            <div class="pc-card-select-item dd-item" data-value="2">Value 2</div>
+                          </li>
+                          <li>
+                            <div class="pc-card-select-item dd-item" data-value="3">Value 3</div>
+                          </li>
+                          <li>
+                            <div class="pc-card-select-item dd-item" data-value="4">Value 4</div>
+                          </li>
+                        </ul>
+                      </div>
+
+                      <div class="pc-card-row _border _white">
+                        <div class="pc-card-label">Quantity:</div>
+                        <div class="pc-card-counter counter" data-counter-step="1">
+                          <button class="pc-card-counter-sign counter-minus">-</button>
+                          <div class="pc-card-counter-value counter-value">3</div>
+                          <button class="pc-card-counter-sign counter-plus">+</button>
+                        </div>
+                      </div>
+
+                      <div class="pc-card-select pc-card-row _shadow dd select">
+                        <input type="hidden" class="dd-input" value="null">
+                        <div class="pc-card-select-item selected">
+                          <div class="pc-card-select-label">Period</div>
+                        </div>
+                        <div class="pc-card-select-arrow">▾</div>
+                        <ul class="pc-card-select-list dd-list showDown">
+                          <li>
+                            <div class="pc-card-select-item dd-item" data-value="1">Value 1</div>
+                          </li>
+                          <li>
+                            <div class="pc-card-select-item dd-item" data-value="2">Value 2</div>
+                          </li>
+                          <li>
+                            <div class="pc-card-select-item dd-item" data-value="3">Value 3</div>
+                          </li>
+                          <li>
+                            <div class="pc-card-select-item dd-item" data-value="4">Value 4</div>
+                          </li>
+                        </ul>
+                      </div>
+
+                      <div class="pc-card-select pc-card-row _shadow dd select">
+                        <input type="hidden" class="dd-input" value="null">
+                        <div class="pc-card-select-item selected">
+                          <div class="pc-card-select-label">Carrier</div>
+                        </div>
+                        <div class="pc-card-select-arrow">▾</div>
+                        <ul class="pc-card-select-list dd-list showDown">
+                          <li>
+                            <div class="pc-card-select-item dd-item" data-value="1">Value 1</div>
+                          </li>
+                          <li>
+                            <div class="pc-card-select-item dd-item" data-value="2">Value 2</div>
+                          </li>
+                          <li>
+                            <div class="pc-card-select-item dd-item" data-value="3">Value 3</div>
+                          </li>
+                          <li>
+                            <div class="pc-card-select-item dd-item" data-value="4">Value 4</div>
+                          </li>
+                        </ul>
+                      </div>
+
+                      <div class="pc-card-select pc-card-row _shadow dd select">
+                        <input type="hidden" class="dd-input" value="null">
+                        <div class="pc-card-select-item selected">
+                          <div class="pc-card-select-label">Location</div>
+                        </div>
+                        <div class="pc-card-select-arrow">▾</div>
+                        <ul class="pc-card-select-list dd-list showDown">
+                          <li>
+                            <div class="pc-card-select-item dd-item" data-value="1">Value 1</div>
+                          </li>
+                          <li>
+                            <div class="pc-card-select-item dd-item" data-value="2">Value 2</div>
+                          </li>
+                          <li>
+                            <div class="pc-card-select-item dd-item" data-value="3">Value 3</div>
+                          </li>
+                          <li>
+                            <div class="pc-card-select-item dd-item" data-value="4">Value 4</div>
+                          </li>
+                        </ul>
+                      </div>
+
+                    </div>
+                    <div class="pc-card-f _gap-0">
+                      <div class="pc-card-price">
+                        <div class="sub">Total price:</div>
+                        <div class="price">$500</div>
+                      </div>
+                      <a href="#" class="pc-card-btn _bottom btn btn-blue">
+                        <img src="./assets/static/icon-rocket-white.svg" alt="rocket" class="icon rocket">
+                        start now
+                      </a>
+                    </div>
+                  </div>
+
+                  <div class="pc-card _hover-2">
+                    <div class="pc-card-hint">
+                      <img src="./assets/static/icon-question-grey.svg" alt="question">
+                    </div>
+                    <div class="pc-card-subtitle">IPv4</div>
+                    <div class="pc-card-title">SHARED PROXIES</div>
+                    <div class="pc-card-b">
+                      
+                      <div class="pc-card-select pc-card-row _shadow dd select">
+                        <input type="hidden" class="dd-input" value="null">
+                        <div class="pc-card-select-item selected">
+                          <div class="pc-card-select-label">Country</div>
+                        </div>
+                        <div class="pc-card-select-arrow">▾</div>
+                        <ul class="pc-card-select-list dd-list showDown">
+                          <li>
+                            <div class="pc-card-select-item dd-item" data-value="1">Value 1</div>
+                          </li>
+                          <li>
+                            <div class="pc-card-select-item dd-item" data-value="2">Value 2</div>
+                          </li>
+                          <li>
+                            <div class="pc-card-select-item dd-item" data-value="3">Value 3</div>
+                          </li>
+                          <li>
+                            <div class="pc-card-select-item dd-item" data-value="4">Value 4</div>
+                          </li>
+                        </ul>
+                      </div>
+
+                      <div class="pc-card-row _border _white">
+                        <div class="pc-card-label">Quantity:</div>
+                        <div class="pc-card-counter counter" data-counter-step="1">
+                          <button class="pc-card-counter-sign counter-minus">-</button>
+                          <div class="pc-card-counter-value counter-value">3</div>
+                          <button class="pc-card-counter-sign counter-plus">+</button>
+                        </div>
+                      </div>
+
+                      <div class="pc-card-select pc-card-row _shadow dd select">
+                        <input type="hidden" class="dd-input" value="null">
+                        <div class="pc-card-select-item selected">
+                          <div class="pc-card-select-label">Period</div>
+                        </div>
+                        <div class="pc-card-select-arrow">▾</div>
+                        <ul class="pc-card-select-list dd-list showDown">
+                          <li>
+                            <div class="pc-card-select-item dd-item" data-value="1">Value 1</div>
+                          </li>
+                          <li>
+                            <div class="pc-card-select-item dd-item" data-value="2">Value 2</div>
+                          </li>
+                          <li>
+                            <div class="pc-card-select-item dd-item" data-value="3">Value 3</div>
+                          </li>
+                          <li>
+                            <div class="pc-card-select-item dd-item" data-value="4">Value 4</div>
+                          </li>
+                        </ul>
+                      </div>
+
+                      <div class="pc-card-select pc-card-row _shadow dd select">
+                        <input type="hidden" class="dd-input" value="null">
+                        <div class="pc-card-select-item selected">
+                          <div class="pc-card-select-label">Carrier</div>
+                        </div>
+                        <div class="pc-card-select-arrow">▾</div>
+                        <ul class="pc-card-select-list dd-list showDown">
+                          <li>
+                            <div class="pc-card-select-item dd-item" data-value="1">Value 1</div>
+                          </li>
+                          <li>
+                            <div class="pc-card-select-item dd-item" data-value="2">Value 2</div>
+                          </li>
+                          <li>
+                            <div class="pc-card-select-item dd-item" data-value="3">Value 3</div>
+                          </li>
+                          <li>
+                            <div class="pc-card-select-item dd-item" data-value="4">Value 4</div>
+                          </li>
+                        </ul>
+                      </div>
+
+                      <div class="pc-card-select pc-card-row _shadow dd select">
+                        <input type="hidden" class="dd-input" value="null">
+                        <div class="pc-card-select-item selected">
+                          <div class="pc-card-select-label">Location</div>
+                        </div>
+                        <div class="pc-card-select-arrow">▾</div>
+                        <ul class="pc-card-select-list dd-list showDown">
+                          <li>
+                            <div class="pc-card-select-item dd-item" data-value="1">Value 1</div>
+                          </li>
+                          <li>
+                            <div class="pc-card-select-item dd-item" data-value="2">Value 2</div>
+                          </li>
+                          <li>
+                            <div class="pc-card-select-item dd-item" data-value="3">Value 3</div>
+                          </li>
+                          <li>
+                            <div class="pc-card-select-item dd-item" data-value="4">Value 4</div>
+                          </li>
+                        </ul>
+                      </div>
+
+                    </div>
+                    <div class="pc-card-f _gap-0">
+                      <div class="pc-card-price">
+                        <div class="sub">Total price:</div>
+                        <div class="price">$500</div>
+                      </div>
+                      <a href="#" class="pc-card-btn _bottom btn btn-blue">
+                        <img src="./assets/static/icon-rocket-white.svg" alt="rocket" class="icon rocket">
+                        start now
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="tabs-node hidden" data-box-id="2">
+                <div class="pc-row _grid-5">
+
+                  <div class="pc-card _hover-2">
+                    <div class="pc-card-hint">
+                      <img src="./assets/static/icon-question-grey.svg" alt="question">
+                    </div>
+                    <div class="pc-card-subtitle">IPv4</div>
+                    <div class="pc-card-title">SHARED PROXIES</div>
+                    <div class="pc-card-b">
+                      
+                      <div class="pc-card-select pc-card-row _shadow dd select">
+                        <input type="hidden" class="dd-input" value="null">
+                        <div class="pc-card-select-item selected">
+                          <div class="pc-card-select-label">Country</div>
+                        </div>
+                        <div class="pc-card-select-arrow">▾</div>
+                        <ul class="pc-card-select-list dd-list showDown">
+                          <li>
+                            <div class="pc-card-select-item dd-item" data-value="1">Value 1</div>
+                          </li>
+                          <li>
+                            <div class="pc-card-select-item dd-item" data-value="2">Value 2</div>
+                          </li>
+                          <li>
+                            <div class="pc-card-select-item dd-item" data-value="3">Value 3</div>
+                          </li>
+                          <li>
+                            <div class="pc-card-select-item dd-item" data-value="4">Value 4</div>
+                          </li>
+                        </ul>
+                      </div>
+
+                      <div class="pc-card-row _border _white">
+                        <div class="pc-card-label">Quantity:</div>
+                        <div class="pc-card-counter counter" data-counter-step="1">
+                          <button class="pc-card-counter-sign counter-minus">-</button>
+                          <div class="pc-card-counter-value counter-value">3</div>
+                          <button class="pc-card-counter-sign counter-plus">+</button>
+                        </div>
+                      </div>
+
+                      <div class="pc-card-select pc-card-row _shadow dd select">
+                        <input type="hidden" class="dd-input" value="null">
+                        <div class="pc-card-select-item selected">
+                          <div class="pc-card-select-label">Period</div>
+                        </div>
+                        <div class="pc-card-select-arrow">▾</div>
+                        <ul class="pc-card-select-list dd-list showDown">
+                          <li>
+                            <div class="pc-card-select-item dd-item" data-value="1">Value 1</div>
+                          </li>
+                          <li>
+                            <div class="pc-card-select-item dd-item" data-value="2">Value 2</div>
+                          </li>
+                          <li>
+                            <div class="pc-card-select-item dd-item" data-value="3">Value 3</div>
+                          </li>
+                          <li>
+                            <div class="pc-card-select-item dd-item" data-value="4">Value 4</div>
+                          </li>
+                        </ul>
+                      </div>
+
+                      <div class="pc-card-select pc-card-row _shadow dd select">
+                        <input type="hidden" class="dd-input" value="null">
+                        <div class="pc-card-select-item selected">
+                          <div class="pc-card-select-label">Carrier</div>
+                        </div>
+                        <div class="pc-card-select-arrow">▾</div>
+                        <ul class="pc-card-select-list dd-list showDown">
+                          <li>
+                            <div class="pc-card-select-item dd-item" data-value="1">Value 1</div>
+                          </li>
+                          <li>
+                            <div class="pc-card-select-item dd-item" data-value="2">Value 2</div>
+                          </li>
+                          <li>
+                            <div class="pc-card-select-item dd-item" data-value="3">Value 3</div>
+                          </li>
+                          <li>
+                            <div class="pc-card-select-item dd-item" data-value="4">Value 4</div>
+                          </li>
+                        </ul>
+                      </div>
+
+                      <div class="pc-card-select pc-card-row _shadow dd select">
+                        <input type="hidden" class="dd-input" value="null">
+                        <div class="pc-card-select-item selected">
+                          <div class="pc-card-select-label">Location</div>
+                        </div>
+                        <div class="pc-card-select-arrow">▾</div>
+                        <ul class="pc-card-select-list dd-list showDown">
+                          <li>
+                            <div class="pc-card-select-item dd-item" data-value="1">Value 1</div>
+                          </li>
+                          <li>
+                            <div class="pc-card-select-item dd-item" data-value="2">Value 2</div>
+                          </li>
+                          <li>
+                            <div class="pc-card-select-item dd-item" data-value="3">Value 3</div>
+                          </li>
+                          <li>
+                            <div class="pc-card-select-item dd-item" data-value="4">Value 4</div>
+                          </li>
+                        </ul>
+                      </div>
+
+                    </div>
+                    <div class="pc-card-f _gap-0">
+                      <div class="pc-card-price">
+                        <div class="sub">Total price:</div>
+                        <div class="price">$500</div>
+                      </div>
+                      <a href="#" class="pc-card-btn _bottom btn btn-blue">
+                        <img src="./assets/static/icon-rocket-white.svg" alt="rocket" class="icon rocket">
+                        start now
+                      </a>
+                    </div>
+                  </div>
+
+                  <div class="pc-card _hover-2">
+                    <div class="pc-card-hint">
+                      <img src="./assets/static/icon-question-grey.svg" alt="question">
+                    </div>
+                    <div class="pc-card-subtitle">IPv4</div>
+                    <div class="pc-card-title">SHARED PROXIES</div>
+                    <div class="pc-card-b">
+                      
+                      <div class="pc-card-select pc-card-row _shadow dd select">
+                        <input type="hidden" class="dd-input" value="null">
+                        <div class="pc-card-select-item selected">
+                          <div class="pc-card-select-label">Country</div>
+                        </div>
+                        <div class="pc-card-select-arrow">▾</div>
+                        <ul class="pc-card-select-list dd-list showDown">
+                          <li>
+                            <div class="pc-card-select-item dd-item" data-value="1">Value 1</div>
+                          </li>
+                          <li>
+                            <div class="pc-card-select-item dd-item" data-value="2">Value 2</div>
+                          </li>
+                          <li>
+                            <div class="pc-card-select-item dd-item" data-value="3">Value 3</div>
+                          </li>
+                          <li>
+                            <div class="pc-card-select-item dd-item" data-value="4">Value 4</div>
+                          </li>
+                        </ul>
+                      </div>
+
+                      <div class="pc-card-row _border _white">
+                        <div class="pc-card-label">Quantity:</div>
+                        <div class="pc-card-counter counter" data-counter-step="1">
+                          <button class="pc-card-counter-sign counter-minus">-</button>
+                          <div class="pc-card-counter-value counter-value">3</div>
+                          <button class="pc-card-counter-sign counter-plus">+</button>
+                        </div>
+                      </div>
+
+                      <div class="pc-card-select pc-card-row _shadow dd select">
+                        <input type="hidden" class="dd-input" value="null">
+                        <div class="pc-card-select-item selected">
+                          <div class="pc-card-select-label">Period</div>
+                        </div>
+                        <div class="pc-card-select-arrow">▾</div>
+                        <ul class="pc-card-select-list dd-list showDown">
+                          <li>
+                            <div class="pc-card-select-item dd-item" data-value="1">Value 1</div>
+                          </li>
+                          <li>
+                            <div class="pc-card-select-item dd-item" data-value="2">Value 2</div>
+                          </li>
+                          <li>
+                            <div class="pc-card-select-item dd-item" data-value="3">Value 3</div>
+                          </li>
+                          <li>
+                            <div class="pc-card-select-item dd-item" data-value="4">Value 4</div>
+                          </li>
+                        </ul>
+                      </div>
+
+                      <div class="pc-card-select pc-card-row _shadow dd select">
+                        <input type="hidden" class="dd-input" value="null">
+                        <div class="pc-card-select-item selected">
+                          <div class="pc-card-select-label">Carrier</div>
+                        </div>
+                        <div class="pc-card-select-arrow">▾</div>
+                        <ul class="pc-card-select-list dd-list showDown">
+                          <li>
+                            <div class="pc-card-select-item dd-item" data-value="1">Value 1</div>
+                          </li>
+                          <li>
+                            <div class="pc-card-select-item dd-item" data-value="2">Value 2</div>
+                          </li>
+                          <li>
+                            <div class="pc-card-select-item dd-item" data-value="3">Value 3</div>
+                          </li>
+                          <li>
+                            <div class="pc-card-select-item dd-item" data-value="4">Value 4</div>
+                          </li>
+                        </ul>
+                      </div>
+
+                      <div class="pc-card-select pc-card-row _shadow dd select">
+                        <input type="hidden" class="dd-input" value="null">
+                        <div class="pc-card-select-item selected">
+                          <div class="pc-card-select-label">Location</div>
+                        </div>
+                        <div class="pc-card-select-arrow">▾</div>
+                        <ul class="pc-card-select-list dd-list showDown">
+                          <li>
+                            <div class="pc-card-select-item dd-item" data-value="1">Value 1</div>
+                          </li>
+                          <li>
+                            <div class="pc-card-select-item dd-item" data-value="2">Value 2</div>
+                          </li>
+                          <li>
+                            <div class="pc-card-select-item dd-item" data-value="3">Value 3</div>
+                          </li>
+                          <li>
+                            <div class="pc-card-select-item dd-item" data-value="4">Value 4</div>
+                          </li>
+                        </ul>
+                      </div>
+
+                    </div>
+                    <div class="pc-card-f _gap-0">
+                      <div class="pc-card-price">
+                        <div class="sub">Total price:</div>
+                        <div class="price">$500</div>
+                      </div>
+                      <a href="#" class="pc-card-btn _bottom btn btn-blue">
+                        <img src="./assets/static/icon-rocket-white.svg" alt="rocket" class="icon rocket">
+                        start now
+                      </a>
+                    </div>
+                  </div>
+
+                  <div class="pc-card _hover-2">
+                    <div class="pc-card-hint">
+                      <img src="./assets/static/icon-question-grey.svg" alt="question">
+                    </div>
+                    <div class="pc-card-subtitle">IPv4</div>
+                    <div class="pc-card-title">SHARED PROXIES</div>
+                    <div class="pc-card-b">
+                      
+                      <div class="pc-card-select pc-card-row _shadow dd select">
+                        <input type="hidden" class="dd-input" value="null">
+                        <div class="pc-card-select-item selected">
+                          <div class="pc-card-select-label">Country</div>
+                        </div>
+                        <div class="pc-card-select-arrow">▾</div>
+                        <ul class="pc-card-select-list dd-list showDown">
+                          <li>
+                            <div class="pc-card-select-item dd-item" data-value="1">Value 1</div>
+                          </li>
+                          <li>
+                            <div class="pc-card-select-item dd-item" data-value="2">Value 2</div>
+                          </li>
+                          <li>
+                            <div class="pc-card-select-item dd-item" data-value="3">Value 3</div>
+                          </li>
+                          <li>
+                            <div class="pc-card-select-item dd-item" data-value="4">Value 4</div>
+                          </li>
+                        </ul>
+                      </div>
+
+                      <div class="pc-card-row _border _white">
+                        <div class="pc-card-label">Quantity:</div>
+                        <div class="pc-card-counter counter" data-counter-step="1">
+                          <button class="pc-card-counter-sign counter-minus">-</button>
+                          <div class="pc-card-counter-value counter-value">3</div>
+                          <button class="pc-card-counter-sign counter-plus">+</button>
+                        </div>
+                      </div>
+
+                      <div class="pc-card-select pc-card-row _shadow dd select">
+                        <input type="hidden" class="dd-input" value="null">
+                        <div class="pc-card-select-item selected">
+                          <div class="pc-card-select-label">Period</div>
+                        </div>
+                        <div class="pc-card-select-arrow">▾</div>
+                        <ul class="pc-card-select-list dd-list showDown">
+                          <li>
+                            <div class="pc-card-select-item dd-item" data-value="1">Value 1</div>
+                          </li>
+                          <li>
+                            <div class="pc-card-select-item dd-item" data-value="2">Value 2</div>
+                          </li>
+                          <li>
+                            <div class="pc-card-select-item dd-item" data-value="3">Value 3</div>
+                          </li>
+                          <li>
+                            <div class="pc-card-select-item dd-item" data-value="4">Value 4</div>
+                          </li>
+                        </ul>
+                      </div>
+
+                      <div class="pc-card-select pc-card-row _shadow dd select">
+                        <input type="hidden" class="dd-input" value="null">
+                        <div class="pc-card-select-item selected">
+                          <div class="pc-card-select-label">Carrier</div>
+                        </div>
+                        <div class="pc-card-select-arrow">▾</div>
+                        <ul class="pc-card-select-list dd-list showDown">
+                          <li>
+                            <div class="pc-card-select-item dd-item" data-value="1">Value 1</div>
+                          </li>
+                          <li>
+                            <div class="pc-card-select-item dd-item" data-value="2">Value 2</div>
+                          </li>
+                          <li>
+                            <div class="pc-card-select-item dd-item" data-value="3">Value 3</div>
+                          </li>
+                          <li>
+                            <div class="pc-card-select-item dd-item" data-value="4">Value 4</div>
+                          </li>
+                        </ul>
+                      </div>
+
+                      <div class="pc-card-select pc-card-row _shadow dd select">
+                        <input type="hidden" class="dd-input" value="null">
+                        <div class="pc-card-select-item selected">
+                          <div class="pc-card-select-label">Location</div>
+                        </div>
+                        <div class="pc-card-select-arrow">▾</div>
+                        <ul class="pc-card-select-list dd-list showDown">
+                          <li>
+                            <div class="pc-card-select-item dd-item" data-value="1">Value 1</div>
+                          </li>
+                          <li>
+                            <div class="pc-card-select-item dd-item" data-value="2">Value 2</div>
+                          </li>
+                          <li>
+                            <div class="pc-card-select-item dd-item" data-value="3">Value 3</div>
+                          </li>
+                          <li>
+                            <div class="pc-card-select-item dd-item" data-value="4">Value 4</div>
+                          </li>
+                        </ul>
+                      </div>
+
+                    </div>
+                    <div class="pc-card-f _gap-0">
+                      <div class="pc-card-price">
+                        <div class="sub">Total price:</div>
+                        <div class="price">$500</div>
+                      </div>
+                      <a href="#" class="pc-card-btn _bottom btn btn-blue">
+                        <img src="./assets/static/icon-rocket-white.svg" alt="rocket" class="icon rocket">
+                        start now
+                      </a>
+                    </div>
+                  </div>
+
+                  <div class="pc-card _hover-2">
+                    <div class="pc-card-hint">
+                      <img src="./assets/static/icon-question-grey.svg" alt="question">
+                    </div>
+                    <div class="pc-card-subtitle">IPv4</div>
+                    <div class="pc-card-title">SHARED PROXIES</div>
+                    <div class="pc-card-b">
+                      
+                      <div class="pc-card-select pc-card-row _shadow dd select">
+                        <input type="hidden" class="dd-input" value="null">
+                        <div class="pc-card-select-item selected">
+                          <div class="pc-card-select-label">Country</div>
+                        </div>
+                        <div class="pc-card-select-arrow">▾</div>
+                        <ul class="pc-card-select-list dd-list showDown">
+                          <li>
+                            <div class="pc-card-select-item dd-item" data-value="1">Value 1</div>
+                          </li>
+                          <li>
+                            <div class="pc-card-select-item dd-item" data-value="2">Value 2</div>
+                          </li>
+                          <li>
+                            <div class="pc-card-select-item dd-item" data-value="3">Value 3</div>
+                          </li>
+                          <li>
+                            <div class="pc-card-select-item dd-item" data-value="4">Value 4</div>
+                          </li>
+                        </ul>
+                      </div>
+
+                      <div class="pc-card-row _border _white">
+                        <div class="pc-card-label">Quantity:</div>
+                        <div class="pc-card-counter counter" data-counter-step="1">
+                          <button class="pc-card-counter-sign counter-minus">-</button>
+                          <div class="pc-card-counter-value counter-value">3</div>
+                          <button class="pc-card-counter-sign counter-plus">+</button>
+                        </div>
+                      </div>
+
+                      <div class="pc-card-select pc-card-row _shadow dd select">
+                        <input type="hidden" class="dd-input" value="null">
+                        <div class="pc-card-select-item selected">
+                          <div class="pc-card-select-label">Period</div>
+                        </div>
+                        <div class="pc-card-select-arrow">▾</div>
+                        <ul class="pc-card-select-list dd-list showDown">
+                          <li>
+                            <div class="pc-card-select-item dd-item" data-value="1">Value 1</div>
+                          </li>
+                          <li>
+                            <div class="pc-card-select-item dd-item" data-value="2">Value 2</div>
+                          </li>
+                          <li>
+                            <div class="pc-card-select-item dd-item" data-value="3">Value 3</div>
+                          </li>
+                          <li>
+                            <div class="pc-card-select-item dd-item" data-value="4">Value 4</div>
+                          </li>
+                        </ul>
+                      </div>
+
+                      <div class="pc-card-select pc-card-row _shadow dd select">
+                        <input type="hidden" class="dd-input" value="null">
+                        <div class="pc-card-select-item selected">
+                          <div class="pc-card-select-label">Carrier</div>
+                        </div>
+                        <div class="pc-card-select-arrow">▾</div>
+                        <ul class="pc-card-select-list dd-list showDown">
+                          <li>
+                            <div class="pc-card-select-item dd-item" data-value="1">Value 1</div>
+                          </li>
+                          <li>
+                            <div class="pc-card-select-item dd-item" data-value="2">Value 2</div>
+                          </li>
+                          <li>
+                            <div class="pc-card-select-item dd-item" data-value="3">Value 3</div>
+                          </li>
+                          <li>
+                            <div class="pc-card-select-item dd-item" data-value="4">Value 4</div>
+                          </li>
+                        </ul>
+                      </div>
+
+                      <div class="pc-card-select pc-card-row _shadow dd select">
+                        <input type="hidden" class="dd-input" value="null">
+                        <div class="pc-card-select-item selected">
+                          <div class="pc-card-select-label">Location</div>
+                        </div>
+                        <div class="pc-card-select-arrow">▾</div>
+                        <ul class="pc-card-select-list dd-list showDown">
+                          <li>
+                            <div class="pc-card-select-item dd-item" data-value="1">Value 1</div>
+                          </li>
+                          <li>
+                            <div class="pc-card-select-item dd-item" data-value="2">Value 2</div>
+                          </li>
+                          <li>
+                            <div class="pc-card-select-item dd-item" data-value="3">Value 3</div>
+                          </li>
+                          <li>
+                            <div class="pc-card-select-item dd-item" data-value="4">Value 4</div>
+                          </li>
+                        </ul>
+                      </div>
+
+                    </div>
+                    <div class="pc-card-f _gap-0">
+                      <div class="pc-card-price">
+                        <div class="sub">Total price:</div>
+                        <div class="price">$500</div>
+                      </div>
+                      <a href="#" class="pc-card-btn _bottom btn btn-blue">
+                        <img src="./assets/static/icon-rocket-white.svg" alt="rocket" class="icon rocket">
+                        start now
+                      </a>
+                    </div>
+                  </div>
+
+                  <div class="pc-card _hover-2">
+                    <div class="pc-card-hint">
+                      <img src="./assets/static/icon-question-grey.svg" alt="question">
+                    </div>
+                    <div class="pc-card-subtitle">IPv4</div>
+                    <div class="pc-card-title">SHARED PROXIES</div>
+                    <div class="pc-card-b">
+                      
+                      <div class="pc-card-select pc-card-row _shadow dd select">
+                        <input type="hidden" class="dd-input" value="null">
+                        <div class="pc-card-select-item selected">
+                          <div class="pc-card-select-label">Country</div>
+                        </div>
+                        <div class="pc-card-select-arrow">▾</div>
+                        <ul class="pc-card-select-list dd-list showDown">
+                          <li>
+                            <div class="pc-card-select-item dd-item" data-value="1">Value 1</div>
+                          </li>
+                          <li>
+                            <div class="pc-card-select-item dd-item" data-value="2">Value 2</div>
+                          </li>
+                          <li>
+                            <div class="pc-card-select-item dd-item" data-value="3">Value 3</div>
+                          </li>
+                          <li>
+                            <div class="pc-card-select-item dd-item" data-value="4">Value 4</div>
+                          </li>
+                        </ul>
+                      </div>
+
+                      <div class="pc-card-row _border _white">
+                        <div class="pc-card-label">Quantity:</div>
+                        <div class="pc-card-counter counter" data-counter-step="1">
+                          <button class="pc-card-counter-sign counter-minus">-</button>
+                          <div class="pc-card-counter-value counter-value">3</div>
+                          <button class="pc-card-counter-sign counter-plus">+</button>
+                        </div>
+                      </div>
+
+                      <div class="pc-card-select pc-card-row _shadow dd select">
+                        <input type="hidden" class="dd-input" value="null">
+                        <div class="pc-card-select-item selected">
+                          <div class="pc-card-select-label">Period</div>
+                        </div>
+                        <div class="pc-card-select-arrow">▾</div>
+                        <ul class="pc-card-select-list dd-list showDown">
+                          <li>
+                            <div class="pc-card-select-item dd-item" data-value="1">Value 1</div>
+                          </li>
+                          <li>
+                            <div class="pc-card-select-item dd-item" data-value="2">Value 2</div>
+                          </li>
+                          <li>
+                            <div class="pc-card-select-item dd-item" data-value="3">Value 3</div>
+                          </li>
+                          <li>
+                            <div class="pc-card-select-item dd-item" data-value="4">Value 4</div>
+                          </li>
+                        </ul>
+                      </div>
+
+                      <div class="pc-card-select pc-card-row _shadow dd select">
+                        <input type="hidden" class="dd-input" value="null">
+                        <div class="pc-card-select-item selected">
+                          <div class="pc-card-select-label">Carrier</div>
+                        </div>
+                        <div class="pc-card-select-arrow">▾</div>
+                        <ul class="pc-card-select-list dd-list showDown">
+                          <li>
+                            <div class="pc-card-select-item dd-item" data-value="1">Value 1</div>
+                          </li>
+                          <li>
+                            <div class="pc-card-select-item dd-item" data-value="2">Value 2</div>
+                          </li>
+                          <li>
+                            <div class="pc-card-select-item dd-item" data-value="3">Value 3</div>
+                          </li>
+                          <li>
+                            <div class="pc-card-select-item dd-item" data-value="4">Value 4</div>
+                          </li>
+                        </ul>
+                      </div>
+
+                      <div class="pc-card-select pc-card-row _shadow dd select">
+                        <input type="hidden" class="dd-input" value="null">
+                        <div class="pc-card-select-item selected">
+                          <div class="pc-card-select-label">Location</div>
+                        </div>
+                        <div class="pc-card-select-arrow">▾</div>
+                        <ul class="pc-card-select-list dd-list showDown">
+                          <li>
+                            <div class="pc-card-select-item dd-item" data-value="1">Value 1</div>
+                          </li>
+                          <li>
+                            <div class="pc-card-select-item dd-item" data-value="2">Value 2</div>
+                          </li>
+                          <li>
+                            <div class="pc-card-select-item dd-item" data-value="3">Value 3</div>
+                          </li>
+                          <li>
+                            <div class="pc-card-select-item dd-item" data-value="4">Value 4</div>
+                          </li>
+                        </ul>
+                      </div>
+
+                    </div>
+                    <div class="pc-card-f _gap-0">
+                      <div class="pc-card-price">
+                        <div class="sub">Total price:</div>
+                        <div class="price">$500</div>
+                      </div>
+                      <a href="#" class="pc-card-btn _bottom btn btn-blue">
+                        <img src="./assets/static/icon-rocket-white.svg" alt="rocket" class="icon rocket">
+                        start now
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="tabs-node hidden" data-box-id="3">
+                <div class="pc-row _grid-5">
+
+                  <div class="pc-card _hover-2">
+                    <div class="pc-card-hint">
+                      <img src="./assets/static/icon-question-grey.svg" alt="question">
+                    </div>
+                    <div class="pc-card-subtitle">IPv4</div>
+                    <div class="pc-card-title">SHARED PROXIES</div>
+                    <div class="pc-card-b">
+                      
+                      <div class="pc-card-select pc-card-row _shadow dd select">
+                        <input type="hidden" class="dd-input" value="null">
+                        <div class="pc-card-select-item selected">
+                          <div class="pc-card-select-label">Country</div>
+                        </div>
+                        <div class="pc-card-select-arrow">▾</div>
+                        <ul class="pc-card-select-list dd-list showDown">
+                          <li>
+                            <div class="pc-card-select-item dd-item" data-value="1">Value 1</div>
+                          </li>
+                          <li>
+                            <div class="pc-card-select-item dd-item" data-value="2">Value 2</div>
+                          </li>
+                          <li>
+                            <div class="pc-card-select-item dd-item" data-value="3">Value 3</div>
+                          </li>
+                          <li>
+                            <div class="pc-card-select-item dd-item" data-value="4">Value 4</div>
+                          </li>
+                        </ul>
+                      </div>
+
+                      <div class="pc-card-row _border _white">
+                        <div class="pc-card-label">Quantity:</div>
+                        <div class="pc-card-counter counter" data-counter-step="1">
+                          <button class="pc-card-counter-sign counter-minus">-</button>
+                          <div class="pc-card-counter-value counter-value">3</div>
+                          <button class="pc-card-counter-sign counter-plus">+</button>
+                        </div>
+                      </div>
+
+                      <div class="pc-card-select pc-card-row _shadow dd select">
+                        <input type="hidden" class="dd-input" value="null">
+                        <div class="pc-card-select-item selected">
+                          <div class="pc-card-select-label">Period</div>
+                        </div>
+                        <div class="pc-card-select-arrow">▾</div>
+                        <ul class="pc-card-select-list dd-list showDown">
+                          <li>
+                            <div class="pc-card-select-item dd-item" data-value="1">Value 1</div>
+                          </li>
+                          <li>
+                            <div class="pc-card-select-item dd-item" data-value="2">Value 2</div>
+                          </li>
+                          <li>
+                            <div class="pc-card-select-item dd-item" data-value="3">Value 3</div>
+                          </li>
+                          <li>
+                            <div class="pc-card-select-item dd-item" data-value="4">Value 4</div>
+                          </li>
+                        </ul>
+                      </div>
+
+                      <div class="pc-card-select pc-card-row _shadow dd select">
+                        <input type="hidden" class="dd-input" value="null">
+                        <div class="pc-card-select-item selected">
+                          <div class="pc-card-select-label">Carrier</div>
+                        </div>
+                        <div class="pc-card-select-arrow">▾</div>
+                        <ul class="pc-card-select-list dd-list showDown">
+                          <li>
+                            <div class="pc-card-select-item dd-item" data-value="1">Value 1</div>
+                          </li>
+                          <li>
+                            <div class="pc-card-select-item dd-item" data-value="2">Value 2</div>
+                          </li>
+                          <li>
+                            <div class="pc-card-select-item dd-item" data-value="3">Value 3</div>
+                          </li>
+                          <li>
+                            <div class="pc-card-select-item dd-item" data-value="4">Value 4</div>
+                          </li>
+                        </ul>
+                      </div>
+
+                      <div class="pc-card-select pc-card-row _shadow dd select">
+                        <input type="hidden" class="dd-input" value="null">
+                        <div class="pc-card-select-item selected">
+                          <div class="pc-card-select-label">Location</div>
+                        </div>
+                        <div class="pc-card-select-arrow">▾</div>
+                        <ul class="pc-card-select-list dd-list showDown">
+                          <li>
+                            <div class="pc-card-select-item dd-item" data-value="1">Value 1</div>
+                          </li>
+                          <li>
+                            <div class="pc-card-select-item dd-item" data-value="2">Value 2</div>
+                          </li>
+                          <li>
+                            <div class="pc-card-select-item dd-item" data-value="3">Value 3</div>
+                          </li>
+                          <li>
+                            <div class="pc-card-select-item dd-item" data-value="4">Value 4</div>
+                          </li>
+                        </ul>
+                      </div>
+
+                    </div>
+                    <div class="pc-card-f _gap-0">
+                      <div class="pc-card-price">
+                        <div class="sub">Total price:</div>
+                        <div class="price">$500</div>
+                      </div>
+                      <a href="#" class="pc-card-btn _bottom btn btn-blue">
+                        <img src="./assets/static/icon-rocket-white.svg" alt="rocket" class="icon rocket">
+                        start now
+                      </a>
+                    </div>
+                  </div>
+
+                  <div class="pc-card _hover-2">
+                    <div class="pc-card-hint">
+                      <img src="./assets/static/icon-question-grey.svg" alt="question">
+                    </div>
+                    <div class="pc-card-subtitle">IPv4</div>
+                    <div class="pc-card-title">SHARED PROXIES</div>
+                    <div class="pc-card-b">
+                      
+                      <div class="pc-card-select pc-card-row _shadow dd select">
+                        <input type="hidden" class="dd-input" value="null">
+                        <div class="pc-card-select-item selected">
+                          <div class="pc-card-select-label">Country</div>
+                        </div>
+                        <div class="pc-card-select-arrow">▾</div>
+                        <ul class="pc-card-select-list dd-list showDown">
+                          <li>
+                            <div class="pc-card-select-item dd-item" data-value="1">Value 1</div>
+                          </li>
+                          <li>
+                            <div class="pc-card-select-item dd-item" data-value="2">Value 2</div>
+                          </li>
+                          <li>
+                            <div class="pc-card-select-item dd-item" data-value="3">Value 3</div>
+                          </li>
+                          <li>
+                            <div class="pc-card-select-item dd-item" data-value="4">Value 4</div>
+                          </li>
+                        </ul>
+                      </div>
+
+                      <div class="pc-card-row _border _white">
+                        <div class="pc-card-label">Quantity:</div>
+                        <div class="pc-card-counter counter" data-counter-step="1">
+                          <button class="pc-card-counter-sign counter-minus">-</button>
+                          <div class="pc-card-counter-value counter-value">3</div>
+                          <button class="pc-card-counter-sign counter-plus">+</button>
+                        </div>
+                      </div>
+
+                      <div class="pc-card-select pc-card-row _shadow dd select">
+                        <input type="hidden" class="dd-input" value="null">
+                        <div class="pc-card-select-item selected">
+                          <div class="pc-card-select-label">Period</div>
+                        </div>
+                        <div class="pc-card-select-arrow">▾</div>
+                        <ul class="pc-card-select-list dd-list showDown">
+                          <li>
+                            <div class="pc-card-select-item dd-item" data-value="1">Value 1</div>
+                          </li>
+                          <li>
+                            <div class="pc-card-select-item dd-item" data-value="2">Value 2</div>
+                          </li>
+                          <li>
+                            <div class="pc-card-select-item dd-item" data-value="3">Value 3</div>
+                          </li>
+                          <li>
+                            <div class="pc-card-select-item dd-item" data-value="4">Value 4</div>
+                          </li>
+                        </ul>
+                      </div>
+
+                      <div class="pc-card-select pc-card-row _shadow dd select">
+                        <input type="hidden" class="dd-input" value="null">
+                        <div class="pc-card-select-item selected">
+                          <div class="pc-card-select-label">Carrier</div>
+                        </div>
+                        <div class="pc-card-select-arrow">▾</div>
+                        <ul class="pc-card-select-list dd-list showDown">
+                          <li>
+                            <div class="pc-card-select-item dd-item" data-value="1">Value 1</div>
+                          </li>
+                          <li>
+                            <div class="pc-card-select-item dd-item" data-value="2">Value 2</div>
+                          </li>
+                          <li>
+                            <div class="pc-card-select-item dd-item" data-value="3">Value 3</div>
+                          </li>
+                          <li>
+                            <div class="pc-card-select-item dd-item" data-value="4">Value 4</div>
+                          </li>
+                        </ul>
+                      </div>
+
+                      <div class="pc-card-select pc-card-row _shadow dd select">
+                        <input type="hidden" class="dd-input" value="null">
+                        <div class="pc-card-select-item selected">
+                          <div class="pc-card-select-label">Location</div>
+                        </div>
+                        <div class="pc-card-select-arrow">▾</div>
+                        <ul class="pc-card-select-list dd-list showDown">
+                          <li>
+                            <div class="pc-card-select-item dd-item" data-value="1">Value 1</div>
+                          </li>
+                          <li>
+                            <div class="pc-card-select-item dd-item" data-value="2">Value 2</div>
+                          </li>
+                          <li>
+                            <div class="pc-card-select-item dd-item" data-value="3">Value 3</div>
+                          </li>
+                          <li>
+                            <div class="pc-card-select-item dd-item" data-value="4">Value 4</div>
+                          </li>
+                        </ul>
+                      </div>
+
+                    </div>
+                    <div class="pc-card-f _gap-0">
+                      <div class="pc-card-price">
+                        <div class="sub">Total price:</div>
+                        <div class="price">$500</div>
+                      </div>
+                      <a href="#" class="pc-card-btn _bottom btn btn-blue">
+                        <img src="./assets/static/icon-rocket-white.svg" alt="rocket" class="icon rocket">
+                        start now
+                      </a>
+                    </div>
+                  </div>
+
+                  <div class="pc-card _hover-2">
+                    <div class="pc-card-hint">
+                      <img src="./assets/static/icon-question-grey.svg" alt="question">
+                    </div>
+                    <div class="pc-card-subtitle">IPv4</div>
+                    <div class="pc-card-title">SHARED PROXIES</div>
+                    <div class="pc-card-b">
+                      
+                      <div class="pc-card-select pc-card-row _shadow dd select">
+                        <input type="hidden" class="dd-input" value="null">
+                        <div class="pc-card-select-item selected">
+                          <div class="pc-card-select-label">Country</div>
+                        </div>
+                        <div class="pc-card-select-arrow">▾</div>
+                        <ul class="pc-card-select-list dd-list showDown">
+                          <li>
+                            <div class="pc-card-select-item dd-item" data-value="1">Value 1</div>
+                          </li>
+                          <li>
+                            <div class="pc-card-select-item dd-item" data-value="2">Value 2</div>
+                          </li>
+                          <li>
+                            <div class="pc-card-select-item dd-item" data-value="3">Value 3</div>
+                          </li>
+                          <li>
+                            <div class="pc-card-select-item dd-item" data-value="4">Value 4</div>
+                          </li>
+                        </ul>
+                      </div>
+
+                      <div class="pc-card-row _border _white">
+                        <div class="pc-card-label">Quantity:</div>
+                        <div class="pc-card-counter counter" data-counter-step="1">
+                          <button class="pc-card-counter-sign counter-minus">-</button>
+                          <div class="pc-card-counter-value counter-value">3</div>
+                          <button class="pc-card-counter-sign counter-plus">+</button>
+                        </div>
+                      </div>
+
+                      <div class="pc-card-select pc-card-row _shadow dd select">
+                        <input type="hidden" class="dd-input" value="null">
+                        <div class="pc-card-select-item selected">
+                          <div class="pc-card-select-label">Period</div>
+                        </div>
+                        <div class="pc-card-select-arrow">▾</div>
+                        <ul class="pc-card-select-list dd-list showDown">
+                          <li>
+                            <div class="pc-card-select-item dd-item" data-value="1">Value 1</div>
+                          </li>
+                          <li>
+                            <div class="pc-card-select-item dd-item" data-value="2">Value 2</div>
+                          </li>
+                          <li>
+                            <div class="pc-card-select-item dd-item" data-value="3">Value 3</div>
+                          </li>
+                          <li>
+                            <div class="pc-card-select-item dd-item" data-value="4">Value 4</div>
+                          </li>
+                        </ul>
+                      </div>
+
+                      <div class="pc-card-select pc-card-row _shadow dd select">
+                        <input type="hidden" class="dd-input" value="null">
+                        <div class="pc-card-select-item selected">
+                          <div class="pc-card-select-label">Carrier</div>
+                        </div>
+                        <div class="pc-card-select-arrow">▾</div>
+                        <ul class="pc-card-select-list dd-list showDown">
+                          <li>
+                            <div class="pc-card-select-item dd-item" data-value="1">Value 1</div>
+                          </li>
+                          <li>
+                            <div class="pc-card-select-item dd-item" data-value="2">Value 2</div>
+                          </li>
+                          <li>
+                            <div class="pc-card-select-item dd-item" data-value="3">Value 3</div>
+                          </li>
+                          <li>
+                            <div class="pc-card-select-item dd-item" data-value="4">Value 4</div>
+                          </li>
+                        </ul>
+                      </div>
+
+                      <div class="pc-card-select pc-card-row _shadow dd select">
+                        <input type="hidden" class="dd-input" value="null">
+                        <div class="pc-card-select-item selected">
+                          <div class="pc-card-select-label">Location</div>
+                        </div>
+                        <div class="pc-card-select-arrow">▾</div>
+                        <ul class="pc-card-select-list dd-list showDown">
+                          <li>
+                            <div class="pc-card-select-item dd-item" data-value="1">Value 1</div>
+                          </li>
+                          <li>
+                            <div class="pc-card-select-item dd-item" data-value="2">Value 2</div>
+                          </li>
+                          <li>
+                            <div class="pc-card-select-item dd-item" data-value="3">Value 3</div>
+                          </li>
+                          <li>
+                            <div class="pc-card-select-item dd-item" data-value="4">Value 4</div>
+                          </li>
+                        </ul>
+                      </div>
+
+                    </div>
+                    <div class="pc-card-f _gap-0">
+                      <div class="pc-card-price">
+                        <div class="sub">Total price:</div>
+                        <div class="price">$500</div>
+                      </div>
+                      <a href="#" class="pc-card-btn _bottom btn btn-blue">
+                        <img src="./assets/static/icon-rocket-white.svg" alt="rocket" class="icon rocket">
+                        start now
+                      </a>
+                    </div>
+                  </div>
+
+                  <div class="pc-card _hover-2">
+                    <div class="pc-card-hint">
+                      <img src="./assets/static/icon-question-grey.svg" alt="question">
+                    </div>
+                    <div class="pc-card-subtitle">IPv4</div>
+                    <div class="pc-card-title">SHARED PROXIES</div>
+                    <div class="pc-card-b">
+                      
+                      <div class="pc-card-select pc-card-row _shadow dd select">
+                        <input type="hidden" class="dd-input" value="null">
+                        <div class="pc-card-select-item selected">
+                          <div class="pc-card-select-label">Country</div>
+                        </div>
+                        <div class="pc-card-select-arrow">▾</div>
+                        <ul class="pc-card-select-list dd-list showDown">
+                          <li>
+                            <div class="pc-card-select-item dd-item" data-value="1">Value 1</div>
+                          </li>
+                          <li>
+                            <div class="pc-card-select-item dd-item" data-value="2">Value 2</div>
+                          </li>
+                          <li>
+                            <div class="pc-card-select-item dd-item" data-value="3">Value 3</div>
+                          </li>
+                          <li>
+                            <div class="pc-card-select-item dd-item" data-value="4">Value 4</div>
+                          </li>
+                        </ul>
+                      </div>
+
+                      <div class="pc-card-row _border _white">
+                        <div class="pc-card-label">Quantity:</div>
+                        <div class="pc-card-counter counter" data-counter-step="1">
+                          <button class="pc-card-counter-sign counter-minus">-</button>
+                          <div class="pc-card-counter-value counter-value">3</div>
+                          <button class="pc-card-counter-sign counter-plus">+</button>
+                        </div>
+                      </div>
+
+                      <div class="pc-card-select pc-card-row _shadow dd select">
+                        <input type="hidden" class="dd-input" value="null">
+                        <div class="pc-card-select-item selected">
+                          <div class="pc-card-select-label">Period</div>
+                        </div>
+                        <div class="pc-card-select-arrow">▾</div>
+                        <ul class="pc-card-select-list dd-list showDown">
+                          <li>
+                            <div class="pc-card-select-item dd-item" data-value="1">Value 1</div>
+                          </li>
+                          <li>
+                            <div class="pc-card-select-item dd-item" data-value="2">Value 2</div>
+                          </li>
+                          <li>
+                            <div class="pc-card-select-item dd-item" data-value="3">Value 3</div>
+                          </li>
+                          <li>
+                            <div class="pc-card-select-item dd-item" data-value="4">Value 4</div>
+                          </li>
+                        </ul>
+                      </div>
+
+                      <div class="pc-card-select pc-card-row _shadow dd select">
+                        <input type="hidden" class="dd-input" value="null">
+                        <div class="pc-card-select-item selected">
+                          <div class="pc-card-select-label">Carrier</div>
+                        </div>
+                        <div class="pc-card-select-arrow">▾</div>
+                        <ul class="pc-card-select-list dd-list showDown">
+                          <li>
+                            <div class="pc-card-select-item dd-item" data-value="1">Value 1</div>
+                          </li>
+                          <li>
+                            <div class="pc-card-select-item dd-item" data-value="2">Value 2</div>
+                          </li>
+                          <li>
+                            <div class="pc-card-select-item dd-item" data-value="3">Value 3</div>
+                          </li>
+                          <li>
+                            <div class="pc-card-select-item dd-item" data-value="4">Value 4</div>
+                          </li>
+                        </ul>
+                      </div>
+
+                      <div class="pc-card-select pc-card-row _shadow dd select">
+                        <input type="hidden" class="dd-input" value="null">
+                        <div class="pc-card-select-item selected">
+                          <div class="pc-card-select-label">Location</div>
+                        </div>
+                        <div class="pc-card-select-arrow">▾</div>
+                        <ul class="pc-card-select-list dd-list showDown">
+                          <li>
+                            <div class="pc-card-select-item dd-item" data-value="1">Value 1</div>
+                          </li>
+                          <li>
+                            <div class="pc-card-select-item dd-item" data-value="2">Value 2</div>
+                          </li>
+                          <li>
+                            <div class="pc-card-select-item dd-item" data-value="3">Value 3</div>
+                          </li>
+                          <li>
+                            <div class="pc-card-select-item dd-item" data-value="4">Value 4</div>
+                          </li>
+                        </ul>
+                      </div>
+
+                    </div>
+                    <div class="pc-card-f _gap-0">
+                      <div class="pc-card-price">
+                        <div class="sub">Total price:</div>
+                        <div class="price">$500</div>
+                      </div>
+                      <a href="#" class="pc-card-btn _bottom btn btn-blue">
+                        <img src="./assets/static/icon-rocket-white.svg" alt="rocket" class="icon rocket">
+                        start now
+                      </a>
+                    </div>
+                  </div>
+
+                  <div class="pc-card _hover-2">
+                    <div class="pc-card-hint">
+                      <img src="./assets/static/icon-question-grey.svg" alt="question">
+                    </div>
+                    <div class="pc-card-subtitle">IPv4</div>
+                    <div class="pc-card-title">SHARED PROXIES</div>
+                    <div class="pc-card-b">
+                      
+                      <div class="pc-card-select pc-card-row _shadow dd select">
+                        <input type="hidden" class="dd-input" value="null">
+                        <div class="pc-card-select-item selected">
+                          <div class="pc-card-select-label">Country</div>
+                        </div>
+                        <div class="pc-card-select-arrow">▾</div>
+                        <ul class="pc-card-select-list dd-list showDown">
+                          <li>
+                            <div class="pc-card-select-item dd-item" data-value="1">Value 1</div>
+                          </li>
+                          <li>
+                            <div class="pc-card-select-item dd-item" data-value="2">Value 2</div>
+                          </li>
+                          <li>
+                            <div class="pc-card-select-item dd-item" data-value="3">Value 3</div>
+                          </li>
+                          <li>
+                            <div class="pc-card-select-item dd-item" data-value="4">Value 4</div>
+                          </li>
+                        </ul>
+                      </div>
+
+                      <div class="pc-card-row _border _white">
+                        <div class="pc-card-label">Quantity:</div>
+                        <div class="pc-card-counter counter" data-counter-step="1">
+                          <button class="pc-card-counter-sign counter-minus">-</button>
+                          <div class="pc-card-counter-value counter-value">3</div>
+                          <button class="pc-card-counter-sign counter-plus">+</button>
+                        </div>
+                      </div>
+
+                      <div class="pc-card-select pc-card-row _shadow dd select">
+                        <input type="hidden" class="dd-input" value="null">
+                        <div class="pc-card-select-item selected">
+                          <div class="pc-card-select-label">Period</div>
+                        </div>
+                        <div class="pc-card-select-arrow">▾</div>
+                        <ul class="pc-card-select-list dd-list showDown">
+                          <li>
+                            <div class="pc-card-select-item dd-item" data-value="1">Value 1</div>
+                          </li>
+                          <li>
+                            <div class="pc-card-select-item dd-item" data-value="2">Value 2</div>
+                          </li>
+                          <li>
+                            <div class="pc-card-select-item dd-item" data-value="3">Value 3</div>
+                          </li>
+                          <li>
+                            <div class="pc-card-select-item dd-item" data-value="4">Value 4</div>
+                          </li>
+                        </ul>
+                      </div>
+
+                      <div class="pc-card-select pc-card-row _shadow dd select">
+                        <input type="hidden" class="dd-input" value="null">
+                        <div class="pc-card-select-item selected">
+                          <div class="pc-card-select-label">Carrier</div>
+                        </div>
+                        <div class="pc-card-select-arrow">▾</div>
+                        <ul class="pc-card-select-list dd-list showDown">
+                          <li>
+                            <div class="pc-card-select-item dd-item" data-value="1">Value 1</div>
+                          </li>
+                          <li>
+                            <div class="pc-card-select-item dd-item" data-value="2">Value 2</div>
+                          </li>
+                          <li>
+                            <div class="pc-card-select-item dd-item" data-value="3">Value 3</div>
+                          </li>
+                          <li>
+                            <div class="pc-card-select-item dd-item" data-value="4">Value 4</div>
+                          </li>
+                        </ul>
+                      </div>
+
+                      <div class="pc-card-select pc-card-row _shadow dd select">
+                        <input type="hidden" class="dd-input" value="null">
+                        <div class="pc-card-select-item selected">
+                          <div class="pc-card-select-label">Location</div>
+                        </div>
+                        <div class="pc-card-select-arrow">▾</div>
+                        <ul class="pc-card-select-list dd-list showDown">
+                          <li>
+                            <div class="pc-card-select-item dd-item" data-value="1">Value 1</div>
+                          </li>
+                          <li>
+                            <div class="pc-card-select-item dd-item" data-value="2">Value 2</div>
+                          </li>
+                          <li>
+                            <div class="pc-card-select-item dd-item" data-value="3">Value 3</div>
+                          </li>
+                          <li>
+                            <div class="pc-card-select-item dd-item" data-value="4">Value 4</div>
+                          </li>
+                        </ul>
+                      </div>
+
+                    </div>
+                    <div class="pc-card-f _gap-0">
+                      <div class="pc-card-price">
+                        <div class="sub">Total price:</div>
+                        <div class="price">$500</div>
+                      </div>
+                      <a href="#" class="pc-card-btn _bottom btn btn-blue">
+                        <img src="./assets/static/icon-rocket-white.svg" alt="rocket" class="icon rocket">
+                        start now
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </section><!-- product cards section -->
+
+      <section class="section wc pagemain-wc" data-section-index="3">
+        <img src="./assets/static/section-pic-1.png" alt="picture" class="pagemain-wc-pic-1">
+        <img src="./assets/static/section-pic-2.png" alt="picture" class="pagemain-wc-pic-2">
+        <div class="container pagemain-wc__inner">
+          <h2 class="section-title section__title">Why Proxyma company</h2>
+          <div class="wc-row">
+            <div class="wc-card">
+              <div class="wc-card-pic">
+                <img src="./assets/static/wc-card-pic.png" alt="picture">
+              </div>
+              <h2 class="wc-card-title">Backconnect Rotating Proxies</h2>
+              <p class="wc-card-text">
+                High-performance private IPs from all around the world reliable and flexible high-speed data center proxy solution on the market.
+              </p>
+            </div>
+            <div class="wc-card">
+              <div class="wc-card-pic">
+                <img src="./assets/static/wc-card-pic.png" alt="picture">
+              </div>
+              <h2 class="wc-card-title">Backconnect Rotating Proxies</h2>
+              <p class="wc-card-text">
+                High-performance private IPs from all around the world reliable and flexible high-speed data center proxy solution on the market.
+              </p>
+            </div>
+            <div class="wc-card">
+              <div class="wc-card-pic">
+                <img src="./assets/static/wc-card-pic.png" alt="picture">
+              </div>
+              <h2 class="wc-card-title">Backconnect Rotating Proxies</h2>
+              <p class="wc-card-text">
+                High-performance private IPs from all around the world reliable and flexible high-speed data center proxy solution on the market.
+              </p>
+            </div>
+            <div class="wc-card">
+              <div class="wc-card-pic">
+                <img src="./assets/static/wc-card-pic.png" alt="picture">
+              </div>
+              <h2 class="wc-card-title">Backconnect Rotating Proxies</h2>
+              <p class="wc-card-text">
+                High-performance private IPs from all around the world reliable and flexible high-speed data center proxy solution on the market.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section><!-- widecards section -->
+
+      <section class="section ft1 pagemain-ft1" data-section-index="4">
+        <img src="./assets/static/ft1-bg.png" alt="background" class="ft1__bg">
+        <div class="container ft1__inner">
+          <h2 class="section-title section__title">What we are best for?</h2>
+          <div class="section-subtitle section__subtitle">Our clients receive exceptional technical support from their own</div>
+          <div class="ft1-row">
+            <div class="ft1-info">
+              <h3 class="ft1-info-title">Brand Protection</h3>
+              <div class="ft1-info-text">
+                <p>Hide your identity to detect ad fraud and analyze landing pages of your competitors.</p>
+              </div>
+              <div class="ft1-info-pic">
+                <img src="./assets/static/ft1-pic-1.png" alt="picture">
+              </div>
+            </div>
+            <div class="ft1-card-grid">
+              <div class="ft1-card">
+                <div class="ft1-card-thumb">
+                  <img src="./assets/static/ft1-card-thumb.png" alt="thumb">
+                </div>
+                <h4 class="ft1-card-title">Brand Protection</h4>
+              </div>
+              <div class="ft1-card">
+                <div class="ft1-card-thumb">
+                  <img src="./assets/static/ft1-card-thumb.png" alt="thumb">
+                </div>
+                <h4 class="ft1-card-title">Brand Protection</h4>
+              </div>
+              <div class="ft1-card">
+                <div class="ft1-card-thumb">
+                  <img src="./assets/static/ft1-card-thumb.png" alt="thumb">
+                </div>
+                <h4 class="ft1-card-title">Brand Protection</h4>
+              </div>
+              <div class="ft1-card">
+                <div class="ft1-card-thumb">
+                  <img src="./assets/static/ft1-card-thumb.png" alt="thumb">
+                </div>
+                <h4 class="ft1-card-title">Brand Protection</h4>
+              </div>
+              <div class="ft1-card">
+                <div class="ft1-card-thumb">
+                  <img src="./assets/static/ft1-card-thumb.png" alt="thumb">
+                </div>
+                <h4 class="ft1-card-title">Brand Protection</h4>
+              </div>
+              <div class="ft1-card">
+                <div class="ft1-card-thumb">
+                  <img src="./assets/static/ft1-card-thumb.png" alt="thumb">
+                </div>
+                <h4 class="ft1-card-title">Brand Protection</h4>
+              </div>
+              <div class="ft1-card">
+                <div class="ft1-card-thumb">
+                  <img src="./assets/static/ft1-card-thumb.png" alt="thumb">
+                </div>
+                <h4 class="ft1-card-title">Brand Protection</h4>
+              </div>
+              <div class="ft1-card">
+                <div class="ft1-card-thumb">
+                  <img src="./assets/static/ft1-card-thumb.png" alt="thumb">
+                </div>
+                <h4 class="ft1-card-title">Brand Protection</h4>
+              </div>
+              <div class="ft1-card">
+                <div class="ft1-card-thumb">
+                  <img src="./assets/static/ft1-card-thumb.png" alt="thumb">
+                </div>
+                <h4 class="ft1-card-title">Brand Protection</h4>
+              </div>
+              <div class="ft1-card">
+                <div class="ft1-card-thumb">
+                  <img src="./assets/static/ft1-card-thumb.png" alt="thumb">
+                </div>
+                <h4 class="ft1-card-title">Brand Protection</h4>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section><!-- features (type 1) -->
+
+      <div class="section ft2 pagemain-ft2" data-section-index="5">
+        <div class="container ft2__inner">
+          <h2 class="section-title section__title">What is geography of our proxies?</h2>
+          <div class="section-subtitle section__subtitle">Receive exceptional technical support from their own</div>
+          <div class="ft2-row">
+            <div class="ft2-tabs__wrap">
+              <div class="tabs ft2-tabs">
+                <div class="tabs-list ft2-tabs-list">
+                  <input type="hidden" class="tabs-value" value="1">
+                  <div class="tabs-item ft2-tabs-item active" data-value="datacenter" data-box-id="1">Datacenter Proxies</div>
+                  <div class="tabs-item ft2-tabs-item" data-value="residential" data-box-id="2">Residential Proxies</div>
+                  <div class="tabs-item ft2-tabs-item" data-value="mobile" data-box-id="3">Mobile Proxies</div>
+                </div>
+                <div class="tabs-node-wrapper">
+                  <div class="tabs-node hidden active" data-box-id="1">
+                    <div class="ft2-info__wrap">
+                      <div class="ft2-info">
+                        <h3 class="ft2-info-title">Worldwide coverage</h3>
+                        <div class="ft2-info-text">
+                          <p>
+                            Get proxies from any corner of the world. Easily filter IP addresses by country, region, city, or provider right in the dashboard.
+                          </p>
+                        </div>
+                        <a href="./signup.html" class="btn btn-blue ft2-info-btn">
+                          <svg width="20px" height="20px" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M9.46727453,0 C12.6508009,0 15.2315589,2.56640935 15.2315589,5.73223573 C15.2315589,7.47655509 14.448084,9.03890148 13.2119914,10.0902571 C13.4822032,10.2238219 13.7275682,10.3582958 13.9497532,10.4930662 C14.4279751,10.7831407 14.9241978,11.1427602 15.4394636,11.5717392 C15.732385,11.8156078 15.7710449,12.2494418 15.5258128,12.5407346 C15.2805808,12.8320274 14.8443213,12.8704723 14.5513999,12.6266038 C14.0866111,12.2396488 13.6455819,11.9200289 13.2293546,11.6675584 C12.8528749,11.4391975 12.384017,11.2042359 11.8239965,10.9643237 C11.1032931,11.2862459 10.3062136,11.4644715 9.46727453,11.4644715 C8.53944258,11.4644715 7.66281089,11.2464759 6.88634681,10.8591798 L6.84481353,10.878634 L6.84481353,10.878634 C4.89437187,11.634739 3.4715441,12.752929 2.55274945,14.2369477 C1.63088171,15.7259301 1.25429819,17.3895789 1.42222738,19.2506112 C1.45637018,19.6289901 1.17559676,19.9632511 0.795102385,19.9972041 C0.414608014,20.031157 0.078478173,19.7519447 0.0443353722,19.3735658 C-0.149844712,17.2216146 0.29386687,15.2614114 1.37469861,13.5156736 C2.32539098,11.9801342 3.72215476,10.7855333 5.54907869,9.93439694 C4.41355013,8.88953631 3.70299014,7.39340475 3.70299014,5.73223573 C3.70299014,2.56640935 6.28374817,0 9.46727453,0 Z M16.868159,12.6926826 C17.2480582,12.6926826 17.5560273,13.0023735 17.5560273,13.3843967 L17.556,15.136 L19.3082859,15.1366553 C19.690309,15.1366553 20,15.4446244 20,15.8245236 C20,16.2044227 19.690309,16.5123919 19.3082859,16.5123919 L17.556,16.512 L17.5560273,18.2646504 C17.5560273,18.6466736 17.2480582,18.9563646 16.868159,18.9563646 C16.4882598,18.9563646 16.1802907,18.6466736 16.1802907,18.2646504 L16.18,16.512 L14.4280321,16.5123919 C14.046009,16.5123919 13.736318,16.2044227 13.736318,15.8245236 C13.736318,15.4446244 14.046009,15.1366553 14.4280321,15.1366553 L16.18,15.136 L16.1802907,13.3843967 C16.1802907,13.0023735 16.4882598,12.6926826 16.868159,12.6926826 Z M9.46727453,1.37573658 C7.04779449,1.37573658 5.08641839,3.32620768 5.08641839,5.73223573 C5.08641839,8.13826378 7.04779449,10.0887349 9.46727453,10.0887349 C11.8867546,10.0887349 13.8481307,8.13826378 13.8481307,5.73223573 C13.8481307,3.32620768 11.8867546,1.37573658 9.46727453,1.37573658 Z"/>
+                          </svg>
+                          sign up
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="tabs-node hidden" data-box-id="2">
+                    <div class="ft2-info__wrap">
+                      <div class="ft2-info">
+                        <h3 class="ft2-info-title">Residential Proxies</h3>
+                        <div class="ft2-info-text">
+                          <p>
+                            Get proxies from any corner of the world. Easily filter IP addresses by country, region, city, or provider right in the dashboard.
+                          </p>
+                        </div>
+                        <a href="./signup.html" class="btn btn-blue ft2-info-btn">
+                          <svg width="20px" height="20px" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M9.46727453,0 C12.6508009,0 15.2315589,2.56640935 15.2315589,5.73223573 C15.2315589,7.47655509 14.448084,9.03890148 13.2119914,10.0902571 C13.4822032,10.2238219 13.7275682,10.3582958 13.9497532,10.4930662 C14.4279751,10.7831407 14.9241978,11.1427602 15.4394636,11.5717392 C15.732385,11.8156078 15.7710449,12.2494418 15.5258128,12.5407346 C15.2805808,12.8320274 14.8443213,12.8704723 14.5513999,12.6266038 C14.0866111,12.2396488 13.6455819,11.9200289 13.2293546,11.6675584 C12.8528749,11.4391975 12.384017,11.2042359 11.8239965,10.9643237 C11.1032931,11.2862459 10.3062136,11.4644715 9.46727453,11.4644715 C8.53944258,11.4644715 7.66281089,11.2464759 6.88634681,10.8591798 L6.84481353,10.878634 L6.84481353,10.878634 C4.89437187,11.634739 3.4715441,12.752929 2.55274945,14.2369477 C1.63088171,15.7259301 1.25429819,17.3895789 1.42222738,19.2506112 C1.45637018,19.6289901 1.17559676,19.9632511 0.795102385,19.9972041 C0.414608014,20.031157 0.078478173,19.7519447 0.0443353722,19.3735658 C-0.149844712,17.2216146 0.29386687,15.2614114 1.37469861,13.5156736 C2.32539098,11.9801342 3.72215476,10.7855333 5.54907869,9.93439694 C4.41355013,8.88953631 3.70299014,7.39340475 3.70299014,5.73223573 C3.70299014,2.56640935 6.28374817,0 9.46727453,0 Z M16.868159,12.6926826 C17.2480582,12.6926826 17.5560273,13.0023735 17.5560273,13.3843967 L17.556,15.136 L19.3082859,15.1366553 C19.690309,15.1366553 20,15.4446244 20,15.8245236 C20,16.2044227 19.690309,16.5123919 19.3082859,16.5123919 L17.556,16.512 L17.5560273,18.2646504 C17.5560273,18.6466736 17.2480582,18.9563646 16.868159,18.9563646 C16.4882598,18.9563646 16.1802907,18.6466736 16.1802907,18.2646504 L16.18,16.512 L14.4280321,16.5123919 C14.046009,16.5123919 13.736318,16.2044227 13.736318,15.8245236 C13.736318,15.4446244 14.046009,15.1366553 14.4280321,15.1366553 L16.18,15.136 L16.1802907,13.3843967 C16.1802907,13.0023735 16.4882598,12.6926826 16.868159,12.6926826 Z M9.46727453,1.37573658 C7.04779449,1.37573658 5.08641839,3.32620768 5.08641839,5.73223573 C5.08641839,8.13826378 7.04779449,10.0887349 9.46727453,10.0887349 C11.8867546,10.0887349 13.8481307,8.13826378 13.8481307,5.73223573 C13.8481307,3.32620768 11.8867546,1.37573658 9.46727453,1.37573658 Z"/>
+                          </svg>
+                          sign up
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="tabs-node hidden" data-box-id="3">
+                    <div class="ft2-info__wrap">
+                      <div class="ft2-info">
+                        <h3 class="ft2-info-title">Mobile Proxies</h3>
+                        <div class="ft2-info-text">
+                          <p>
+                            Get proxies from any corner of the world. Easily filter IP addresses by country, region, city, or provider right in the dashboard.
+                          </p>
+                        </div>
+                        <a href="./signup.html" class="btn btn-blue ft2-info-btn">
+                          <svg width="20px" height="20px" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M9.46727453,0 C12.6508009,0 15.2315589,2.56640935 15.2315589,5.73223573 C15.2315589,7.47655509 14.448084,9.03890148 13.2119914,10.0902571 C13.4822032,10.2238219 13.7275682,10.3582958 13.9497532,10.4930662 C14.4279751,10.7831407 14.9241978,11.1427602 15.4394636,11.5717392 C15.732385,11.8156078 15.7710449,12.2494418 15.5258128,12.5407346 C15.2805808,12.8320274 14.8443213,12.8704723 14.5513999,12.6266038 C14.0866111,12.2396488 13.6455819,11.9200289 13.2293546,11.6675584 C12.8528749,11.4391975 12.384017,11.2042359 11.8239965,10.9643237 C11.1032931,11.2862459 10.3062136,11.4644715 9.46727453,11.4644715 C8.53944258,11.4644715 7.66281089,11.2464759 6.88634681,10.8591798 L6.84481353,10.878634 L6.84481353,10.878634 C4.89437187,11.634739 3.4715441,12.752929 2.55274945,14.2369477 C1.63088171,15.7259301 1.25429819,17.3895789 1.42222738,19.2506112 C1.45637018,19.6289901 1.17559676,19.9632511 0.795102385,19.9972041 C0.414608014,20.031157 0.078478173,19.7519447 0.0443353722,19.3735658 C-0.149844712,17.2216146 0.29386687,15.2614114 1.37469861,13.5156736 C2.32539098,11.9801342 3.72215476,10.7855333 5.54907869,9.93439694 C4.41355013,8.88953631 3.70299014,7.39340475 3.70299014,5.73223573 C3.70299014,2.56640935 6.28374817,0 9.46727453,0 Z M16.868159,12.6926826 C17.2480582,12.6926826 17.5560273,13.0023735 17.5560273,13.3843967 L17.556,15.136 L19.3082859,15.1366553 C19.690309,15.1366553 20,15.4446244 20,15.8245236 C20,16.2044227 19.690309,16.5123919 19.3082859,16.5123919 L17.556,16.512 L17.5560273,18.2646504 C17.5560273,18.6466736 17.2480582,18.9563646 16.868159,18.9563646 C16.4882598,18.9563646 16.1802907,18.6466736 16.1802907,18.2646504 L16.18,16.512 L14.4280321,16.5123919 C14.046009,16.5123919 13.736318,16.2044227 13.736318,15.8245236 C13.736318,15.4446244 14.046009,15.1366553 14.4280321,15.1366553 L16.18,15.136 L16.1802907,13.3843967 C16.1802907,13.0023735 16.4882598,12.6926826 16.868159,12.6926826 Z M9.46727453,1.37573658 C7.04779449,1.37573658 5.08641839,3.32620768 5.08641839,5.73223573 C5.08641839,8.13826378 7.04779449,10.0887349 9.46727453,10.0887349 C11.8867546,10.0887349 13.8481307,8.13826378 13.8481307,5.73223573 C13.8481307,3.32620768 11.8867546,1.37573658 9.46727453,1.37573658 Z"/>
+                          </svg>
+                          sign up
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="ft2-card-grid">
+              <div class="ft2-card">
+                <div class="ft2-card-thumb">
+                  <img src="./assets/static/ft2-card-thumb.png" alt="thumb">
+                </div>
+                <div class="ft2-card-info">
+                  <div class="ft2-card-title">France</div>
+                  <div class="ft2-card-sub">178k IPs</div>
+                </div>
+              </div>
+              <div class="ft2-card">
+                <div class="ft2-card-thumb">
+                  <img src="./assets/static/ft2-card-thumb.png" alt="thumb">
+                </div>
+                <div class="ft2-card-info">
+                  <div class="ft2-card-title">France</div>
+                  <div class="ft2-card-sub">178k IPs</div>
+                </div>
+              </div>
+              <div class="ft2-card">
+                <div class="ft2-card-thumb">
+                  <img src="./assets/static/ft2-card-thumb.png" alt="thumb">
+                </div>
+                <div class="ft2-card-info">
+                  <div class="ft2-card-title">France</div>
+                  <div class="ft2-card-sub">178k IPs</div>
+                </div>
+              </div>
+              <div class="ft2-card">
+                <div class="ft2-card-thumb">
+                  <img src="./assets/static/ft2-card-thumb.png" alt="thumb">
+                </div>
+                <div class="ft2-card-info">
+                  <div class="ft2-card-title">France</div>
+                  <div class="ft2-card-sub">178k IPs</div>
+                </div>
+              </div>
+              <div class="ft2-card">
+                <div class="ft2-card-thumb">
+                  <img src="./assets/static/ft2-card-thumb.png" alt="thumb">
+                </div>
+                <div class="ft2-card-info">
+                  <div class="ft2-card-title">France</div>
+                  <div class="ft2-card-sub">178k IPs</div>
+                </div>
+              </div>
+              <div class="ft2-card">
+                <div class="ft2-card-thumb">
+                  <img src="./assets/static/ft2-card-thumb.png" alt="thumb">
+                </div>
+                <div class="ft2-card-info">
+                  <div class="ft2-card-title">France</div>
+                  <div class="ft2-card-sub">178k IPs</div>
+                </div>
+              </div>
+              <div class="ft2-card">
+                <div class="ft2-card-thumb">
+                  <img src="./assets/static/ft2-card-thumb.png" alt="thumb">
+                </div>
+                <div class="ft2-card-info">
+                  <div class="ft2-card-title">France</div>
+                  <div class="ft2-card-sub">178k IPs</div>
+                </div>
+              </div>
+              <div class="ft2-card">
+                <div class="ft2-card-thumb">
+                  <img src="./assets/static/ft2-card-thumb.png" alt="thumb">
+                </div>
+                <div class="ft2-card-info">
+                  <div class="ft2-card-title">France</div>
+                  <div class="ft2-card-sub">178k IPs</div>
+                </div>
+              </div>
+              <div class="ft2-card">
+                <div class="ft2-card-thumb">
+                  <img src="./assets/static/ft2-card-thumb.png" alt="thumb">
+                </div>
+                <div class="ft2-card-info">
+                  <div class="ft2-card-title">France</div>
+                  <div class="ft2-card-sub">178k IPs</div>
+                </div>
+              </div>
+              <div class="ft2-card">
+                <div class="ft2-card-thumb">
+                  <img src="./assets/static/ft2-card-thumb.png" alt="thumb">
+                </div>
+                <div class="ft2-card-info">
+                  <div class="ft2-card-title">France</div>
+                  <div class="ft2-card-sub">178k IPs</div>
+                </div>
+              </div>
+              <div class="ft2-card">
+                <div class="ft2-card-thumb">
+                  <img src="./assets/static/ft2-card-thumb.png" alt="thumb">
+                </div>
+                <div class="ft2-card-info">
+                  <div class="ft2-card-title">France</div>
+                  <div class="ft2-card-sub">178k IPs</div>
+                </div>
+              </div>
+              <div class="ft2-card">
+                <div class="ft2-card-thumb">
+                  <img src="./assets/static/ft2-card-thumb.png" alt="thumb">
+                </div>
+                <div class="ft2-card-info">
+                  <div class="ft2-card-title">France</div>
+                  <div class="ft2-card-sub">178k IPs</div>
+                </div>
+              </div>
+              <div class="ft2-card">
+                <div class="ft2-card-thumb">
+                  <img src="./assets/static/ft2-card-thumb.png" alt="thumb">
+                </div>
+                <div class="ft2-card-info">
+                  <div class="ft2-card-title">France</div>
+                  <div class="ft2-card-sub">178k IPs</div>
+                </div>
+              </div>
+              <div class="ft2-card">
+                <div class="ft2-card-thumb">
+                  <img src="./assets/static/ft2-card-thumb.png" alt="thumb">
+                </div>
+                <div class="ft2-card-info">
+                  <div class="ft2-card-title">France</div>
+                  <div class="ft2-card-sub">178k IPs</div>
+                </div>
+              </div>
+              <div class="ft2-card">
+                <div class="ft2-card-thumb">
+                  <img src="./assets/static/ft2-card-thumb.png" alt="thumb">
+                </div>
+                <div class="ft2-card-info">
+                  <div class="ft2-card-title">France</div>
+                  <div class="ft2-card-sub">178k IPs</div>
+                </div>
+              </div>
+              <div class="ft2-card">
+                <div class="ft2-card-thumb">
+                  <img src="./assets/static/ft2-card-thumb.png" alt="thumb">
+                </div>
+                <div class="ft2-card-info">
+                  <div class="ft2-card-title">France</div>
+                  <div class="ft2-card-sub">178k IPs</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div><!-- features (type 2) -->
+
+      <section class="section al1 pagemain-al1" data-section-index="6">
+        <img src="./assets/static/section-pic-3.png" alt="" class="pagemain-al1-pic-1">
+        <img src="./assets/static/section-pic-4.png" alt="" class="pagemain-al1-pic-2">
+        <div class="container al1__inner">
+          <div class="al1-slider">
+            <h2 class="section-title section__title">Our blog</h2>
+            <div class="section-subtitle section__subtitle">Receive exceptional technical support from their own</div>
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="al1-card">
+                  <div class="al1-card-h">
+                    <div class="al1-card-title">Adding a new booster</div>
+                    <div class="al1-card-date">29 Nov 2022</div>
+                  </div>
+                  <div class="al1-card-text">
+                    <p>
+                      First of all, the beginning of daily work on the formation of a position provides a wide range of (specialists) participation.
+                    </p>
+                  </div>
+                  <a href="#" class="al1-card-link btn btn-white">More detailed ›</a>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="al1-card">
+                  <div class="al1-card-h">
+                    <div class="al1-card-title">Adding a new booster</div>
+                    <div class="al1-card-date">29 Nov 2022</div>
+                  </div>
+                  <div class="al1-card-text">
+                    <p>
+                      First of all, the beginning of daily work on the formation of a position provides a wide range of (specialists) participation.
+                    </p>
+                  </div>
+                  <a href="#" class="al1-card-link btn btn-white">More detailed ›</a>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="al1-card">
+                  <div class="al1-card-h">
+                    <div class="al1-card-title">Adding a new booster</div>
+                    <div class="al1-card-date">29 Nov 2022</div>
+                  </div>
+                  <div class="al1-card-text">
+                    <p>
+                      First of all, the beginning of daily work on the formation of a position provides a wide range of (specialists) participation.
+                    </p>
+                  </div>
+                  <a href="#" class="al1-card-link btn btn-white">More detailed ›</a>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="al1-card">
+                  <div class="al1-card-h">
+                    <div class="al1-card-title">Adding a new booster</div>
+                    <div class="al1-card-date">29 Nov 2022</div>
+                  </div>
+                  <div class="al1-card-text">
+                    <p>
+                      First of all, the beginning of daily work on the formation of a position provides a wide range of (specialists) participation.
+                    </p>
+                  </div>
+                  <a href="#" class="al1-card-link btn btn-white">More detailed ›</a>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="al1-card">
+                  <div class="al1-card-h">
+                    <div class="al1-card-title">Adding a new booster</div>
+                    <div class="al1-card-date">29 Nov 2022</div>
+                  </div>
+                  <div class="al1-card-text">
+                    <p>
+                      First of all, the beginning of daily work on the formation of a position provides a wide range of (specialists) participation.
+                    </p>
+                  </div>
+                  <a href="#" class="al1-card-link btn btn-white">More detailed ›</a>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="al1-card">
+                  <div class="al1-card-h">
+                    <div class="al1-card-title">Adding a new booster</div>
+                    <div class="al1-card-date">29 Nov 2022</div>
+                  </div>
+                  <div class="al1-card-text">
+                    <p>
+                      First of all, the beginning of daily work on the formation of a position provides a wide range of (specialists) participation.
+                    </p>
+                  </div>
+                  <a href="#" class="al1-card-link btn btn-white">More detailed ›</a>
+                </div>
+              </div>
+            </div>
+            <div class="al1-slider-pagination"></div>
+          </div>
+        </div>
+      </section><!-- atricles list (type 2) -->
+
+    </main>
+
+    <footer class="f">
+      <div class="f-promo">
+        <div class="container f-promo__inner">
+          <h2 class="f-promo-title">
+            Data scraping made easy with <span class="_active">proxyma</span>
+          </h2>
+          <div class="f-promo-bar">
+            <button type="button" class="btn btn-blue f-promo-btn">
+              <svg class="f-promo-btn-icon" width="20px" height="20px" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                <path d="M9.46727453,0 C12.6508009,0 15.2315589,2.56640935 15.2315589,5.73223573 C15.2315589,7.47655509 14.448084,9.03890148 13.2119914,10.0902571 C13.4822032,10.2238219 13.7275682,10.3582958 13.9497532,10.4930662 C14.4279751,10.7831407 14.9241978,11.1427602 15.4394636,11.5717392 C15.732385,11.8156078 15.7710449,12.2494418 15.5258128,12.5407346 C15.2805808,12.8320274 14.8443213,12.8704723 14.5513999,12.6266038 C14.0866111,12.2396488 13.6455819,11.9200289 13.2293546,11.6675584 C12.8528749,11.4391975 12.384017,11.2042359 11.8239965,10.9643237 C11.1032931,11.2862459 10.3062136,11.4644715 9.46727453,11.4644715 C8.53944258,11.4644715 7.66281089,11.2464759 6.88634681,10.8591798 L6.84481353,10.878634 L6.84481353,10.878634 C4.89437187,11.634739 3.4715441,12.752929 2.55274945,14.2369477 C1.63088171,15.7259301 1.25429819,17.3895789 1.42222738,19.2506112 C1.45637018,19.6289901 1.17559676,19.9632511 0.795102385,19.9972041 C0.414608014,20.031157 0.078478173,19.7519447 0.0443353722,19.3735658 C-0.149844712,17.2216146 0.29386687,15.2614114 1.37469861,13.5156736 C2.32539098,11.9801342 3.72215476,10.7855333 5.54907869,9.93439694 C4.41355013,8.88953631 3.70299014,7.39340475 3.70299014,5.73223573 C3.70299014,2.56640935 6.28374817,0 9.46727453,0 Z M16.868159,12.6926826 C17.2480582,12.6926826 17.5560273,13.0023735 17.5560273,13.3843967 L17.556,15.136 L19.3082859,15.1366553 C19.690309,15.1366553 20,15.4446244 20,15.8245236 C20,16.2044227 19.690309,16.5123919 19.3082859,16.5123919 L17.556,16.512 L17.5560273,18.2646504 C17.5560273,18.6466736 17.2480582,18.9563646 16.868159,18.9563646 C16.4882598,18.9563646 16.1802907,18.6466736 16.1802907,18.2646504 L16.18,16.512 L14.4280321,16.5123919 C14.046009,16.5123919 13.736318,16.2044227 13.736318,15.8245236 C13.736318,15.4446244 14.046009,15.1366553 14.4280321,15.1366553 L16.18,15.136 L16.1802907,13.3843967 C16.1802907,13.0023735 16.4882598,12.6926826 16.868159,12.6926826 Z M9.46727453,1.37573658 C7.04779449,1.37573658 5.08641839,3.32620768 5.08641839,5.73223573 C5.08641839,8.13826378 7.04779449,10.0887349 9.46727453,10.0887349 C11.8867546,10.0887349 13.8481307,8.13826378 13.8481307,5.73223573 C13.8481307,3.32620768 11.8867546,1.37573658 9.46727453,1.37573658 Z" fill="#FFFFFF"/>
+              </svg>
+              <span class="f-promo-btn-text">sign up</span>
+            </button>
+            <button type="button" class="btn btn-red-border f-promo-btn _chat">
+              <svg class="f-promo-btn-icon" version="1.1" width="37px" height="37px" viewBox="0 0 512 512" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                <path d="M221.4,81.6C102.4,81.6,6,153.7,6,242.7C6,295.8,40.5,343,93.6,372.3c-5.2,18.1-17.3,40.6-45.3,56.4   c0,0,52.9,13.5,97.9-35.1c23.4,6.5,48.8,10.1,75.3,10.1c119,0,215.4-72.1,215.4-161S340.4,81.6,221.4,81.6z M122.3,208.5   c18.9,0,34.1,15.3,34.1,34.1c0,18.9-15.3,34.1-34.1,34.1c-18.9,0-34.1-15.3-34.1-34.1C88.1,223.8,103.4,208.5,122.3,208.5z    M221.4,276.8c-18.9,0-34.1-15.3-34.1-34.1c0-18.9,15.3-34.1,34.1-34.1s34.1,15.3,34.1,34.1C255.6,261.5,240.3,276.8,221.4,276.8z    M320.6,276.8c-18.9,0-34.1-15.3-34.1-34.1c0-18.9,15.3-34.1,34.1-34.1c18.9,0,34.1,15.3,34.1,34.1   C354.7,261.5,339.4,276.8,320.6,276.8z"/>
+                <path d="M455,387.8c31-17.1,51-44.6,51-75.5c0-33.8-24-63.5-59.9-80c0.3,3.5,0.4,6.9,0.4,10.4    c0,46.2-23.8,89.4-67,121.6c-17.1,12.8-36.4,23.2-57.2,31.1c17.4,6.8,37.2,10.7,58.1,10.7c15.4,0,30.2-2.1,43.9-5.9    c26.2,28.3,57,20.4,57,20.4C465,411.5,458,398.3,455,387.8z"/>
+              </svg>
+              <span class="f-promo-btn-text">chat with us</span>
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="f-frame">
+        <img src="./assets/static/footer-pic-1.png" alt="picture" class="f-frame-pic">
+        <div class="container f__inner">
+          <div class="f-row">
+            <div class="f-bar">
+
+              <div class="f-logo">
+                <img src="./assets/static/f-logo.png" alt="proxyma">
+              </div>
+
+              <div class="f-lang dd">
+                <div class="f-lang-item">
+                  <div class="f-lang-icon">
+                    <img src="./assets/static/eng.svg" alt="english">
+                  </div>
+                  <div class="f-lang-label">English</div>
+                </div>
+                <div class="f-lang-arrow">▾</div>
+                <ul class="f-lang-list dd-list showDown">
+                  <li>
+                    <a href="#" class="f-lang-item dd-item">
+                      <div class="f-lang-icon">
+                        <img src="./assets/static/eng.svg" alt="english">
+                      </div>
+                      <div class="f-lang-label">English</div>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" class="f-lang-item dd-item">
+                      <div class="f-lang-icon">
+                        <img src="./assets/static/chn.svg" alt="chinese">
+                      </div>
+                      <div class="f-lang-label">Chinese</div>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" class="f-lang-item dd-item">
+                      <div class="f-lang-icon">
+                        <img src="./assets/static/rus.svg" alt="russian">
+                      </div>
+                      <div class="f-lang-label">Russian</div>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+
+              <div class="f-conts">
+
+                <div class="f-conts-item">
+                  <div class="f-conts-icon">
+                    <svg viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M511.2 387l-23.25 100.8c-3.266 14.25-15.79 24.22-30.46 24.22C205.2 512 0 306.8 0 54.5c0-14.66 9.969-27.2 24.22-30.45l100.8-23.25C139.7-2.602 154.7 5.018 160.8 18.92l46.52 108.5c5.438 12.78 1.77 27.67-8.98 36.45L144.5 207.1c33.98 69.22 90.26 125.5 159.5 159.5l44.08-53.8c8.688-10.78 23.69-14.51 36.47-8.975l108.5 46.51C506.1 357.2 514.6 372.4 511.2 387z"/>
+                    </svg>
+                  </div>
+                  <div class="f-conts-text">
+                    <span class="f-conts-label">Phone: </span>
+                    <a href="tel:+442080591037" class="f-conts-link">+44 208 059 1037</a>
+                  </div>
+                </div>
+
+                <div class="f-conts-item">
+                  <div class="f-conts-icon">
+                    <svg viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M53,11H11.05a9.06,9.06,0,0,0-9,9.05V44a9.06,9.06,0,0,0,9.05,9H53a9.06,9.06,0,0,0,9-9V20.05A9.06,9.06,0,0,0,53,11ZM57.5,49.33,37.89,32.56a9,9,0,0,1-11.76,0l-19.26,17A6.38,6.38,0,0,1,5.44,48.2L24.59,31.28,5.81,15.35a6.32,6.32,0,0,1,1.56-1.3L27.48,31.1a7,7,0,0,0,9,0l20.11-17a6.32,6.32,0,0,1,1.56,1.3L39.43,31.25l19.4,16.58A6.79,6.79,0,0,1,57.5,49.33Z"/>
+                    </svg>
+                  </div>
+                  <div class="f-conts-text">
+                    <span class="f-conts-label">Email: </span>
+                    <a href="mailto:support@soax.com" class="f-conts-link">support@soax.com</a>
+                  </div>
+                </div>
+
+              </div>
+
+              <div class="f-soc">
+                <a href="#" class="f-soc-item">
+                  <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                    viewBox="0 0 56.7 56.7" enable-background="new 0 0 56.7 56.7" xml:space="preserve">
+                    <path d="M28.2,16.7c-7,0-12.8,5.7-12.8,12.8s5.7,12.8,12.8,12.8S41,36.5,41,29.5S35.2,16.7,28.2,16.7z M28.2,37.7
+                      c-4.5,0-8.2-3.7-8.2-8.2s3.7-8.2,8.2-8.2s8.2,3.7,8.2,8.2S32.7,37.7,28.2,37.7z"/>
+                    <circle cx="41.5" cy="16.4" r="2.9"/>
+                    <path d="M49,8.9c-2.6-2.7-6.3-4.1-10.5-4.1H17.9c-8.7,0-14.5,5.8-14.5,14.5v20.5c0,4.3,1.4,8,4.2,10.7c2.7,2.6,6.3,3.9,10.4,3.9
+                      h20.4c4.3,0,7.9-1.4,10.5-3.9c2.7-2.6,4.1-6.3,4.1-10.6V19.3C53,15.1,51.6,11.5,49,8.9z M48.6,39.9c0,3.1-1.1,5.6-2.9,7.3
+                      s-4.3,2.6-7.3,2.6H18c-3,0-5.5-0.9-7.3-2.6C8.9,45.4,8,42.9,8,39.8V19.3c0-3,0.9-5.5,2.7-7.3c1.7-1.7,4.3-2.6,7.3-2.6h20.6
+                      c3,0,5.5,0.9,7.3,2.7c1.7,1.8,2.7,4.3,2.7,7.2V39.9L48.6,39.9z"/>
+                  </svg>
+                </a>
+                <a href="#" class="f-soc-item">
+                  <svg height="100%" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;" version="1.1" viewBox="0 0 512 512" width="100%" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:serif="http://www.serif.com/" xmlns:xlink="http://www.w3.org/1999/xlink">
+                    <path d="M374.244,285.825l14.105,-91.961l-88.233,0l0,-59.677c0,-25.159 12.325,-49.682 51.845,-49.682l40.116,0l0,-78.291c0,0 -36.407,-6.214 -71.213,-6.214c-72.67,0 -120.165,44.042 -120.165,123.775l0,70.089l-80.777,0l0,91.961l80.777,0l0,222.31c16.197,2.541 32.798,3.865 49.709,3.865c16.911,0 33.511,-1.324 49.708,-3.865l0,-222.31l74.128,0Z"/>
+                  </svg>
+                </a>
+                <a href="#" class="f-soc-item">
+                  <svg width="48px" height="48px" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M41.4193 7.30899C41.4193 7.30899 45.3046 5.79399 44.9808 9.47328C44.8729 10.9883 43.9016 16.2908 43.1461 22.0262L40.5559 39.0159C40.5559 39.0159 40.3401 41.5048 38.3974 41.9377C36.4547 42.3705 33.5408 40.4227 33.0011 39.9898C32.5694 39.6652 24.9068 34.7955 22.2086 32.4148C21.4531 31.7655 20.5897 30.4669 22.3165 28.9519L33.6487 18.1305C34.9438 16.8319 36.2389 13.8019 30.8426 17.4812L15.7331 27.7616C15.7331 27.7616 14.0063 28.8437 10.7686 27.8698L3.75342 25.7055C3.75342 25.7055 1.16321 24.0823 5.58815 22.459C16.3807 17.3729 29.6555 12.1786 41.4193 7.30899Z"/>
+                  </svg>
+                </a>
+                <a href="#" class="f-soc-item">
+                  <svg viewBox="0 0 24 24" role="img" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M20.317 4.37a19.791 19.791 0 0 0-4.885-1.515.074.074 0 0 0-.079.037c-.21.375-.444.864-.608 1.25a18.27 18.27 0 0 0-5.487 0 12.64 12.64 0 0 0-.617-1.25.077.077 0 0 0-.079-.037A19.736 19.736 0 0 0 3.677 4.37a.07.07 0 0 0-.032.027C.533 9.046-.32 13.58.099 18.057a.082.082 0 0 0 .031.057 19.9 19.9 0 0 0 5.993 3.03.078.078 0 0 0 .084-.028 14.09 14.09 0 0 0 1.226-1.994.076.076 0 0 0-.041-.106 13.107 13.107 0 0 1-1.872-.892.077.077 0 0 1-.008-.128 10.2 10.2 0 0 0 .372-.292.074.074 0 0 1 .077-.01c3.928 1.793 8.18 1.793 12.062 0a.074.074 0 0 1 .078.01c.12.098.246.198.373.292a.077.077 0 0 1-.006.127 12.299 12.299 0 0 1-1.873.892.077.077 0 0 0-.041.107c.36.698.772 1.362 1.225 1.993a.076.076 0 0 0 .084.028 19.839 19.839 0 0 0 6.002-3.03.077.077 0 0 0 .032-.054c.5-5.177-.838-9.674-3.549-13.66a.061.061 0 0 0-.031-.03zM8.02 15.33c-1.183 0-2.157-1.085-2.157-2.419 0-1.333.956-2.419 2.157-2.419 1.21 0 2.176 1.096 2.157 2.42 0 1.333-.956 2.418-2.157 2.418zm7.975 0c-1.183 0-2.157-1.085-2.157-2.419 0-1.333.955-2.419 2.157-2.419 1.21 0 2.176 1.096 2.157 2.42 0 1.333-.946 2.418-2.157 2.418z"/>
+                  </svg>
+                </a>
+                <a href="#" class="f-soc-item">
+                  <svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M17.498 14.382c-.301-.15-1.767-.867-2.04-.966-.273-.101-.473-.15-.673.15-.197.295-.771.964-.944 1.162-.175.195-.349.21-.646.075-.3-.15-1.263-.465-2.403-1.485-.888-.795-1.484-1.77-1.66-2.07-.174-.3-.019-.465.13-.615.136-.135.301-.345.451-.523.146-.181.194-.301.297-.496.1-.21.049-.375-.025-.524-.075-.15-.672-1.62-.922-2.206-.24-.584-.487-.51-.672-.51-.172-.015-.371-.015-.571-.015-.2 0-.523.074-.797.359-.273.3-1.045 1.02-1.045 2.475s1.07 2.865 1.219 3.075c.149.195 2.105 3.195 5.1 4.485.714.3 1.27.48 1.704.629.714.227 1.365.195 1.88.121.574-.091 1.767-.721 2.016-1.426.255-.705.255-1.29.18-1.425-.074-.135-.27-.21-.57-.345m-5.446 7.443h-.016c-1.77 0-3.524-.48-5.055-1.38l-.36-.214-3.75.975 1.005-3.645-.239-.375c-.99-1.576-1.516-3.391-1.516-5.26 0-5.445 4.455-9.885 9.942-9.885 2.654 0 5.145 1.035 7.021 2.91 1.875 1.859 2.909 4.35 2.909 6.99-.004 5.444-4.46 9.885-9.935 9.885M20.52 3.449C18.24 1.245 15.24 0 12.045 0 5.463 0 .104 5.334.101 11.893c0 2.096.549 4.14 1.595 5.945L0 24l6.335-1.652c1.746.943 3.71 1.444 5.71 1.447h.006c6.585 0 11.946-5.336 11.949-11.896 0-3.176-1.24-6.165-3.495-8.411"/>
+                  </svg>
+                </a>
+              </div>
+
+            </div><!-- /.f-bar -->
+
+            <nav class="f-nav">
+              <div class="f-nav-col">
+                <div class="f-nav-label">PRODUCTS</div>
+                <a href="#" class="f-nav-item">Residential Proxies</a>
+                <a href="#" class="f-nav-item">Mobile Proxies</a>
+              </div>
+              <div class="f-nav-col">
+                <div class="f-nav-label">OUR COMPANY</div>
+                <a href="#" class="f-nav-item">Pricing plan</a>
+                <a href="#" class="f-nav-item">Help Center</a>
+                <a href="#" class="f-nav-item">Sitemap</a>
+                <a href="#" class="f-nav-item">Login</a>
+                <a href="#" class="f-nav-item">Sign Up</a>
+              </div>
+              <div class="f-nav-col">
+                <div class="f-nav-label">DOCUMENTS</div>
+                <a href="#" class="f-nav-item">Terms of Use</a>
+                <a href="#" class="f-nav-item">Privacy Policy</a>
+                <a href="#" class="f-nav-item">KYC & Compliance</a>
+                <a href="#" class="f-nav-item">Ethics</a>
+                <a href="#" class="f-nav-item">Cookie Policy</a>
+                <a href="#" class="f-nav-item">SLA</a>
+              </div>
+            </nav>
+          </div><!-- /.f-row -->
+        </div>
+      </div>
+    </footer>
+  </div>
+</body>
+</html>

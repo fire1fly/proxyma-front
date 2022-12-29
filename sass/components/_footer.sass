@@ -36,8 +36,18 @@
       &-icon
         max-width: 37px
   &-frame
+    position: relative
     background-color: $purple2
+    &-pic
+      position: absolute
+      top: -10px
+      left: 0px
+      z-index: 1
+      max-width: 1000px
+      width: 100%
   &__inner
+    position: relative
+    z-index: 2
     padding-top: 100px
     padding-bottom: 120px
   &-row

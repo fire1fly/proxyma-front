@@ -1,5 +1,6 @@
 .ms
   padding-top: 60px
+  position: relative
   &-title
     margin-bottom: 15px
     position: relative
@@ -9,6 +10,8 @@
       font-size: 51px
       color: $grey1
   &__inner
+    position: relative
+    z-index: 2
     display: grid
     grid-template-columns: auto min-content
     grid-template-rows: repeat(2, auto)
@@ -26,6 +29,8 @@
         grid-column: 2/3
         grid-row: 2/3
   &-info
+    position: relative
+    z-index: 3
     padding-top: 60px
     flex: 0 1 auto
   &-text
@@ -44,6 +49,11 @@
       max-height: 450px
     img
       width: 800px
+  &-backpic
+    position: absolute
+    left: 0
+    bottom: -100px
+    z-index: 1
 
 @media ( max-width: 1600px )
   .ms
@@ -72,6 +82,8 @@
         width: 400px
     &__fieldbtn
       max-width: 600px
+    &-backpic
+      width: 300px
 
 @media ( max-width: 991px )
   .ms
@@ -104,7 +116,7 @@
       &-sub
         font-size: 24px
     &__text
-      margin-bottom: 25px
+      // margin-bottom: 25px
     &__fieldbtn
       max-width: 400px
 

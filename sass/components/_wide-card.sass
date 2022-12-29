@@ -1,0 +1,88 @@
+.wc
+  &-row
+    display: grid
+    grid-template-columns: repeat(2, 1fr)
+    gap: 60px 70px
+  &-card
+    border-radius: 20px
+    padding: 50px
+    display: grid
+    grid-template-columns: auto auto
+    grid-template-rows: auto 1fr
+    gap: 30px 60px
+    background-color: $grey4
+    transition: 0.3s
+    &:hover
+      background: linear-gradient(-90deg, darken(#0072ff, 3%) 0%, darken(#00f6ff, 3%) 100%)
+      .wc-card
+        &-title
+          color: $white
+        &-text
+          color: $white
+    &-pic
+      grid-column: 1/2
+      grid-row: 1/3
+      flex: 0 0 auto
+      img, svg
+        width: 100%
+    &-title
+      align-self: start
+      grid-column: 2/3
+      grid-row: 1/2
+      margin: 0
+      +futura-demi
+      font-size: 28px
+      color: $grey1
+      transition: color 0.3s
+    &-text
+      grid-column: 2/3
+      grid-row: 2/3
+      margin: 0
+      +futura-book
+      font-size: 23px
+      color: $grey2
+      transition: color 0.3s
+
+@media ( max-width: 1400px )
+  .wc
+    &-row
+      gap: 20px 30px
+    &-card
+      padding: 30px
+      &-text
+        font-size: 20px
+
+@media ( max-width: 1200px )
+  .wc
+    &-card
+      gap: 30px
+
+@media ( max-width: 991px )
+  .wc
+    &-row
+      grid-template-columns: 1fr
+    &-card
+      gap: 15px 30px
+
+@media ( max-width: 768px )
+  .wc
+    &-card
+      gap: 15px
+      &-pic
+        grid-row: 2/3
+        width: 80px
+      &-title
+        grid-column: 1/3
+        font-size: 22px
+      &-text
+        font-size: 18px
+
+@media ( max-width: 520px )
+  .wc
+    &-card
+      border-radius: 15px
+      padding: 20px
+      &-pic
+        width: 50px
+      &-text
+        font-size: 16px

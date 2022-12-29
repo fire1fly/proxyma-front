@@ -1,0 +1,110 @@
+.al1
+  &__inner
+    overflow-x: hidden
+  &-card
+    border-radius: 20px
+    border: 3px solid transparent
+    padding: 40px
+    display: flex
+    flex-direction: column
+    align-items: flex-start
+    gap: 30px
+    background-color: $grey4
+    transition: 0.3s
+    &:hover
+      border-color: $active
+      background-color: $white
+      .al1-card
+        &-link
+          color: $white
+          background-color: $active
+    &-h
+      width: 100%
+      display: flex
+      align-items: center
+      justify-content: space-between
+      flex-wrap: wrap
+      gap: 10px
+    &-title
+      +futura-demi
+      font-size: 25px
+      color: $grey1
+    &-date
+      +futura-demi
+      font-size: 14px
+      color: $grey6
+    &-text
+      p
+        margin: 0
+        margin-bottom: 10px
+        +futura-med
+        font-size: 21px
+        color: $grey2
+    &-link
+      margin-top: auto
+      border-radius: 25px
+      height: 50px
+      padding: 0 25px
+      text-transform: uppercase
+      +futura-heavy
+      font-size: 18px
+  &-slider
+    position: relative
+    &-pagination
+      &.swiper-pagination-bullets
+        position: absolute
+        top: 0
+        right: 0
+        z-index: 2
+        width: auto
+        left: auto
+        bottom: auto
+        .swiper-pagination-bullet
+          margin: 0 8px
+      .swiper-pagination-bullet
+        width: 12px
+        height: 12px
+        background: darken(#E7EDF3, 10%)
+        &-active
+          background: $active
+
+@media ( max-width: 1400px )
+  .al1
+    &-card
+      padding: 20px
+      &-title
+        font-size: 20px
+      &-text
+        p
+          font-size: 16px
+
+@media ( max-width: 1200px )
+  .al1
+    &-card
+      &-link
+        height: 40px
+        padding: 0 15px
+        font-size: 16px
+
+@media ( max-width: 991px )
+  .al1
+    &-slider
+      position: relative
+      .swiper-wrapper
+        padding-bottom: 30px
+      &-pagination
+        &.swiper-pagination-bullets
+          top: auto
+          bottom: 0
+          right: auto
+          left: 0
+          width: 100%
+          display: flex
+          justify-content: center
+          .swiper-pagination-bullet
+            margin: 0 4px
+        .swiper-pagination-bullet
+          width: 8px
+          height: 8px
+    &-card
+      border-width: 2px

@@ -1,0 +1,210 @@
+.ft2
+  &-row
+    display: flex
+    gap: 80px
+  &-tabs
+    &__wrap
+      flex: 0 1 730px
+    &-list
+      display: flex
+      align-items: center
+    &-item
+      position: relative
+      border-top-left-radius: 15px
+      border-top-right-radius: 15px
+      min-height: 70px
+      padding: 0 30px
+      display: flex
+      align-items: center
+      +futura-demi
+      font-size: 22px
+      color: $grey1
+      cursor: pointer
+      &::before
+        content: ''
+        position: absolute
+        top: 50%
+        transform: translateY(-50%)
+        left: 0
+        display: block
+        width: 2px
+        height: 17px
+        background-color: $grey4
+      &::after
+        content: ''
+        position: absolute
+        top: 50%
+        transform: translateY(-50%)
+        right: 0
+        display: block
+        width: 2px
+        height: 17px
+        background-color: $grey4
+      &:nth-of-type(1)
+        &::before
+          display: none
+      &:nth-last-of-type(1)
+        &::after
+          display: none
+      &:not(:nth-last-of-type(1))
+        &::after
+          display: none
+      &.active
+        background-color: $grey4
+        color: $active
+  &-info
+    border-radius: 20px
+    min-height: 320px
+    display: flex
+    flex-direction: column
+    align-items: flex-start
+    gap: 20px
+    padding: 20px 40px 40px
+    background: linear-gradient(-180deg, $grey4 0%, lighten($grey4, 5%) 100%)
+    box-shadow: 0px 10px 10px 1px rgba(#E5EAEE, 1)
+    &__wrap
+      border-top-right-radius: 20px
+      border-bottom-right-radius: 20px
+      border-bottom-left-radius: 20px
+      padding: 15px
+      background-color: $grey4
+    &-title
+      margin: 0
+      +futura-heavy
+      font-size: 37px
+      color: $grey1
+    &-text
+      +futura-med
+      font-size: 21px
+      color: $grey2
+      p
+        margin: 0
+        margin-bottom: 10px
+    &-btn
+      margin-top: auto
+      border-radius: 35px
+      height: 70px
+      padding: 0 28px
+      gap: 18px
+      +futura-heavy
+      text-transform: uppercase
+      font-size: 30px
+      svg
+        width: 30px
+        height: 30px
+  .tabs-node
+    &:not(:nth-of-type(1))
+      &.active
+        .ft2-info__wrap
+          border-top-left-radius: 20px
+  &-card
+    border-radius: 10px
+    padding: 16px 20px
+    display: flex
+    align-items: center
+    gap: 16px
+    transition: 0.3s
+    &:hover
+      background-color: $grey4
+    &-grid
+      flex: 1 1 auto
+      display: grid
+      grid-template-columns: repeat(auto-fill, minmax(160px, 1fr))
+      gap: 15px 30px
+    &-thumb
+      flex: 0 0 auto
+      width: 70px
+      img
+        width: 100%
+    &-title
+      margin: 0
+      margin-bottom: 10px
+      +futura-heavy
+      font-size: 20px
+      color: $grey1
+    &-sub
+      +futura-med
+      font-size: 17px
+      color: $grey2
+
+@media ( max-width: 1400px )
+  .ft2
+    &-row
+      gap: 40px
+    &-tabs
+      &__wrap
+        flex: 0 1 650px
+      &-item
+        min-height: 50px
+        padding: 0 20px
+        font-size: 18px
+    &-info
+      padding: 20px
+      min-height: 250px
+      &-title
+        font-size: 30px
+      &-text
+        font-size: 18px
+      &-btn
+        height: 60px
+        font-size: 25px
+
+@media ( max-width: 1200px )
+  .ft2
+    &-row
+      flex-direction: column
+    &-tabs
+      &__wrap
+        max-width: 700px
+        flex: auto
+    &-card
+      &-grid
+        flex: auto
+
+@media ( max-width: 768px )
+  .ft2
+    &-card
+      padding: 10px
+      gap: 10px
+      &-grid
+        grid-template-columns: repeat(auto-fill, minmax(130px, 1fr))
+        gap: 10px
+      &-thumb
+        width: 50px
+      &-title
+        margin-bottom: 3px
+        font-size: 18px
+      &-sub
+        font-size: 16px
+
+@media ( max-width: 520px )
+  .ft2
+    &-row
+      gap: 20px
+    &-tabs
+      &-item
+        flex: 1 1 auto
+        min-height: 40px
+        padding: 0 10px
+        font-size: 14px
+        display: flex
+        justify-content: center
+    &-info
+      padding: 15px
+      &-title
+        font-size: 22px
+      &-text
+        font-size: 16px
+      &-btn
+        height: 40px
+        font-size: 18px
+        padding: 0 15px
+        gap: 10px
+        svg
+          width: 20px
+          height: 20px
+    .tabs-node
+      &:nth-last-of-type(1)
+        &.active
+          .ft2-info__wrap
+            border-top-right-radius: 0

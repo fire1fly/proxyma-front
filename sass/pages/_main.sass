@@ -1,7 +1,7 @@
 .pagemain
   &-pc
     position: relative
-    padding: 30px 0 130px
+    padding: 0 0 130px
     &__bg
       position: absolute
       z-index: 1
@@ -11,62 +11,117 @@
     &__inner
       position: relative
       z-index: 2
-    &-tabs
-      padding-top: 90px
-      &-list
-        margin: 0 auto 65px
-        max-width: 1100px
-        width: 100%
-        display: flex
-        align-items: center
-        justify-content: center
-        gap: 40px
-      &-item
-        flex: 1 1 auto
+  &-wc
+    position: relative
+    padding: 120px 0
+    overflow: hidden
+    &-pic
+      &-1
+        position: absolute
+        z-index: 1
+        top: 150px
+        left: 0
+      &-2
+        position: absolute
+        z-index: 1
+        bottom: -100px
+        right: 0
+    &__inner
+      position: relative
+      z-index: 2
+    .wc-row
+      margin-top: 120px
+  &-ft1
+    padding-top: 120px
+  &-ft2
+    padding-bottom: 30px
+    .ft2-row
+      margin-top: 100px
+  &-al1
+    position: relative
+    padding: 100px 0 140px
+    &-pic
+      &-1
+        position: absolute
+        z-index: 1
+        top: 0
+        left: 0
+      &-2
+        position: absolute
+        z-index: 1
+        right: 0
+        bottom: 0
+    .al1
+      &__inner
         position: relative
-        border: 3px solid transparent
-        border-radius: 33px
-        height: 66px
-        display: flex
-        align-items: center
-        justify-content: center
-        gap: 10px
-        background-color: $white
-        +futura-demi
-        font-size: 22px
-        color: $grey1
-        cursor: pointer
-        transition: 0.3s ease-in-out
-        &::before
-          content: ''
-          position: absolute
-          z-index: -1
-          top: 100%
-          left: 50%
-          transform: translateX(-50%)
-          width: 80%
-          height: 2px
-          background-color: transparent
-          box-shadow: 0 10px 15px 4px rgba(#D8E2E8, 1)
-          transition: opacity 0.3s
-        &::after
-          content: ''
-          position: absolute
-          top: calc(100% + 3px)
-          left: 50%
-          transform: translateX(-50%)
-          width: 0
-          height: 0
-          border-style: solid
-          border-width: 6px 6px 0 6px
-          border-color: $active transparent transparent transparent
-          opacity: 0
-          transition: opacity 0.3s
-        &.active
-          border-color: $active
-          &::before
-            opacity: 0
-          &::after
-            opacity: 1
-        .icon
-          max-width: 27px
+        z-index: 2
+      &-slider
+        .swiper-wrapper
+          padding-top: 110px
+
+@media ( max-width: 1600px )
+  .pagemain
+    &-pc
+      &__bg
+        top: -250px
+    &-ft1
+      padding: 120px 0 30px
+
+@media ( max-width: 1400px )
+  .pagemain
+    &-wc
+      padding: 80px 0
+      &-pic
+        &-1
+          top: 0
+          width: 500px
+        &-2
+          width: 400px
+      .wc-row
+        margin-top: 80px
+    &-ft1
+      padding: 80px 0 30px
+    &-ft2
+      .ft2-row
+        margin-top: 50px
+    &-al1
+      padding: 80px 0
+      .al1-slider
+        .swiper-wrapper
+          padding-top: 80px
+
+@media ( max-width: 1200px )
+  .pagemain
+    &-pc
+      padding: 0 0 60px
+      &__bg
+        top: -150px
+
+@media ( max-width: 991px )
+  .pagemain
+    &-pc
+      padding: 40px 0
+      background-color: $grey4
+      &__bg
+        display: none
+    &-wc
+      &-pic
+        &-1
+          top: 50px
+          width: 300px
+      .wc-row
+        margin-top: 40px
+    &-ft1
+      padding: 60px 0
+    &-ft2
+      padding: 30px 0
+    &-al1
+      padding: 40px 0
+      &-pic
+        &-1
+          width: 150px
+        &-2
+          width: 400px
+      .al1-slider
+        .swiper-wrapper
+          padding-top: 40px
