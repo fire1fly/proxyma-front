@@ -1,0 +1,286 @@
+.fqp
+  padding-bottom: 150px
+  &-fs
+    &-grid
+      margin-bottom: 30px
+      display: flex
+      justify-content: space-between
+    &-pic
+      &-1
+        flex: 0 0 auto
+      &-2
+        flex: 0 0 auto
+    &__inner
+      padding-top: 120px
+      flex: 0 1 670px
+    &-title
+      text-align: center
+      margin: 0
+      +futura-heavy
+      font-size: 50px
+      color: $grey1
+    &-subtitle
+      +futura-med
+      text-align: center
+      font-size: 26px
+      color: $grey2
+    &__subtitle
+      margin-bottom: 50px
+    &-search
+      border-radius: 20px
+      border: 1px solid #D7E2ED
+      height: 70px
+      padding: 0 10px
+      display: flex
+      align-items: center
+      background-color: $grey3
+      &__input
+        flex: 1 1 auto
+        border: none
+        width: 100%
+        height: 100%
+        padding: 0 20px
+        background-color: transparent
+        +futura-demi
+        font-size: 20px
+        color: $grey1
+        &::placeholder
+          color: $grey2
+      &__btn
+        flex: 0 0 auto
+        border-radius: 20px
+        width: 52px
+        height: 52px
+        display: flex
+        align-items: center
+        justify-content: center
+        background-color: $active
+        &:hover
+          background-color: darken($active, 5%)
+        &:active
+          background-color: lighten($active, 2%)
+        img, svg
+          width: 30px
+  &-tabs
+    display: flex
+    justify-content: space-between
+    gap: 30px
+    &-list
+      flex: 0 0 330px
+    &-item
+      border-top: 1px solid $grey4
+      min-height: 56px
+      padding: 0 15px 0 30px
+      display: flex
+      align-items: center
+      justify-content: space-between
+      +futura-demi
+      font-size: 24px
+      color: $grey1
+      cursor: pointer
+      user-select: none
+      &:nth-of-type(1)
+        border-color: transparent
+      &.active
+        border-color: transparent
+        border-radius: 30px
+        background-color: $grey4
+        color: $active
+        .arrow
+          visibility: visible
+        & + .fqp-tabs-item
+          border-color: transparent
+      .arrow
+        flex: 0 0 auto
+        border-radius: 50%
+        width: 27px
+        height: 27px
+        display: flex
+        align-items: center
+        justify-content: center
+        background-color: $active
+        visibility: hidden
+        img, svg
+          width: 20px
+    &-box
+      border-radius: 20px
+      padding: 50px 45px
+      background-color: $grey3
+      &-h
+        margin-bottom: 30px
+        display: flex
+        align-items: center
+        justify-content: space-between
+        flex-wrap: wrap
+        gap: 15px
+        .fqp-tabs-box-title
+          margin-bottom: 0
+      &-title
+        margin: 0
+        margin-bottom: 30px
+        +futura-demi
+        font-size: 29px
+        color: $grey1
+      &-sub
+        +futura-demi
+        font-size: 16px
+        color: #c8cdda
+      p
+        margin: 0
+        margin-bottom: 30px
+        +futura-med
+        font-size: 19px
+        color: $grey1
+        &:nth-last-of-type(1)
+          margin-bottom: 0
+    &-feed
+      display: flex
+      flex-direction: column
+      gap: 25px
+      .fqp-tabs-box
+        transition: 0.3s
+        &:hover
+          background-color: $white
+          box-shadow: 0 10px 20px 5px rgba(#DCE5E9, 1)
+          .fqp-tabs-box-title
+            color: $active
+        &-title
+          transition: 0.3s
+    .tabs-node-wrapper
+      flex: 1 1 auto
+
+@media ( max-width: 1400px )
+  .fqp
+    padding-bottom: 100px
+    &-fs
+      &-pic
+        &-1
+          width: 300px
+        &-2
+          width: 300px
+      &__inner
+        padding-top: 30px
+      &-title
+        font-size: 40px
+      &-subtitle
+        font-size: 22px
+    &-tabs
+      &-item
+        font-size: 20px
+      &-box
+        padding: 35px
+
+@media ( max-width: 1200px )
+  .fqp
+    &-fs
+      &-pic
+        &-1
+          width: 250px
+        &-2
+          width: 250px
+      &-title
+        font-size: 35px
+      &-subtitle
+        font-size: 22px
+      &-search
+        border-radius: 15px
+        padding: 0 7px
+        height: 60px
+        &__btn
+          border-radius: 15px
+          width: 45px
+          height: 45px
+
+@media ( max-width: 991px )
+  .fqp
+    padding-bottom: 60px
+    &-fs
+      &-grid
+        justify-content: center
+      &-pic
+        &-1
+          display: none
+        &-2
+          display: none
+      &__inner
+        padding-top: 0
+        flex: 0 1 500px
+      &-title
+        font-size: 30px
+      &__subtitle
+        margin-bottom: 25px
+      &-search
+        height: 50px
+        &__input
+          font-size: 18px
+        &__btn
+          width: 35px
+          height: 35px
+    &-tabs
+      flex-direction: column
+      gap: 15px
+      &-list
+        flex: auto
+        display: flex
+        gap: 10px
+        flex-wrap: wrap
+      .tabs-node-wrapper
+        flex: auto
+      &-item
+        border: 1px solid $grey4
+        border-radius: 30px
+        min-height: auto
+        padding: 10px 20px
+        justify-content: center
+        font-size: 16px
+        &:nth-of-type(1)
+          border-color: $grey4
+        &.active
+          border-color: $grey4
+          border-radius: 30px
+          background-color: $grey4
+          color: $active
+          .arrow
+            visibility: visible
+          & + .fqp-tabs-item
+            border-color: $grey4
+        .arrow
+          display: none
+      &-box
+        padding: 30px
+        &-title
+          font-size: 25px
+        &-sub
+          font-size: 14px
+        p
+          margin-bottom: 15px
+          font-size: 16px
+
+@media ( max-width: 520px )
+  .fqp
+    &-fs
+      &-title
+        font-size: 26px
+      &-subtitle
+        font-size: 18px
+    &-tabs
+      &-item
+        padding: 5px 10px
+        font-size: 14px
+      &-feed
+        gap: 15px
+        .fqp-tabs-box
+          &:hover
+            box-shadow: 0 5px 25px 3px rgba(#DCE5E9, 0.7)
+      &-box
+        border-radius: 15px
+        padding: 15px
+        &-h
+          margin-bottom: 15px
+        &-title
+          font-size: 20px
+        &-sub
+          font-size: 12px
+        p
+          font-size: 14px
+          line-height: 1.3

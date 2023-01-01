@@ -124,6 +124,14 @@ input, textarea, a, button
       color: $white
       &::before
         opacity: 0
+  &-grey1
+    background-color: $grey1
+    color: $white
+    transition: 0.3s
+    &:hover
+      background-color: lighten($grey1, 5%)
+    &:active
+      background-color: lighten($grey1, 3%)
 
 .page
   &-title

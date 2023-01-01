@@ -1,5 +1,7 @@
 .h
   margin-bottom: 64px
+  &._pt
+    padding-top: 90px
   &__inner
     display: flex
     align-items: flex-end
@@ -132,6 +134,17 @@
         fill: $active
       &._up
         fill: $white
+  &-btnbar
+    display: flex
+    align-items: center
+    gap: 25px
+  &-btn
+    border-radius: 30px
+    height: 60px
+    padding: 0 20px
+    text-align: center
+    +futura-heavy
+    font-size: 23px
   &-menubtn
     display: none
 
@@ -164,6 +177,8 @@
   .h
     position: relative
     padding-top: 20px
+    &._pt
+      padding-top: 30px
     &-nav
       position: absolute
       top: calc(100% + 20px)
@@ -217,10 +232,21 @@
             transform: rotate(45deg) translate(4px, 5px)
           &:nth-of-type(3)
             transform: rotate(-45deg) translate(5px, -6px)
+    &-btnbar
+      gap: 10px
+    &-btn
+      height: 45px
+      font-size: 18px
 
 @media ( max-width: 768px )
   .h
     margin-bottom: 30px
+    &._wonav
+      .h
+        &-lang
+          margin-right: 0
+        &-btnbar
+          display: none
     &__inner
       align-items: center
     &-logo
@@ -247,6 +273,10 @@
 
 @media ( max-width: 520px )
   .h
+    &._wonav
+      .h
+        &-logo
+          flex: 0 1 120px
     &-logo
       flex: 0 1 48px
       max-width: none
