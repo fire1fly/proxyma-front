@@ -1,0 +1,13 @@
+<?xml version="1.0" ?>
+<svg id="icon" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
+<defs><style>.cls-1{fill:none;}</style></defs><title/>
+  <rect height="2" width="18" x="4" y="6" fill="#FF376E"/>
+  <rect height="2" width="18" x="4" y="12" fill="#FF376E"/>
+  <rect height="2" width="18" x="4" y="18" fill="#FF376E"/>
+  <rect height="2" width="18" x="4" y="24" fill="#FF376E"/>
+  <rect height="2" width="2" x="26" y="6" fill="#FF376E"/>
+  <rect height="2" width="2" x="26" y="12" fill="#FF376E"/>
+  <rect height="2" width="2" x="26" y="18" fill="#FF376E"/>
+  <rect height="2" width="2" x="26" y="24" fill="#FF376E"/>
+  <rect class="cls-1" height="32" width="32"/>
+</svg>
