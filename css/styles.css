@@ -64,6 +64,9 @@ input:focus, textarea:focus, a:focus, button:focus {
   overflow-x: hidden;
   width: 100%;
 }
+.root._overflow {
+  overflow-x: visible;
+}
 
 .container {
   margin: 0 auto;
@@ -2961,6 +2964,89 @@ input:focus, textarea:focus, a:focus, button:focus {
     border-width: 2px;
   }
 }
+.al2-grid {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  gap: 10px;
+}
+.al2-grid .al2-card {
+  width: 22%;
+}
+.al2-card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  gap: 15px;
+}
+.al2-card-preview {
+  line-height: 0;
+  border-radius: 20px;
+  width: 100%;
+  max-height: 178px;
+  overflow: hidden;
+}
+.al2-card-preview img, .al2-card-preview svg {
+  width: 100%;
+}
+.al2-card-title {
+  margin: 0;
+  font-family: "Futura PT Heavy";
+  font-size: 18px;
+  color: #38313f;
+}
+.al2-card-text {
+  margin: 0;
+  font-family: "Futura PT Medium";
+  font-size: 17px;
+  color: #4f5357;
+}
+.al2-card .blp-tag {
+  padding: 8px 12px;
+}
+.al2-card .blp-art-authorplate {
+  margin-top: auto;
+}
+
+@media (max-width: 1400px) {
+  .al2-grid .al2-card {
+    width: 24%;
+  }
+  .al2-card-text {
+    font-size: 14px;
+  }
+}
+@media (max-width: 991px) {
+  .al2-grid {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    gap: 30px 10px;
+  }
+  .al2-grid .al2-card {
+    width: 48%;
+  }
+  .al2-card {
+    gap: 10px;
+  }
+}
+@media (max-width: 520px) {
+  .al2-grid .al2-card {
+    width: 100%;
+  }
+  .al2-card {
+    gap: 10px;
+  }
+}
 .sign {
   position: relative;
   z-index: 2;
@@ -4404,6 +4490,24 @@ input:focus, textarea:focus, a:focus, button:focus {
       -ms-flex: 0 0 360px;
           flex: 0 0 360px;
 }
+.blp-h {
+  margin: 30px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 10px;
+}
+.blp-h .blp-title {
+  margin: 0;
+}
 .blp-title {
   margin: 30px 0;
   font-family: "Futura PT Bold";
@@ -4714,6 +4818,10 @@ input:focus, textarea:focus, a:focus, button:focus {
 .blp-bar-triggerbtn {
   display: none;
 }
+.blp-bar__inner {
+  height: 100%;
+  padding-bottom: 30px;
+}
 .blp-bar-part {
   margin-bottom: 45px;
 }
@@ -4758,6 +4866,140 @@ input:focus, textarea:focus, a:focus, button:focus {
   -webkit-box-shadow: none;
           box-shadow: none;
 }
+.blp-al2 {
+  padding: 110px 0;
+  background-color: #FFFFFF;
+}
+.blp-al2 .al2-grid {
+  margin-top: 110px;
+}
+
+.article-preview__big {
+  margin: 50px 0 35px;
+}
+.article-preview-big {
+  border-radius: 35px;
+  width: 100%;
+  max-height: 356px;
+  overflow: hidden;
+}
+.article-preview-big img, .article-preview-big svg {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+}
+.article-b {
+  margin: 30px 0;
+}
+.article h2, .article h3, .article h4, .article h5, .article h6 {
+  margin: 0;
+  margin-bottom: 25px;
+  font-family: "Futura PT Heavy";
+  color: #38313f;
+}
+.article h2 {
+  font-size: 29px;
+}
+.article h3 {
+  font-size: 27px;
+}
+.article h4 {
+  font-size: 25px;
+}
+.article h5 {
+  font-size: 23px;
+}
+.article h6 {
+  font-size: 21px;
+}
+.article p {
+  margin: 0;
+  margin-bottom: 35px;
+  font-family: "Futura PT Medium";
+  line-height: 1.3;
+  font-size: 19px;
+  color: #4f5357;
+}
+.article p:nth-last-of-type(1) {
+  margin-bottom: 0;
+}
+.article-tc__wrap {
+  position: sticky;
+  top: 10px;
+  border-radius: 30px;
+  padding: 30px 15px 45px 30px;
+  background-color: #FFFFFF;
+  -webkit-box-shadow: 0 0 25px 5px #dbe5eb;
+          box-shadow: 0 0 25px 5px #dbe5eb;
+}
+.article-tc-item {
+  position: relative;
+  display: block;
+  padding: 20px 0px 20px 30px;
+  font-family: "Futura PT Heavy";
+  font-size: 15px;
+  color: #4f5357;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+}
+.article-tc-item:hover {
+  color: rgba(255, 55, 110, 0.7);
+}
+.article-tc-item:hover::after {
+  border-color: rgba(255, 55, 110, 0.7);
+}
+.article-tc-item:nth-of-type(1) {
+  padding-top: 12px;
+}
+.article-tc-item:nth-of-type(1)::after {
+  -webkit-transform: translateY(-70%);
+      -ms-transform: translateY(-70%);
+          transform: translateY(-70%);
+}
+.article-tc-item:nth-last-of-type(1) {
+  padding-bottom: 12px;
+}
+.article-tc-item:nth-last-of-type(1)::after {
+  -webkit-transform: translateY(-30%);
+      -ms-transform: translateY(-30%);
+          transform: translateY(-30%);
+}
+.article-tc-item::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 3px;
+  height: 100%;
+  background-color: #E3E9EE;
+}
+.article-tc-item::after {
+  content: "";
+  position: absolute;
+  left: -7px;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+          transform: translateY(-50%);
+  border-radius: 50%;
+  border: 3px solid #E3E9EE;
+  width: 12px;
+  height: 12px;
+  background-color: #F3F7FA;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+}
+.article-tc-item.active {
+  color: #FF376E;
+}
+.article-tc-item.active::after {
+  border-color: #FF376E;
+}
 
 @media (max-width: 1400px) {
   .blp {
@@ -4786,6 +5028,16 @@ input:focus, textarea:focus, a:focus, button:focus {
     border-radius: 10px;
     padding: 8px;
   }
+  .blp-al2 {
+    padding: 60px 0;
+    background-color: #FFFFFF;
+  }
+  .blp-al2 .al2-grid {
+    margin-top: 60px;
+  }
+  .article-preview__big {
+    margin: 30px 0;
+  }
 }
 @media (max-width: 1200px) {
   .blp-post {
@@ -4800,6 +5052,13 @@ input:focus, textarea:focus, a:focus, button:focus {
   .blp-post-btn {
     height: 50px;
     font-size: 20px;
+  }
+  .article-preview-big {
+    border-radius: 20px;
+  }
+  .article-tc__wrap {
+    border-radius: 20px;
+    padding: 20px;
   }
 }
 @media (max-width: 991px) {
@@ -4896,8 +5155,28 @@ input:focus, textarea:focus, a:focus, button:focus {
         -ms-flex: 0 0 200px;
             flex: 0 0 200px;
   }
+  .article-tc__wrap {
+    border-radius: 0;
+    padding: 0;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+  }
+  .article-tc-item {
+    padding: 15px 0 15px 20px;
+  }
+  .article-tc-item::before {
+    width: 2px;
+  }
+  .article-tc-item::after {
+    left: -6px;
+    width: 8px;
+    height: 8px;
+  }
 }
 @media (max-width: 768px) {
+  .blp-h {
+    margin: 15px 0;
+  }
   .blp-post {
     height: 210px;
   }
@@ -4918,10 +5197,53 @@ input:focus, textarea:focus, a:focus, button:focus {
   .blp-art-preview {
     display: none;
   }
+  .blp-al2 {
+    padding: 40px 0;
+    background-color: #FFFFFF;
+  }
+  .blp-al2 .al2-grid {
+    margin-top: 30px;
+  }
+  .article-preview__big {
+    margin: 15px 0;
+  }
+  .article-b {
+    margin: 30px 0 15px;
+  }
+  .article h2, .article h3, .article h4, .article h5, .article h6 {
+    margin: 0;
+    margin-top: 10px;
+    margin-bottom: 15px;
+  }
+  .article h2 {
+    font-size: 25px;
+  }
+  .article h3 {
+    font-size: 23px;
+  }
+  .article h4 {
+    font-size: 21px;
+  }
+  .article h5 {
+    font-size: 19px;
+  }
+  .article h6 {
+    font-size: 17px;
+  }
+  .article p {
+    margin-bottom: 15px;
+    font-size: 16px;
+  }
+  .article p:nth-last-of-type(1) {
+    margin-bottom: 0;
+  }
 }
 @media (max-width: 520px) {
+  .blp {
+    padding: 20px 0 30px;
+  }
   .blp-title {
-    font-size: 30px;
+    font-size: 27px;
   }
   .blp-post {
     height: 210px;
@@ -4953,6 +5275,16 @@ input:focus, textarea:focus, a:focus, button:focus {
   }
   .blp-topart .blp-art__readtime {
     margin-top: 15px;
+  }
+  .blp-art-authorplate-avatar {
+    width: 30px;
+    height: 30px;
+  }
+  .blp-art-authorplate-name {
+    font-size: 13px;
+  }
+  .blp-art-authorplate-sub {
+    font-size: 10px;
   }
   .blp-art-text {
     font-size: 14px;

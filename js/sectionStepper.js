@@ -24,7 +24,7 @@ sections.forEach(element => {
 
 anchors.forEach((anchor, index) => {
   anchor.addEventListener('click', function (e) {
-
+    e.preventDefault();
     sections[index].scrollIntoView({
       behavior: 'smooth',
       block: 'start'

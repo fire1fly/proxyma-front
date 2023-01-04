@@ -1,10 +1,12 @@
-const sidebarClass = "mobile-sidebar";
-const sidebarTriggerClass = "mobile-sidebar-trigger";
+const sidebarSelector = "mobile-sidebar";
+const sidebarTriggerSelector = "mobile-sidebar-trigger";
+const sidebarCloseSelector = "mobile-sidebar-close";
 
 const sidebarMediaQuery = window.matchMedia("(max-width: 991px)");
 
-const sidebarEl = document.querySelector(`.${sidebarClass}`);
-const sidebarBtnEl = document.querySelector(`.${sidebarTriggerClass}`);
+const sidebarEl = document.querySelector(`.${sidebarSelector}`);
+const sidebarBtnEl = document.querySelector(`.${sidebarTriggerSelector}`);
+const sidebarCloseElsList = sidebarEl.querySelectorAll(`.${sidebarCloseSelector}`)
 
 function toggleSidebar() {
   sidebarBtnEl.classList.toggle("active");
@@ -12,8 +14,8 @@ function toggleSidebar() {
 }
 
 function handleOutsideClick(e) {
-  const sidebar = e.target.closest(`.${sidebarClass}`);
-  const trigger = e.target.closest(`.${sidebarTriggerClass}`);
+  const sidebar = e.target.closest(`.${sidebarSelector}`);
+  const trigger = e.target.closest(`.${sidebarTriggerSelector}`);
 
   if (!(sidebar || trigger)) {
     sidebarBtnEl.classList.remove("active");
@@ -24,6 +26,7 @@ function handleOutsideClick(e) {
 function initMenu() {
   sidebarBtnEl.addEventListener("click", toggleSidebar);
   document.addEventListener("click", handleOutsideClick);
+  sidebarCloseElsList.forEach(elem => elem.addEventListener("click", toggleSidebar))
 }
 
 function resetMenu() {
