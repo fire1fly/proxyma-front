@@ -163,6 +163,28 @@
         color: $active
       &:nth-last-of-type(1)
         margin-bottom: 0
+  &-pays
+    margin: 45px 0
+    border-radius: 20px
+    padding: 40px
+    display: flex
+    align-items: center
+    justify-content: space-between
+    gap: 5px 20px
+    background-color: $purple3
+    &-item
+      flex: 0 1 auto
+      img, svg
+        max-width: 100%
+  &-copy
+    display: flex
+    align-items: center
+    justify-content: space-between
+    flex-wrap: wrap
+    gap: 10px
+    +futura-med
+    font-size: 18px
+    color: $purple1
 
 @media ( max-width: 1400px )
   .f
@@ -182,6 +204,8 @@
         margin-bottom: 30px
       &-item
         margin-bottom: 25px
+    &-pays
+      padding: 20px 30px
 
 @media ( max-width: 1024px )
   .f
@@ -233,6 +257,8 @@
       &-item
         margin-bottom: 15px
         font-size: 16px
+    &-copy
+      font-size: 14px
 
 @media ( max-width: 991px )
   .f
@@ -246,6 +272,21 @@
         height: 45px
         font-size: 20px
         gap: 10px
+
+@media ( max-width: 768px )
+  .f
+    &-pays
+      margin: 20px 0
+      border-radius: 10px
+      padding: 15px
+      flex-wrap: wrap
+      justify-content: center
+      &-item
+        flex: 0 1 60px
+    &-copy
+      flex-direction: column
+      justify-content: center
+      text-align: center
 
 @media ( max-width: 520px )
   .f
@@ -265,3 +306,5 @@
       width: 150px
     &-nav
       flex-direction: column
+    &-pays
+      justify-content: space-around

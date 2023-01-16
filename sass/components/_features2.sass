@@ -5,6 +5,11 @@
   &-tabs
     &__wrap
       flex: 0 1 730px
+      .tabs-node
+        &:not(:nth-of-type(1))
+          &.active
+            .ft2-info__wrap
+              border-top-left-radius: 20px
     &-list
       display: flex
       align-items: center
@@ -92,14 +97,9 @@
       svg
         width: 30px
         height: 30px
-  .tabs-node
-    &:not(:nth-of-type(1))
-      &.active
-        .ft2-info__wrap
-          border-top-left-radius: 20px
   &-card
     border-radius: 10px
-    padding: 16px 20px
+    padding: 15px 0 15px 15px
     display: flex
     align-items: center
     gap: 16px
@@ -107,10 +107,11 @@
     &:hover
       background-color: $grey4
     &-grid
-      flex: 1 1 auto
       display: grid
-      grid-template-columns: repeat(auto-fill, minmax(160px, 1fr))
-      gap: 15px 30px
+      grid-template-columns: repeat(auto-fill, minmax(210px, 1fr))
+      gap: 15px
+      &-wrapper
+        flex: 0 1 800px
     &-thumb
       flex: 0 0 auto
       width: 70px
@@ -118,7 +119,7 @@
         width: 100%
     &-title
       margin: 0
-      margin-bottom: 10px
+      margin-bottom: 5px
       +futura-heavy
       font-size: 20px
       color: $grey1
@@ -133,7 +134,7 @@
       gap: 40px
     &-tabs
       &__wrap
-        flex: 0 1 650px
+        flex: 0 1 540px
       &-item
         min-height: 50px
         padding: 0 20px
@@ -148,6 +149,19 @@
       &-btn
         height: 60px
         font-size: 25px
+    &-card
+      gap: 12px
+      &-grid
+        grid-template-columns: repeat(auto-fill, minmax(170px, 1fr))
+        &-wrapper
+          flex: 0 1 700px
+      &-thumb
+        width: 60px
+      &-title
+        margin-bottom: 2px
+        font-size: 18px
+      &-sub
+        font-size: 16px
 
 @media ( max-width: 1200px )
   .ft2
@@ -155,11 +169,18 @@
       flex-direction: column
     &-tabs
       &__wrap
-        max-width: 700px
         flex: auto
+    &-info
+      min-height: 200px
+      gap: 10px
+      &-btn
+        height: 50px
+        padding: 0 20px
+        font-size: 22px
     &-card
       &-grid
-        flex: auto
+        &-wrapper
+          flex: auto
 
 @media ( max-width: 768px )
   .ft2
@@ -182,6 +203,12 @@
     &-row
       gap: 20px
     &-tabs
+      &__wrap
+        .tabs-node
+          &:nth-last-of-type(1)
+            &.active
+              .ft2-info__wrap
+                border-top-right-radius: 0
       &-item
         flex: 1 1 auto
         min-height: 40px
@@ -194,7 +221,8 @@
       &-title
         font-size: 22px
       &-text
-        font-size: 16px
+        font-size: 14px
+        line-height: 1.3
       &-btn
         height: 40px
         font-size: 18px
@@ -203,8 +231,14 @@
         svg
           width: 20px
           height: 20px
-    .tabs-node
-      &:nth-last-of-type(1)
-        &.active
-          .ft2-info__wrap
-            border-top-right-radius: 0
+    &-card
+      &-grid
+        grid-template-columns: repeat(8, 1fr)
+        overflow-x: auto
+      &-thumb
+        width: 40px
+      &-title
+        font-size: 14px
+      &-sub
+        white-space: nowrap
+        font-size: 12px

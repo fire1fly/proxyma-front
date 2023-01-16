@@ -64,12 +64,16 @@
       &-4
         grid-template-columns: repeat(4, auto)
         gap: 70px
+        align-items: flex-start
       &-3
+        margin: 0 auto
+        max-width: 1286px
         grid-template-columns: repeat(3, auto)
         gap: 70px
       &-5
         grid-template-columns: repeat(5, auto)
         gap: 40px
+        align-items: flex-start
   &-card
     position: relative
     border-radius: 15px
@@ -155,7 +159,7 @@
           gap: 0
     &-row
       border-radius: 30px
-      min-height: 43px
+      height: 43px
       display: flex
       align-items: center
       justify-content: space-between
@@ -232,7 +236,7 @@
         align-items: center
         justify-content: center
         background-color: $white
-        +futura-heavy
+        +futura-med
         font-size: 22px
         color: #9899BA
         cursor: pointer
@@ -267,7 +271,7 @@
         height: 60px
     &-row
       &._grid
-        &-3, &-4, &-5
+        &-4, &-5
           grid-template-columns: repeat(auto-fill, minmax(280px, 1fr))
     &-card
       padding: 25px 15px 0
@@ -334,7 +338,7 @@
         .sub
           font-size: 16px
       &-row
-        min-height: 35px
+        height: 35px
       &-label
         font-size: 16px
       &-value
@@ -367,3 +371,13 @@
           border-width: 4px 4px 0 4px
         &.active
           border-width: 2px
+    &-row
+      &._grid
+        &-3, &-4, &-5
+          display: flex
+          overflow-x: auto
+          padding-bottom: 50px
+    &-card
+      flex: 0 0 auto
+      &-row
+        gap: 20px

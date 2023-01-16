@@ -1,7 +1,9 @@
 *
   box-sizing: border-box
+  -webkit-tap-highlight-color: transparent
   &::-webkit-scrollbar
     width: 4px
+    height: 3px
   &::-webkit-scrollbar-track
     background-color: transparent
   &::-webkit-scrollbar-thumb
@@ -173,9 +175,10 @@ input, textarea, a, button
     left: 0
     top: 50%
     transform: translateY(-50%)
-    display: flex
-    flex-direction: column
-    gap: 50px
+    &__inner
+      display: flex
+      flex-direction: column
+      gap: 50px
     &-item
       position: relative
       &::before
@@ -187,27 +190,35 @@ input, textarea, a, button
         height: 1px
         background-color: $grey2
         transition: 0.3s
-      span
-        margin-left: 40px
-        border-radius: 50%
-        width: 36px
-        height: 36px
-        display: flex
-        align-items: center
-        justify-content: center
-        background-color: $white
-        +futura-heavy
-        font-size: 15px
-        color: $grey2
-        transition: 0.3s
-        cursor: pointer
       &.active
-        span
-          background-color: $active
-          color: $white
+        .section-stepper
+          &-num
+            background-color: $active
+            color: $white
+          &-label
+            color: $active
         &::before
           width: 17px
           background-color: $active
+    &-num
+      margin-left: 40px
+      border-radius: 50%
+      width: 36px
+      height: 36px
+      display: flex
+      align-items: center
+      justify-content: center
+      background-color: $white
+      +futura-heavy
+      font-size: 15px
+      color: $grey2
+      transition: 0.3s
+      cursor: pointer
+    &-label
+      display: none
+    &-triggerbtn
+      display: none
+
 .fieldbtn
   border-radius: 36px
   height: 72px
@@ -316,10 +327,9 @@ input, textarea, a, button
 
   .section
     &-stepper
-      &-item
-        span
-          margin-left: 15px
-          box-shadow: 0 0 10px 2px rgba(#E5EAEE, 1)
+      &-num
+        margin-left: 15px
+        box-shadow: 0 0 10px 2px rgba(#E5EAEE, 1)
 
 @media ( max-width: 1400px )
   .section
@@ -346,18 +356,61 @@ input, textarea, a, button
   .section
     &-stepper
       left: auto
+      top: 0
       right: 0
-      gap: 20px
+      padding: 0 5px 0 0
+      width: 320px
+      height: 100%
+      box-shadow: 0 0 25px 3px rgba(#000000, 0.1)
+      background-color: $white
+      transform: translateX(100%)
+      transition: 0.3s
+      &.active
+        transform: translateX(0)
+      &__inner
+        gap: 20px
+        padding: 30px 15px
+        height: 100%
+        overflow-y: auto
+        overscroll-behavior: none
       &-item
+        display: flex
+        align-items: center
+        gap: 10px
+        cursor: pointer
         &::before
-          left: auto
-          right: 0
-        span
-          margin-left: 0
-          margin-right: 15px
-          width: 30px
-          height: 30px
-          font-size: 14px
+          display: none
+      &-num
+        margin: 0
+        width: 30px
+        height: 30px
+        font-size: 14px
+      &-label
+        display: block
+        +futura-med
+        font-size: 18px
+        color: $grey1
+      &-triggerbtn
+        position: absolute
+        top: 120px
+        left: -60px
+        border-radius: 50%
+        width: 45px
+        height: 45px
+        display: flex
+        align-items: center
+        justify-content: center
+        background-color: $white
+        box-shadow: 0 0 25px 3px rgba(#000000, 0.2)
+        cursor: pointer
+        transition: 0.3s
+        img, svg
+          width: 25px
+          transition: 0.3s
+        &.active
+          background-color: $active
+          svg, circle, path
+            fill: $white
 
 @media ( max-width: 768px )
   .btn
@@ -392,6 +445,10 @@ input, textarea, a, button
     &-title
       font-size: 30px
 
+  .section
+    &-subtitle
+      font-size: 14px
+
   .fieldbtn
     &-btn
       font-size: 16px
@@ -403,3 +460,16 @@ input, textarea, a, button
     border-radius: 30px
     padding: 8px 12px
     font-size: 14px
+
+@media ( max-width: 390px )
+  .section
+    &-stepper
+      width: 280px
+      &-triggerbtn
+        left: -50px
+        width: 40px
+        height: 40px
+        img, svg
+          width: 22px
+      &-label
+        font-size: 16px

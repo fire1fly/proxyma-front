@@ -1,25 +1,21 @@
 const sections = document.querySelectorAll(".section");
-const anchors = document.querySelectorAll(".section-stepper-item");
+const anchorsCont = document.querySelector(".section-stepper");
+const anchors = anchorsCont.querySelectorAll(".section-stepper-item");
 
-let threshold = document.documentElement.clientWidth > 991 ? 0.5 : 0;
-
-function handleIntersection(entries, observer) {
-  entries.forEach(entry => {
-    let index = parseInt(entry.target.dataset.sectionIndex);
-    if (entry.isIntersecting) {
-      anchors[index - 1].classList.add("active");
-    } else {
-      anchors[index - 1].classList.remove("active");
+window.addEventListener('scroll', () => {
+  let sectionId = '';
+  for (let i = sections.length - 1; i >= 0; i--) {
+    if (sections[i].getBoundingClientRect().top < 50) {
+      sectionId = sections[i].id;
+      break;
     }
+  }
+  anchors.forEach(el => {
+    el.classList.remove('active');
   });
-}
-
-const observer = new IntersectionObserver(handleIntersection, {
-  threshold: threshold
-});
-
-sections.forEach(element => {
-  observer.observe(element);
+  if (sectionId) {
+    anchorsCont.querySelector(`a[href$="#${sectionId}"]`).classList.add('active');
+  }
 });
 
 anchors.forEach((anchor, index) => {
@@ -30,4 +26,4 @@ anchors.forEach((anchor, index) => {
       block: 'start'
     })
   })
-})
+});
