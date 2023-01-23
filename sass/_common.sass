@@ -267,13 +267,18 @@ input, textarea, a, button
     &._error
       color: $active
 
-.tabs-node
-  display: block
-  visibility: visible
-  &.hidden
-    display: none
-  &.active
+.tabs
+  &-node
     display: block
+    visibility: visible
+    &.hidden
+      display: none
+    &.active
+      display: block
+  &._height-transition
+    .tabs-node-wrapper
+      overflow: hidden
+      transition: height 0.5s ease-in-out
 
 .radiobtn
   border-radius: 50%
@@ -310,7 +315,14 @@ input, textarea, a, button
     &.active
       color: $active
 
+@media ( max-width: 1700px )
+  .container
+    max-width: 1470px
+
 @media ( max-width: 1600px )
+  .container
+    max-width: 1330px
+
   .page
     &-title
       font-size: 60px
@@ -331,12 +343,29 @@ input, textarea, a, button
         margin-left: 15px
         box-shadow: 0 0 10px 2px rgba(#E5EAEE, 1)
 
-@media ( max-width: 1400px )
+@media ( max-width: 1440px )
+  .container
+    max-width: 1230px
+
+  .page
+    &-title
+      font-size: 50px
+
   .section
     &-title
       font-size: 35px
     &-subtitle
       font-size: 22px
+
+@media ( max-width: 1330px )
+  .container
+    max-width: 1030px
+
+  .fieldbtn
+    &-input
+      padding: 0 20px
+    &-btn
+      padding: 0 12px
 
 @media ( max-width: 1200px )
   .fieldbtn
@@ -348,10 +377,14 @@ input, textarea, a, button
       bottom: calc(100% + 4px)
       font-size: 16px
 
+@media ( max-width: 1130px )
+  .container
+    max-width: 900px
+
 @media ( max-width: 991px )
   .page
     &-title
-      font-size: 50px
+      font-size: 40px
 
   .section
     &-stepper
@@ -411,6 +444,15 @@ input, textarea, a, button
           background-color: $active
           svg, circle, path
             fill: $white
+
+  .fieldbtn
+    height: 55px
+    &-btn
+      font-size: 20px
+      gap: 10px
+      &-icon
+        width: 22px
+        height: 22px
 
 @media ( max-width: 768px )
   .btn

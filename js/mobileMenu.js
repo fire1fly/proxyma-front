@@ -1,7 +1,7 @@
 const menuClass = "h-nav";
 const menuTriggerClass = "h-menubtn";
 
-const headerMediaQuery = window.matchMedia("(max-width: 1365px)");
+const headerMediaQuery = window.matchMedia("(max-width: 1440px)");
 
 const menuEl = document.querySelector(`.${menuClass}`);
 const menuBtnEl = document.querySelector(`.${menuTriggerClass}`);
@@ -22,6 +22,7 @@ function handleOutsideClick(e) {
 }
 
 function initMenu() {
+  console.log("init header menu");
   menuBtnEl.addEventListener("click", toggleMenu);
   document.addEventListener("click", handleOutsideClick);
 }
@@ -35,6 +36,7 @@ function handleMenu(e) {
     initMenu();
   } else {
     resetMenu();
+    console.log("header menu not avaliable");
   }
 }
 

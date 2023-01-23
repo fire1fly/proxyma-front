@@ -21,7 +21,7 @@ let articleListSlider1 = new Swiper(".al1-slider", {
       slidesPerView: 3,
       spaceBetween: 30,
     },
-    1400: {
+    1601: {
       slidesPerView: 3,
       spaceBetween: 65,
     },
@@ -69,7 +69,7 @@ let wideCardsListSlider = new Swiper(".wc-slider", {
       },
       spaceBetween: 30,
     },
-    1400: {
+    1441: {
       slidesPerView: 2,
       grid: {
         fill: 'row',

@@ -7,9 +7,9 @@
       justify-content: space-between
     &-pic
       &-1
-        flex: 0 0 auto
+        flex: 0 1 auto
       &-2
-        flex: 0 0 auto
+        flex: 0 1 auto
     &__inner
       padding-top: 120px
       flex: 0 1 670px
@@ -149,26 +149,48 @@
     .tabs-node-wrapper
       flex: 1 1 auto
 
-@media ( max-width: 1400px )
+@media ( max-width: 1440px )
   .fqp
     padding-bottom: 100px
     &-fs
       &-pic
         &-1
-          width: 300px
+          width: 250px
         &-2
-          width: 300px
+          width: 250px
       &__inner
         padding-top: 30px
       &-title
-        font-size: 40px
+        font-size: 35px
       &-subtitle
-        font-size: 22px
-    &-tabs
-      &-item
         font-size: 20px
+      &-search
+        border-radius: 15px
+        padding: 0 7px
+        height: 60px
+        &__btn
+          border-radius: 15px
+          width: 45px
+          height: 45px
+    &-tabs
+      &-list
+        flex: 0 0 250px
+      &-item
+        min-height: 50px
+        font-size: 18px
+        padding: 0 15px
       &-box
-        padding: 35px
+        padding: 30px
+        &-h
+          margin-bottom: 20px
+        &-title
+          font-size: 25px
+        &-sub
+          font-size: 14px
+        p
+          margin-bottom: 20px
+          font-size: 16px
+          line-height: 1.4
 
 @media ( max-width: 1200px )
   .fqp
@@ -182,14 +204,6 @@
         font-size: 35px
       &-subtitle
         font-size: 22px
-      &-search
-        border-radius: 15px
-        padding: 0 7px
-        height: 60px
-        &__btn
-          border-radius: 15px
-          width: 45px
-          height: 45px
 
 @media ( max-width: 991px )
   .fqp
@@ -263,6 +277,17 @@
         font-size: 26px
       &-subtitle
         font-size: 18px
+      &-search
+        border-radius: 10px
+        padding: 0 4px
+        height: 40px
+        &__input
+          padding: 0 10px
+          font-size: 16px
+        &__btn
+          border-radius: 10px
+          width: 30px
+          height: 30px
     &-tabs
       &-list
         flex-wrap: nowrap

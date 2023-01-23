@@ -363,27 +363,36 @@
         &::after
           border-color: $active
 
-@media ( max-width: 1400px )
+@media ( max-width: 1440px )
   .blp
     padding: 40px 0 0
+    &-title
+      font-size: 30px
     &__post
       margin: 30px 0
     &-post
-      height: 300px
+      height: 250px
       &__inner
         padding-left: 40px
       &-title
-        font-size: 45px
+        font-size: 35px
     &-feed
       padding-bottom: 60px
     &-tag
       padding: 6px 12px
       font-size: 12px
     &-art
+      gap: 15px
       padding: 25px 0
+      &-preview
+        flex: 0 0 220px
       &-authorplate
         border-radius: 10px
-        padding: 8px
+        padding: 4px
+        &-name
+          font-size: 12px
+        &-sub
+          font-size: 10px
     &-al2
       padding: 60px 0
       background-color: $white
@@ -397,6 +406,36 @@
         margin: 30px 0
     &-b
       padding-bottom: 70px
+
+@media ( max-width: 1330px )
+  .blp
+    &__bar
+      flex: 0 0 260px
+    &-bar
+      &-part
+        margin-bottom: 25px
+      &-cats
+        display: flex
+        align-items: center
+        flex-wrap: wrap
+        &-item
+          flex: 1 1 auto
+          padding: 8px
+          font-size: 12px
+
+  .article
+    &-tc
+      &__wrap
+        border-radius: 12px
+        padding: 20px 10px 20px 20px
+      &-item
+        padding: 10px 0 10px 20px
+        &:nth-of-type(1)
+          &::after
+            transform: translateY(-50%)
+        &:nth-last-of-type(1)
+          &::after
+            transform: translateY(-60%)
 
 @media ( max-width: 1200px )
   .blp
@@ -494,6 +533,12 @@
           left: -6px
           width: 8px
           height: 8px
+        &:nth-of-type(1)
+          &::after
+            transform: translateY(-60%)
+        &:nth-last-of-type(1)
+          &::after
+            transform: translateY(-40%)
     &-b
       padding-bottom: 40px
 

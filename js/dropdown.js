@@ -21,6 +21,7 @@ class Dropdown {
       if (clickedItem) {
         selectedItem.innerHTML = clickedItem.innerHTML;
         input.value = clickedItem.dataset.value;
+        input.dispatchEvent(new Event("change"));
       }
     }
 

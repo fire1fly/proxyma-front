@@ -34,12 +34,12 @@
       font-size: 14px
       color: $grey6
     &-text
+      +futura-med
+      font-size: 21px
+      color: $grey2
       p
         margin: 0
         margin-bottom: 10px
-        +futura-med
-        font-size: 21px
-        color: $grey2
     &-link
       margin-top: auto
       border-radius: 25px
@@ -68,15 +68,19 @@
         &-active
           background: $active
 
-@media ( max-width: 1400px )
+@media ( max-width: 1600px )
+  .al1
+    &-card
+      padding: 30px
+
+@media ( max-width: 1440px )
   .al1
     &-card
       padding: 20px
       &-title
         font-size: 20px
       &-text
-        p
-          font-size: 16px
+        font-size: 16px
 
 @media ( max-width: 1200px )
   .al1
@@ -108,3 +112,17 @@
           height: 8px
     &-card
       border-width: 2px
+
+@media ( max-width: 520px )
+  .al1
+    &-card
+      padding: 12px 15px
+      gap: 10px
+      &-title
+        font-size: 18px
+      &-date
+        font-size: 12px
+      &-text
+        font-size: 14px
+      &-link
+        font-size: 14px

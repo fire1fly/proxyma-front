@@ -5,6 +5,7 @@ document.addEventListener("DOMContentLoaded", function () {
       this.$switchWrapper = el;
       this.$switch = this.$switchWrapper.querySelector(".tabs-list");
       this.$switchBoxes = this.$switchWrapper.querySelectorAll(".tabs-node");
+      this.$switchBoxesWrapper = this.$switchWrapper.querySelector(".tabs-node-wrapper");
       this.setup();
       this.asyncHidden();
     }
@@ -20,6 +21,11 @@ document.addEventListener("DOMContentLoaded", function () {
     setup() {
       this.handleClick = this.handleClick.bind(this);
       this.$switch.addEventListener("click", this.handleClick);
+
+      if (this.$switchWrapper.classList.contains("_height-transition")) {
+        let activeBox = Array.from(this.$switchBoxes).find(box => box.classList.contains("active"));
+        this.$switchBoxesWrapper.style.height = `${activeBox.clientHeight}px`;
+      }
     }
 
     handleClick(e) {
@@ -36,6 +42,11 @@ document.addEventListener("DOMContentLoaded", function () {
       this.$switchBoxes.forEach(box => {
         if ($switchTabClicked && !box.classList.contains("active") && box.dataset.boxId == $switchTabClicked.dataset.boxId) {
           box.classList.add("active");
+
+          if (this.$switchWrapper.classList.contains("_height-transition")) {
+            this.$switchBoxesWrapper.style.height = `${box.clientHeight}px`;
+          }
+
         } else if (box.dataset.boxId !== $switchTabClicked.dataset.boxId) {
           box.classList.remove("active");
         }
