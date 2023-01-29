@@ -1,0 +1,66 @@
+.whois
+  margin-bottom: 100px
+  padding-bottom: 60px
+  display: flex
+  flex-direction: column
+  align-items: center
+  justify-content: center
+  &-fieldbtn
+    margin-bottom: 20px
+    max-width: 640px
+    width: 100%
+    border-radius: 30px
+    border: 1px solid #E4EAF0
+    height: 58px
+    display: flex
+    align-items: center
+    background-color: #E9EFF3
+    overflow: hidden
+    +futura-book
+    font-size: 18px
+    color: $grey1
+    &::placeholder
+      color: $grey2
+    .fieldbtn
+      &-input
+        padding: 0 28px
+      &-btn
+        border-radius: 30px
+        padding: 0 20px
+        +futura-heavy
+        text-transform: uppercase
+        font-size: 23px
+
+@media ( max-width: 1440px )
+  .whois
+    margin-bottom: 50px
+    padding-bottom: 30px
+    &-fieldbtn
+      height: 50px
+      font-size: 16px
+      .fieldbtn
+        &-input
+          padding: 0 16px
+        &-btn
+          font-size: 20px
+
+@media ( max-width: 768px )
+  .whois
+    &-fieldbtn
+      margin-bottom: 10px
+      height: 45px
+      font-size: 14px
+      .fieldbtn
+        &-input
+          padding: 0 16px
+        &-btn
+          padding: 0 15px
+          font-size: 16px
+
+@media ( max-width: 520px )
+  .whois
+    &-fieldbtn
+      height: 40px
+      .fieldbtn
+        &-btn
+          font-size: 16px

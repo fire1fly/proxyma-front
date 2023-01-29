@@ -6,19 +6,20 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <link rel="stylesheet" href="./css/normalize.css">
+  <link rel="stylesheet" href="./css/swiper-bundle.min.css">
   <link rel="stylesheet" href="./css/styles.css">
+  
+  <script src="./js/swiper-bundle.min.js"></script>
 
   <script defer src="./js/dropdown.js"></script>
   <script defer src="./js/mobileMenu.js"></script>
-  <script defer src="./js/mobileSidebar.js"></script>
-  <script defer src="./js/tableOfContent.js"></script>
+  <script defer src="./js/accordion.js"></script>
 
-  <title>Article - Proxyma</title>
+
+  <title>Whois IP lookup - Proxyma</title>
 </head>
 <body>
-  <div class="root _overflow">
-    <!-- модификатор _overflow нужен для работы sticky элементов -->
-
+  <div class="root">
     <header class="h">
       <div class="container h__inner">
         <div class="h-logo">
@@ -76,13 +77,13 @@
               <div class="h-select-arrow"></div>
               <ul class="h-select-list dd-list showDown">
                 <li>
-                  <a class="h-select-item dd-item">Use case 1</a>
+                  <a href="./usecases.html" class="h-select-item dd-item">Use case 1</a>
                 </li>
                 <li>
-                  <a class="h-select-item dd-item">Use case 2</a>
+                  <a href="./usecases.html" class="h-select-item dd-item">Use case 2</a>
                 </li>
                 <li>
-                  <a class="h-select-item dd-item">Use case 3</a>
+                  <a href="./usecases.html" class="h-select-item dd-item">Use case 3</a>
                 </li>
               </ul>
             </div>
@@ -115,220 +116,378 @@
       </div>    
     </header>
 
-    <main class="main blp">
+    <main class="main chp">
+
       <div class="container">
-        <div class="blp-grid">
-          <div class="blp__inner">
-            <div class="breads">
-              <a href="#" class="breads-item">‹ Back to blog</a>
+        <nav class="chp-nav chp__nav dd">
+
+          <div class="chp-nav-label">Chekers:</div>
+
+          <div class="chp-nav-icon">
+            <svg enable-background="new 0 0 32 32" height="32px" version="1.1" viewBox="0 0 32 32" width="32px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+              <path d="M24.285,11.284L16,19.571l-8.285-8.288c-0.395-0.395-1.034-0.395-1.429,0  c-0.394,0.395-0.394,1.035,0,1.43l8.999,9.002l0,0l0,0c0.394,0.395,1.034,0.395,1.428,0l8.999-9.002  c0.394-0.395,0.394-1.036,0-1.431C25.319,10.889,24.679,10.889,24.285,11.284z"/>
+            </svg>
+          </div>
+
+          <div class="chp-nav__inner dd-list showDown">
+            <a href="./proxy-checker.html" class="chp-nav-link">proxy checker</a>
+            <a href="./check-ip.html" class="chp-nav-link">check my ip</a>
+            <a href="./check-anon.html" class="chp-nav-link">check my anonymity</a>
+            <a href="./check-spamdb.html" class="chp-nav-link">spam database check</a>
+            <a href="./whois.html" class="chp-nav-link">whois</a>
+            <a href="./port-scanner.html" class="chp-nav-link">port scanner</a>
+            <a href="./ipv6.html" class="chp-nav-link active">ipv6 compatibilty</a>
+          </div>
+        </nav>
+        
+        <div class="chp-h">
+          <h1 class="chp-title">Whois IP <b>Lookup</b></h1>
+          <div class="chp-h-text">
+            <p>
+              A simple and free tool that allows you to get information about an IP address, website, or server. It will help you to determine the data of the owners of domains and IP addresses. Enter the domain, IP or hostname in the field and click "Check".
+            </p>
+          </div>
+        </div>
+
+        <form action="#" class="whois chp-box">
+
+          <div class="chp-box-h">
+            <h2 class="chp-box-title">Check domain or address</h2>
+          </div>
+
+          <div class="fieldbtn whois-fieldbtn">
+            <input type="email" class="fieldbtn-input" placeholder="Enter IP or domain">
+            <button type="button" class="btn btn-blue fieldbtn-btn">
+              <div class="fieldbtn-btn-text">check</div>
+            </button>
+          </div>
+
+          <div class="chp-pastelink">Paste my IP address</div>
+
+        </form> 
+
+      </div> 
+
+      <div class="inf1">
+        <div class="inf1-grid container">
+          <div class="inf1-pic">
+            <img src="./assets/static/inf1-pic-1.png" alt="picture">
+          </div>
+          <h2 class="inf1-title">
+            Do online businesses and strive to conquer new markets?
+          </h2>
+          <div class="inf1-text">
+            <p>
+              Our proxy service will become your reliable partner on the way to your goals. Changing IP to promote business in a particular country is one of the priority conditions, and the best and easiest way to do it is using proxies of Russia, the USA.
+            </p>
+            <p>
+              Great Britain, and other countries purchased on our website.
+            </p>
+          </div>
+        </div>
+      </div><!-- /.info section 1 -->
+
+      <div class="section chp-faq">
+        <img src="./assets/static/section-pic-1.png" alt="background picture" class="chp-faq-pic-1">
+        <img src="./assets/static/section-pic-2.png" alt="background picture" class="chp-faq-pic-2">
+        <div class="container chp-faq__inner">
+          <h2 class="section-title chp-faq__title">FAQ</h2>
+
+          <div class="faq__inner accordion">
+            <div class="faq-item accordion__item">
+              <div class="faq-item-h accordion__header">
+                <div class="faq-item-label">
+                  <span class="_active">1.</span> Account and balanceas read
+                </div>
+                <div class="faq-item-arrow">
+                  <svg enable-background="new 0 0 512 512" version="1.0" viewBox="0 0 512 512" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                    <polygon points="256,382.4 66.8,193.2 109.2,150.8 256,297.6 402.8,150.8 445.2,193.2"/>
+                  </svg>
+                </div>
+              </div>
+              <div class="accordion__body">
+                <div class="faq-item-content">
+
+                  <div class="faq-subitem accordion__item">
+                    <div class="faq-subitem-h accordion__header">
+                      <div class="faq-subitem-label">How do I assign a work profile in the editor?</div>
+                      <div class="faq-subitem-arrow">
+                        <svg enable-background="new 0 0 512 512" version="1.0" viewBox="0 0 512 512" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                          <polygon points="256,382.4 66.8,193.2 109.2,150.8 256,297.6 402.8,150.8 445.2,193.2"/>
+                        </svg>
+                      </div>
+                    </div>
+                    <div class="accordion__body">
+                      <div class="faq-subitem-content">
+                        <div class="faq-item-text">
+                          <p>
+                            In general, of course, a high-quality prototype of the future project speaks about the possibilities of forms of influence. And the actively  developing countries of the third world, regardless of their level, should be mixed with non-unique data to the point of complete unrecognizability, which increases their status of uselessness.
+                          </p>
+                          <p>
+                            Clearly, the shareholders of the largest companies, overcoming the current difficult economic situation, are objectively considered by the relevant authorities.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="faq-subitem accordion__item">
+                    <div class="faq-subitem-h accordion__header">
+                      <div class="faq-subitem-label">How do I assign a work profile in the editor?</div>
+                      <div class="faq-subitem-arrow">
+                        <svg enable-background="new 0 0 512 512" version="1.0" viewBox="0 0 512 512" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                          <polygon points="256,382.4 66.8,193.2 109.2,150.8 256,297.6 402.8,150.8 445.2,193.2"/>
+                        </svg>
+                      </div>
+                    </div>
+                    <div class="accordion__body">
+                      <div class="faq-subitem-content">
+                        <div class="faq-item-text">
+                          <p>
+                            In general, of course, a high-quality prototype of the future project speaks about the possibilities of forms of influence. And the actively  developing countries of the third world, regardless of their level, should be mixed with non-unique data to the point of complete unrecognizability, which increases their status of uselessness.
+                          </p>
+                          <p>
+                            Clearly, the shareholders of the largest companies, overcoming the current difficult economic situation, are objectively considered by the relevant authorities.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="faq-subitem accordion__item">
+                    <div class="faq-subitem-h accordion__header">
+                      <div class="faq-subitem-label">How do I assign a work profile in the editor?</div>
+                      <div class="faq-subitem-arrow">
+                        <svg enable-background="new 0 0 512 512" version="1.0" viewBox="0 0 512 512" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                          <polygon points="256,382.4 66.8,193.2 109.2,150.8 256,297.6 402.8,150.8 445.2,193.2"/>
+                        </svg>
+                      </div>
+                    </div>
+                    <div class="accordion__body">
+                      <div class="faq-subitem-content">
+                        <div class="faq-item-text">
+                          <p>
+                            In general, of course, a high-quality prototype of the future project speaks about the possibilities of forms of influence. And the actively  developing countries of the third world, regardless of their level, should be mixed with non-unique data to the point of complete unrecognizability, which increases their status of uselessness.
+                          </p>
+                          <p>
+                            Clearly, the shareholders of the largest companies, overcoming the current difficult economic situation, are objectively considered by the relevant authorities.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
             </div>
 
-            <article class="article">
-
-              <div class="blp-h">
-                <h1 class="blp-title">Introducing Real Estate Scraper API: Gather</h1>
-                <div class="blp-art-readtime">
-                  <div class="blp-art-readtime__icon">
-                    <img src="./assets/static/icon-clock-red.svg" alt="clock">
-                  </div>
-                  <div class="blp-art-readtime__value">
-                    Time to read: <strong>2 min</strong>
-                  </div>
+            <div class="faq-item accordion__item">
+              <div class="faq-item-h accordion__header">
+                <div class="faq-item-label">
+                  <span class="_active">2.</span> Account and balanceas read
+                </div>
+                <div class="faq-item-arrow">
+                  <svg enable-background="new 0 0 512 512" version="1.0" viewBox="0 0 512 512" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                    <polygon points="256,382.4 66.8,193.2 109.2,150.8 256,297.6 402.8,150.8 445.2,193.2"/>
+                  </svg>
                 </div>
               </div>
+              <div class="accordion__body">
+                <div class="faq-item-content">
 
-              <div class="article-preview-big article-preview__big">
-                <img src="./assets/static/article-preview-big-example.png" alt="preview">
-              </div>
-  
-              <div class="blp-art-bar-row">
-                <div class="blp-tag-row">
-                  <div class="blp-tag">product updates</div>
-                  <div class="blp-tag">product updates</div>
-                  <div class="blp-tag">product updates</div>
-                </div>
-                <div class="blp-art-authorplate">
-                  <div class="blp-art-authorplate-avatar">
-                    <img src="./assets/static/avatar-example-1.png" alt="avatar">
+                  <div class="faq-subitem accordion__item">
+                    <div class="faq-subitem-h accordion__header">
+                      <div class="faq-subitem-label">How do I assign a work profile in the editor?</div>
+                      <div class="faq-subitem-arrow">
+                        <svg enable-background="new 0 0 512 512" version="1.0" viewBox="0 0 512 512" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                          <polygon points="256,382.4 66.8,193.2 109.2,150.8 256,297.6 402.8,150.8 445.2,193.2"/>
+                        </svg>
+                      </div>
+                    </div>
+                    <div class="accordion__body">
+                      <div class="faq-subitem-content">
+                        <div class="faq-item-text">
+                          <p>
+                            In general, of course, a high-quality prototype of the future project speaks about the possibilities of forms of influence. And the actively  developing countries of the third world, regardless of their level, should be mixed with non-unique data to the point of complete unrecognizability, which increases their status of uselessness.
+                          </p>
+                          <p>
+                            Clearly, the shareholders of the largest companies, overcoming the current difficult economic situation, are objectively considered by the relevant authorities.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
                   </div>
-                  <div class="blp-art-authorplate__inner">
-                    <div class="blp-art-authorplate-name">Danielius Radavicius</div>
-                    <div class="blp-art-authorplate-sub">2022-11-24</div>
-                  </div>
-                </div>
-              </div>
 
-              <div class="article-b">
-                <h2 id="heading1">What is an ETL pipeline?</h2>
-                <p>
-                  On the other hand, the existing theory is a qualitatively new stage of rethinking foreign economic policies! Unequivocally, the clear signs of the victory of institutionalization are mixed with non-unique data to the point of complete unrecognizability, which increases their status of uselessness.
-                </p>
-                <p>
-                  Everyday practice shows that diluted with a fair amount of empathy, rational thinking allows you to perform important tasks for the development of the withdrawal of current assets. In particular, a high-quality prototype of a future project plays a decisive role for the economic feasibility of the decisions taken.
-                </p>
-                <h2 id="heading2">Benefits of an ETL pitpeline</h2>
-                <p>
-                  Each of us understands the obvious thing: the cohesion of a team of professionals contributes to the preparation and implementation of new proposals. By the way, the key features of the project structure, initiated exclusively synthetically, are mixed with non-unique data to the point of complete unrecognizability, which increases their status of uselessness.
-                </p>
-                <p>
-                  Clearly, interactive prototypes highlight extremely interesting features of the picture as a whole, but concrete conclusions, of course, are turned into a laughing stock, although their very existence brings undoubted benefits to society. The task of the organization, especially socio-economic development, provides a wide range of (specialists) participation in the formation of forms of influence.
-                </p>
-                <p>
-                  Taking into account the current international situation, the semantic analysis of external counteractions reveals the urgent need to withdraw current assets. Considering key behavioral scenarios, consulting with a broad asset requires an analysis of innovative process management methods.
-                </p>
-                <h2 id="heading3">Challenges of an ETL pipeline</h2>
-                <p>
-                  On the other hand, the existing theory is a qualitatively new stage of rethinking foreign economic policies! Unequivocally, the clear signs of the victory of institutionalization are mixed with non-unique data to the point of complete unrecognizability, which increases their status of uselessness.
-                </p>
-                <h2 id="heading4">ETL pipeline vs. Data pipeline</h2>
-                <p>
-                  On the other hand, the existing theory is a qualitatively new stage of rethinking foreign economic policies! Unequivocally, the clear signs of the victory of institutionalization are mixed with non-unique data to the point of complete unrecognizability, which increases their status of uselessness.
-                </p>
-                <h2 id="heading5">How to build an ETL pipeline with Python</h2>
-                <p>
-                  On the other hand, the existing theory is a qualitatively new stage of rethinking foreign economic policies! Unequivocally, the clear signs of the victory of institutionalization are mixed with non-unique data to the point of complete unrecognizability, which increases their status of uselessness.
-                </p>
-                <h2 id="heading6">Conclusion</h2>
-                <p>
-                  On the other hand, the existing theory is a qualitatively new stage of rethinking foreign economic policies! Unequivocally, the clear signs of the victory of institutionalization are mixed with non-unique data to the point of complete unrecognizability, which increases their status of uselessness.
-                </p>
+                  <div class="faq-subitem accordion__item">
+                    <div class="faq-subitem-h accordion__header">
+                      <div class="faq-subitem-label">How do I assign a work profile in the editor?</div>
+                      <div class="faq-subitem-arrow">
+                        <svg enable-background="new 0 0 512 512" version="1.0" viewBox="0 0 512 512" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                          <polygon points="256,382.4 66.8,193.2 109.2,150.8 256,297.6 402.8,150.8 445.2,193.2"/>
+                        </svg>
+                      </div>
+                    </div>
+                    <div class="accordion__body">
+                      <div class="faq-subitem-content">
+                        <div class="faq-item-text">
+                          <p>
+                            In general, of course, a high-quality prototype of the future project speaks about the possibilities of forms of influence. And the actively  developing countries of the third world, regardless of their level, should be mixed with non-unique data to the point of complete unrecognizability, which increases their status of uselessness.
+                          </p>
+                          <p>
+                            Clearly, the shareholders of the largest companies, overcoming the current difficult economic situation, are objectively considered by the relevant authorities.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="faq-subitem accordion__item">
+                    <div class="faq-subitem-h accordion__header">
+                      <div class="faq-subitem-label">How do I assign a work profile in the editor?</div>
+                      <div class="faq-subitem-arrow">
+                        <svg enable-background="new 0 0 512 512" version="1.0" viewBox="0 0 512 512" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                          <polygon points="256,382.4 66.8,193.2 109.2,150.8 256,297.6 402.8,150.8 445.2,193.2"/>
+                        </svg>
+                      </div>
+                    </div>
+                    <div class="accordion__body">
+                      <div class="faq-subitem-content">
+                        <div class="faq-item-text">
+                          <p>
+                            In general, of course, a high-quality prototype of the future project speaks about the possibilities of forms of influence. And the actively  developing countries of the third world, regardless of their level, should be mixed with non-unique data to the point of complete unrecognizability, which increases their status of uselessness.
+                          </p>
+                          <p>
+                            Clearly, the shareholders of the largest companies, overcoming the current difficult economic situation, are objectively considered by the relevant authorities.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                </div>
               </div>
-            </article>
+            </div>
+
+            <div class="faq-item accordion__item">
+              <div class="faq-item-h accordion__header">
+                <div class="faq-item-label">
+                  <span class="_active">3.</span> Account and balanceas read
+                </div>
+                <div class="faq-item-arrow">
+                  <svg enable-background="new 0 0 512 512" version="1.0" viewBox="0 0 512 512" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                    <polygon points="256,382.4 66.8,193.2 109.2,150.8 256,297.6 402.8,150.8 445.2,193.2"/>
+                  </svg>
+                </div>
+              </div>
+              <div class="accordion__body">
+                <div class="faq-item-content">
+
+                  <div class="faq-subitem accordion__item">
+                    <div class="faq-subitem-h accordion__header">
+                      <div class="faq-subitem-label">How do I assign a work profile in the editor?</div>
+                      <div class="faq-subitem-arrow">
+                        <svg enable-background="new 0 0 512 512" version="1.0" viewBox="0 0 512 512" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                          <polygon points="256,382.4 66.8,193.2 109.2,150.8 256,297.6 402.8,150.8 445.2,193.2"/>
+                        </svg>
+                      </div>
+                    </div>
+                    <div class="accordion__body">
+                      <div class="faq-subitem-content">
+                        <div class="faq-item-text">
+                          <p>
+                            In general, of course, a high-quality prototype of the future project speaks about the possibilities of forms of influence. And the actively  developing countries of the third world, regardless of their level, should be mixed with non-unique data to the point of complete unrecognizability, which increases their status of uselessness.
+                          </p>
+                          <p>
+                            Clearly, the shareholders of the largest companies, overcoming the current difficult economic situation, are objectively considered by the relevant authorities.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="faq-subitem accordion__item">
+                    <div class="faq-subitem-h accordion__header">
+                      <div class="faq-subitem-label">How do I assign a work profile in the editor?</div>
+                      <div class="faq-subitem-arrow">
+                        <svg enable-background="new 0 0 512 512" version="1.0" viewBox="0 0 512 512" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                          <polygon points="256,382.4 66.8,193.2 109.2,150.8 256,297.6 402.8,150.8 445.2,193.2"/>
+                        </svg>
+                      </div>
+                    </div>
+                    <div class="accordion__body">
+                      <div class="faq-subitem-content">
+                        <div class="faq-item-text">
+                          <p>
+                            In general, of course, a high-quality prototype of the future project speaks about the possibilities of forms of influence. And the actively  developing countries of the third world, regardless of their level, should be mixed with non-unique data to the point of complete unrecognizability, which increases their status of uselessness.
+                          </p>
+                          <p>
+                            Clearly, the shareholders of the largest companies, overcoming the current difficult economic situation, are objectively considered by the relevant authorities.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="faq-subitem accordion__item">
+                    <div class="faq-subitem-h accordion__header">
+                      <div class="faq-subitem-label">How do I assign a work profile in the editor?</div>
+                      <div class="faq-subitem-arrow">
+                        <svg enable-background="new 0 0 512 512" version="1.0" viewBox="0 0 512 512" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                          <polygon points="256,382.4 66.8,193.2 109.2,150.8 256,297.6 402.8,150.8 445.2,193.2"/>
+                        </svg>
+                      </div>
+                    </div>
+                    <div class="accordion__body">
+                      <div class="faq-subitem-content">
+                        <div class="faq-item-text">
+                          <p>
+                            In general, of course, a high-quality prototype of the future project speaks about the possibilities of forms of influence. And the actively  developing countries of the third world, regardless of their level, should be mixed with non-unique data to the point of complete unrecognizability, which increases their status of uselessness.
+                          </p>
+                          <p>
+                            Clearly, the shareholders of the largest companies, overcoming the current difficult economic situation, are objectively considered by the relevant authorities.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+            </div>
 
           </div>
-          <div class="blp__bar blp-bar mobile-sidebar">
-            <div class="blp-bar-triggerbtn mobile-sidebar-trigger">
-              <svg width="32px" height="32px" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" mirror-in-rtl="true">
-                <circle fill="#FF376E" cx="2" cy="2" r="2"/>
-                <circle fill="#FF376E" cx="2" cy="8" r="2"/>
-                <circle fill="#FF376E" cx="2" cy="20" r="2"/>
-                <circle fill="#FF376E" cx="2" cy="14" r="2"/>
-                <path fill="#FF376E" d="M23.002 3H7.998C7.448 3 7 2.55 7 2.002v-.004c0-.55.45-.998.998-.998H23c.55 0 1 .45 1 .998V2c0 .55-.45 1-.998 1zM23.002 9H7.998C7.448 9 7 8.55 7 8.002v-.004c0-.55.45-.998.998-.998H23c.55 0 1 .45 1 .998V8c0 .55-.45 1-.998 1zM23.002 15H7.998c-.55 0-.998-.45-.998-.998V14c0-.55.45-1 .998-1H23c.55 0 1 .45 1 .998V14c0 .55-.45 1-.998 1zM23.002 21H7.998c-.55 0-.998-.45-.998-.998V20c0-.55.45-1 .998-1H23c.55 0 1 .45 1 .998V20c0 .55-.45 1-.998 1z"/>
-              </svg>
-            </div>
-            <div class="blp-bar__inner">
-              <div class="article-tc__wrap">
-                <div class="blp-bar-part-label">IN THIS ARTICLE</div>
-                <div class="article-tc tc">
-                  <a href="#heading1" class="article-tc-item tc-item mobile-sidebar-close">1. What is an ETL pipeline?</a>
-                  <a href="#heading2" class="article-tc-item tc-item mobile-sidebar-close">2. Benefits of an ETL pipeline</a>
-                  <a href="#heading3" class="article-tc-item tc-item mobile-sidebar-close">3. Challenges of an ETL pipeline</a>
-                  <a href="#heading4" class="article-tc-item tc-item mobile-sidebar-close">4. ETL pipeline vs. Data pipeline</a>
-                  <a href="#heading5" class="article-tc-item tc-item mobile-sidebar-close">5. How to build an ETL pipeline with Python</a>
-                  <a href="#heading6" class="article-tc-item tc-item mobile-sidebar-close">6. Conclusion</a>
-                </div>
-              </div> <!-- /. table of contents -->
-              <div></div>
-            </div>
-          </div>
+
         </div>
       </div>
 
-      <section class="section al2 blp-al2">
+      <div class="inf1 _center">
         <div class="container">
-          <h2 class="section-title">Related articles</h2>
-          <div class="section-subtitle">Read the latest news of the Proxyma blog</div>
-
-          <div class="al2-grid">
-
-            <div class="al2-card">
-              <div class="al2-card-preview">
-                <img src="./assets/static/article-preview-example-1.png" alt="preview">
-              </div>
-              <div class="blp-tag-row">
-                <div class="blp-tag">product updates</div>
-                <div class="blp-tag">news</div>
-              </div>
-              <h3 class="al2-card-title">Real Estate Scraper API Quick Start Guide</h3>
-              <p class="al2-card-text">
-                Real Estate Scraper API is a powerful tool for real estate real-time data collection at scale from almost any target. Learn how the tool works and
-              </p>
-              <div class="blp-art-authorplate">
-                <div class="blp-art-authorplate-avatar">
-                  <img src="./assets/static/avatar-example-1.png" alt="avatar">
-                </div>
-                <div class="blp-art-authorplate__inner">
-                  <div class="blp-art-authorplate-name">Danielius Radavicius</div>
-                  <div class="blp-art-authorplate-sub">2022-11-24</div>
-                </div>
-              </div>
-            </div>
-
-            <div class="al2-card">
-              <div class="al2-card-preview">
-                <img src="./assets/static/article-preview-example-1.png" alt="preview">
-              </div>
-              <div class="blp-tag-row">
-                <div class="blp-tag">product updates</div>
-                <div class="blp-tag">news</div>
-              </div>
-              <h3 class="al2-card-title">Real Estate Scraper API Quick Start Guide</h3>
-              <p class="al2-card-text">
-                Real Estate Scraper API is a powerful tool for real estate real-time...
-              </p>
-              <div class="blp-art-authorplate">
-                <div class="blp-art-authorplate-avatar">
-                  <img src="./assets/static/avatar-example-1.png" alt="avatar">
-                </div>
-                <div class="blp-art-authorplate__inner">
-                  <div class="blp-art-authorplate-name">Danielius Radavicius</div>
-                  <div class="blp-art-authorplate-sub">2022-11-24</div>
-                </div>
-              </div>
-            </div>
-
-            <div class="al2-card">
-              <div class="al2-card-preview">
-                <img src="./assets/static/article-preview-example-1.png" alt="preview">
-              </div>
-              <div class="blp-tag-row">
-                <div class="blp-tag">product updates</div>
-                <div class="blp-tag">news</div>
-              </div>
-              <h3 class="al2-card-title">Real Estate Scraper API Quick Start Guide</h3>
-              <p class="al2-card-text">
-                Real Estate Scraper API is a powerful tool for real estate real-time data collection at scale from almost any target. Learn how the tool works and. Learn how the tool works and.
-              </p>
-              <div class="blp-art-authorplate">
-                <div class="blp-art-authorplate-avatar">
-                  <img src="./assets/static/avatar-example-1.png" alt="avatar">
-                </div>
-                <div class="blp-art-authorplate__inner">
-                  <div class="blp-art-authorplate-name">Danielius Radavicius</div>
-                  <div class="blp-art-authorplate-sub">2022-11-24</div>
-                </div>
-              </div>
-            </div>
-
-            <div class="al2-card">
-              <div class="al2-card-preview">
-                <img src="./assets/static/article-preview-example-1.png" alt="preview">
-              </div>
-              <div class="blp-tag-row">
-                <div class="blp-tag">product updates</div>
-                <div class="blp-tag">news</div>
-              </div>
-              <h3 class="al2-card-title">Real Estate Scraper API Quick Start Guide</h3>
-              <p class="al2-card-text">
-                Real Estate Scraper API is a powerful tool for real estate real-time data collection at scale from almost any target. Learn how the tool works and
-              </p>
-              <div class="blp-art-authorplate">
-                <div class="blp-art-authorplate-avatar">
-                  <img src="./assets/static/avatar-example-1.png" alt="avatar">
-                </div>
-                <div class="blp-art-authorplate__inner">
-                  <div class="blp-art-authorplate-name">Danielius Radavicius</div>
-                  <div class="blp-art-authorplate-sub">2022-11-24</div>
-                </div>
-              </div>
-            </div>
-
+          <div class="inf1-h">
+            <h2 class="inf1-title">
+              Use Our Powerful Proxy Tester
+            </h2>
           </div>
-
+          <div class="inf1-text _thin">
+            <p>
+              The risk of buying a proxy is that you might spend money on something worthless. That is why it is crucial to have a good test proxy service to ensure you make the correct decision.
+              There are a variety of proxy services you can purchase, making your choice of using this tool even more useful. You also have the fact that many people choose not to use private
+              proxies but public ones. You need to know whether your public proxy is working or not. A proxy checker live or dead service is a valuable commodity.
+            </p>
+            <p>
+              The main reason you want to have the service is you don't want to waste resources doing something that doesn't work because the proxies aren't working yet.
+            </p>
+            <p>
+              The best thing about our multiple proxy checker software is that you can check up to 100 simultaneously. That feature minimizes the time you need to spend comparing various proxies to see if they work or not. Our proxy scanner does the job for you without too much fuss. You can check if a proxy is working quickly and conveniently.
+            </p>
+            <p>
+              On top of that, the ability to check anonymous proxies is also present. You can also check socks proxies. The socks checker is great because it allows you to format your proxies conveniently for our tool.
+            </p>
+          </div>
         </div>
-      </section>
+      </div><!-- /.info section 1 -->
 
-    </main><!-- blog page -->
+
+    </main>
 
     <footer class="f">
       <div class="f-promo">

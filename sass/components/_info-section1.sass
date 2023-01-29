@@ -1,0 +1,107 @@
+.inf1
+  padding: 50px 0
+  background-color: $grey4
+  &._center
+    text-align: center
+  &-h
+    margin-bottom: 70px
+  &-grid
+    display: grid
+    grid-template-columns: min-content auto
+    grid-template-rows: repeat(2, auto)
+    gap: 60px 80px
+    .inf1
+      &-pic
+        grid-column: 1/2
+        grid-row: 1/3
+        width: 530px
+      &-title
+        align-self: end
+        grid-column: 2/3
+        grid-row: 1/2
+      &-text
+        grid-column: 2/3
+        grid-row: 2/3
+  &-pic
+    img
+      width: 100%
+  &-title
+    margin: 0
+    +futura-demi
+    font-size: 44px
+    color: $grey1
+  &-text
+    +futura-med
+    font-size: 23px
+    color: $grey2
+    &._thin
+      +futura-book
+    p
+      margin: 0
+      margin-bottom: 40px
+      line-height: 1.3
+      &:nth-last-of-type(1)
+        margin-bottom: 0
+
+@media ( max-width: 1440px )
+  .inf1
+    &-h
+      margin-bottom: 30px
+    &-grid
+      gap: 30px 40px
+      .inf1
+        &-pic
+          width: 350px
+    &-title
+      font-size: 32px
+    &-text
+      font-size: 18px
+      p
+        margin-bottom: 15px
+
+@media ( max-width: 991px )
+  .inf1
+    padding: 30px 0
+    &-grid
+      .inf1
+        &-pic
+          width: 250px
+    &-title
+      font-size: 26px
+    &-text
+      font-size: 16px
+
+@media ( max-width: 768px )
+  .inf1
+    &-h
+      margin-bottom: 15px
+    &-grid
+      grid-template-columns: 1fr
+      grid-template-rows: repeat(3, auto)
+      gap: 15px
+      .inf1
+        &-pic
+          justify-self: center
+          grid-column: 1/2
+          grid-row: 2/3
+          max-width: 300px
+          width: 100%
+        &-title
+          text-align: center
+          grid-column: 1/2
+          grid-row: 1/2
+        &-text
+          text-align: center
+          grid-column: 1/2
+          grid-row: 3/4
+
+@media ( max-width: 520px )
+  .inf1
+    &-grid
+      .inf1
+        &-pic
+          max-width: 200px
+    &-title
+      font-size: 20px
+    &-text
+      font-size: 14px

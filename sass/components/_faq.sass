@@ -1,0 +1,161 @@
+.faq
+  &__inner
+    .faq-item
+      margin-bottom: 20px
+      &:nth-last-of-type(1)
+        margin-bottom: 0
+  &-item
+    border-radius: 10px
+    border: 1px solid $grey4
+    overflow: hidden
+    background-color: $white
+    box-shadow: 0 0 20px 8px rgba(#F9FAFB, 1)
+    &.accordion__item_show
+      .faq
+        &-item
+          &-arrow
+            background-color: $grey4
+            svg
+              transform: scale(1, -1)
+              fill: $active
+    &-h
+      min-height: 73px
+      padding: 10px 20px 10px 35px
+      display: flex
+      align-items: center
+      justify-content: space-between
+      gap: 10px
+      cursor: pointer
+      transition: 0.3s
+    &-label
+      +futura-bold
+      font-size: 17px
+      color: $grey1
+      ._active
+        color: $active
+    &-arrow
+      flex: 0 0 auto
+      border-radius: 10px
+      border: 1px solid $grey3
+      width: 32px
+      height: 32px
+      display: flex
+      align-items: center
+      justify-content: center
+      background-color: $active
+      transition: 0.3s
+      svg
+        width: 12px
+        fill: $white
+        transition: 0.3s
+    &-content
+      border-top: 1px solid $grey4
+      padding: 30px 35px
+    &-text
+      +futura-med
+      font-size: 16px
+      line-height: 1.3
+      color: $grey2
+      p
+        margin: 0
+        margin-bottom: 20px
+        &:nth-last-of-type(1)
+          margin-bottom: 0
+  &-subitem
+    border-radius: 10px
+    border: 1px solid #ECEDF2
+    overflow: hidden
+    &:not(:nth-last-of-type(1))
+      margin-bottom: 15px
+    &.accordion__item_show
+      .faq
+        &-subitem
+          &-arrow
+            svg
+              transform: scale(1, -1)
+              fill: $active
+    &-h
+      border-radius: 10px
+      min-height: 50px
+      padding: 5px 15px
+      display: flex
+      align-items: center
+      justify-content: space-between
+      gap: 10px
+      background-color: #F1F1F8
+      cursor: pointer
+      transition: 0.3s
+    &-label
+      +futura-demi
+      font-size: 16px
+      color: $grey1
+    &-arrow
+      flex: 0 0 auto
+      border-radius: 50%
+      width: 24px
+      height: 24px
+      display: flex
+      align-items: center
+      justify-content: center
+      background-color: $white
+      transition: 0.3s
+      box-shadow: 0 10px 25px 8px rgba(#E3E8F1, 1)
+      svg
+        width: 10px
+        fill: $grey1
+        transition: 0.3s
+    &-content
+      padding: 25px 30px
+
+@media ( max-width: 1440px )
+  .faq
+    &-item
+      &-h
+        min-height: 60px
+        padding: 10px 20px
+      &-content
+        padding: 20px
+      &-text
+        p
+          margin-bottom: 10px
+    &-subitem
+      &-content
+        padding: 15px
+
+@media ( max-width: 768px )
+  .faq
+    &__inner
+      .faq
+        &-item
+          margin-bottom: 10px
+    &-item
+      &-h
+        min-height: 50px
+      &-label
+        font-size: 16px
+      &-arrow
+        border-radius: 7px
+        width: 24px
+        height: 24px
+      &-content
+        padding: 10px
+      &-text
+        font-size: 14px
+    &-subitem
+      border-radius: 5px
+      &:not(:nth-last-of-type(1))
+        margin-bottom: 10px
+      &-h
+        border-radius: 5px
+        min-height: 35px
+      &-label
+        font-size: 14px
+      &-arrow
+        width: 20px
+        height: 20px
+
+@media ( max-width: 520px )
+  .faq
+    &-item
+      &-label
+        font-size: 14px
