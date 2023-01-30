@@ -39,6 +39,7 @@
       color: $grey1
       p
         margin: 0
+        margin-bottom: 15px
   &-title
     margin: 0
     margin-bottom: 60px
@@ -87,6 +88,8 @@
       color: $grey1
       &._center
         text-align: center
+      ._active
+        color: $active
   &-upload
     display: inline-block
     cursor: pointer
@@ -184,7 +187,7 @@
           +futura-heavy
           text-transform: uppercase
           font-size: 23px
-  &-outfield
+  &-outplate
     border-radius: 30px
     height: 60px
     padding: 0 25px
@@ -206,8 +209,74 @@
     display: inline-block
     +futura-med
     font-size: 18px
-    color: $blue
+    color: $blue2
     cursor: pointer
+  &-rbs
+    display: flex
+    align-items: center
+    flex-wrap: wrap
+    gap: 15px 25px
+    &-label
+      +futura-demi
+      font-size: 20px
+      color: $grey1
+  &-fieldbtn
+    border-radius: 30px
+    border: 1px solid #E4EAF0
+    height: 58px
+    display: flex
+    align-items: center
+    background-color: #E9EFF3
+    overflow: hidden
+    +futura-book
+    font-size: 18px
+    color: $grey1
+    &::placeholder
+      color: $grey2
+    .fieldbtn
+      &-input
+        padding: 0 28px
+      &-btn
+        border-radius: 30px
+        padding: 0 20px
+        +futura-heavy
+        text-transform: uppercase
+        font-size: 23px
+  &-outfield
+    border-radius: 20px
+    border: 1px solid #E7EFF5
+    width: 100%
+    padding: 10px 20px
+    background-color: $white
+    +futura-demi
+    font-size: 18px
+    color: $grey1
+    &__content
+      height: 100%
+      overflow-y: auto
+  &-infrow
+    display: flex
+    align-items: center
+    gap: 10px
+    &-icon
+      flex: 0 0 auto
+      width: 27px
+      height: 27px
+      img
+        object-fit: cover
+        width: 100%
+        height: 100%
+    &-text
+      +futura-med
+      font-size: 20px
+      color: $grey1
+  &-rowstat
+    display: flex
+    align-items: center
+    flex-wrap: wrap
+    gap: 15px 30px
+    &-item
+      +futura-demi
 
 @media ( max-width: 1440px )
   .chp
@@ -279,9 +348,29 @@
             padding: 0 16px
           &-btn
             font-size: 20px
-    &-outfield
+    &-outplate
       height: 50px
       padding: 0 16px
+    &-pastelink
+      font-size: 16px
+    &-fieldbtn
+      height: 50px
+      font-size: 16px
+      .fieldbtn
+        &-input
+          padding: 0 16px
+        &-btn
+          font-size: 20px
+    &-rbs
+      gap: 10px
+      &-label
+        font-size: 16px
+    &-infrow
+      &-icon
+        width: 22px
+        height: 22px
+      &-text
+        font-size: 16px
 
 @media ( max-width: 1330px )
   .chp
@@ -341,12 +430,28 @@
           &-btn
             padding: 0 15px
             font-size: 16px
-    &-outfield
+    &-outplate
       height: 45px
       padding: 0 16px
       font-size: 16px
     &-pastelink
       font-size: 14px
+    &-fieldbtn
+      height: 45px
+      font-size: 14px
+      .fieldbtn
+        &-input
+          padding: 0 16px
+        &-btn
+          padding: 0 15px
+          font-size: 16px
+    &-infrow
+      gap: 6px
+      &-icon
+        width: 18px
+        height: 18px
+      &-text
+        font-size: 14px
 
 @media ( max-width: 520px )
   .chp
@@ -424,7 +529,18 @@
         .fieldbtn
           &-btn
             font-size: 16px
-    &-outfield
+    &-outplate
       height: 40px
       padding: 0 12px
       font-size: 14px
+    &-rbs
+      &-label
+        width: 100%
+        font-size: 14px
+    &-fieldbtn
+      height: 40px
+      .fieldbtn
+        &-btn
+          font-size: 16px
+    &-outfield
+      border-radius: 10px

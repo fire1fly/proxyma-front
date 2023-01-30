@@ -16,7 +16,7 @@
   <script defer src="./js/accordion.js"></script>
 
 
-  <title>IPv6 compatibilty - Proxyma</title>
+  <title>Spam database - Proxyma</title>
 </head>
 <body>
   <div class="root">
@@ -133,39 +133,59 @@
             <a href="./proxy-checker.html" class="chp-nav-link">proxy checker</a>
             <a href="./check-ip.html" class="chp-nav-link">check my ip</a>
             <a href="./check-anon.html" class="chp-nav-link">check my anonymity</a>
-            <a href="./check-spamdb.html" class="chp-nav-link">spam database check</a>
+            <a href="./check-spamdb.html" class="chp-nav-link active">spam database check</a>
             <a href="./whois.html" class="chp-nav-link">whois</a>
             <a href="./port-scanner.html" class="chp-nav-link">port scanner</a>
-            <a href="./ipv6.html" class="chp-nav-link active">ipv6 compatibilty</a>
+            <a href="./ipv6.html" class="chp-nav-link">ipv6 compatibilty</a>
           </div>
         </nav>
         
         <div class="chp-h">
-          <h1 class="chp-title">CHECK THE SITE'S <b>IPV6 SUPPORT</b></h1>
+          <h1 class="chp-title">Spam <b>Database</b></h1>
           <div class="chp-h-text">
             <p>
-              With this service, you can check any site for IPv6 access support.
-            </p>
+              A free tool to check if your IP address or any other IP address is <b>in anti-spam databases</b>. <br> Will your emails or forum chats be blocked? <b>We'll help you figure it out.</b>
           </div>
         </div>
 
-        <form action="#" class="stsup chp-box">
+        <div class="spmdb">
+          <form action="#" class="spmdb-in chp-box">
 
-          <h2 class="chp-box-title">Enter the domain</h2>
+            <div class="chp-box-h">
+              <h2 class="chp-box-title">Check IP address</h2>
+            </div>
 
-          <div class="chp-urlfield stsup__urlfield">
-            <input type="text" class="chp-urlfield-prefix" placeholder="https://">
-            <div class="fieldbtn chp-urlfield-fieldbtn">
-              <input type="email" class="fieldbtn-input" placeholder="example.com">
+            <div class="fieldbtn chp-fieldbtn spmdb__fieldbtn">
+              <input type="email" class="fieldbtn-input" placeholder="Enter IP address">
               <button type="button" class="btn btn-blue fieldbtn-btn">
-                <div class="fieldbtn-btn-text">check</div>
+                <div class="fieldbtn-btn-text">CHECK ports</div>
               </button>
             </div>
+
+            <div class="chp-pastelink">Paste my IP address</div>
+
+            <div class="chp-infrow spmdb__infrow">
+              <div class="chp-infrow-icon">
+                <img src="./assets/static/icon-ipcheck.png" alt="icon">
+              </div>
+              <div class="chp-infrow-text">50+ databases of blacklisted IPs are checked</div>
+            </div>
+
+          </form>
+
+          <div class="spmdb-out chp-box">
+            <div class="chp-rowstat spmdb__rowstat">
+              <div class="chp-rowstat-item chp-box-text">Checks <span class="_active">0</span></div>
+              <div class="chp-rowstat-item chp-box-text">Verified <span class="_active">0</span></div>
+              <div class="chp-rowstat-item chp-box-text">Blacklisted <span class="_active">0</span></div>
+            </div>
+            <div class="chp-outfield spmdb-out__outfield">
+              <div class="chp-outfield__content">
+                <!-- field for results output -->
+              </div>  
+            </div>
           </div>
-
-          <div class="chp-outplate _success">Congratulations, this site supports IPv6</div>
-
-        </form> 
+        </div>
 
       </div> 
 
@@ -486,7 +506,6 @@
           </div>
         </div>
       </div><!-- /.info section 1 -->
-
 
     </main>
 

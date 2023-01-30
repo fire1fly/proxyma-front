@@ -1,0 +1,38 @@
+.prtsc
+  margin-bottom: 100px
+  display: flex
+  justify-content: space-between
+  &-in
+    flex: 0 1 47%
+  &__rbs
+    margin-bottom: 30px
+  &__fieldbtn
+    margin-bottom: 20px
+  &-out
+    padding-bottom: 50px
+    flex: 0 1 47%
+    &__label
+      margin-bottom: 50px
+    &__outfield
+      height: 170px
+
+@media ( max-width: 1440px )
+  .prtsc
+    margin-bottom: 50px
+    &__rbs
+      margin-bottom: 15px
+    &__fieldbtn
+      margin-bottom: 15px
+    &-out
+      padding-bottom: 25px
+      &__label
+        margin-bottom: 15px
+
+@media ( max-width: 991px )
+  .prtsc
+    flex-direction: column
+    gap: 30px
+    &-in
+      flex: auto
+    &-out
+      flex: auto
