@@ -14,9 +14,10 @@
   <script defer src="./js/dropdown.js"></script>
   <script defer src="./js/mobileMenu.js"></script>
   <script defer src="./js/accordion.js"></script>
+  <script defer src="./js/copy.js"></script>
 
 
-  <title>Port scanner - Proxyma</title>
+  <title>My IP address - Proxyma</title>
 </head>
 <body>
   <div class="root">
@@ -132,78 +133,231 @@
           <div class="chp-nav__inner dd-list showDown">
             <a href="./proxy-checker.html" class="chp-nav-link">proxy checker</a>
             <a href="./check-ip.html" class="chp-nav-link">check my ip</a>
-            <a href="./check-anon.html" class="chp-nav-link">check my anonymity</a>
+            <a href="./check-anon.html" class="chp-nav-link active">check my anonymity</a>
             <a href="./check-spamdb.html" class="chp-nav-link">spam database check</a>
             <a href="./whois.html" class="chp-nav-link">whois</a>
-            <a href="./port-scanner.html" class="chp-nav-link active">port scanner</a>
+            <a href="./port-scanner.html" class="chp-nav-link">port scanner</a>
             <a href="./ipv6.html" class="chp-nav-link">ipv6 compatibilty</a>
           </div>
         </nav>
         
         <div class="chp-h">
-          <h1 class="chp-title">Network Port <b>Scanner</b></h1>
+          <h1 class="chp-title">Check my <b>anonymity</b></h1>
           <div class="chp-h-text">
             <p>
-              Checking open ports by the Port Scanner service shows what ports are open on your computer/website or someone else's one and what they are responsible for.              
-            </p>
-            <p>
-              The check is made through the NMAP scanner and shows how open your access to the PC/website is to the outside world.
+              With the help of this service, you can check how anonymous you are on the network, how much the data provided by your computer / browser matches the data provided by your IP address.
             </p>
           </div>
         </div>
+      </div>  
 
-        <div class="prtsc">
-          <form action="#" class="prtsc-in chp-box">
-
-            <div class="chp-box-h">
-              <h2 class="chp-box-title">Check domain or IP address</h2>
+        <div class="chan">
+          <img src="./assets/static/section-pic-1.png" alt="picture" class="chan-bgpic-1">
+          <img src="./assets/static/section-pic-2.png" alt="picture" class="chan-bgpic-2">
+          <div class="chp-container chan__inner">
+            <div class="chp-box chan-sum">
+              <div class="chan-sum-anon">
+                My anonymity: <span class="_active">80%</span>
+              </div>
+              <div class="chan-sum-ip">
+                My ip <span class="_blue">85.26.235.145</span>
+              </div>
+              <button class="btn btn-blue chan-sum-btn">hide ip</button>
             </div>
-
-            <div class="chp-rbs prtsc__rbs">
-              <div class="chp-rbs-label">Types of ports to scan:</div>
-              <label class="chp-radiobtn__wrap">
-                <div class="chp-radiobtn radiobtn">
-                  <input type="radio" name="port_type" value="popular" checked>
-                  <div class="radiobtn-check"></div>
+            <div class="chp-box chan-stat">
+              <div class="chan-stat-col">
+                <div class="chan-stat-table">
+                  <div class="chan-stat-row">
+                    <div class="chan-stat-label">Host</div>
+                    <div class="chan-stat-value">85.26.235.145Whois</div>
+                  </div>
+                  <div class="chan-stat-row">
+                    <div class="chan-stat-label">A country</div>
+                    <div class="chan-stat-value">Russian (RU)</div>
+                  </div>
+                  <div class="chan-stat-row">
+                    <div class="chan-stat-label">City</div>
+                    <div class="chan-stat-value">Samara</div>
+                  </div>
+                  <div class="chan-stat-row">
+                    <div class="chan-stat-label">Postal code</div>
+                    <div class="chan-stat-value">404146</div>
+                  </div>
+                  <div class="chan-stat-row">
+                    <div class="chan-stat-label">Coordinates</div>
+                    <div class="chan-stat-value">53.1785, 50.1267</div>
+                  </div>
                 </div>
-                <div class="chp-radiobtn-label">
-                  Popular ports
+  
+                <div class="chan-stat-table">
+                  <div class="chan-stat-row">
+                    <div class="chan-stat-label">OS</div>
+                    <div class="chan-stat-value">Browser</div>
+                  </div>
+                  <div class="chan-stat-row">
+                    <div class="chan-stat-label">Windows</div>
+                    <div class="chan-stat-value">Chrome 107.0.0.0</div>
+                  </div>
                 </div>
-              </label>
-
-              <label class="chp-radiobtn__wrap">
-                <div class="chp-radiobtn radiobtn">
-                  <input type="radio" name="port_type" value="popular">
-                  <div class="radiobtn-check"></div>
+  
+                <div class="chan-stat-table">
+                  <div class="chan-stat-row">
+                    <div class="chan-stat-label">Screen</div>
+                    <div class="chan-stat-value">1366x768, 24 bits</div>
+                  </div>
                 </div>
-                <div class="chp-radiobtn-label">
-                  Hidden ports
+  
+                <div class="chan-stat-table">
+                  <div class="chan-stat-row">
+                    <div class="chan-stat-label">Blacklisted </div>
+                    <div class="chan-stat-value _active">20</div>
+                  </div>
+                  <div class="chan-stat-row">
+                    <div class="chan-stat-label">Checks</div>
+                    <div class="chan-stat-value">7</div>
+                  </div>
                 </div>
-              </label>
-            </div>
-
-            <div class="fieldbtn chp-fieldbtn prtsc__fieldbtn">
-              <input type="email" class="fieldbtn-input" placeholder="Enter IP address">
-              <button type="button" class="btn btn-blue fieldbtn-btn">
-                <div class="fieldbtn-btn-text">CHECK ports</div>
-              </button>
-            </div>
-
-            <div class="chp-pastelink">Paste my IP address</div>
-
-          </form>
-
-          <div class="prtsc-out chp-box">
-            <div class="chp-box-text prtsc-out__label">Check Results</div>
-            <div class="chp-outfield prtsc-out__outfield">
-              <div class="chp-outfield__content">
-                <!-- field for results output -->
-              </div>  
+  
+                <div class="chan-stat-table">
+                  <div class="chan-stat-row">
+                    <div class="chan-stat-label">IP Time Zone</div>
+                    <div class="chan-stat-value">Europe/Samara</div>
+                  </div>
+                  <div class="chan-stat-row">
+                    <div class="chan-stat-label">IP time</div>
+                    <div class="chan-stat-value">27-11-2022, 19:20</div>
+                  </div>
+                  <div class="chan-stat-row">
+                    <div class="chan-stat-label">System time</div>
+                    <div class="chan-stat-value">27-11-2022, 19:20</div>
+                  </div>
+                </div>
+  
+                <div class="chan-stat-table">
+                  <div class="chan-stat-row">
+                    <div class="chan-stat-label">Open ports</div>
+                    <div class="chan-stat-value">
+                      <div class="chan-stat-status _green">No</div>
+                    </div>
+                  </div>
+                </div>
+  
+              </div>
+              <div class="chan-stat-col">
+  
+                <div class="chan-stat-table">
+                  <div class="chan-stat-row">
+                    <div class="chan-stat-label">Proxy</div>
+                    <div class="chan-stat-value">
+                      <div class="chan-stat-status _green">No</div>
+                    </div>
+                  </div>
+                  <div class="chan-stat-row">
+                    <div class="chan-stat-label">VPN</div>
+                    <div class="chan-stat-value">
+                      <div class="chan-stat-status _green">No</div>
+                    </div>
+                  </div>
+                  <div class="chan-stat-row">
+                    <div class="chan-stat-label">Tor</div>
+                    <div class="chan-stat-value">
+                      <div class="chan-stat-status _green">No</div>
+                    </div>
+                  </div>
+                  <div class="chan-stat-row">
+                    <div class="chan-stat-label">Anonymizer</div>
+                    <div class="chan-stat-value">
+                      <div class="chan-stat-status _green">No</div>
+                    </div>
+                  </div>
+                  <div class="chan-stat-row">
+                    <div class="chan-stat-label">Blacklist</div>
+                    <div class="chan-stat-value">
+                      <div class="chan-stat-status _active">Yes</div>
+                    </div>
+                  </div>
+                </div>
+  
+                <div class="chan-stat-table">
+                  <div class="chan-stat-row">
+                    <div class="chan-stat-label">Language</div>
+                    <div class="chan-stat-value">
+                      <div class="chan-stat-lang">
+                        <div class="chan-stat-lang__icon">
+                          <img src="./assets/static/icon-flag-rus.svg" alt="russia">
+                        </div>
+                        <span class="_upper">RU</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="chan-stat-row">
+                    <div class="chan-stat-label">JS language</div>
+                    <div class="chan-stat-value">
+                      <div class="chan-stat-lang">
+                        <div class="chan-stat-lang__icon">
+                          <img src="./assets/static/icon-flag-rus.svg" alt="russia">
+                        </div>
+                        <span class="_upper">RU</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+  
+                <div class="chan-stat-table">
+                  <div class="chan-stat-row">
+                    <div class="chan-stat-label">Flash</div>
+                    <div class="chan-stat-value">
+                      <div class="chan-stat-status _green">No</div>
+                    </div>
+                  </div>
+                  <div class="chan-stat-row">
+                    <div class="chan-stat-label">Java</div>
+                    <div class="chan-stat-value">
+                      <div class="chan-stat-status _green">No</div>
+                    </div>
+                  </div>
+                  <div class="chan-stat-row">
+                    <div class="chan-stat-label">ActiveX</div>
+                    <div class="chan-stat-value">
+                      <div class="chan-stat-status _green">No</div>
+                    </div>
+                  </div>
+                  <div class="chan-stat-row">
+                    <div class="chan-stat-label">WebRTC</div>
+                    <div class="chan-stat-value">
+                      <div class="chan-stat-status _active">Yes</div>
+                    </div>
+                  </div>
+                  <div class="chan-stat-row">
+                    <div class="chan-stat-label">WebRTC IPs</div>
+                    <div class="chan-stat-value">
+                      <div class="chan-stat-status _blue">85.26.235.145</div>
+                    </div>
+                  </div>
+                </div>
+  
+                <div class="chan-stat-table">
+                  <div class="chan-stat-row">
+                    <div class="chan-stat-label">UserAgent</div>
+                    <div class="chan-stat-value">
+                      <div>Mozilla/5.0 (Windows NT 10.0; Win64; x64)</div>
+                      <div>AppleWebKit/537.36 (KHTML, like Gecko)</div>
+                      <div>Chrome/107.0.0.0 Safari/537.36</div>
+                    </div>
+                  </div>
+                  <div class="chan-stat-row">
+                    <div class="chan-stat-label">System time</div>
+                    <div class="chan-stat-value">
+                      <div class="chan-stat-status _green"> Matches</div>
+                    </div>
+                  </div>
+                </div>
+  
+              </div>
+  
             </div>
           </div>
         </div>
-
-      </div> 
 
       <div class="inf1">
         <div class="inf1-grid container">

@@ -14,9 +14,10 @@
   <script defer src="./js/dropdown.js"></script>
   <script defer src="./js/mobileMenu.js"></script>
   <script defer src="./js/accordion.js"></script>
+  <script defer src="./js/copy.js"></script>
 
 
-  <title>Port scanner - Proxyma</title>
+  <title>My IP address - Proxyma</title>
 </head>
 <body>
   <div class="root">
@@ -131,76 +132,88 @@
 
           <div class="chp-nav__inner dd-list showDown">
             <a href="./proxy-checker.html" class="chp-nav-link">proxy checker</a>
-            <a href="./check-ip.html" class="chp-nav-link">check my ip</a>
+            <a href="./check-ip.html" class="chp-nav-link active">check my ip</a>
             <a href="./check-anon.html" class="chp-nav-link">check my anonymity</a>
             <a href="./check-spamdb.html" class="chp-nav-link">spam database check</a>
             <a href="./whois.html" class="chp-nav-link">whois</a>
-            <a href="./port-scanner.html" class="chp-nav-link active">port scanner</a>
+            <a href="./port-scanner.html" class="chp-nav-link">port scanner</a>
             <a href="./ipv6.html" class="chp-nav-link">ipv6 compatibilty</a>
           </div>
         </nav>
         
         <div class="chp-h">
-          <h1 class="chp-title">Network Port <b>Scanner</b></h1>
+          <h1 class="chp-title">My IP <b>Address</b></h1>
           <div class="chp-h-text">
             <p>
-              Checking open ports by the Port Scanner service shows what ports are open on your computer/website or someone else's one and what they are responsible for.              
-            </p>
-            <p>
-              The check is made through the NMAP scanner and shows how open your access to the PC/website is to the outside world.
+              A computer is assigned a number called IP (Internet Protocol Address) when it is connected to the Internet. <br> 
+              You get the IP that is available to the provider and free. IP changes when you connect next time.
             </p>
           </div>
         </div>
 
-        <div class="prtsc">
-          <form action="#" class="prtsc-in chp-box">
-
-            <div class="chp-box-h">
-              <h2 class="chp-box-title">Check domain or IP address</h2>
+        <div class="chip">
+            <div class="chip-ip chp-box">
+              <div class="chp-box-h">
+                <h2 class="chp-box-title">Your IP address</h2>
+              </div>
+              
+              <div class="chip-ip__inner copy">
+                <div class="chip-ip-value copy-value">85.26.233.185</div>
+                <div class="chp-btncopy chip-ip__btncopy copy-trigger">
+                  <svg class="icon icon-tabler icon-tabler-copy" fill="none" height="24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M0 0h24v24H0z" fill="none" stroke="none"/>
+                    <rect height="12" rx="2" width="12" x="8" y="8"/>
+                    <path d="M16 8v-2a2 2 0 0 0 -2 -2h-8a2 2 0 0 0 -2 2v8a2 2 0 0 0 2 2h2"/>
+                  </svg>
+                </div>
+              </div>
             </div>
 
-            <div class="chp-rbs prtsc__rbs">
-              <div class="chp-rbs-label">Types of ports to scan:</div>
-              <label class="chp-radiobtn__wrap">
-                <div class="chp-radiobtn radiobtn">
-                  <input type="radio" name="port_type" value="popular" checked>
-                  <div class="radiobtn-check"></div>
+            <div class="chip-stat">
+              <div class="chip-stat-title">Information <br> tracked by your IP address</div>
+              <div class="chip-stat-table">
+                <div class="chip-stat-row">
+                  <div class="chip-stat-label">Country</div>
+                  <div class="chip-stat-value">Russia (RU)</div>
                 </div>
-                <div class="chp-radiobtn-label">
-                  Popular ports
+                <div class="chip-stat-row">
+                  <div class="chip-stat-label">City</div>
+                  <div class="chip-stat-value">Samara</div>
                 </div>
-              </label>
-
-              <label class="chp-radiobtn__wrap">
-                <div class="chp-radiobtn radiobtn">
-                  <input type="radio" name="port_type" value="popular">
-                  <div class="radiobtn-check"></div>
+                <div class="chip-stat-row">
+                  <div class="chip-stat-label">Postal code</div>
+                  <div class="chip-stat-value">404146</div>
                 </div>
-                <div class="chp-radiobtn-label">
-                  Hidden ports
+                <div class="chip-stat-row">
+                  <div class="chip-stat-label">Time</div>
+                  <div class="chip-stat-value">27-11-22, 17:26 (Europe/Samara)</div>
                 </div>
-              </label>
+                <div class="chip-stat-row">
+                  <div class="chip-stat-label">Browser</div>
+                  <div class="chip-stat-value">Chrome 107.0.0.0</div>
+                </div>
+                <div class="chip-stat-row">
+                  <div class="chip-stat-label">Proxy</div>
+                  <div class="chip-stat-value">Used</div>
+                </div>
+              </div>
             </div>
 
-            <div class="fieldbtn chp-fieldbtn prtsc__fieldbtn">
-              <input type="email" class="fieldbtn-input" placeholder="Enter IP address">
-              <button type="button" class="btn btn-blue fieldbtn-btn">
-                <div class="fieldbtn-btn-text">CHECK ports</div>
-              </button>
+            <div class="chip-hd">
+              <div class="chip-hd-pic">
+                <img src="./assets/static/check-ip-hide-pic-1.png" alt="picture">
+              </div>
+              <div class="chip-hd-title">You can hide it all</div>
+              <div class="chip-hd-text">Hide your private details and secure your traffic with the help of our trusted tool</div>
+              <div class="chip-hd-f">
+                <button class="btn btn-blue chip-hd-btn">
+                  <div class="chip-hd-btn__icon">
+                    <img src="./assets/static/icon-incognito-white.png" alt="icon">
+                  </div>
+                  <div class="chip-hd-btn__text">hide ip address</div>
+                </button>
+              </div>
             </div>
-
-            <div class="chp-pastelink">Paste my IP address</div>
-
-          </form>
-
-          <div class="prtsc-out chp-box">
-            <div class="chp-box-text prtsc-out__label">Check Results</div>
-            <div class="chp-outfield prtsc-out__outfield">
-              <div class="chp-outfield__content">
-                <!-- field for results output -->
-              </div>  
-            </div>
-          </div>
         </div>
 
       </div> 

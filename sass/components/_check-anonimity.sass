@@ -1,0 +1,171 @@
+.chan
+  position: relative
+  overflow: hidden
+  &__inner
+    position: relative
+    z-index: 2
+  &-bgpic
+    &-1
+      position: absolute
+      z-index: 1
+      left: 0
+      bottom: -180px
+    &-2
+      position: absolute
+      z-index: 1
+      right: 0
+      bottom: -800px
+  &-sum
+    margin-bottom: 20px
+    display: flex
+    align-items: center
+    justify-content: space-between
+    flex-wrap: wrap
+    gap: 10px 20px
+    &-anon
+      +futura-heavy
+      font-size: 20px
+      color: $grey1
+      ._active
+        color: $active
+    &-ip
+      margin-left: auto
+      +futura-demi
+      font-size: 24px
+      color: $grey1
+      ._blue
+        color: $blue
+    &-btn
+      border-radius: 30px
+      height: 50px
+      padding: 0 20px
+      +futura-heavy
+      text-transform: uppercase
+      font-size: 20px
+  &-stat
+    margin-bottom: 100px
+    display: flex
+    gap: 25px
+    &-col
+      flex: 1 1 50%
+    &-table
+      margin-bottom: 25px
+      border-radius: 20px
+      border: 1px solid #E7ECF2
+      padding: 15px 25px
+      background-color: $white
+      &:nth-last-of-type(1)
+        margin-bottom: 0
+    &-row
+      border-bottom: 1px solid #E7ECF2
+      padding: 8px 0
+      display: flex
+      align-items: center
+      justify-content: space-between
+      gap: 10px
+      &:nth-last-of-type(1)
+        border-bottom: none
+    &-label
+      +futura-med
+      font-size: 18px
+      color: $grey1
+    &-value
+      +futura-demi
+      text-align: right
+      font-size: 16px
+      color: $grey1
+      &._active
+        color: $active
+      &._blue
+        color: $blue2
+      &._upper
+        text-transform: uppercase
+      ._upper
+        text-transform: uppercase
+    &-lang
+      display: flex
+      align-items: center
+      gap: 10px
+      &__icon
+        width: 18px
+        line-height: 0
+        img, svg
+          width: 100%
+    &-status
+      border-radius: 30px
+      padding: 2px 10px
+      +futura-demi
+      font-size: 14px
+      color: $white
+      &._green
+        background-color: $green2
+      &._active
+        background-color: $active
+
+@media ( max-width: 1330px )
+  .chan
+    &-sum
+      &-anon
+        font-size: 18px
+      &-ip
+        font-size: 22px
+
+@media ( max-width: 991px )
+  .chan
+    &-sum
+      &-anon
+        font-size: 16px
+      &-ip
+        font-size: 18px
+      &-btn
+        height: 40px
+        padding: 0 15px
+        font-size: 18px
+
+@media ( max-width: 768px )
+  .chan
+    &-bgpic
+      &-1
+        width: 250px
+        bottom: -80px
+      &-2
+        width: 150px
+        bottom: -180px
+    &-sum
+      justify-content: center
+      &-ip
+        margin-left: 0
+    &-stat
+      margin-bottom: 50px
+      flex-direction: column
+      &-col
+        flex: auto
+
+@media ( max-width: 520px )
+  .chan
+    &-bgpic
+      &-1
+        left: -100px
+    &-sum
+      gap: 10px
+      &-anon
+        font-size: 16px
+      &-ip
+        font-size: 16px
+      &-btn
+        height: 35px
+        font-size: 16px
+    &-stat
+      &-table
+        margin-bottom: 15px
+        border-radius: 10px
+        padding: 5px 10px
+      &-label
+        font-size: 14px
+      &-value
+        font-size: 14px
+      &-lang
+        gap: 5px
+      &-status
+        padding: 2px 6px
+        font-size: 12px

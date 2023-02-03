@@ -1,0 +1,183 @@
+.chip
+  &-ip
+    margin-bottom: 30px
+    &__inner
+      display: flex
+      align-items: center
+      justify-content: center
+      gap: 18px
+    &-value
+      +futura-heavy
+      font-size: 50px
+      color: $blue2
+    &__btncopy
+      flex: 0 0 auto
+  &-stat
+    margin-bottom: 50px
+    &-title
+      text-align: center
+      margin-bottom: 30px
+      +futura-demi
+      font-size: 30px
+      color: $grey1
+    &-row
+      margin-bottom: 15px
+      border-radius: 30px
+      padding: 12px 18px
+      display: flex
+      align-items: flex-start
+      justify-content: space-between
+      gap: 20px
+      &:nth-child(odd)
+        background-color: $grey3
+      &:nth-last-of-type(1)
+        margin-bottom: 0
+    &-label
+      +futura-med
+      font-size: 18px
+      color: $grey1
+    &-value
+      text-align: right
+      +futura-demi
+      font-size: 18px
+      color: $grey1
+  &-hd
+    margin-bottom: 50px
+    border-radius: 20px
+    padding: 60px
+    display: grid
+    grid-template-columns: min-content auto
+    grid-template-rows: repeat(3, auto)
+    gap: 30px 75px
+    background-color: $grey4
+    &-pic
+      grid-column: 1/2
+      grid-row: 1/4
+      width: 420px
+      height: auto
+      img
+        max-width: 100%
+    &-title
+      grid-column: 2/3
+      grid-row: 1/2
+      align-self: end
+      text-align: center
+      +futura-demi
+      font-size: 30px
+      color: $grey1
+    &-text
+      grid-column: 2/3
+      grid-row: 2/3
+      text-align: center
+      +futura-med
+      font-size: 20px
+      color: $grey1
+    &-f
+      grid-column: 2/3
+      grid-row: 3/4
+      justify-self: center
+    &-btn
+      border-radius: 30px
+      height: 50px
+      padding: 0 20px
+      gap: 14px
+      text-transform: uppercase
+      +futura-heavy
+      font-size: 24px
+      &__icon
+        width: 22px
+        max-height: 32px
+        line-height: 0
+        img, svg
+          width: 100%
+          max-height: 100%
+
+@media ( max-width: 1440px )
+  .chip
+    &-stat
+      &-title
+        font-size: 25px
+      &-row
+        margin-bottom: 5px
+    &-hd
+      padding: 30px
+      justify-content: center
+      gap: 15px 40px
+      &-pic
+        width: 300px
+      &-title
+        font-size: 28px
+      &-text
+        font-size: 16px
+
+@media ( max-width: 991px )
+  .chip
+    &-ip
+      &-value
+        font-size: 40px
+    &-hd
+      &-pic
+        width: 220px
+
+@media ( max-width: 768px )
+  .chip
+    &-ip
+      &__inner
+        gap: 10px
+      &-value
+        font-size: 30px
+    &-stat
+      &-title
+        font-size: 22px
+      &-row
+        padding: 10px 14px
+      &-label
+        font-size: 16px
+      &-value
+        font-size: 16px
+    &-hd
+      grid-template-columns: 1fr
+      grid-template-rows: repeat(5, auto)
+      gap: 20px
+      padding: 30px 15px
+      &-title
+        grid-column: 1/2
+        grid-row: 1/2
+      &-text
+        grid-column: 1/2
+        grid-row: 2/3
+      &-pic
+        justify-self: center
+        grid-column: 1/2
+        grid-row: 3/4
+        max-width: 100%
+      &-f
+        grid-column: 1/2
+        grid-row: 4/5
+      &-btn
+        height: 45px
+        font-size: 20px
+        padding: 0 15px
+
+@media ( max-width: 520px )
+  .chip
+    &-ip
+      &-value
+        font-size: 25px
+    &-stat
+      margin-bottom: 25px
+      &-title
+        font-size: 20px
+      &-row
+        padding: 8px 12px
+      &-label
+        font-size: 14px
+      &-value
+        font-size: 14px
+    &-hd
+      padding: 15px
+      gap: 15px
+      &-title
+        font-size: 22px
+      &-text
+        font-size: 16px
