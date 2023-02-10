@@ -176,6 +176,17 @@
       flex: 0 1 auto
       img, svg
         max-width: 100%
+      ._hover
+        &-fill
+          transition: 0.2s ease-in-out
+        &-stroke
+          transition: 0.2s ease-in-out
+      &:hover
+        ._hover
+          &-fill
+            fill: $active
+          &-stroke
+            stroke: $active
   &-copy
     display: flex
     align-items: center

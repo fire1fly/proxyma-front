@@ -78,4 +78,34 @@ let wideCardsListSlider = new Swiper(".wc-slider", {
       spaceBetween: 60,
     },
   },
-})
+});
+
+if (document.documentElement.clientWidth <= 1440) {
+  const productCardsSlider = new Swiper(".pc-slider", {
+    pagination: {
+      el: ".pc-slider-pagination",
+      clickable: true,
+      renderBullet: function (index, className) {
+        return '<span class="' + className + '"></span>';
+      },
+    },
+    breakpoints: {
+      0: {
+        slidesPerView: 1,
+        spaceBetween: 20,
+      },
+      521: {
+        slidesPerView: 2,
+        spaceBetween: 20,
+      },
+      768: {
+        slidesPerView: 3,
+        spaceBetween: 20,
+      },
+      991: {
+        spaceBetween: 30,
+        slidesPerView: 3,
+      },
+    },
+  });
+}

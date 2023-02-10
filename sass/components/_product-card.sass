@@ -74,6 +74,22 @@
         grid-template-columns: repeat(5, auto)
         gap: 40px
         align-items: flex-start
+  &-slider
+    position: relative
+    padding-bottom: 80px
+    &-pagination
+      position: absolute
+      display: flex
+      justify-content: center
+      &.swiper-pagination-bullets
+        .swiper-pagination-bullet
+          margin: 0 8px
+      .swiper-pagination-bullet
+        width: 12px
+        height: 12px
+        background: darken(#E7EDF3, 10%)
+        &-active
+          background: $active
   &-card
     position: relative
     border-radius: 15px
@@ -241,7 +257,7 @@
       display: flex
       align-items: center
       padding: 0 10px
-      gap: 10px
+      gap: 2px
       background-color: $grey3
       &-sign
         border: none
@@ -259,8 +275,13 @@
         &:active
           transform: translateY(1px)
       &-value
+        border: none
+        width: 32px
+        height: 100%
+        background-color: transparent
+        text-align: center
         +futura-demi
-        font-size: 19px
+        font-size: 16px
         color: $grey1
     &-btn
       border-radius: 30px
@@ -302,9 +323,10 @@
 @media ( max-width: 1440px )
   .pc
     &-row
+      display: flex
       &._grid
         &-3, &-4, &-5
-          gap: 35px
+          gap: 0
     &-card
       &-title
         margin-bottom: 20px
@@ -349,10 +371,15 @@
       &-item
         height: 40px
         font-size: 15px
-    &-row
-      &._grid
-        &-3, &-4, &-5
-          grid-template-columns: repeat(auto-fill, minmax(230px, 1fr))
+    &-slider
+      padding-bottom: 50px
+      &-pagination
+        &.swiper-pagination-bullets
+          .swiper-pagination-bullet
+            margin: 0 4px
+        .swiper-pagination-bullet
+          width: 8px
+          height: 8px
     &-card
       padding: 15px 15px 0
       &-hint
@@ -400,12 +427,6 @@
         flex-direction: column
       &-item
         width: 100%
-    &-row
-      &._grid
-        &-3, &-4, &-5
-          display: flex
-          overflow-x: auto
-          padding-bottom: 50px
     &-card
       flex: 0 0 auto
       &-row
