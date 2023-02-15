@@ -1,4 +1,8 @@
 .pc
+  &-container
+    margin: 0 auto
+    max-width: 1570px
+    padding: 0 15px
   &-tabs
     padding-top: 90px
     &-list
@@ -75,21 +79,9 @@
         gap: 40px
         align-items: flex-start
   &-slider
-    position: relative
     padding-bottom: 80px
-    &-pagination
-      position: absolute
-      display: flex
-      justify-content: center
-      &.swiper-pagination-bullets
-        .swiper-pagination-bullet
-          margin: 0 8px
-      .swiper-pagination-bullet
-        width: 12px
-        height: 12px
-        background: darken(#E7EDF3, 10%)
-        &-active
-          background: $active
+    &-button
+      display: none
   &-card
     position: relative
     border-radius: 15px
@@ -299,11 +291,15 @@
 
 @media ( max-width: 1700px )
   .pc
+    &-container
+      max-width: 1470px
     &-card
       padding: 45px 20px 0
 
 @media ( max-width: 1600px )
   .pc
+    &-container
+      max-width: 1330px
     &-tabs
       padding-top: 40px
       &-list
@@ -322,12 +318,75 @@
 
 @media ( max-width: 1440px )
   .pc
+    &-container
+      max-width: 1230px
     &-row
       display: flex
       &._grid
         &-3, &-4, &-5
           gap: 0
+    &-slider
+      position: relative
+      padding: 0 50px 80px
+      overflow: hidden
+      &-pagination
+        position: absolute
+        display: flex
+        justify-content: center
+        &.swiper-pagination-bullets
+          .swiper-pagination-bullet
+            margin: 0 8px
+        .swiper-pagination-bullet
+          width: 12px
+          height: 12px
+          background: darken(#E7EDF3, 10%)
+          &-active
+            background: $active
+      &-button
+        border-radius: 50%
+        width: 45px
+        height: 45px
+        display: flex
+        align-items: center
+        justify-content: center
+        background-color: darken($grey3, 3%)
+        cursor: pointer
+        transition: 0.3s ease
+        user-select: none
+        &:not(.swiper-button-disabled)
+          &:hover
+            background-color: $active
+            svg
+              path
+                stroke: $white
+        &.swiper-button-disabled
+          opacity: 0.4
+          cursor: default
+        &.swiper-button-lock
+          display: none
+        svg
+          width: 28px
+          path
+            transition: 0.2s ease
+            stroke: $grey1
+        &-prev
+          position: absolute
+          top: 40%
+          transform: translateY(-50%)
+          left: 0
+          z-index: 2
+        &-next
+          position: absolute
+          top: 40%
+          transform: translateY(-50%)
+          right: 0
+          z-index: 2
     &-card
+      &-hint
+        top: 7px
+        right: 7px
+        width: 25px
+        height: 25px
       &-title
         margin-bottom: 20px
         font-size: 26px
@@ -364,6 +423,13 @@
         font-size: 18px
         .icon
           max-width: 22px
+    &-slider
+      padding: 0 40px 80px
+      &-button
+        width: 35px
+        height: 35px
+        svg
+          width: 24px
 
 @media ( max-width: 768px )
   .pc
@@ -381,12 +447,14 @@
           width: 8px
           height: 8px
     &-card
-      padding: 15px 15px 0
+      padding: 25px 15px 0
       &-hint
         top: 8px
-        top: 8px
-        width: 25px
-        height: 25px
+        right: 8px
+        width: 20px
+        height: 20px
+        img, svg
+          width: 20px
       &-title
         margin-bottom: 15px
         font-size: 22px

@@ -316,6 +316,32 @@ input[type="number"]
       .accordion__body
         display: none
 
+.quote
+  margin: 0
+  position: relative
+  display: block
+  padding-left: 20px
+  +futura-book
+  font-size: 20px
+  color: #696375
+  &::before
+    content: ''
+    position: absolute
+    top: 0
+    left: 0
+    display: block
+    width: 3px
+    height: 100%
+  &._green
+    &::before
+      background-color: $green3
+  &._red
+    &::before
+      background-color: $active
+  &._blue
+    &::before
+      background-color: $blue
+
 @media ( max-width: 1700px )
   .container
     max-width: 1470px
@@ -470,6 +496,9 @@ input[type="number"]
     border-radius: 30px
     padding: 8px 12px
     font-size: 14px
+
+  .quote
+    padding-left: 10px
 
 @media ( max-width: 390px )
   .section

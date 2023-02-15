@@ -1,0 +1,329 @@
+.prx
+  &-pageblock1
+    background: transparent url("../assets/static/prx-pageblock1-bg.png") no-repeat
+    background-size: contain
+    background-position: center 20%
+  &-pageblock2
+    background: transparent url("../assets/static/prx-pageblock2-bg.png") no-repeat
+    background-size: contain
+    background-position: center bottom
+  &-ms
+    margin-bottom: 40px
+    &-frame
+      position: relative
+      margin-bottom: 40px
+      padding: 60px 0
+    &__bg
+      position: absolute
+      top: 0
+      left: 0
+      z-index: 1
+      height: 100%
+    &__backpic
+      position: absolute
+      top: 50%
+      transform: translateY(-50%)
+      left: 0
+      z-index: 2
+    &-grid
+      position: relative
+      z-index: 3
+      display: grid
+      grid-template-columns: repeat(2, 1fr)
+      gap: 30px 0
+    &-h
+      grid-column: 1/2
+      grid-row: 1/2
+    &-title
+      margin: 0
+      +futura-bold
+      font-size: 60px
+      text-transform: uppercase
+      color: $white
+    &-subtitle
+      +futura-med
+      font-size: 35px
+      color: $white
+    &-text
+      grid-column: 1/2
+      grid-row: 2/3
+      margin: 0
+      max-width: 660px
+      +futura-book
+      font-size: 25px
+      color: #d8ebff
+    &__fieldbtn
+      grid-column: 1/2
+      grid-row: 3/4
+      border-radius: 36px
+      max-width: 700px
+      height: 60px
+      .fieldbtn
+        &-input
+          padding: 0 20px
+          +futura-demi
+          font-size: 20px
+          color: $grey1
+          &::placeholder
+            color: #9095A5
+        &-btn
+          border-radius: 36px
+          padding: 0 20px
+          gap: 15px
+          +futura-heavy
+          text-transform: uppercase
+          font-size: 24px
+          &-icon
+            width: 30px
+            height: 30px
+            line-height: 0
+            svg
+              width: 100%
+    &-pic
+      justify-self: end
+      align-self: center
+      height: 480px
+      grid-column: 2/3
+      grid-row: 1/4
+      img
+        height: 100%
+    &-ft
+      display: flex
+      justify-content: space-between
+      gap: 15px
+      &-item
+        border-radius: 45px
+        padding: 12px 15px 15px
+        display: flex
+        align-items: center
+        gap: 10px
+        background-color: $grey4
+      &-icon
+        max-width: 35px
+        flex: 0 0 auto
+        line-height: 0
+        img
+          max-width: 100%
+      &-label
+        +futura-demi
+        font-size: 16px
+        color: $grey1
+      &-sub
+        +futura-med
+        font-size: 14px
+        color: #9b9dad
+  &-ab
+    margin-bottom: 40px
+    &-grid
+      display: grid
+      grid-template-columns: repeat(2, auto)
+      gap: 30px 60px
+      justify-content: space-between
+    &-pic
+      grid-column: 1/2
+      grid-row: 1/3
+      width: 480px
+      img
+        width: 100%
+    &-title
+      align-self: end
+      grid-column: 2/3
+      grid-row: 1/2
+      +futura-demi
+      font-size: 35px
+      color: $grey1
+    &-info
+      grid-column: 2/3
+      grid-column: 2/3
+    &-text
+      margin: 0
+      margin-bottom: 20px
+      +futura-book
+      font-size: 22px
+      color: $grey1
+      &:nth-last-of-type(1)
+        margin-bottom: 0
+    &__quote
+      margin-bottom: 20px
+  &-ft1
+    margin-bottom: 90px
+    padding-top: 80px
+
+@media ( max-width: 1440px )
+  .prx
+    &-pageblock2
+      background-size: contain
+      background-position: center bottom
+    &-ms
+      &__backpic
+        width: 200px
+      &-pic
+        height: 400px
+    &-ab
+      &-grid
+        gap: 30px
+      &-pic
+        width: 420px
+      &-title
+        font-size: 30px
+      &-text
+        font-size: 18px
+      &__quote
+        font-size: 16px
+    &-ft1
+      margin-bottom: 40px
+
+@media ( max-width: 1330px )
+  .prx
+    &-ms
+      &-title
+        font-size: 45px
+      &-subtitle
+        font-size: 30px
+      &-text
+        font-size: 20px
+      &-pic
+        height: 320px
+      &__fieldbtn
+        height: 50px
+        .fieldbtn
+          &-input
+            padding: 0 15px
+            font-size: 18px
+          &-btn
+            padding: 0 15px
+            gap: 15px
+            font-size: 20px
+            &-icon
+              width: 25px
+              height: 25px
+
+@media ( max-width: 991px )
+  .prx
+    &-pageblock2
+      background-size: cover
+      background-position: right bottom
+    &-ms
+      &-frame
+        padding: 30px 0
+      &__backpic
+        width: 150px
+      &-title
+        font-size: 35px
+      &-subtitle
+        font-size: 22px
+      &-text
+        font-size: 16px
+        line-height: 1.3
+      &-pic
+        height: 270px
+      &-ft
+        justify-content: center
+        flex-wrap: wrap
+        gap: 15px 20px
+    &-ab
+      &-pic
+        width: 360px
+      &-text
+        font-size: 16px
+      &__quote
+        font-size: 16px
+
+@media ( max-width: 768px )
+  .prx
+    &-pageblock1
+      background-position: center 5%
+    &-pageblock2
+      background-position: center bottom
+    &-ms
+      margin-bottom: 30px
+      &-frame
+        margin-bottom: 30px
+      &__bg
+        width: 100%
+        object-fit: cover
+        object-position: 90% center
+      &__backpic
+        width: 250px
+      &-grid
+        grid-template-columns: 100%
+      &__fieldbtn
+        grid-row: 3/4
+      &-pic
+        grid-column: 1/2
+        grid-row: 4/5
+        max-width: 350px
+        width: 100%
+        height: auto
+        img
+          width: 100%
+          height: auto
+    &-ab
+      &-grid
+        grid-template-columns: 100%
+        gap: 10px
+      &-title
+        grid-column: 1/2
+        grid-row: 1/2
+      &-pic
+        grid-column: 1/2
+        grid-row: 2/3
+        justify-self: center
+        max-width: 350px
+        width: 100%
+      &-info
+        grid-column: 1/2
+        grid-row: 3/4
+      &-title
+        font-size: 30px
+      &-text
+        font-size: 18px
+      &__quote
+        font-size: 16px
+    &-ft1
+      padding-top: 30px
+      margin-bottom: 30px
+
+@media ( max-width: 520px )
+  .prx
+    &-ms
+      &-frame
+        margin-bottom: 15px
+      &-title
+        font-size: 32px
+      &__fieldbtn
+        height: 45px
+        .fieldbtn
+          &-input
+            padding: 0 12px
+            font-size: 16px
+          &-btn
+            padding: 0 12px
+            gap: 12px
+            font-size: 16px
+            &-icon
+              width: 20px
+              height: 20px
+      &-ft
+        gap: 10px
+        justify-content: flex-start
+        &-item
+          flex: 0 1 48%
+          border-radius: 20px
+          gap: 7px
+          padding: 12px
+        &-icon
+          max-width: 25px
+        &-label
+          font-size: 14px
+        &-sub
+          font-size: 12px
+    &-ab
+      padding: 15px 0
+      &-title
+        text-align: center
+        font-size: 25px
+      &-text
+        font-size: 16px
+      &__quote
+        font-size: 14px

@@ -1,0 +1,99 @@
+.pay
+  position: relative
+  padding-top: 200px
+  padding-bottom: 100px
+  &-grid
+    display: grid
+    grid-template-columns: 1fr 1fr
+    gap: 30px 0
+  &-title
+    grid-column: 1/2
+    grid-row: 1/2
+    +futura-demi
+    font-size: 36px
+    color: $grey1
+  &-desc
+    grid-column: 1/2
+    grid-row: 2/3
+  &-text
+    +futura-book
+    font-size: 22px
+    color: $grey1
+  &-item
+    flex: 0 1 30%
+    border-radius: 30px
+    height: 130px
+    padding: 15px 25px
+    display: flex
+    align-items: center
+    justify-content: center
+    background-color: $white
+    box-shadow: 0px 10px 25px 5px rgba(#E7EFF5, 1)
+    img
+      max-width: 100%
+      max-height: 95%
+    &-grid
+      grid-column: 1/2
+      grid-row: 3/4
+      padding-top: 80px
+      display: flex
+      justify-content: space-between
+      flex-wrap: wrap
+      gap: 30px 0
+  &-pic
+    position: absolute
+    bottom: 50px
+    right: 0
+    width: 40%
+    line-height: 0
+    img
+      width: 100%
+
+@media ( max-width: 1440px )
+  .pay
+    padding-top: 100px
+    padding-bottom: 50px
+    &-item
+      height: 100px
+      padding: 15px
+      img
+        max-width: 80%
+      &-grid
+        padding-top: 40px
+
+@media ( max-width: 991px )
+  .pay
+    &-grid
+      grid-template-columns: 1.15fr 0.85fr
+    &-title
+      font-size: 32px
+    &-text
+      font-size: 20px
+    &-item
+      flex: 0 1 31%
+      border-radius: 20px
+      height: 90px
+      &-grid
+        gap: 15px 0
+
+@media ( max-width: 768px )
+  .pay
+    padding-top: 30px
+    &-grid
+      grid-template-columns: 100%
+      gap: 15px 0
+    &-title
+      text-align: center
+      font-size: 26px
+    &-desc
+      text-align: center
+    &-text
+      font-size: 18px
+    &-item
+      height: 70px
+      &-grid
+        padding-top: 15px
+        margin: 0 auto
+        max-width: 450px
+    &-pic
+      display: none

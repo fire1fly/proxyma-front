@@ -89,22 +89,26 @@ if (document.documentElement.clientWidth <= 1440) {
         return '<span class="' + className + '"></span>';
       },
     },
+    navigation: {
+      nextEl: ".pc-slider-button-next",
+      prevEl: ".pc-slider-button-prev",
+    },
     breakpoints: {
       0: {
         slidesPerView: 1,
-        spaceBetween: 20,
+        spaceBetween: 50,
       },
       521: {
         slidesPerView: 2,
         spaceBetween: 20,
       },
       768: {
-        slidesPerView: 3,
-        spaceBetween: 20,
+        slidesPerView: 2,
+        spaceBetween: 40,
       },
       991: {
-        spaceBetween: 30,
         slidesPerView: 3,
+        spaceBetween: 50,
       },
     },
   });

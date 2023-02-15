@@ -44,6 +44,7 @@
         background-color: $white
         box-shadow: 0px 5px 30px 3px rgba(#E4E7EA, 0.7)
   &-card
+    flex: 0 1 17%
     border-radius: 20px
     padding: 20px
     display: flex
@@ -53,10 +54,12 @@
     background-color: $grey3
     transition: 0.3s
     &-grid
-      flex: 0 1 910px
-      display: grid
-      grid-template-columns: repeat(auto-fill, minmax(150px, 1fr))
-      gap: 20px 30px
+      gap: 20px
+      display: flex
+      justify-content: flex-end
+      flex-wrap: wrap
+      &__wrapper
+        flex: 1 1 910px
     &-thumb
       width: 85px
       line-height: 0
@@ -81,14 +84,23 @@
         font-size: 20px
         height: 70px
     &-card
+      flex: 0 1 23%
       padding: 15px
       &-grid
-        flex: 0 1 510px
         gap: 15px
+        &__wrapper
+          flex: 0 1 60%
       &-title
         font-size: 18px
       &-thumb
         width: 60px
+
+@media ( max-width: 1130px )
+  .ft1
+    &-card
+      flex: 0 1 22%
+      &__wrapper
+        flex: 0 1 65%
 
 @media ( max-width: 991px )
   .ft1
@@ -126,10 +138,13 @@
       &-grid
         padding-bottom: 10px
         overflow-x: auto
-        flex: auto
-        width: 100%
         gap: 10px
+        display: grid
         grid-template-columns: repeat(5, 1fr)
+        justify-content: flex-start
+        &__wrapper
+          width: 100%
+          flex: auto
       &-thumb
         flex: 0 0 auto
         width: 40px
@@ -173,12 +188,12 @@
 @media ( max-width: 520px )
   .ft1
     &-info
-      justify-items: start
       .ft1
         &-info
           &-text
             align-self: start
       &-title
+        text-align: center
         font-size: 25px
       &-text
         height: 56px
