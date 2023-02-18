@@ -26,7 +26,7 @@ let articleListSlider1 = new Swiper(".al1-slider", {
       spaceBetween: 65,
     },
   },
-})
+});
 
 let wideCardsListSlider = new Swiper(".wc-slider", {
   pagination: {
@@ -113,3 +113,67 @@ if (document.documentElement.clientWidth <= 1440) {
     },
   });
 }
+
+let proxyCardsSlider = new Swiper(".prc-slider", {
+  pagination: {
+    el: ".prc-slider-pagination",
+    clickable: true,
+    renderBullet: function (index, className) {
+      return '<span class="' + className + '"></span>';
+    },
+  },
+  navigation: {
+    nextEl: ".prc-slider-button-next",
+    prevEl: ".prc-slider-button-prev",
+  },
+  breakpoints: {
+    0: {
+      slidesPerView: 1,
+      spaceBetween: 60,
+    },
+    560: {
+      slidesPerView: 2,
+      spaceBetween: 50,
+    },
+    768: {
+      slidesPerView: 3,
+      spaceBetween: 30,
+    },
+    1130: {
+      slidesPerView: 3,
+      spaceBetween: 60,
+    },
+  },
+});
+
+let articleListSlider3 = new Swiper(".al3-slider", {
+  pagination: {
+    el: ".al3-slider-pagination",
+    clickable: true,
+    renderBullet: function (index, className) {
+      return '<span class="' + className + '"></span>';
+    },
+  },
+  navigation: {
+    nextEl: ".al3-slider-button-next",
+    prevEl: ".al3-slider-button-prev",
+  },
+  breakpoints: {
+    0: {
+      slidesPerView: 1,
+      spaceBetween: 40,
+    },
+    520: {
+      slidesPerView: 2,
+      spaceBetween: 40,
+    },
+    768: {
+      slidesPerView: 3,
+      spaceBetween: 50,
+    },
+    1200: {
+      slidesPerView: 4,
+      spaceBetween: 40,
+    },
+  },
+});

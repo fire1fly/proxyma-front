@@ -1,2 +1,351 @@
 .ucp
+  &-pageblock1
+    padding-top: 60px
+    padding-bottom: 80px
+    background: transparent url(../assets/static/usecases-pageblock1-bg.png) no-repeat
+    background-size: cover
+    background-position: center top
+    .inf2
+      margin-bottom: 108px
+  &-pageblock2
+    padding-top: 100px
+    padding-bottom: 100px
+    background: transparent url(../assets/static/usecases-pageblock2-bg.png) no-repeat
+    background-size: cover
+    background-position: center top
+    &-pc
+      min-height: 1100px
   &-ms
+    margin-bottom: 80px
+    padding-top: 60px
+    &-grid
+      display: grid
+      grid-template-columns: 50% 40%
+      gap: 40px 0
+      justify-content: space-between
+      align-content: center
+    &-title
+      grid-column: 1/2
+      grid-row: 1/2
+      margin: 0
+      +futura-bold
+      text-transform: uppercase
+      font-size: 60px
+      color: $grey1
+    &-text
+      +futura-book
+      font-size: 24px
+      color: $grey1
+    &-desc
+      grid-column: 1/2
+      grid-row: 2/3
+    &__fieldbtn
+      grid-column: 1/2
+      grid-row: 3/4
+      border-radius: 36px
+      max-width: 760px
+      height: 60px
+      .fieldbtn
+        &-input
+          padding: 0 20px
+          +futura-demi
+          font-size: 20px
+          color: $grey1
+          &::placeholder
+            color: #9095A5
+        &-btn
+          border-radius: 36px
+          padding: 0 20px
+          gap: 15px
+          +futura-heavy
+          text-transform: uppercase
+          font-size: 24px
+          &-icon
+            width: 30px
+            height: 30px
+            line-height: 0
+            svg
+              width: 100%
+    &-dt
+      grid-column: 1/2
+      grid-row: 4/5
+      &-title
+        margin-bottom: 20px
+        +futura-demi
+        font-size: 18px
+        color: #7e8493
+      &-grid
+        display: flex
+        justify-content: space-between
+        flex-wrap: wrap
+      &-card
+        flex: 0 1 30%
+        border-radius: 20px
+        padding: 18px 22px
+        background-color: $white
+        box-shadow: 0px 10px 25px 5px rgba(#EAEEF2, 1)
+      &-pic
+        margin-bottom: 15px
+      &-label
+        +futura-demi
+        font-size: 18px
+        color: $grey1
+    &-pic
+      grid-column: 2/3
+      grid-row: 1/5
+      line-height: 0
+      display: flex
+      align-items: center
+      img
+        max-width: 100%
+  &-dt
+    padding-top: 40px
+    padding-bottom: 70px
+    background: transparent url(../assets/static/usecases-pageblock1-bottom-line.png) no-repeat
+    background-size: 115%
+    background-position: center bottom
+    &-grid
+      margin: 0 auto
+      max-width: 1360px
+      width: 100%
+      display: flex
+      align-items: center
+      justify-content: space-between
+    &-item
+      display: flex
+      align-items: center
+      gap: 15px
+      &-icon
+        flex: 0 0 auto
+        img
+          max-width: 100%
+      &-label
+        +futura-demi
+        font-size: 18px
+        color: $grey1
+    &-sep
+      border-radius: 50%
+      width: 6px
+      height: 6px
+      background-color: #E0E9EE
+  &-inf2
+    &-1
+      position: relative
+      overflow: hidden
+      padding: 100px 0
+      &-pic
+        &-1
+          position: absolute
+          bottom: 0
+          left: 0
+          z-index: 1
+        &-2
+          position: absolute
+          top: 0
+          right: 0
+          z-index: 1
+      .inf2-grid
+        position: relative
+        z-index: 2
+    &-2
+      padding: 60px 0
+
+@media ( max-width: 1700px )
+  .ucp
+    &-pageblock1
+      .inf2
+        margin-bottom: 66px
+
+@media ( max-width: 1600px )
+  .ucp
+    &-pageblock1
+      padding-top: 30px
+    &-dt
+      padding-top: 5px
+      padding-bottom: 60px
+      &-grid
+        max-width: 1150px
+
+@media ( max-width: 1440px )
+  .ucp
+    &-pageblock1
+      .inf2
+        margin-bottom: 65px
+    &-pageblock2
+      padding-top: 50px
+      padding-bottom: 50px
+      background-size: 106%
+      &-pc
+        min-height: 810px
+    &-ms
+      padding-top: 0
+      &-grid
+        grid-template-columns: 58% 40%
+        gap: 30px 0
+      &__fieldbtn
+        max-width: 550px
+        height: 50px
+        .fieldbtn
+          &-input
+            padding: 0 15px
+            font-size: 18px
+          &-btn
+            padding: 0 15px
+            gap: 15px
+            font-size: 20px
+            &-icon
+              width: 25px
+              height: 25px
+      &-dt
+        &-card
+          padding: 14px
+        &-label
+          font-size: 16px
+    &-dt
+      padding-top: 25px
+      padding-bottom: 46px
+      &-grid
+        max-width: 960px
+      &-item
+        gap: 8px
+        &-icon
+          max-width: 32px
+        &-label
+          font-size: 16px
+    &-inf2
+      &-1
+        padding: 50px 0
+        &-pic
+          &-1
+            width: 250px
+          &-2
+            width: 350px
+
+@media ( max-width: 1330px )
+  .ucp
+    &-dt
+      max-width: 1230px
+
+@media ( max-width: 1282px )
+  .ucp
+    &-pageblock2
+      background-size: 115%
+
+@media ( max-width: 991px )
+  .ucp
+    &-pageblock1
+      padding-bottom: 30px
+      background: none
+      .inf2
+        margin-bottom: 40px
+        padding: 40px 0
+        background-color: $grey4
+    &-pageblock2
+      background: none
+      &-pc
+        padding-top: 30px
+        padding-bottom: 30px
+        background-color: $grey4
+        min-height: auto
+    &-ms
+      margin-bottom: 40px
+      &-title
+        font-size: 40px
+      &-text
+        font-size: 20px
+    &-dt
+      max-width: 900px
+      background: none
+      padding-top: 0
+      padding-bottom: 0
+      &-grid
+        display: grid
+        grid-template-columns: repeat(2, auto)
+        justify-content: center
+        gap: 50px
+      &-item
+        flex: 0 1 48%
+      &-sep
+        display: none
+    &-inf2
+      &-1
+        padding: 30px 0
+      &-2
+        padding: 30px 0
+
+@media ( max-width: 768px )
+  .ucp
+    &-pageblock1
+      padding-top: 0
+      .inf2
+        margin-bottom: 30px
+        padding: 30px 0
+    &-pageblock2
+      padding-top: 0
+      padding-bottom: 0
+    &-ms
+      &-grid
+        grid-template-columns: repeat(2, 48%)
+      &-title
+        grid-column: 1/3
+      &-desc
+        grid-column: 1/3
+      &__fieldbtn
+        grid-column: 1/3
+        max-width: 100%
+      &-dt
+        &-grid
+          gap: 15px
+        &-card
+          flex: 1 1 100%
+          display: flex
+          align-items: center
+          gap: 12px
+        &-pic
+          margin-bottom: 0
+          max-width: 35px
+          img
+            max-width: 100%
+      &-pic
+        grid-column: 2/3
+        grid-row: 4/5
+
+@media ( max-width: 520px )
+  .ucp
+    &-ms
+      margin-bottom: 30px
+      &-grid
+        gap: 20px 15px
+      &-title
+        font-size: 30px
+      &-text
+        font-size: 16px
+      &__fieldbtn
+        height: 40px
+        .fieldbtn
+          &-input
+            padding: 0 12px
+            font-size: 16px
+          &-btn
+            padding: 0 12px
+            gap: 12px
+            font-size: 16px
+            &-icon
+              width: 20px
+              height: 20px
+      &-dt
+        &-title
+          font-size: 16px
+        &-card
+          border-radius: 10px
+          padding: 8px
+        &-pic
+          max-width: 25px
+        &-label
+          font-size: 14px
+    &-dt
+      &-grid
+        gap: 20px
+      &-item
+        &-icon
+          max-width: 24px

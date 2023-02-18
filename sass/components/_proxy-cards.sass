@@ -1,0 +1,209 @@
+.prc
+  padding: 90px 0
+  background-color: $grey4
+  &-h
+    margin-bottom: 80px
+  &-grid
+    display: flex
+    justify-content: space-between
+    .swiper-slide
+      display: flex
+  &-card
+    width: 100%
+    height: 100%
+    border-radius: 20px
+    padding: 50px 45px
+    display: flex
+    flex-direction: column
+    align-items: center
+    gap: 30px
+    background-color: $white
+    &-pic
+      width: 100px
+      img
+        max-width: 100%
+    &-title
+      text-align: center
+      +futura-bold
+      font-size: 29px
+      color: #000000
+    &-desc
+      text-align: center
+      +futura-book
+      font-size: 18px
+      color: #000000
+    &-link
+      +futura-demi
+      font-size: 18px
+      color: $active
+    &-notauth
+      border-radius: 30px
+      height: 60px
+      padding-right: 20px
+      display: flex
+      align-items: center
+      gap: 25px
+      background-color: #EFF4F7
+      &-btn
+        border-radius: 30px
+        height: 60px
+        padding: 0 20px
+        gap: 10px
+        +futura-heavy
+        font-size: 23px
+        text-transform: uppercase
+      &-label
+        +futura-heavy
+        font-size: 23px
+        color: #000000
+
+@media ( max-width: 1600px )
+  .prc
+    &-card
+      padding: 40px 25px
+      &-notauth
+        height: 55px
+        padding-right: 15px
+        gap: 12px
+        &-btn
+          padding: 0 12px
+          height: 55px
+          font-size: 20px
+        &-label
+          font-size: 20px
+
+@media ( max-width: 1440px )
+  .prc
+    padding: 60px 0
+    &-h
+      margin-bottom: 60px
+
+@media ( max-width: 1330px )
+  .prc
+    &-card
+      padding: 30px 15px
+      gap: 20px
+      &-pic
+        width: 80px
+      &-title
+        font-size: 24px
+      &-desc
+        font-size: 16px
+      &-link
+        font-size: 16px
+      &-notauth
+        height: 50px
+        padding-right: 12px
+        gap: 10px
+        &-btn
+          padding: 0 12px
+          height: 50px
+          font-size: 18px
+        &-label
+          font-size: 18px
+
+@media ( max-width: 1130px )
+  .prc
+    &-card
+      &-notauth
+        padding-right: 0
+        &-btn
+          height: 100%
+        &-label
+          display: none
+
+@media ( max-width: 991px )
+  .prc
+    &-card
+      padding: 20px 15px
+      &-pic
+        width: 50px
+      &-title
+        font-size: 20px
+
+@media ( max-width: 768px )
+  .prc
+    padding: 30px 0
+    &-h
+      margin-bottom: 30px
+    &-slider
+      position: relative
+      padding: 0 60px 40px
+      &-pagination
+        &.swiper-pagination-bullets
+          position: absolute
+          z-index: 2
+          display: flex
+          justify-content: center
+          .swiper-pagination-bullet
+            margin: 0 4px
+        .swiper-pagination-bullet
+          width: 8px
+          height: 8px
+          background: darken(#E7EDF3, 10%)
+          &-active
+            background: $active
+      &-button
+        border-radius: 50%
+        width: 35px
+        height: 35px
+        display: flex
+        align-items: center
+        justify-content: center
+        background-color: darken($grey3, 3%)
+        cursor: pointer
+        transition: 0.3s ease
+        user-select: none
+        &:not(.swiper-button-disabled)
+          &:hover
+            background-color: $active
+            svg
+              path
+                stroke: $white
+        &.swiper-button-disabled
+          opacity: 0.4
+          cursor: default
+        &.swiper-button-lock
+          display: none
+        svg
+          width: 20px
+          path
+            transition: 0.2s ease
+            stroke: $grey1
+        &-prev
+          position: absolute
+          top: 40%
+          transform: translateY(-50%)
+          left: 15px
+          z-index: 2
+        &-next
+          position: absolute
+          top: 40%
+          transform: translateY(-50%)
+          right: 15px
+          z-index: 2
+    &-card
+      &-notauth
+        height: 40px
+
+@media ( max-width: 520px )
+  .prc
+    padding: 30px 0 10px
+    &-slider
+      padding: 0 30px 40px
+      &-button
+        width: 24px
+        height: 24px
+        svg
+          width: 16px
+        &-prev
+          left: 0
+        &-next
+          right: 0
+    &-card
+      border-radius: 10px
+      gap: 10px
+      &-desc
+        font-size: 14px
+      &-link
+        font-size: 14px
