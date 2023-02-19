@@ -1,0 +1,121 @@
+.inf3
+  position: relative
+  background-color: $grey4
+  &-pic
+    position: absolute
+    top: 50%
+    transform: translateY(-50%)
+    right: 66%
+    width: 690px
+    line-height: 0
+    img
+      width: 100%
+  &-info
+    padding: 80px 0
+    margin-left: 38%
+    max-width: 53%
+    width: 100%
+  &-title
+    margin: 0
+    margin-bottom: 40px
+    text-align: left
+    +futura-demi
+    font-size: 42px
+    color: $grey1
+  &-desc
+    margin-bottom: 50px
+    +futura-book
+    font-size: 25px
+    color: $grey1
+    p
+      margin: 0
+      margin-bottom: 40px
+      &:nth-last-of-type(1)
+        margin-bottom: 0
+  &-link
+    border-radius: 30px
+    display: inline-flex
+    height: 60px
+    padding: 0 25px
+    +futura-heavy
+    font-size: 23px
+    text-transform: uppercase
+
+@media ( max-width: 1600px )
+  .inf3
+    &-title
+      font-size: 36px
+      margin-bottom: 30px
+    &-desc
+      font-size: 24px
+      p
+        margin-bottom: 30px
+
+@media ( max-width: 1440px )
+  .inf3
+    &-pic
+      width: 620px
+    &-info
+      max-width: 60%
+      padding: 60px 0
+    &-title
+      font-size: 32px
+    &-desc
+      font-size: 22px
+
+@media ( max-width: 1330px )
+  .inf3
+    &-pic
+      width: 560px
+    &-info
+      padding: 60px 0
+    &-title
+      font-size: 30px
+    &-desc
+      font-size: 20px
+
+@media ( max-width: 991px )
+  .inf3
+    &-pic
+      width: 600px
+    &-desc
+      margin-bottom: 30px
+    &-link
+      height: 50px
+      font-size: 20px
+      padding: 0 20px
+
+@media ( max-width: 768px )
+  .inf3
+    &-pic
+      right: 80%
+      width: 520px
+    &-info
+      margin-left: 23%
+      max-width: 75%
+      padding: 30px 0
+    &-title
+      font-size: 28px
+    &-desc
+      font-size: 18px
+
+@media ( max-width: 520px )
+  .inf3
+    &-pic
+      display: none
+    &-info
+      margin: 0 auto
+      max-width: 100%
+      width: 90%
+    &-title
+      font-size: 25px
+      margin-bottom: 20px
+    &-desc
+      font-size: 16px
+      margin-bottom: 20px
+      p
+        margin-bottom: 10px
+    &-link
+      height: 45px
+      font-size: 18px
+      padding: 0 15px

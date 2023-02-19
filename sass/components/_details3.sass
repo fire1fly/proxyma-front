@@ -1,0 +1,120 @@
+.dt3
+  position: relative
+  padding-top: 100px
+  padding-bottom: 130px
+  &-pic
+    position: absolute
+    bottom: -180px
+    left: -240px
+  &__inner
+    position: relative
+    z-index: 2
+  &-h
+    margin-bottom: 80px
+  &-grid
+    display: flex
+    justify-content: space-between
+    flex-wrap: wrap
+    gap: 60px 0
+  &-card
+    flex: 0 1 30%
+    border-radius: 30px
+    padding: 30px 40px
+    display: flex
+    flex-direction: column
+    gap: 20px
+    background-color: $grey4
+    &-pic
+      max-width: 47px
+      line-height: 0
+      img
+        max-width: 100%
+    &-title
+      margin: 0
+      +futura-heavy
+      font-size: 25px
+      color: $grey1
+    &-desc
+      margin: 0
+      +futura-med
+      font-size: 19px
+      color: $grey2
+    &-link
+      margin-top: auto
+      +futura-demi
+      font-size: 17px
+      color: $active
+
+@media ( max-width: 1440px )
+  .dt3
+    padding-top: 50px
+    padding-bottom: 80px
+    &-h
+      margin-bottom: 50px
+    &-grid
+      gap: 40px 0
+    &-card
+      padding: 25px 30px
+      &-title
+        font-size: 22px
+      &-desc
+        font-size: 18px
+
+@media ( max-width: 991px )
+  .dt3
+    &-pic
+      width: 300px
+      bottom: -80px
+      left: -120px
+    &-grid
+      gap: 15px 0
+    &-card
+      flex: 0 1 32%
+      padding: 20px
+      &-title
+        font-size: 20px
+      &-desc
+        font-size: 16px
+
+@media ( max-width: 768px )
+  .dt3
+    &-grid
+      flex-direction: column
+    &-card
+      border-radius: 20px
+      flex: auto
+      gap: 15px
+      display: grid
+      grid-template-columns: min-content auto
+      &-pic
+        grid-column: 1/2
+        grid-row: 1/2
+        width: 30px
+      &-title
+        align-self: center
+        grid-column: 2/3
+        grid-row: 1/2
+      &-desc
+        grid-column: 1/3
+        grid-row: 2/3
+      &-link
+        grid-column: 1/3
+        grid-row: 3/4
+
+@media ( max-width: 520px )
+  .dt3
+    padding-top: 30px
+    padding-bottom: 30px
+    &-h
+      margin-bottom: 30px
+    &-card
+      border-radius: 10px
+      gap: 12px
+      &-pic
+        width: 24px
+      &-title
+        font-size: 18px
+      &-desc
+        font-size: 14px
+      &-link
+        font-size: 14px

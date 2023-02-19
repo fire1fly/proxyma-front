@@ -1,0 +1,138 @@
+.bnr
+  padding-top: 100px
+  padding-bottom: 100px
+  &-h
+    margin-bottom: 80px
+  &-grid
+    display: flex
+    align-items: center
+    justify-content: space-between
+  &-item
+    border-radius: 30px
+    padding: 40px 45px
+    display: flex
+    align-items: flex-start
+    flex-direction: column
+    gap: 15px
+    min-height: 300px
+    &._short
+      flex: 0 1 29%
+    &._long
+      flex: 0 1 66%
+    &._grid
+      &-1
+        background: $grey4 url(../assets/static/banner-bg-1.png) no-repeat
+        background-size: contain
+        background-position: right bottom
+      &-2
+        background: $grey4 url(../assets/static/banner-bg-2.png) no-repeat
+        background-size: contain
+        background-position: right bottom
+        .bnr-item
+          &-title
+            max-width: 66%
+          &-text
+            max-width: 66%
+    &-title
+      +futura-demi
+      font-size: 33px
+      color: $grey1
+    &-text
+      +futura-med
+      font-size: 19px
+      color: $grey2
+      strong
+        +futura-demi
+        color: $active
+        text-decoration: underline
+    &-btn
+      margin-top: auto
+      border-radius: 30px
+      display: inline-flex
+      height: 60px
+      padding: 0 25px
+      +futura-heavy
+      text-transform: uppercase
+      font-size: 23px
+
+@media ( max-width: 1440px )
+  .bnr
+    padding-top: 60px
+    padding-bottom: 60px
+    &-h
+      margin-bottom: 40px
+    &-item
+      padding: 30px
+      min-height: 250px
+      &._short
+        flex: 0 1 36%
+      &._long
+        flex: 0 1 60%
+      &._grid
+        &-2
+          background: $grey4 url(../assets/static/banner-bg-2.png) no-repeat
+          background-size: cover
+          background-position: right -50px bottom
+      &-title
+        font-size: 26px
+      &-text
+        font-size: 18px
+      &-btn
+        height: 50px
+        padding: 0 20px
+        font-size: 20px
+
+@media ( max-width: 1330px )
+  .bnr
+    &-item
+      &._grid
+        &-2
+          background: $grey4 url(../assets/static/banner-bg-2.png) no-repeat
+          background-size: cover
+          background-position: right -100px bottom
+
+@media ( max-width: 991px )
+  .bnr
+    &-grid
+      flex-direction: column
+      gap: 20px
+    &-item
+      border-radius: 20px
+      padding: 20px
+      min-height: 210px
+      &._short
+        width: 100%
+        flex: auto
+      &._long
+        width: 100%
+        flex: auto
+
+@media ( max-width: 768px )
+  .bnr
+    &-item
+      &-title
+        font-size: 24px
+      &-text
+        font-size: 16px
+      &-btn
+        height: 40px
+        font-size: 16px
+        padding: 0 15px
+
+@media ( max-width: 520px )
+  .bnr
+    padding-top: 30px
+    padding-bottom: 30px
+    &-h
+      margin-bottom: 30px
+    &-item
+      border-radius: 10px
+      min-height: 190px
+      padding: 15px
+      &._grid
+        &-2
+          background-position: right -100px bottom
+      &-title
+        font-size: 22px
+      &-text
+        font-size: 14px
