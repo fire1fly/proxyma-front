@@ -5,11 +5,11 @@
     margin-bottom: 80px
   &-grid
     display: flex
-    align-items: center
     justify-content: space-between
   &-item
     border-radius: 30px
     padding: 40px 45px
+    flex: 0 1 48%
     display: flex
     align-items: flex-start
     flex-direction: column
@@ -33,6 +33,24 @@
             max-width: 66%
           &-text
             max-width: 66%
+      &-3
+        background: $grey4 url(../assets/static/banner-bg-3.png) no-repeat
+        background-size: contain
+        background-position: right bottom
+        .bnr-item
+          &-title
+            max-width: 55%
+          &-text
+            max-width: 55%
+      &-4
+        background: $grey4 url(../assets/static/banner-bg-4.png) no-repeat
+        background-size: contain
+        background-position: right bottom
+        .bnr-item
+          &-title
+            max-width: 55%
+          &-text
+            max-width: 55%
     &-title
       +futura-demi
       font-size: 33px
@@ -99,6 +117,8 @@
     &-item
       border-radius: 20px
       padding: 20px
+      flex: auto
+      width: 100%
       min-height: 210px
       &._short
         width: 100%
@@ -132,6 +152,12 @@
       &._grid
         &-2
           background-position: right -100px bottom
+        &-3
+          .bnr-item
+            &-title
+              max-width: 100%
+            &-text
+              max-width: 65%
       &-title
         font-size: 22px
       &-text
