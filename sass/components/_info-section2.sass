@@ -19,14 +19,25 @@
           &-grid
             justify-content: flex-end
             grid-column: 1/2
+        &-ft
+          justify-content: flex-end
+          &__wrap
+            grid-column: 1/2
+        &-list
+          &__wrap
+            grid-column: 1/2
+          &-item
+            flex-direction: row-reverse
   &-pic
     grid-column: 1/2
     grid-row: 1/4
     display: flex
     align-items: center
+    justify-content: center
     img
       max-width: 100%
   &-title
+    align-self: end
     grid-column: 2/3
     grid-row: 1/2
     margin: 0
@@ -40,6 +51,11 @@
     +futura-book
     font-size: 22px
     color: $grey1
+    p
+      margin: 0
+      margin-bottom: 40px
+      &:nth-last-of-type(1)
+        margin-bottom: 0
   &-card
     flex: 0 1 45%
     border-radius: 20px
@@ -66,6 +82,54 @@
       +futura-book
       font-size: 20px
       color: $grey1
+  &-ft
+    display: flex
+    align-items: center
+    justify-content: flex-start
+    flex-wrap: wrap
+    gap: 30px 60px
+    &__wrap
+      grid-column: 2/3
+      grid-row: 3/4
+    &-item
+      display: flex
+      align-items: center
+      gap: 10px
+    &-icon
+      max-width: 45px
+      flex: 0 0 auto
+      line-height: 0
+      img
+        max-width: 100%
+    &-label
+      +futura-demi
+      font-size: 18px
+      color: $grey1
+    &-sub
+      +futura-med
+      font-size: 17px
+      color: #9b9dad
+  &-list
+    &__wrap
+      grid-column: 2/3
+      grid-row: 3/4
+    &-item
+      margin-bottom: 20px
+      display: flex
+      align-items: center
+      gap: 20px
+      &:nth-last-of-type(1)
+        margin-bottom: 0
+    &-icon
+      flex: 0 0 auto
+      width: 30px
+      line-height: 0
+      img
+        width: 100%
+    &-label
+      +futura-heavy
+      font-size: 23px
+      color: $grey1
 
 @media ( max-width: 1440px )
   .inf2
@@ -82,6 +146,19 @@
         font-size: 20px
       &-desc
         font-size: 16px
+    &-ft
+      gap: 30px
+      &-icon
+        max-width: 35px
+      &-label
+        font-size: 16px
+      &-sub
+        font-size: 15px
+    &-list
+      &-icon
+        width: 25px
+      &-label
+        font-size: 20px
 
 @media ( max-width: 991px )
   .inf2
@@ -111,6 +188,14 @@
             &-grid
               grid-column: 1/2
               grid-row: 3/4
+          &-ft
+            &__wrap
+              grid-column: 1/2
+              grid-row: 3/4
+          &-list
+            &__wrap
+              grid-column: 1/2
+              grid-row: 3/4
     &-title
       grid-column: 1/3
       grid-row: 1/2
@@ -128,6 +213,22 @@
         grid-row: 3/4
         flex-wrap: nowrap
         flex-direction: column
+    &-ft
+      &__wrap
+        align-self: center
+        grid-column: 2/3
+        grid-row: 3/4
+    &-list
+      &__wrap
+        align-self: center
+        grid-column: 2/3
+        grid-row: 3/4
+      &-item
+        gap: 12px
+      &-icon
+        width: 22px
+      &-label
+        font-size: 18px
 
 @media ( max-width: 520px )
   .inf2
@@ -147,6 +248,14 @@
             grid-row: 3/4
           &-card
             &-grid
+              grid-column: 1/2
+              grid-row: 4/5
+          &-ft
+            &__wrap
+              grid-column: 1/2
+              grid-row: 4/5
+          &-list
+            &__wrap
               grid-column: 1/2
               grid-row: 4/5
     &-title
@@ -178,4 +287,18 @@
         margin-bottom: 5px
         font-size: 16px
       &-desc
+        font-size: 16px
+    &-ft
+      justify-content: space-around
+      gap: 30px 10px
+      &__wrap
+        grid-column: 1/2
+        grid-row: 4/5
+    &-list
+      &__wrap
+        grid-column: 1/2
+        grid-row: 4/5
+      &-icon
+        width: 18px
+      &-label
         font-size: 16px

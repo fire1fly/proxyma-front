@@ -1,0 +1,240 @@
+.f1
+  padding-top: 120px
+  padding-bottom: 200px
+  &-h
+    margin-bottom: 90px
+  &-form
+    position: relative
+    border-radius: 30px
+    padding: 64px 80px
+    margin: 0 auto
+    width: calc(100% - 80px - 80px)
+    display: flex
+    align-items: center
+    justify-content: space-between
+    flex-wrap: wrap
+    background-color: $white
+    box-shadow: 0px 0px 30px 8px rgba(#F0F2F4, 1)
+    &::before
+      content: ''
+      position: absolute
+      top: 50%
+      transform: translateY(-50%)
+      left: -80px
+      border-top-left-radius: 30px
+      border-bottom-left-radius: 30px
+      width: 80px
+      height: 90%
+      background-color: #F2F3F5
+    &::after
+      content: ''
+      position: absolute
+      top: 50%
+      transform: translateY(-50%)
+      right: -80px
+      border-top-right-radius: 30px
+      border-bottom-right-radius: 30px
+      width: 80px
+      height: 90%
+      background-color: #F2F3F5
+    &-part
+      margin-bottom: 40px
+      flex: 0 1 48%
+      &._wide
+        flex: 1 1 100%
+    &-label
+      margin-bottom: 20px
+      +futura-demi
+      font-size: 19px
+      color: $grey1
+    &-f
+      flex: 1 1 100%
+      width: 100%
+      display: flex
+      align-items: center
+      justify-content: space-between
+  &-input
+    border: 1px solid #EBEDF1
+    border-radius: 35px
+    width: 100%
+    height: 72px
+    padding: 0 35px
+    background-color: #F2F3F5
+    +futura-demi
+    font-size: 19px
+    color: $grey1
+    &::placeholder
+      color: #b8bfcd
+  &-textarea
+    border: 1px solid #EBEDF1
+    border-radius: 35px
+    width: 100%
+    height: 240px
+    padding: 25px 35px
+    background-color: #F2F3F5
+    +futura-demi
+    font-size: 19px
+    color: $grey1
+    resize: none
+    &::placeholder
+      color: #b8bfcd
+  &-btn
+    &-file
+      border-radius: 30px
+      height: 56px
+      padding: 0 25px
+      gap: 10px
+      +futura-bold
+      text-transform: uppercase
+      font-size: 18px
+      color: $grey1
+      input[type="file"]
+        display: none
+      &-icon
+        flex: 0 0 auto
+        width: 18px
+        line-height: 0
+        img
+          width: 100%
+    &-submit
+      border-radius: 30px
+      height: 56px
+      text-transform: uppercase
+      padding: 0 25px
+      +futura-heavy
+      font-size: 23px
+
+@media ( max-width: 1440px )
+  .f1
+    padding-top: 80px
+    padding-bottom: 80px
+    &-h
+      margin-bottom: 80px
+    &-form
+      padding: 40px 50px
+      width: calc(100% - 60px - 60px)
+      &::before
+        width: 60px
+        left: -60px
+      &::after
+        width: 60px
+        right: -60px
+      &-part
+        margin-bottom: 30px
+      &-label
+        margin-bottom: 15px
+        font-size: 18px
+    &-input
+      height: 60px
+      padding: 0 25px
+      font-size: 18px
+    &-textarea
+      padding: 25px
+      height: 200px
+
+@media ( max-width: 991px )
+  .f1
+    &-form
+      padding: 30px 40px
+      width: calc(100% - 40px - 40px)
+      &::before
+        width: 40px
+        left: -40px
+      &::after
+        width: 40px
+        right: -40px
+      &-part
+        margin-bottom: 20px
+      &-label
+        margin-bottom: 15px
+        font-size: 16px
+    &-input
+      height: 50px
+      padding: 0 20px
+      font-size: 16px
+    &-textarea
+      border-radius: 20px
+      padding: 25px
+      height: 200px
+      font-size: 16px
+    &-btn
+      &-file
+        height: 50px
+        padding: 0 20px
+      &-submit
+        height: 50px
+        padding: 0 20px
+        font-size: 20px
+
+@media ( max-width: 768px )
+  .f1
+    padding-top: 40px
+    padding-bottom: 40px
+    &-h
+      margin-bottom: 40px
+    &-form
+      border-radius: 20px
+      width: calc(100% - 30px - 30px)
+      padding: 20px
+      &::before
+        border-top-left-radius: 20px
+        border-bottom-left-radius: 20px
+        width: 30px
+        left: -30px
+      &::after
+        border-top-right-radius: 20px
+        border-bottom-right-radius: 20px
+        width: 30px
+        right: -30px
+    &-btn
+      &-file
+        height: 45px
+        padding: 0 15px
+        font-size: 16px
+      &-submit
+        height: 45px
+        padding: 0 15px
+        font-size: 18px
+
+@media ( max-width: 768px )
+  .f1
+    padding-top: 30px
+    padding-bottom: 30px
+    &-h
+      margin-bottom: 30px
+    &-form
+      width: calc(100% - 20px - 20px)
+      &::before
+        width: 20px
+        left: -20px
+      &::after
+        width: 20px
+        right: -20px
+      &-part
+        margin-bottom: 10px
+        flex: 1 1 100%
+      &-label
+        margin-bottom: 10px
+        font-size: 14px
+      &-f
+        flex-wrap: wrap
+        gap: 10px
+    &-input
+      height: 40px
+      font-size: 14px
+    &-textarea
+      padding: 15px
+      font-size: 14px
+      height: 120px
+    &-btn
+      &-file
+        height: 40px
+        padding: 0 15px
+        font-size: 14px
+        gap: 5px
+        &-icon
+          width: 14px
+      &-submit
+        height: 40px
+        padding: 0 15px
+        font-size: 14px

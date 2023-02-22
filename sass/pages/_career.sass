@@ -1,0 +1,178 @@
+.cr
+  &-ms
+    position: relative
+    padding-top: 60px
+    padding-bottom: 120px
+    &-pic
+      &-1
+        position: absolute
+        bottom: 0
+        left: 0
+        z-index: 1
+      &-2
+        position: absolute
+        bottom: 0
+        right: 0
+        z-index: 1
+    &__inner
+      position: relative
+      z-index: 2
+      display: flex
+      flex-direction: column
+      align-items: center
+    &-title
+      margin: 0
+      margin-bottom: 80px
+      text-align: center
+      +futura-bold
+      text-transform: uppercase
+      font-size: 60px
+      color: $grey1
+      i
+        font-style: normal
+        color: $active
+    &-desc
+      margin: 0 auto 80px
+      max-width: 1150px
+      text-align: center
+      +futura-med
+      font-size: 27px
+      color: $grey1
+      p
+        margin: 0
+        margin-bottom: 40px
+        &:nth-last-of-type(1)
+          margin-bottom: 0
+    &-btn
+      border-radius: 30px
+      height: 60px
+      padding: 0 25px
+      +futura-heavy
+      text-transform: uppercase
+      font-size: 23px
+  &-inf2
+    padding: 60px 0
+    background-color: $grey4
+  &-dt4
+    position: relative
+    overflow: hidden
+    &-pic
+      &-1
+        position: absolute
+        z-index: 1
+        bottom: -15%
+        left: -10%
+      &-2
+        position: absolute
+        z-index: 1
+        bottom: -30%
+        right: 0
+    .dt4__inner
+      position: relative
+      z-index: 2
+
+@media ( max-width: 1600px )
+  .cr
+    &-ms
+      &-pic
+        &-1
+          width: 350px
+        &-2
+          width: 330px
+
+@media ( max-width: 1440px )
+  .cr
+    &-ms
+      &-pic
+        &-1
+          width: 320px
+        &-2
+          width: 300px
+      &-title
+        font-size: 50px
+      &-desc
+        max-width: 900px
+        font-size: 24px
+    &-dt4
+      &-pic
+        &-1
+          width: 500px
+        &-2
+          width: 500px
+
+@media ( max-width: 991px )
+  .cr
+    &-ms
+      padding-top: 15px
+      &-pic
+        &-1
+          width: 220px
+        &-2
+          width: 200px
+      &-title
+        margin-bottom: 40px
+        font-size: 36px
+      &-desc
+        margin: 0 auto 40px
+        max-width: 800px
+        font-size: 22px
+      &-btn
+        height: 50px
+        padding: 0 20px
+        font-size: 20px
+    &-dt4
+      &-pic
+        &-1
+          width: 400px
+        &-2
+          width: 400px
+
+@media ( max-width: 768px )
+  .cr
+    &-ms
+      &-pic
+        &-1
+          width: 180px
+        &-2
+          width: 180px
+      &-title
+        font-size: 28px
+      &-desc
+        max-width: 620px
+        font-size: 18px
+        p
+          margin-bottom: 20px
+      &-btn
+        height: 45px
+        padding: 0 15px
+        font-size: 18px
+    &-inf2
+      padding: 30px 0
+    &-dt4
+      &-pic
+        &-1
+          width: 200px
+          bottom: 0
+          left: 0
+        &-2
+          width: 200px
+          bottom: 0
+          right: 0
+
+@media ( max-width: 520px )
+  .cr
+    &-ms
+      &-pic
+        &-1
+          width: 140px
+        &-2
+          width: 120px
+      &-title
+        margin-bottom: 30px
+        font-size: 24px
+      &-desc
+        margin: 0 auto 30px
+        font-size: 16px
+      &-btn
+        height: 40px
+        font-size: 16px
