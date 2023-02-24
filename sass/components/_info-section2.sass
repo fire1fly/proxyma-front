@@ -28,6 +28,8 @@
             grid-column: 1/2
           &-item
             flex-direction: row-reverse
+          &-label
+            text-align: right
   &-pic
     grid-column: 1/2
     grid-row: 1/4
@@ -56,6 +58,9 @@
       margin-bottom: 40px
       &:nth-last-of-type(1)
         margin-bottom: 0
+    strong
+      +futura-heavy
+      color: $active
   &-card
     flex: 0 1 45%
     border-radius: 20px
