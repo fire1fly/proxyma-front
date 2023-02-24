@@ -177,3 +177,33 @@ let articleListSlider3 = new Swiper(".al3-slider", {
     },
   },
 });
+
+let reviewsSlider = new Swiper(".rv-slider", {
+  slidesPerView: 3,
+  spaceBetween: 65,
+  pagination: {
+    el: ".rv-slider-pagination",
+    clickable: true,
+    renderBullet: function (index, className) {
+      return '<span class="' + className + '"></span>';
+    },
+  },
+  breakpoints: {
+    0: {
+      slidesPerView: 1,
+      spaceBetween: 20,
+    },
+    520: {
+      slidesPerView: 2,
+      spaceBetween: 20,
+    },
+    991: {
+      slidesPerView: 3,
+      spaceBetween: 30,
+    },
+    1601: {
+      slidesPerView: 3,
+      spaceBetween: 65,
+    },
+  },
+});
