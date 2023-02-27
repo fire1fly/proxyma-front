@@ -2,11 +2,15 @@ const sidebarSelector = "mobile-sidebar";
 const sidebarTriggerSelector = "mobile-sidebar-trigger";
 const sidebarCloseSelector = "mobile-sidebar-close";
 
-const sidebarMediaQuery = window.matchMedia("(max-width: 991px)");
-
 const sidebarEl = document.querySelector(`.${sidebarSelector}`);
 const sidebarBtnEl = document.querySelector(`.${sidebarTriggerSelector}`);
 const sidebarCloseElsList = sidebarEl.querySelectorAll(`.${sidebarCloseSelector}`)
+
+const breakpoint = sidebarEl.dataset.breakpoint || 991
+
+const sidebarMediaQuery = window.matchMedia(`(max-width: ${breakpoint}px)`) || window.matchMedia("(max-width: 991px)");
+
+console.log(sidebarMediaQuery);
 
 function toggleSidebar() {
   sidebarBtnEl.classList.toggle("active");

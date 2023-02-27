@@ -1,0 +1,645 @@
+.acc
+  display: grid
+  grid-template-columns: 312px auto
+  min-height: 100vh
+  &-sb
+    height: 100%
+    display: flex
+    flex-direction: column
+    background-color: $purple4
+    &-triggerbtn
+      display: none
+    &-h
+      position: fixed
+      top: 0
+      left: 0
+      z-index: 3
+      width: 312px
+      height: 150px
+      display: flex
+      align-items: center
+      justify-content: center
+      background-color: $purple5
+      &-logo
+        width: 190px
+        img, svg
+          width: 100%
+    &-inner
+      flex: 1 1 auto
+      padding: 200px 0 15px
+    &-nav
+      &-group
+        margin-bottom: 30px
+      &-label
+        margin-bottom: 20px
+        padding-left: 60px
+        display: flex
+        align-items: center
+        gap: 8px
+        +geo-bold
+        font-size: 18px
+        color: #706a7f
+        .arrow
+          transform: rotate(45deg)
+          font-size: 11px
+      &-item
+        position: relative
+        padding: 16px 16px 16px 60px
+        display: flex
+        align-items: center
+        gap: 10px
+        transition: 0.3s ease
+        &::after
+          content: ''
+          position: absolute
+          z-index: 1
+          top: 0
+          left: 0
+          width: 3px
+          height: 100%
+          background: linear-gradient(0deg, rgba(0,131,255,1) 0%, rgba(0,227,255,1) 100%)
+          box-shadow: 0px 0px 40px 10px rgba(0,227,255,0.5)
+          transition: 0.2s ease
+          opacity: 0
+        &::before
+          content: ''
+          position: absolute
+          z-index: 1
+          top: 0
+          left: 0
+          width: 100%
+          height: 100%
+          background: linear-gradient(90deg, rgba(0,106,147,1) 0%, rgba(0,0,0,0) 100%)
+          opacity: 0
+          transition: 0.2s ease
+        &:hover
+          &::before
+            opacity: 1
+          &::after
+            opacity: 1
+          .acc-sb-nav-item-icon
+            svg
+              fill: $blue
+              path
+                fill: $blue
+            &._balance
+              svg
+                rect, path
+                  stroke: $blue
+                  fill: $blue
+            &._notification
+              svg
+                path
+                  stroke: $blue
+                  fill: transparent
+            &._user
+              svg
+                path, circle
+                  stroke: $blue
+                  fill: transparent
+            &._support
+              svg
+                path, circle
+                  stroke: $blue
+                  fill: transparent
+        &-icon
+          position: relative
+          z-index: 2
+          svg
+            width: 24px
+            height: 24px
+            fill: #574D68
+            transition: 0.2s ease
+            path
+              transition: 0.2s ease
+              fill: #574D68
+          &._balance
+            svg
+              rect, path
+                transition: 0.2s ease
+                stroke: #574D68
+                fill: #574D68
+          &._notification
+            svg
+              path
+                stroke: #574D68
+                fill: transparent
+          &._user
+            svg
+              path, circle
+                transition: 0.2s ease
+                stroke: #574D68
+                fill: transparent
+          &._support
+            svg
+              path
+                stroke: #574D68
+                fill: transparent
+        &-title
+          position: relative
+          z-index: 2
+          +geo-bold
+          font-size: 16px
+          color: $white
+        &-mark
+          position: relative
+          z-index: 2
+          margin-left: 10px
+          border-radius: 50%
+          width: 21px
+          height: 21px
+          display: flex
+          align-items: center
+          justify-content: center
+          background-color: $active
+          +futura-bold
+          font-size: 13px
+          color: $white
+    &-f
+      flex: 0 0 auto
+      width: 100%
+      min-height: 168px
+      padding: 30px 40px
+      display: flex
+      flex-direction: column
+      gap: 20px
+      background-color: $purple5
+    &-lang
+      border-radius: 30px
+      width: 100%
+      height: 52px
+      padding: 0 14px
+      display: flex
+      align-items: center
+      justify-content: space-between
+      gap: 13px
+      background-color: $purple4
+      &-item
+        display: flex
+        align-items: center
+        gap: 14px
+      &-icon
+        border-radius: 50%
+        width: 28px
+        height: 28px
+        img, svg
+          width: 100%
+          height: 100%
+      &-label
+        +geo-bold
+        font-size: 16px
+        color: $white
+      &-arrow
+        transform: rotate(45deg)
+        font-size: 10px
+        color: $purple1
+      &-list
+        top: calc(100% + 5px)
+        border-radius: 20px
+        background-color: $purple4
+        padding: 10px 0
+        box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.3)
+        .acc-sb-lang-item
+          padding: 8px 14px
+          transition: 0.3s
+          &:hover
+            background-color: lighten($purple5, 4%)
+    &-soc
+      display: flex
+      align-items: center
+      flex-wrap: wrap
+      justify-content: space-between
+      gap: 10px 0
+      &-item
+        border: 2px solid #504B5A
+        border-radius: 50%
+        width: 34px
+        height: 34px
+        display: flex
+        align-items: center
+        justify-content: center
+        transition: 0.3s ease-in-out
+        svg
+          max-width: 17px
+          width: 100%
+          fill: #504B5A
+          transition: 0.3s ease-in-out
+        &:hover
+          border-color: $blue
+          svg
+            fill: $blue
+  &-frame
+    height: 100%
+    background-color: #F2F2F8
+    display: flex
+    flex-direction: column
+  &-h
+    position: fixed
+    top: 0
+    left: 312px
+    z-index: 1
+    width: calc(100% - 312px)
+    height: 150px
+    padding: 0 40px
+    background-color: $white
+    display: flex
+    align-items: center
+    justify-content: flex-end
+    gap: 40px
+    &-search
+      border-radius: 25px
+      border: 1px solid #F0F0F6
+      width: 100%
+      height: 42px
+      display: flex
+      align-items: center
+      background-color: #F2F3F9
+      padding: 0 15px
+      &__wrapper
+        margin-right: auto
+        max-width: 368px
+        width: 100%
+      &__input
+        flex: 1 1 auto
+        border: none
+        width: 100%
+        height: 100%
+        padding: 0 10px
+        background-color: transparent
+        +geo-med
+        font-size: 14px
+        color: $grey1
+        &::placeholder
+          color: #abaeba
+      &__btn
+        margin: 0
+        padding: 0
+        flex: 0 0 auto
+        width: 16px
+        height: 100%
+        line-height: 0
+        background-color: transparent
+        img
+          width: 100%
+    &-not
+      grid-column: 1/2
+      grid-row: 1/3
+      border-radius: 10px
+      height: 64px
+      padding: 0 20px
+      display: flex
+      align-items: center
+      gap: 15px
+      background-color: #F3F3F9
+      transition: 0.2s ease
+      &:hover
+        background-color: darken(#F3F3F9, 3%)
+      &:active
+        transform: scale(0.99)
+      &-icon
+        flex: 0 0 auto
+        line-height: 0
+        svg
+          width: 24px
+          height: 24px
+      &-label
+        +geo-bold
+        font-size: 16px
+        .count
+          +geo-extrabold
+          color: $active
+    &-bar
+      display: grid
+      grid-template-columns: auto auto min-content
+      gap: 3px 25px
+      &-name
+        align-self: end
+        grid-column: 2/3
+        grid-row: 1/2
+        +geo-extrabold
+        font-size: 16px
+        color: $grey1
+      &-balance
+        grid-column: 2/3
+        grid-row: 2/3
+        .label
+          +geo-med
+          font-size: 15px
+          color: #a7afbd
+        .value
+          +geo-extrabold
+          font-size: 15px
+          color: $active
+      &-btn
+        &-out
+          align-self: center
+          grid-column: 3/4
+          grid-row: 1/3
+          border-radius: 50%
+          width: 42px
+          height: 42px
+          display: flex
+          align-items: center
+          justify-content: center
+          background-color: #F3F3F9
+          transition: 0.2s ease
+          &:hover
+            background-color: darken(#F3F3F9, 3%)
+            svg
+              fill: $active
+          &:active
+            transform: scale(0.98)
+          svg
+            width: 20px
+            height: 20px
+            fill: #C8CBDF
+            transition: 0.2s ease
+  &-c
+    padding: 190px 50px 50px
+    flex: 1 1 auto
+    &-h
+      margin-bottom: 50px
+      display: flex
+      align-items: center
+      gap: 15px
+      &-icon
+        flex: 0 0 auto
+        line-height: 0
+        max-width: 32px
+        img
+          max-width: 100%
+      &-title
+        margin: 0
+        +geo-extrabold
+        font-size: 27px
+        color: $grey1
+  &-f
+    width: 100%
+    height: 168px
+    padding: 0 70px
+    display: flex
+    align-items: center
+    justify-content: space-between
+    background-color: $white
+    +geo-med
+    font-size: 16px
+    color: #acafc7
+    &-copy
+      flex: 0 1 30%
+    &-disc
+      flex: 0 1 60%
+      text-align: right
+  &-prst
+    border-radius: 10px
+    border: 1px solid #EAEAF3
+    background-color: $white
+    box-shadow: 0px 0px 30px 5px rgba(#EEEFF6, 1)
+    &-block
+      border-bottom: 1px solid #EAEAF3
+      padding: 35px 40px
+      &:nth-last-of-type(1)
+        border-bottom: none
+      .f2
+        &-part
+          margin-bottom: 25px
+          display: block
+          &:nth-last-of-type(1)
+            margin-bottom: 0
+      &__btn
+        margin-top: 25px
+      &__radiobtn
+        margin-top: 15px
+    &-title
+      margin-bottom: 35px
+      +geo-extrabold
+      font-size: 20px
+      color: $grey1
+
+@media ( max-width: 1440px )
+  .acc
+    grid-template-columns: 250px auto
+    &-sb
+      width: 250px
+      &-h
+        width: 250px
+        height: 100px
+        &-logo
+          width: 170px
+      &-inner
+        padding: 130px 0 15px
+      &-nav
+        &-group
+          margin-bottom: 15px
+        &-label
+          margin-bottom: 10px
+          padding-left: 20px
+          font-size: 16px
+          &-arrow
+            font-size: 8px
+        &-item
+          padding: 8px 8px 8px 20px
+          &-icon
+            svg
+              width: 20px
+              height: 20px
+          &-title
+            font-size: 14px
+          &-mark
+            margin-left: 5px
+            width: 16px
+            height: 16px
+            font-size: 10px
+      &-f
+        padding: 20px 10px
+      &-lang
+        height: 45px
+        &-item
+          gap: 10px
+        &-label
+          font-size: 14px
+    &-h
+      left: 250px
+      width: calc(100% - 250px)
+      height: 100px
+      padding: 0 20px
+      gap: 20px
+      &-search
+        &__wrapper
+          max-width: 300px
+      &-not
+        height: 50px
+        padding: 0 15px
+        gap: 10px
+        &-label
+          font-size: 14px
+      &-bar
+        gap: 0 15px
+        &-name
+          font-size: 14px
+        &-balance
+          .label, .value
+            font-size: 14px
+    &-c
+      padding: 130px 30px 30px
+      &-h
+        margin-bottom: 30px
+        gap: 12px
+        &-icon
+          max-width: 24px
+        &-title
+          font-size: 24px
+    &-f
+      padding: 0 30px
+      font-size: 14px
+    &-prst
+      &-title
+        font-size: 18px
+      &-block
+        padding: 15px 30px 25px
+        .f2
+          &-part
+            margin-bottom: 15px
+        &__btn
+          margin-top: 15px
+      &-title
+        margin-bottom: 25px
+
+@media ( max-width: 1200px )
+  .acc
+    display: block
+    &-sb
+      position: fixed
+      top: 0
+      left: 0
+      z-index: 5
+      height: 100%
+      transform: translateX(-100%)
+      transition: 0.3s
+      &.active
+        transform: translateX(0)
+      &-triggerbtn
+        position: absolute
+        top: 140px
+        right: -60px
+        border-radius: 50%
+        width: 45px
+        height: 45px
+        display: flex
+        align-items: center
+        justify-content: center
+        background-color: $white
+        box-shadow: 0 0 25px 3px rgba(#000000, 0.2)
+        cursor: pointer
+        transition: 0.3s
+        img, svg
+          width: 25px
+          transition: 0.3s
+        &.active
+          background-color: $active
+          svg, circle, path
+            fill: $white
+      &-h
+        position: static
+        flex: 0 0 auto
+        width: 100%
+        height: 100px
+        justify-content: flex-start
+        padding: 0 20px
+      &-inner
+        padding: 15px 0
+        overflow-y: auto
+        overscroll-behavior: none
+        &::-webkit-scrollbar-thumb
+          background: #706a7f
+      &-f
+        min-height: auto
+    &-h
+      left: 0
+      width: 100%
+    &-f
+      padding: 30px
+      height: auto
+
+@media ( max-width: 991px )
+  .acc
+    &-sb
+      &-h
+        height: 80px
+        &-logo
+    &-h
+      height: 80px
+      &-search
+        &__wrapper
+      &-not
+        height: 42px
+        padding: 0 10px
+        gap: 5px
+        &-label
+          .label
+            display: none
+    &-c
+      padding: 110px 30px 30px
+
+@media ( max-width: 768px )
+  .acc
+    &-c
+      padding: 110px 15px 15px
+    &-prst
+      &-title
+        margin-bottom: 15px
+      &-block
+        padding: 15px 20px
+
+@media ( max-width: 520px )
+  .acc
+    &-sb
+      &-triggerbtn
+        top: 105px
+        right: -50px
+        width: 36px
+        height: 36px
+        img, svg
+          width: 18px
+      &-h
+        height: 60px
+        &-logo
+          width: 140px
+    &-h
+      height: 60px
+      padding: 0 15px
+      &-search
+        &__wrapper
+          display: none
+      &-bar
+        flex: 1 1 auto
+        width: 100%
+        grid-template-columns: 1fr auto min-content
+        &-name
+          grid-column: 1/2
+        &-balance
+          grid-column: 1/2
+      &-not
+        grid-column: 2/3
+    &-c
+      padding: 80px 15px 15px
+      &-h
+        &-icon
+          max-width: 20px
+        &-title
+          font-size: 20px
+    &-f
+      padding: 15px
+      flex-direction: column
+      gap: 15px
+      font-size: 12px
+      &-copy
+        flex: auto
+        text-align: center
+      &-disc
+        flex: auto
+        text-align: center
+
+@media ( max-width: 360px )
+  .acc
+    &-sb
+      width: 220px

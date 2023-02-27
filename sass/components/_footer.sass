@@ -10,7 +10,7 @@
       gap: 20px
     &-title
       margin: 0
-      max-width: 580px
+      max-width: 700px
       +futura-bold
       font-size: 56px
       color: $white
@@ -35,6 +35,9 @@
         display: none
       &-icon
         max-width: 37px
+        &._signup
+          width: 30px
+          height: 30px
   &-frame
     position: relative
     background-color: $purple2
@@ -189,19 +192,28 @@
             stroke: $active
   &-copy
     display: flex
-    align-items: center
     justify-content: space-between
     flex-wrap: wrap
     gap: 10px
     +futura-med
     font-size: 18px
     color: $purple1
+    &-text
+      flex: 0 1 38%
+      &._disc
+        text-align: right
+      p
+        margin: 0
+        margin-bottom: 15px
+        &:nth-last-of-type(1)
+          margin-bottom: 0
 
 @media ( max-width: 1440px )
   .f
     &-promo
       padding: 40px 0
       &-title
+        max-width: 540px
         font-size: 30px
       &-btn
         height: 50px
@@ -209,8 +221,12 @@
         gap: 10px
         &-icon
           max-width: 28px
+          &._signup
+            width: 25px
+            height: 25px
     &__inner
       padding-top: 30px
+      padding-bottom: 60px
     &-logo
       width: 200px
     &-lang
@@ -245,6 +261,8 @@
         flex: 0 1 60px
     &-copy
       font-size: 16px
+      &-text
+        flex: 0 1 45%
 
 @media ( max-width: 1024px )
   .f
@@ -314,6 +332,12 @@
 
 @media ( max-width: 768px )
   .f
+    &-promo
+      &-btn
+        &-icon
+          &._signup
+            width: 20px
+            height: 20px
     &-pays
       margin: 20px 0
       border-radius: 10px
@@ -326,6 +350,11 @@
       flex-direction: column
       justify-content: center
       text-align: center
+      gap: 15px
+      &-text
+        flex: auto
+        &._disc
+          text-align: center
 
 @media ( max-width: 520px )
   .f

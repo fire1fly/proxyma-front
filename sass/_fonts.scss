@@ -51,6 +51,7 @@
   url('../assets/fonts/FuturaPT-Bold.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
+  font-display: swap;
 }
 
 @mixin futura-bold {
@@ -65,8 +66,54 @@
   url('../assets/fonts/FuturaPT-Heavy.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
+  font-display: swap;
 }
 
 @mixin futura-heavy {
   font-family: 'Futura PT Heavy';
+}
+
+@font-face {
+  font-family: 'Geometria Medium';
+  src: url('../assets/fonts/Geometria-Medium.eot');
+  src: url('../assets/fonts/Geometria-Medium.eot?#iefix') format('embedded-opentype'),
+  url('../assets/fonts/Geometria-Medium.woff') format('woff'),
+  url('../assets/fonts/Geometria-Medium.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@mixin geo-med {
+  font-family: 'Geometria Medium';
+}
+
+@font-face {
+  font-family: 'Geometria Bold';
+  src: url('../assets/fonts/Geometria-Bold.eot');
+  src: url('../assets/fonts/Geometria-Bold.eot?#iefix') format('embedded-opentype'),
+  url('../assets/fonts/Geometria-Bold.woff') format('woff'),
+  url('../assets/fonts/Geometria-Bold.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@mixin geo-bold {
+  font-family: 'Geometria Bold';
+}
+
+@font-face {
+  font-family: 'Geometria Extra Bold';
+  src: url('../assets/fonts/Geometria-ExtraBold.eot');
+  src: url('../assets/fonts/Geometria-ExtraBold.eot?#iefix') format('embedded-opentype'),
+  url('../assets/fonts/Geometria-ExtraBold.woff') format('woff'),
+  url('../assets/fonts/Geometria-ExtraBold.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+  }
+
+@mixin geo-extrabold {
+  font-family: 'Geometria Extra Bold';
 }

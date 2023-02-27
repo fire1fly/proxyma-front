@@ -64,6 +64,9 @@ input[type="number"]
       transform: translateY(-5px)
     &.showUp
       transform: translateY(5px)
+    &._up
+      top: auto
+      bottom: calc(100% + 10px)
   &._scrolled
     .dd-list
       ul
@@ -158,6 +161,13 @@ input[type="number"]
       background-color: darken(#F2F3F5, 3%)
     &:active
       background-color: darken(#F2F3F5, 1%)
+  &-red
+    background-color: $active
+    color: $white
+    &:hover
+      background-color: darken($active, 3%)
+    &:active
+      background-color: darken($active, 1%)
 
 .page
   &-title

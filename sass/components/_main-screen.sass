@@ -1,5 +1,6 @@
 .ms
-  padding-top: 60px
+  padding-top: 10px
+  padding-bottom: 30px
   position: relative
   &-title
     margin-bottom: 15px
@@ -31,7 +32,7 @@
   &-info
     position: relative
     z-index: 3
-    padding-top: 60px
+    padding-top: 30px
     flex: 0 1 auto
   &-text
     +futura-book
@@ -107,6 +108,7 @@
 
 @media ( max-width: 1440px )
   .ms
+    padding-bottom: 60px
     &-title
       margin-bottom: 0
       &-sub
@@ -164,6 +166,7 @@
 
 @media ( max-width: 768px )
   .ms
+    padding-bottom: 0
     &__inner
       grid-template-rows: repeat(3, auto)
       .ms

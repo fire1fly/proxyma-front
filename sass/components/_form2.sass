@@ -1,0 +1,94 @@
+.f2
+  &-part
+    &-label
+      margin-bottom: 15px
+      +geo-bold
+      font-size: 18px
+      color: $grey1
+  &-field
+    display: flex
+    align-items: center
+    gap: 16px
+    .f2
+      &-input
+        flex: 1 1 auto
+      &-btn
+        flex: 0 0 auto
+  &-input
+    border-radius: 10px
+    border: 1px solid #EDEDF3
+    width: 100%
+    height: 52px
+    padding: 0 24px
+    background-color: #F3F3F9
+    +geo-med
+    font-size: 16px
+    color: $grey1
+    &::placeholder
+      color: #828595
+    &._error
+      border-color: $active
+      &::placeholder
+        text-align: right
+        color: $active
+  &-btn
+    border-radius: 10px
+    height: 52px
+    padding: 0 15px
+    gap: 10px
+    +geo-extrabold
+    font-size: 17px
+    &._rounded
+      border-radius: 30px
+    .icon
+      flex: 0 0 auto
+      line-height: 0
+      img
+        max-width: 100%
+  &-radiobtn
+    &__wrap
+      display: flex
+      align-items: center
+      gap: 10px
+    &-label
+      +geo-bold
+      font-size: 18px
+      color: $grey1
+
+@media ( max-width: 1440px )
+  .f2
+    &-part
+      &-label
+        margin-bottom: 10px
+        font-size: 14px
+    &-input
+      height: 45px
+      padding: 0 15px
+      font-size: 14px
+    &-btn
+      height: 45px
+      font-size: 16px
+    &-radiobtn
+      &-label
+        font-size: 16px
+
+@media ( max-width: 768px )
+  .f2
+    &-field
+      gap: 8px
+    &-input
+      height: 40px
+      font-size: 14px
+    &-btn
+      height: 40px
+      font-size: 14px
+      .icon
+        max-width: 16px
+    &-radiobtn
+      &-label
+        font-size: 14px
+
+@media ( max-width: 520px )
+  .f2
+    &-field
+      flex-wrap: wrap
