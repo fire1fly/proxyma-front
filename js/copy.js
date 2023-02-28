@@ -4,7 +4,7 @@ copyElList.forEach(el => {
   const copyValue = el.querySelector(".copy-value");
   const copyTrigger = el.querySelector(".copy-trigger");
   copyTrigger.addEventListener("click", () => {
-    const str = copyValue.innerText;
+    const str = copyValue.innerText || copyValue.value;
     const field = document.createElement('textarea');
     field.value = str;
     field.setAttribute('readonly', '');

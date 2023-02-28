@@ -13,7 +13,7 @@
       position: fixed
       top: 0
       left: 0
-      z-index: 3
+      z-index: 10
       width: 312px
       height: 150px
       display: flex
@@ -237,7 +237,7 @@
     position: fixed
     top: 0
     left: 312px
-    z-index: 1
+    z-index: 10
     width: calc(100% - 312px)
     height: 150px
     padding: 0 40px
@@ -414,6 +414,122 @@
       +geo-extrabold
       font-size: 20px
       color: $grey1
+  &-box
+    border-radius: 10px
+    border: 1px solid #EAEAF3
+    padding: 40px 45px
+    background-color: $white
+    box-shadow: 0px 0px 30px 5px rgba(#EEEFF6, 1)
+    &-title
+      margin-bottom: 35px
+      +geo-bold
+      font-size: 22px
+      color: $grey1
+  &-api
+    display: grid
+    grid-template-columns: 1fr 1fr
+    gap: 35px
+    &-key
+      grid-column: 1/2
+      grid-row: 1/2
+    &-req
+      grid-column: 1/2
+      grid-row: 2/3
+      &__inner
+        display: flex
+        flex-direction: column
+        gap: 10px
+    &-method
+      border-radius: 10px
+      min-height: 55px
+      padding: 10px 20px
+      display: flex
+      align-items: center
+      justify-content: space-between
+      background-color: #F2F2F8
+      &-label
+        flex: 0 0 auto
+        border-radius: 10px
+        padding: 8px 10px
+        +geo-bold
+        font-size: 14px
+        color: $white
+        &._blue
+          background-color: $blue
+        &._green
+          background-color: $green4
+        &._red
+          background-color: $red
+        &._cyan
+          background-color: $cyan
+      &-value
+        +geo-bold
+        font-size: 14px
+        color: $grey1
+    &-doc
+      grid-column: 2/3
+      grid-row: 1/3
+      &__inner
+        +geo-med
+        font-size: 15px
+        color: $grey1
+        p
+          margin: 0
+          margin-bottom: 25px
+          &:nth-last-of-type(1)
+            margin-bottom: 0
+  &-fq1
+    display: flex
+    &-list
+      padding-top: 15px
+      flex: 0 0 300px
+      width: 300px
+    &-item
+      position: relative
+      z-index: 2
+      border-top: 1px solid transparent
+      border-left: 1px solid transparent
+      border-bottom: 1px solid #EDEDF6
+      min-height: 60px
+      padding: 10px 10px 10px 24px
+      display: flex
+      align-items: center
+      +geo-bold
+      font-size: 16px
+      color: $grey1
+      transition: 0.2s ease
+      cursor: pointer
+      &::after
+        content: ''
+        position: absolute
+        top: 0
+        right: -2px
+        z-index: 2
+        width: 2px
+        height: 100%
+        background-color: $white
+        opacity: 0
+        transition: 0.2s ease
+      &.active
+        border-top-left-radius: 10px
+        border-bottom-left-radius: 10px
+        border-color: #EDEDF6
+        background-color: $white
+        color: $active
+        &::after
+          opacity: 1
+    &-nodes
+      flex: 1 1 auto
+    &-box
+      p
+        margin: 0
+        margin-bottom: 40px
+        +geo-med
+        line-height: 1.3
+        font-size: 15px
+        color: $grey1
+        &:nth-last-of-type(1)
+          margin-bottom: 0
 
 @media ( max-width: 1440px )
   .acc
@@ -503,6 +619,34 @@
           margin-top: 15px
       &-title
         margin-bottom: 25px
+    &-box
+      padding: 20px 25px
+      &-title
+        margin-bottom: 20px
+        font-size: 20px
+    &-api
+      gap: 25px
+      &-method
+        min-height: 45px
+        padding: 8px 15px
+        &-label
+          padding: 6px 8px
+      &-doc
+        &__inner
+          font-size: 14px
+          p
+            margin-bottom: 15px
+    &-fq1
+      &-list
+        flex: 0 0 250px
+        width: 250px
+      &-item
+        min-height: 50px
+        padding: 10px 10px 10px 16px
+        font-size: 14px
+      &-box
+        p
+          margin-bottom: 20px
 
 @media ( max-width: 1200px )
   .acc
@@ -511,7 +655,7 @@
       position: fixed
       top: 0
       left: 0
-      z-index: 5
+      z-index: 11
       height: 100%
       transform: translateX(-100%)
       transition: 0.3s
@@ -579,6 +723,18 @@
             display: none
     &-c
       padding: 110px 30px 30px
+    &-api
+      grid-template-columns: 100%
+      gap: 15px
+      &-key
+        grid-column: 1/2
+        grid-row: 1/2
+      &-req
+        grid-column: 1/2
+        grid-row: 2/3
+      &-doc
+        grid-column: 1/2
+        grid-row: 3/4
 
 @media ( max-width: 768px )
   .acc
@@ -589,6 +745,34 @@
         margin-bottom: 15px
       &-block
         padding: 15px 20px
+    &-fq1
+      flex-direction: column
+      gap: 15px
+      &-list
+        flex: auto
+        width: 100%
+        padding-top: 0
+        padding-bottom: 8px
+        overflow-x: auto
+        display: flex
+        align-items: center
+        gap: 10px
+      &-item
+        border-radius: 30px
+        border: 1px solid #EDEDF6
+        min-height: auto
+        padding: 8px 10px
+        background-color: $white
+        white-space: nowrap
+        &::after
+          display: none
+        &.active
+          border-radius: 30px
+      &-nodes
+        width: 100%
+      &-box
+        p
+          font-size: 14px
 
 @media ( max-width: 520px )
   .acc
@@ -638,6 +822,23 @@
       &-disc
         flex: auto
         text-align: center
+    &-box
+      padding: 15px
+      &-title
+        margin-bottom: 15px
+        font-size: 18px
+    &-api
+      &-method
+        border-radius: 5px
+        padding: 6px 10px
+        min-height: 40px
+        &-label
+          border-radius: 5px
+          font-size: 12px
+      &-doc
+        &__inner
+          font-size: 12px
+          line-height: 1.3
 
 @media ( max-width: 360px )
   .acc
