@@ -14603,6 +14603,9 @@ input[type=number] {
           justify-content: flex-end;
   gap: 40px;
 }
+.acc-h._topline {
+  height: 100px;
+}
 .acc-h-search {
   border-radius: 25px;
   border: 1px solid #F0F0F6;
@@ -14665,8 +14668,6 @@ input[type=number] {
   width: 100%;
 }
 .acc-h-not {
-  grid-column: 1/2;
-  grid-row: 1/3;
   border-radius: 10px;
   height: 64px;
   padding: 0 20px;
@@ -14690,6 +14691,26 @@ input[type=number] {
       -ms-transform: scale(0.99);
           transform: scale(0.99);
 }
+.acc-h-not__wrapper {
+  grid-column: 1/2;
+  grid-row: 1/3;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100%;
+}
+.acc-h-not__wrapper._topline {
+  border-right: 1px solid #ECEDF2;
+  border-left: 1px solid #ECEDF2;
+  background-color: #F2F2F8;
+  padding: 0 22px;
+}
+.acc-h-not__wrapper._topline .acc-h-not {
+  background-color: #FFFFFF;
+}
 .acc-h-not-icon {
   -webkit-box-flex: 0;
       -ms-flex: 0 0 auto;
@@ -14709,6 +14730,7 @@ input[type=number] {
   color: #FF376E;
 }
 .acc-h-bar {
+  height: 100%;
   display: grid;
   grid-template-columns: auto auto -webkit-min-content;
   grid-template-columns: auto auto min-content;
@@ -14781,6 +14803,9 @@ input[type=number] {
   -webkit-box-flex: 1;
       -ms-flex: 1 1 auto;
           flex: 1 1 auto;
+}
+.acc-c._topline {
+  padding-top: 30px;
 }
 .acc-c-h {
   margin-bottom: 50px;
@@ -15039,6 +15064,41 @@ input[type=number] {
 .acc-fq1-box p:nth-last-of-type(1) {
   margin-bottom: 0;
 }
+.acc-topline {
+  margin-top: 100px;
+  border-top: 1px solid #E7E7F0;
+  border-bottom: 1px solid #E7E7F0;
+  min-height: 50px;
+  padding: 5px 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background-color: #F2F2F8;
+}
+.acc-topline .acc-c-h {
+  margin-bottom: 0;
+}
+.acc-topline-link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 8px;
+  font-family: "Geometria Bold";
+  font-size: 14px;
+  color: #a7afbd;
+}
+.acc-topline-link-icon {
+  line-height: 0;
+}
 
 @media (max-width: 1440px) {
   .acc {
@@ -15192,6 +15252,9 @@ input[type=number] {
   .acc-fq1-box p {
     margin-bottom: 20px;
   }
+  .acc-topline {
+    margin-top: 100px;
+  }
 }
 @media (max-width: 1200px) {
   .acc {
@@ -15217,7 +15280,7 @@ input[type=number] {
   }
   .acc-sb-triggerbtn {
     position: absolute;
-    top: 140px;
+    top: 180px;
     right: -60px;
     border-radius: 50%;
     width: 45px;
@@ -15291,6 +15354,9 @@ input[type=number] {
   .acc-h {
     height: 80px;
   }
+  .acc-h._topline {
+    height: 80px;
+  }
   .acc-h-not {
     height: 42px;
     padding: 0 10px;
@@ -15318,8 +15384,14 @@ input[type=number] {
     grid-column: 1/2;
     grid-row: 3/4;
   }
+  .acc-topline {
+    margin-top: 80px;
+  }
 }
 @media (max-width: 768px) {
+  .acc-h-not__wrapper._topline {
+    padding: 0 15px;
+  }
   .acc-c {
     padding: 110px 15px 15px;
   }
@@ -15372,10 +15444,21 @@ input[type=number] {
   .acc-fq1-box p {
     font-size: 14px;
   }
+  .acc-topline {
+    border: none;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    padding: 15px;
+    gap: 10px;
+  }
 }
 @media (max-width: 520px) {
   .acc-sb-triggerbtn {
-    top: 105px;
     right: -50px;
     width: 36px;
     height: 36px;
@@ -15392,6 +15475,9 @@ input[type=number] {
   .acc-h {
     height: 60px;
     padding: 0 15px;
+  }
+  .acc-h._topline {
+    height: 60px;
   }
   .acc-h-search__wrapper {
     display: none;
@@ -15410,11 +15496,17 @@ input[type=number] {
   .acc-h-bar-balance {
     grid-column: 1/2;
   }
-  .acc-h-not {
+  .acc-h-not__wrapper {
     grid-column: 2/3;
   }
   .acc-c {
     padding: 80px 15px 15px;
+  }
+  .acc-c._topline {
+    padding-top: 15px;
+  }
+  .acc-c-h {
+    margin-bottom: 15px;
   }
   .acc-c-h-icon {
     max-width: 20px;
@@ -15462,6 +15554,13 @@ input[type=number] {
   .acc-api-doc__inner {
     font-size: 12px;
     line-height: 1.3;
+  }
+  .acc-topline {
+    margin-top: 60px;
+  }
+  .acc-topline-link {
+    font-size: 12px;
+    gap: 4px;
   }
 }
 @media (max-width: 360px) {
