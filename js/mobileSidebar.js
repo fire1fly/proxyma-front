@@ -10,8 +10,6 @@ const breakpoint = sidebarEl.dataset.breakpoint || 991
 
 const sidebarMediaQuery = window.matchMedia(`(max-width: ${breakpoint}px)`) || window.matchMedia("(max-width: 991px)");
 
-console.log(sidebarMediaQuery);
-
 function toggleSidebar() {
   sidebarBtnEl.classList.toggle("active");
   sidebarEl.classList.toggle("active");
