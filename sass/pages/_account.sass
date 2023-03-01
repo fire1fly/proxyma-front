@@ -7,6 +7,15 @@
     display: flex
     flex-direction: column
     background-color: $purple4
+    &._type2
+      border-right: 1px solid #E8F0F6
+      background-color: $white
+      .acc-sb
+        &-h
+          border-bottom: 1px solid #E8F0F6
+          background-color: $white
+        &-inner
+          padding-top: 150px
     &-triggerbtn
       display: none
     &-h
@@ -14,7 +23,7 @@
       top: 0
       left: 0
       z-index: 10
-      width: 312px
+      width: 311px
       height: 150px
       display: flex
       align-items: center
@@ -173,7 +182,7 @@
       align-items: center
       justify-content: space-between
       gap: 13px
-      background-color: $purple4
+      background-color: lighten($purple4, 10%)
       &-item
         display: flex
         align-items: center
@@ -228,6 +237,70 @@
           border-color: $blue
           svg
             fill: $blue
+    &-acrd
+      &-item
+        // border-top: 1px solid #E8F0F6
+        border-bottom: 1px solid #E8F0F6
+        overflow: hidden
+        &:nth-last-child(1)
+          border-top: none
+        &.accordion__item_show
+          .acc-sb-acrd
+            &-item
+              &-arrow
+                background-color: $active
+                svg
+                  transform: scale(1, -1)
+                  fill: $white
+        &-h
+          min-height: 78px
+          padding: 10px 28px 10px 25px
+          display: flex
+          align-items: center
+          justify-content: space-between
+          gap: 10px
+          cursor: pointer
+          transition: 0.3s
+        &-label
+          +futura-heavy
+          font-size: 20px
+          color: $grey1
+          ._active
+            color: $active
+        &-arrow
+          flex: 0 0 auto
+          border-radius: 10px
+          width: 32px
+          height: 32px
+          display: flex
+          align-items: center
+          justify-content: center
+          background-color: #EEF3F7
+          transition: 0.3s
+          svg
+            width: 14px
+            fill: $active
+            transition: 0.3s
+        &-content
+          border-top: 1px solid #E8F0F6
+          padding: 15px 28px 15px 25px
+      &-list
+        margin: 0
+        padding: 0
+        padding-left: 20px
+        +futura-med
+        font-size: 18px
+        line-height: 1.3
+        color: $grey1
+        &._mark-none
+          padding-left: 0
+          list-style: none
+        li
+          margin-bottom: 10px
+          &:nth-last-of-type(1)
+            margin-bottom: 0
+        a
+          color: $active
   &-frame
     height: 100%
     background-color: #F2F2F8
@@ -248,6 +321,9 @@
     gap: 40px
     &._topline
       height: 100px
+    &._type2
+      border-bottom: 1px solid #E8F0F6
+      justify-content: space-between
     &-search
       border-radius: 25px
       border: 1px solid #F0F0F6
@@ -368,6 +444,58 @@
             height: 20px
             fill: #C8CBDF
             transition: 0.2s ease
+    &-lang
+      border-radius: 30px
+      max-width: 258px
+      width: 100%
+      height: 52px
+      padding: 0 14px
+      display: flex
+      align-items: center
+      justify-content: space-between
+      gap: 13px
+      background-color: $grey4
+      &-item
+        display: flex
+        align-items: center
+        gap: 14px
+      &-icon
+        border-radius: 50%
+        width: 28px
+        height: 28px
+        img, svg
+          width: 100%
+          height: 100%
+      &-label
+        +futura-heavy
+        font-size: 20px
+        color: $grey1
+      &-arrow
+        transform: rotate(45deg)
+        font-size: 10px
+        color: $purple1
+      &-list
+        top: calc(100% + 5px)
+        border-radius: 20px
+        background-color: $grey4
+        padding: 10px 0
+        box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.3)
+        .acc-h-lang-item
+          padding: 8px 14px
+          transition: 0.3s
+          &:hover
+            background-color: darken($grey4, 3%)
+    &-backlink
+      flex: 0 0 auto
+      border-radius: 30px
+      height: 58px
+      padding: 0 25px
+      background-color: $grey4
+      +futura-heavy
+      font-size: 20px
+      color: $active
+      &:hover
+        background-color: darken($grey4, 3%)
   &-c
     padding: 190px 50px 50px
     flex: 1 1 auto
@@ -400,6 +528,10 @@
     +geo-med
     font-size: 16px
     color: #acafc7
+    &._type2
+      height: auto
+      padding: 30px 40px
+      background-color: #E8EEF6
     &-copy
       flex: 0 1 30%
     &-disc
@@ -677,12 +809,33 @@
         line-height: 0
         img, svg
           width: 100%
+  &-rul
+    &-box
+      +futura-med
+      font-size: 22px
+      line-height: 1.3
+      color: $grey1
+      p
+        margin: 0
+        margin-bottom: 40px
+        &:nth-last-of-type(1)
+          margin-bottom: 0
+      b
+        +futura-demi
+      ._lighten
+        color: #8388a1
+      a
+        color: $active
 
 @media ( max-width: 1440px )
   .acc
     grid-template-columns: 250px auto
     &-sb
       width: 250px
+      &._type2
+        .acc-sb
+          &-inner
+            padding-top: 100px
       &-h
         width: 250px
         height: 100px
@@ -720,6 +873,20 @@
           gap: 10px
         &-label
           font-size: 14px
+      &-acrd
+        &-item
+          &-h
+            min-height: 60px
+            padding: 10px 20px
+          &-label
+            font-size: 16px
+          &-arrow
+            width: 28px
+            height: 28px
+          &-content
+            padding: 10px 20px
+        &-list
+          font-size: 16px
     &-h
       left: 250px
       width: calc(100% - 250px)
@@ -742,6 +909,16 @@
         &-balance
           .label, .value
             font-size: 14px
+      &-lang
+        height: 45px
+        &-item
+          gap: 10px
+        &-label
+          font-size: 14px
+      &-backlink
+        height: 50px
+        padding: 0 15px
+        font-size: 18px
     &-c
       padding: 130px 30px 30px
       &-h
@@ -754,6 +931,8 @@
     &-f
       padding: 0 30px
       font-size: 14px
+      &._type2
+        padding: 30px
     &-prst
       &-title
         font-size: 18px
@@ -818,6 +997,11 @@
         padding: 16px
         &__wrapper
           gap: 20px
+    &-rul
+      &-box
+        font-size: 20px
+        p
+          margin-bottom: 20px
 
 @media ( max-width: 1200px )
   .acc
@@ -832,6 +1016,10 @@
       transition: 0.3s
       &.active
         transform: translateX(0)
+      &._type2
+        .acc-sb
+          &-inner
+            padding-top: 0
       &-triggerbtn
         position: absolute
         top: 180px
@@ -868,6 +1056,8 @@
           background: #706a7f
       &-f
         min-height: auto
+    &-frame
+      min-height: 100vh
     &-h
       left: 0
       width: 100%
@@ -894,6 +1084,9 @@
         &-label
           .label
             display: none
+      &-backlink
+        height: 45px
+        font-size: 16px
     &-c
       padding: 110px 30px 30px
     &-api
@@ -933,6 +1126,11 @@
           font-size: 16px
         &-text
           font-size: 14px
+    &-rul
+      &-box
+        font-size: 18px
+        p
+          margin-bottom: 15px
 
 @media ( max-width: 768px )
   .acc
@@ -1035,6 +1233,12 @@
           font-size: 12px
         &-icon
           width: 16px
+    &-f
+      &._type2
+        padding: 15px
+    &-rul
+      &-box
+        font-size: 16px
 
 @media ( max-width: 520px )
   .acc
@@ -1068,6 +1272,12 @@
       &-not
         &__wrapper
           grid-column: 2/3
+      &-lang
+        max-width: 200px
+        height: 40px
+      &-backlink
+        height: 40px
+        font-size: 14px
     &-c
       padding: 80px 15px 15px
       &._topline
