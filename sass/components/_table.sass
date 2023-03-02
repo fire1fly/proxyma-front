@@ -1,0 +1,77 @@
+.table
+  width: 100%
+  border-collapse: collapse
+  th
+    padding: 16px
+    text-align: center
+    +geo-med
+    font-weight: normal
+    font-size: 14px
+    color: #aaacbf
+    &:nth-of-type(1)
+      text-align: left
+    &:nth-last-of-type(1)
+      text-align: right
+  td
+    padding: 16px
+    text-align: center
+    +geo-bold
+    font-size: 15px
+    color: $grey1
+    &._green
+      color: $green5
+    &._yellow
+      color: $yellow
+    &._red
+      color: $red
+    &._bold
+      +geo-extrabold
+    &._nowrap
+      white-space: nowrap
+  &-row
+    display: flex
+    align-items: flex-start
+    gap: 8px
+    justify-content: center
+  tbody
+    td
+      &:nth-of-type(1)
+        text-align: left
+        border-top-left-radius: 30px
+        border-bottom-left-radius: 30px
+        .table-row
+          justify-content: flex-start
+      &:nth-last-of-type(1)
+        text-align: right
+        border-top-right-radius: 30px
+        border-bottom-right-radius: 30px
+        .table-row
+          justify-content: flex-end
+    tr
+      &:nth-child(odd)
+        td
+          background-color: #F3F3F9
+
+@media ( max-width: 1440px )
+  .table
+    th
+      padding: 12px
+    td
+      padding: 12px
+      font-size: 14px
+
+@media ( max-width: 768px )
+  .table
+    th
+      padding: 8px
+      font-size: 12px
+    td
+      padding: 8px
+      font-size: 12px
+
+@media ( max-width: 520px )
+  .table
+    min-width: 520px
+    &__wrapper
+      padding-bottom: 10px
+      overflow-x: auto

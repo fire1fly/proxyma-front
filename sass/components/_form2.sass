@@ -29,6 +29,7 @@
     &._error
       border-color: $active
       &::placeholder
+        font-size: 14px
         text-align: right
         color: $active
   &-btn
@@ -94,6 +95,46 @@
         &:active
           svg
             transform: translateY(1px)
+  &-select
+    border-radius: 10px
+    border: 1px solid #EDEDF3
+    width: 100%
+    height: 52px
+    padding: 0 14px
+    display: flex
+    align-items: center
+    justify-content: space-between
+    background-color: $white
+    box-shadow: 0px 10px 25px 8px rgba(#E6E6ED, 1)
+    &-item
+      display: flex
+      align-items: center
+      gap: 11px
+    &-icon
+      width: 27px
+      height: 27px
+      img, svg
+        width: 100%
+        height: 100%
+    &-label
+      +geo-bold
+      font-size: 16px
+      color: $grey1
+    &-arrow
+      transform: rotate(45deg)
+      font-size: 10px
+      color: $purple1
+    &-list
+      top: calc(100% + 5px)
+      border-radius: 10px
+      background-color: $white
+      padding: 10px 0
+      box-shadow: 0px 0px 10px rgba(#E6E6ED, 1)
+      .f2-select-item
+        padding: 8px 14px
+        transition: 0.3s
+        &:hover
+          background-color: darken($white, 4%)
 
 @media ( max-width: 1440px )
   .f2
@@ -111,10 +152,17 @@
     &-radiobtn
       &-label
         font-size: 16px
+    &-checkbox
+      &-label
+        font-size: 16px
     &-field2
       height: 45px
       padding: 0 10px
       &-input
+        font-size: 14px
+    &-select
+      height: 45px
+      &-label
         font-size: 14px
 
 @media ( max-width: 768px )
@@ -132,9 +180,15 @@
     &-radiobtn
       &-label
         font-size: 14px
+    &-checkbox
+      &-label
+        font-size: 14px
     &-field2
       border-width: 1px
       height: 40px
+    &-select
+      height: 40px
+      box-shadow: none
 
 @media ( max-width: 520px )
   .f2

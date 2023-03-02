@@ -826,6 +826,92 @@
         color: #8388a1
       a
         color: $active
+  &-bln
+    border-radius: 10px
+    border: 1px solid #EAEAF3
+    display: flex
+    background-color: $white
+    box-shadow: 0px 0px 30px 5px rgba(#EEEFF6, 1)
+    &-page
+      display: flex
+      flex-direction: column
+      gap: 36px
+    &-value
+      position: relative
+      border-right: 1px solid #EAEAF3
+      padding: 40px 45px
+      display: flex
+      flex-direction: column
+      justify-content: center
+      gap: 20px
+      &__bgpic
+        position: absolute
+        bottom: 0
+        left: 0
+        z-index: 1
+      .label
+        position: relative
+        z-index: 2
+        +geo-med
+        font-size: 16px
+        color: #a6abbc
+      .value
+        position: relative
+        z-index: 2
+        +geo-extrabold
+        font-size: 52px
+        color: $active
+    &-bar
+      flex: 1 1 auto
+      padding: 40px 45px
+      display: flex
+      gap: 27px
+      &__amount
+        flex: 0 0 308px
+      &__pay
+        flex: 1 1 auto
+  &-pay
+    &-grid
+      display: grid
+      grid-template-columns: repeat(3, 1fr)
+      gap: 45px
+    &-item
+      border-radius: 10px
+      padding: 20px
+      display: flex
+      align-items: center
+      justify-content: space-between
+      background-color: #F2F2F8
+      &-pic
+        border-radius: 10px
+        flex: 0 1 50%
+        height: 115px
+        padding: 0 20px
+        display: flex
+        align-items: center
+        justify-content: center
+        background-color: $white
+        box-shadow: 0px 0px 20px 5px rgba(#E9EBF2, 1)
+        img
+          max-width: 100%
+      &-info
+        flex: 0 1 46%
+        display: flex
+        flex-direction: column
+        gap: 15px
+        align-items: center
+        justify-content: center
+      &-label
+        +geo-extrabold
+        font-size: 18px
+        color: $grey1
+      &-sub
+        +geo-med
+        font-size: 14px
+        color: #979aae
+        strong
+          +geo-bold
+          color: $grey1
 
 @media ( max-width: 1440px )
   .acc
@@ -1002,6 +1088,26 @@
         font-size: 20px
         p
           margin-bottom: 20px
+    &-bln
+      &-value
+        padding: 20px 25px
+        gap: 10px
+        &__bgpic
+          width: 120px
+        .value
+          font-size: 36px
+      &-bar
+        padding: 20px 25px
+        &__amount
+          flex: 0 0 260px
+    &-pay
+      &-grid
+        gap: 15px
+      &-item
+        padding: 15px
+        &-pic
+          height: 100px
+          padding: 0 30px
 
 @media ( max-width: 1200px )
   .acc
@@ -1131,6 +1237,39 @@
         font-size: 18px
         p
           margin-bottom: 15px
+    &-bln
+      &-page
+        gap: 24px
+      &-value
+        padding: 15px
+        &__bgpic
+          width: 80px
+        .value
+          font-size: 32px
+      &-bar
+        padding: 15px
+        flex-direction: column
+        gap: 15px
+        &__amount
+          width: 100%
+          flex: auto
+        &__pay
+          width: 100%
+          flex: auto
+    &-pay
+      &-item
+        flex-direction: column
+        gap: 15px
+        &-pic
+          width: 100%
+          flex: auto
+          padding: 15px 30px
+          img
+            max-height: 100%
+        &-info
+          width: 100%
+          flex: auto
+          gap: 5px
 
 @media ( max-width: 768px )
   .acc
@@ -1239,6 +1378,14 @@
     &-rul
       &-box
         font-size: 16px
+    &-pay
+      &-item
+        padding: 10px
+        &-pic
+          padding: 15px
+          height: 80px
+        &-label
+          font-size: 16px
 
 @media ( max-width: 520px )
   .acc
@@ -1321,6 +1468,31 @@
       &-link
         font-size: 12px
         gap: 4px
+    &-bln
+      flex-direction: column
+      &-page
+        gap: 15px
+      &-value
+        border-right: none
+        border-bottom: 1px solid #EAEAF3
+        width: 100%
+        gap: 5px
+        .label
+          font-size: 14px
+      &-bar
+        width: 100%
+    &-pay
+      &-grid
+        grid-template-columns: repeat(2, 1fr)
+      &-item
+        gap: 10px
+        &-pic
+          height: 60px
+          padding: 10px 20px
+        &-label
+          font-size: 14px
+        &-sub
+          font-size: 12px
 
 @media ( max-width: 360px )
   .acc
