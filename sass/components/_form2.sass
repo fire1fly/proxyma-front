@@ -46,6 +46,11 @@
       line-height: 0
       img
         max-width: 100%
+  &-subtext
+    margin-top: 10px
+    +geo-med
+    font-size: 14px
+    color: #828595
   &-radiobtn
     &__wrap
       display: flex
@@ -68,7 +73,7 @@
     border-radius: 10px
     border: 2px solid #EDEDF3
     height: 52px
-    padding: 0 15px
+    padding: 0 6px 0 15px
     display: flex
     align-items: center
     gap: 10px
@@ -85,6 +90,8 @@
       color: $grey1
       &::placeholder
         color: #828595
+      &._bold
+        +geo-extrabold
     &-btn
       &-transp
         flex: 0 0 auto
@@ -95,6 +102,10 @@
         &:active
           svg
             transform: translateY(1px)
+    .f2-btn
+      flex: 0 0 auto
+      height: 80%
+      padding: 0 10px
   &-select
     border-radius: 10px
     border: 1px solid #EDEDF3
@@ -157,13 +168,15 @@
         font-size: 16px
     &-field2
       height: 45px
-      padding: 0 10px
+      padding: 0 5px 0 10px
       &-input
         font-size: 14px
     &-select
       height: 45px
       &-label
         font-size: 14px
+    &-subtext
+      font-size: 12px
 
 @media ( max-width: 768px )
   .f2

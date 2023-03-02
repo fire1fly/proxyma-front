@@ -912,6 +912,125 @@
         strong
           +geo-bold
           color: $grey1
+  &-rf
+    display: flex
+    justify-content: space-between
+    gap: 35px
+    &-page
+      display: flex
+      flex-direction: column
+      gap: 40px
+    &-pnl
+      flex: 0 1 40%
+      .f2-part
+        display: block
+        margin-bottom: 25px
+      &-text
+        +geo-med
+        font-size: 15px
+        color: $grey1
+        a
+          text-decoration: underline
+          +geo-bold
+          color: $active
+    &-bar
+      flex: 0 1 58%
+      border-radius: 10px
+      border: 1px solid #EAEAF3
+      background-color: $white
+      box-shadow: 0px 0px 30px 5px rgba(#EEEFF6, 1)
+      &-top
+        border-bottom: 1px solid #F3F3F9
+        padding: 45px 50px
+        display: flex
+        align-items: center
+        justify-content: space-between
+      &-bottom
+        padding: 45px 50px
+    &-value
+      .label
+        margin-bottom: 10px
+        +geo-med
+        font-size: 16px
+        color: #828595
+      .value
+        +geo-extrabold
+        font-size: 40px
+        color: $active
+    &-value2
+      border-radius: 10px
+      padding: 18px
+      display: flex
+      align-items: center
+      gap: 8px
+      background-color: #F3F3F9
+      .label
+        +geo-bold
+        font-size: 16px
+        color: $grey1
+      .value
+        +geo-extrabold
+        font-size: 24px
+        color: $active
+  &-stat
+    &-grid
+      display: flex
+      gap: 35px
+      flex-wrap: wrap
+    &-item
+      flex: 1 1 auto
+      border-radius: 10px
+      padding: 25px 10px 25px 20px
+      display: flex
+      align-items: center
+      gap: 15px
+      background-color: #F3F3F9
+      &-pic
+        flex: 0 0 auto
+        max-width: 60px
+        width: 100%
+        line-height: 0
+        img, svg
+          width: 100%
+      &-value
+        +geo-extrabold
+        font-size: 40px
+        color: $grey1
+      &-sub
+        +geo-med
+        font-size: 16px
+        color: #828595
+  &-textbanner
+    border-radius: 10px
+    padding: 35px 15px
+    display: flex
+    align-items: center
+    justify-content: center
+    background-color: #EDEDF6
+    text-align: center
+    +geo-bold
+    font-size: 18px
+    color: $grey1
+    p
+      margin: 0
+    a
+      text-decoration: underline
+      color: $active
+
+@media ( max-width: 1600px )
+  .acc
+    &-rf
+      &-bar
+        &-top
+          padding: 25px 30px
+        &-bottom
+          padding: 25px 30px
+        .acc-rf-amount
+          .f2
+            &-field
+              flex-wrap: wrap
+            &-input
+              flex: 0 1 50%
 
 @media ( max-width: 1440px )
   .acc
@@ -1108,6 +1227,44 @@
         &-pic
           height: 100px
           padding: 0 30px
+    &-stat
+      &-grid
+        gap: 15px
+      &-item
+        padding: 15px 10px 15px 15px
+        &-value
+          font-size: 28px
+        &-pic
+          max-width: 40px
+    &-rf
+      gap: 16px
+      &-page
+        gap: 16px
+      &-pnl
+        &-text
+          font-size: 14px
+      &-value
+        .label
+          font-size: 14px
+        .value
+          font-size: 28px
+      &-value2
+        padding: 12px
+        .label
+          font-size: 14px
+        .value
+          font-size: 20px
+      &-bar
+        &-top
+          padding: 20px 25px
+        &-bottom
+          padding: 20px 25px
+        .acc-rf-amount
+          .f2
+            &-field
+              gap: 8px
+            &-input
+              flex: 0 1 20%
 
 @media ( max-width: 1200px )
   .acc
@@ -1270,6 +1427,26 @@
           width: 100%
           flex: auto
           gap: 5px
+    &-rf
+      flex-direction: column
+      &-pnl
+        flex: auto
+        width: 100%
+        .f2
+          &-part
+            margin-bottom: 15px
+      &-bar
+        flex: auto
+        width: 100%
+    &-stat
+      &-item
+        &-value
+          font-size: 24px
+        &-sub
+          font-size: 14px
+    &-textbanner
+      padding: 15px
+      font-size: 16px
 
 @media ( max-width: 768px )
   .acc
@@ -1386,6 +1563,18 @@
           height: 80px
         &-label
           font-size: 16px
+    &-rf
+      &-page
+        gap: 16px
+    &-stat
+      &-grid
+        gap: 10px
+      &-item
+        padding: 10px
+        &-pic
+          max-width: 30px
+        &-value
+          font-size: 20px
 
 @media ( max-width: 520px )
   .acc
@@ -1493,6 +1682,38 @@
           font-size: 14px
         &-sub
           font-size: 12px
+    &-stat
+      &-item
+        gap: 12px
+        &-value
+          font-size: 18px
+        &-sub
+          font-size: 12px
+    &-rf
+      &-value
+        .label
+          margin-bottom: 5px
+          font-size: 12px
+        .value
+          font-size: 24px
+      &-value2
+        padding: 10px
+        .value
+          font-size: 18px
+      &-bar
+        &-top
+          padding: 15px
+          flex-direction: column
+          align-items: flex-start
+          gap: 15px
+        &-bottom
+          padding: 15px
+        .acc-rf-amount
+          .f2
+            &-input
+              flex: 1 1 auto
+    &-textbanner
+      font-size: 14px
 
 @media ( max-width: 360px )
   .acc
