@@ -1,265 +1,345 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <link rel="stylesheet" href="./css/normalize.css">
-  <link rel="stylesheet" href="./css/swiper-bundle.min.css">
-  <link rel="stylesheet" href="./css/styles.css">
-  
-  <script src="./js/swiper-bundle.min.js"></script>
+    <link rel="stylesheet" href="./css/normalize.css" />
+    <link rel="stylesheet" href="./css/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="./css/styles.css" />
 
-  <script defer src="./js/dropdown.js"></script>
-  <script defer src="./js/mobileSidebar.js"></script>
-  <script defer src="./js/accordion.js"></script>
+    <script src="./js/swiper-bundle.min.js"></script>
 
-  <title>Rules - Proxyma</title>
-</head>
-<body>
-  <div class="root">
-    <div class="acc">
-      <aside class="acc-sb _type2 mobile-sidebar" data-breakpoint="1200">
+    <script defer src="./js/dropdown.js"></script>
+    <script defer src="./js/mobileSidebar.js"></script>
+    <script defer src="./js/accordion.js"></script>
 
-        <div class="acc-sb-triggerbtn mobile-sidebar-trigger">
-          <svg width="32px" height="32px" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" mirror-in-rtl="true">
-            <circle fill="#FF376E" cx="2" cy="2" r="2"/>
-            <circle fill="#FF376E" cx="2" cy="8" r="2"/>
-            <circle fill="#FF376E" cx="2" cy="20" r="2"/>
-            <circle fill="#FF376E" cx="2" cy="14" r="2"/>
-            <path fill="#FF376E" d="M23.002 3H7.998C7.448 3 7 2.55 7 2.002v-.004c0-.55.45-.998.998-.998H23c.55 0 1 .45 1 .998V2c0 .55-.45 1-.998 1zM23.002 9H7.998C7.448 9 7 8.55 7 8.002v-.004c0-.55.45-.998.998-.998H23c.55 0 1 .45 1 .998V8c0 .55-.45 1-.998 1zM23.002 15H7.998c-.55 0-.998-.45-.998-.998V14c0-.55.45-1 .998-1H23c.55 0 1 .45 1 .998V14c0 .55-.45 1-.998 1zM23.002 21H7.998c-.55 0-.998-.45-.998-.998V20c0-.55.45-1 .998-1H23c.55 0 1 .45 1 .998V20c0 .55-.45 1-.998 1z"/>
-          </svg>
-        </div>
-
-        <div class="acc-sb-h">
-          <div class="acc-sb-h-logo">
-            <img src="./assets/static/logo-header.svg" alt="proxyma">
-          </div>
-        </div>
-
-        <div class="acc-sb-inner">
-
-          <div class="acc-sb-acrd-feed accordion">
-
-            <div class="acc-sb-acrd-item accordion__item">
-              <div class="acc-sb-acrd-item-h accordion__header">
-                <div class="acc-sb-acrd-item-label">Postback settings</div>
-                <div class="acc-sb-acrd-item-arrow">
-                  <svg enable-background="new 0 0 512 512" version="1.0" viewBox="0 0 512 512" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                    <polygon points="256,382.4 66.8,193.2 109.2,150.8 256,297.6 402.8,150.8 445.2,193.2"/>
-                  </svg>
-                </div>
-              </div>
-              <div class="accordion__body">
-                <div class="acc-sb-acrd-item-content">
-                  <ul class="acc-sb-acrd-list _mark-none">
-                    <li><a href="#">Terms of use</a></li>
-                    <li><a href="#">Privacy Policy </a></li>
-                    <li><a href="#">Cookie Policy</a></li>
-                    <li><a href="#">Affilate program</a></li>
-                  </ul>
-                </div>
-              </div>
+    <title>Rules - Proxyma</title>
+  </head>
+  <body>
+    <div class="root">
+      <div class="acc">
+        <aside class="acc-sb _type2 mobile-sidebar" data-breakpoint="1200">
+          <div class="acc-sb-h">
+            <div class="acc-sb-h-logo">
+              <img src="./assets/static/logo-header.svg" alt="proxyma" />
             </div>
-
-            <div class="acc-sb-acrd-item accordion__item">
-              <div class="acc-sb-acrd-item-h accordion__header">
-                <div class="acc-sb-acrd-item-label">Postback settings</div>
-                <div class="acc-sb-acrd-item-arrow">
-                  <svg enable-background="new 0 0 512 512" version="1.0" viewBox="0 0 512 512" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                    <polygon points="256,382.4 66.8,193.2 109.2,150.8 256,297.6 402.8,150.8 445.2,193.2"/>
-                  </svg>
-                </div>
-              </div>
-              <div class="accordion__body">
-                <div class="acc-sb-acrd-item-content">
-                  <ul class="acc-sb-acrd-list _mark-none">
-                    <li><a href="#">Terms of use</a></li>
-                    <li><a href="#">Privacy Policy </a></li>
-                    <li><a href="#">Cookie Policy</a></li>
-                    <li><a href="#">Affilate program</a></li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-
-            <div class="acc-sb-acrd-item accordion__item">
-              <div class="acc-sb-acrd-item-h accordion__header">
-                <div class="acc-sb-acrd-item-label">Postback settings</div>
-                <div class="acc-sb-acrd-item-arrow">
-                  <svg enable-background="new 0 0 512 512" version="1.0" viewBox="0 0 512 512" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                    <polygon points="256,382.4 66.8,193.2 109.2,150.8 256,297.6 402.8,150.8 445.2,193.2"/>
-                  </svg>
-                </div>
-              </div>
-              <div class="accordion__body">
-                <div class="acc-sb-acrd-item-content">
-                  <ul class="acc-sb-acrd-list _mark-none">
-                    <li><a href="#">Terms of use</a></li>
-                    <li><a href="#">Privacy Policy </a></li>
-                    <li><a href="#">Cookie Policy</a></li>
-                    <li><a href="#">Affilate program</a></li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-
-            <div class="acc-sb-acrd-item accordion__item">
-              <div class="acc-sb-acrd-item-h accordion__header">
-                <div class="acc-sb-acrd-item-label">Postback settings</div>
-                <div class="acc-sb-acrd-item-arrow">
-                  <svg enable-background="new 0 0 512 512" version="1.0" viewBox="0 0 512 512" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                    <polygon points="256,382.4 66.8,193.2 109.2,150.8 256,297.6 402.8,150.8 445.2,193.2"/>
-                  </svg>
-                </div>
-              </div>
-              <div class="accordion__body">
-                <div class="acc-sb-acrd-item-content">
-                  <ul class="acc-sb-acrd-list _mark-none">
-                    <li><a href="#">Terms of use</a></li>
-                    <li><a href="#">Privacy Policy </a></li>
-                    <li><a href="#">Cookie Policy</a></li>
-                    <li><a href="#">Affilate program</a></li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-
-            <div class="acc-sb-acrd-item accordion__item">
-              <div class="acc-sb-acrd-item-h accordion__header">
-                <div class="acc-sb-acrd-item-label">Postback settings</div>
-                <div class="acc-sb-acrd-item-arrow">
-                  <svg enable-background="new 0 0 512 512" version="1.0" viewBox="0 0 512 512" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                    <polygon points="256,382.4 66.8,193.2 109.2,150.8 256,297.6 402.8,150.8 445.2,193.2"/>
-                  </svg>
-                </div>
-              </div>
-              <div class="accordion__body">
-                <div class="acc-sb-acrd-item-content">
-                  <ul class="acc-sb-acrd-list _mark-none">
-                    <li><a href="#">Terms of use</a></li>
-                    <li><a href="#">Privacy Policy </a></li>
-                    <li><a href="#">Cookie Policy</a></li>
-                    <li><a href="#">Affilate program</a></li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-
-            <div class="acc-sb-acrd-item accordion__item">
-              <div class="acc-sb-acrd-item-h accordion__header">
-                <div class="acc-sb-acrd-item-label">Postback settings</div>
-                <div class="acc-sb-acrd-item-arrow">
-                  <svg enable-background="new 0 0 512 512" version="1.0" viewBox="0 0 512 512" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                    <polygon points="256,382.4 66.8,193.2 109.2,150.8 256,297.6 402.8,150.8 445.2,193.2"/>
-                  </svg>
-                </div>
-              </div>
-              <div class="accordion__body">
-                <div class="acc-sb-acrd-item-content">
-                  <ul class="acc-sb-acrd-list _mark-none">
-                    <li><a href="#">Terms of use</a></li>
-                    <li><a href="#">Privacy Policy </a></li>
-                    <li><a href="#">Cookie Policy</a></li>
-                    <li><a href="#">Affilate program</a></li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-
-
           </div>
 
-        </div>
-      </aside>
-      <div class="acc-frame">
-        <header class="acc-h _type2">
-
-          <div class="acc-h-lang dd">
-            <div class="acc-h-lang-item">
-              <div class="acc-h-lang-icon">
-                <img src="./assets/static/eng.svg" alt="english">
-              </div>
-              <div class="acc-h-lang-label">English</div>
-            </div>
-            <div class="acc-h-lang-arrow">◢</div>
-            <ul class="acc-h-lang-list dd-list showUp">
-              <li>
-                <a href="#" class="acc-h-lang-item dd-item">
-                  <div class="acc-h-lang-icon">
-                    <img src="./assets/static/eng.svg" alt="english">
+          <div class="acc-sb-inner">
+            <div class="acc-sb-acrd-feed accordion">
+              <div class="acc-sb-acrd-item accordion__item">
+                <div class="acc-sb-acrd-item-h accordion__header">
+                  <div class="acc-sb-acrd-item-label">Postback settings</div>
+                  <div class="acc-sb-acrd-item-arrow">
+                    <svg
+                      enable-background="new 0 0 512 512"
+                      version="1.0"
+                      viewBox="0 0 512 512"
+                      xml:space="preserve"
+                      xmlns="http://www.w3.org/2000/svg"
+                      xmlns:xlink="http://www.w3.org/1999/xlink"
+                    >
+                      <polygon
+                        points="256,382.4 66.8,193.2 109.2,150.8 256,297.6 402.8,150.8 445.2,193.2"
+                      />
+                    </svg>
                   </div>
-                  <div class="acc-h-lang-label">English</div>
-                </a>
-              </li>
-              <li>
-                <a href="#" class="acc-h-lang-item dd-item">
-                  <div class="acc-h-lang-icon">
-                    <img src="./assets/static/chn.svg" alt="chinese">
+                </div>
+                <div class="accordion__body">
+                  <div class="acc-sb-acrd-item-content">
+                    <ul class="acc-sb-acrd-list _mark-none">
+                      <li><a href="#">Terms of use</a></li>
+                      <li><a href="#">Privacy Policy </a></li>
+                      <li><a href="#">Cookie Policy</a></li>
+                      <li><a href="#">Affilate program</a></li>
+                    </ul>
                   </div>
-                  <div class="acc-h-lang-label">Chinese</div>
-                </a>
-              </li>
-              <li>
-                <a href="#" class="acc-h-lang-item dd-item">
-                  <div class="acc-h-lang-icon">
-                    <img src="./assets/static/rus.svg" alt="russian">
+                </div>
+              </div>
+
+              <div class="acc-sb-acrd-item accordion__item">
+                <div class="acc-sb-acrd-item-h accordion__header">
+                  <div class="acc-sb-acrd-item-label">Postback settings</div>
+                  <div class="acc-sb-acrd-item-arrow">
+                    <svg
+                      enable-background="new 0 0 512 512"
+                      version="1.0"
+                      viewBox="0 0 512 512"
+                      xml:space="preserve"
+                      xmlns="http://www.w3.org/2000/svg"
+                      xmlns:xlink="http://www.w3.org/1999/xlink"
+                    >
+                      <polygon
+                        points="256,382.4 66.8,193.2 109.2,150.8 256,297.6 402.8,150.8 445.2,193.2"
+                      />
+                    </svg>
                   </div>
-                  <div class="acc-h-lang-label">Russian</div>
-                </a>
-              </li>
-            </ul>
-          </div>
+                </div>
+                <div class="accordion__body">
+                  <div class="acc-sb-acrd-item-content">
+                    <ul class="acc-sb-acrd-list _mark-none">
+                      <li><a href="#">Terms of use</a></li>
+                      <li><a href="#">Privacy Policy </a></li>
+                      <li><a href="#">Cookie Policy</a></li>
+                      <li><a href="#">Affilate program</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
 
-          <a href="./acc-profile.html" class="btn acc-h-backlink">‹ Go back</a>
-          
-        </header>
+              <div class="acc-sb-acrd-item accordion__item">
+                <div class="acc-sb-acrd-item-h accordion__header">
+                  <div class="acc-sb-acrd-item-label">Postback settings</div>
+                  <div class="acc-sb-acrd-item-arrow">
+                    <svg
+                      enable-background="new 0 0 512 512"
+                      version="1.0"
+                      viewBox="0 0 512 512"
+                      xml:space="preserve"
+                      xmlns="http://www.w3.org/2000/svg"
+                      xmlns:xlink="http://www.w3.org/1999/xlink"
+                    >
+                      <polygon
+                        points="256,382.4 66.8,193.2 109.2,150.8 256,297.6 402.8,150.8 445.2,193.2"
+                      />
+                    </svg>
+                  </div>
+                </div>
+                <div class="accordion__body">
+                  <div class="acc-sb-acrd-item-content">
+                    <ul class="acc-sb-acrd-list _mark-none">
+                      <li><a href="#">Terms of use</a></li>
+                      <li><a href="#">Privacy Policy </a></li>
+                      <li><a href="#">Cookie Policy</a></li>
+                      <li><a href="#">Affilate program</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
 
-        <main class="acc-c">
-          <div class="acc-c-h">
-            <div class="acc-c-h-icon">
-              <img src="./assets/static/acc-c-h-icon-legal.png" alt="icon">
+              <div class="acc-sb-acrd-item accordion__item">
+                <div class="acc-sb-acrd-item-h accordion__header">
+                  <div class="acc-sb-acrd-item-label">Postback settings</div>
+                  <div class="acc-sb-acrd-item-arrow">
+                    <svg
+                      enable-background="new 0 0 512 512"
+                      version="1.0"
+                      viewBox="0 0 512 512"
+                      xml:space="preserve"
+                      xmlns="http://www.w3.org/2000/svg"
+                      xmlns:xlink="http://www.w3.org/1999/xlink"
+                    >
+                      <polygon
+                        points="256,382.4 66.8,193.2 109.2,150.8 256,297.6 402.8,150.8 445.2,193.2"
+                      />
+                    </svg>
+                  </div>
+                </div>
+                <div class="accordion__body">
+                  <div class="acc-sb-acrd-item-content">
+                    <ul class="acc-sb-acrd-list _mark-none">
+                      <li><a href="#">Terms of use</a></li>
+                      <li><a href="#">Privacy Policy </a></li>
+                      <li><a href="#">Cookie Policy</a></li>
+                      <li><a href="#">Affilate program</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+
+              <div class="acc-sb-acrd-item accordion__item">
+                <div class="acc-sb-acrd-item-h accordion__header">
+                  <div class="acc-sb-acrd-item-label">Postback settings</div>
+                  <div class="acc-sb-acrd-item-arrow">
+                    <svg
+                      enable-background="new 0 0 512 512"
+                      version="1.0"
+                      viewBox="0 0 512 512"
+                      xml:space="preserve"
+                      xmlns="http://www.w3.org/2000/svg"
+                      xmlns:xlink="http://www.w3.org/1999/xlink"
+                    >
+                      <polygon
+                        points="256,382.4 66.8,193.2 109.2,150.8 256,297.6 402.8,150.8 445.2,193.2"
+                      />
+                    </svg>
+                  </div>
+                </div>
+                <div class="accordion__body">
+                  <div class="acc-sb-acrd-item-content">
+                    <ul class="acc-sb-acrd-list _mark-none">
+                      <li><a href="#">Terms of use</a></li>
+                      <li><a href="#">Privacy Policy </a></li>
+                      <li><a href="#">Cookie Policy</a></li>
+                      <li><a href="#">Affilate program</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+
+              <div class="acc-sb-acrd-item accordion__item">
+                <div class="acc-sb-acrd-item-h accordion__header">
+                  <div class="acc-sb-acrd-item-label">Postback settings</div>
+                  <div class="acc-sb-acrd-item-arrow">
+                    <svg
+                      enable-background="new 0 0 512 512"
+                      version="1.0"
+                      viewBox="0 0 512 512"
+                      xml:space="preserve"
+                      xmlns="http://www.w3.org/2000/svg"
+                      xmlns:xlink="http://www.w3.org/1999/xlink"
+                    >
+                      <polygon
+                        points="256,382.4 66.8,193.2 109.2,150.8 256,297.6 402.8,150.8 445.2,193.2"
+                      />
+                    </svg>
+                  </div>
+                </div>
+                <div class="accordion__body">
+                  <div class="acc-sb-acrd-item-content">
+                    <ul class="acc-sb-acrd-list _mark-none">
+                      <li><a href="#">Terms of use</a></li>
+                      <li><a href="#">Privacy Policy </a></li>
+                      <li><a href="#">Cookie Policy</a></li>
+                      <li><a href="#">Affilate program</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
             </div>
-            <h1 class="acc-c-h-title">Terms of use of the site</h1>
           </div>
+        </aside>
+        <div class="acc-frame">
+          <header class="acc-h _type2">
+            <div class="acc-h-lang dd">
+              <div class="acc-h-lang-item">
+                <div class="acc-h-lang-icon">
+                  <img src="./assets/static/eng.svg" alt="english" />
+                </div>
+                <div class="acc-h-lang-label">English</div>
+              </div>
+              <div class="acc-h-lang-arrow">◢</div>
+              <ul class="acc-h-lang-list dd-list showUp">
+                <li>
+                  <a href="#" class="acc-h-lang-item dd-item">
+                    <div class="acc-h-lang-icon">
+                      <img src="./assets/static/eng.svg" alt="english" />
+                    </div>
+                    <div class="acc-h-lang-label">English</div>
+                  </a>
+                </li>
+                <li>
+                  <a href="#" class="acc-h-lang-item dd-item">
+                    <div class="acc-h-lang-icon">
+                      <img src="./assets/static/chn.svg" alt="chinese" />
+                    </div>
+                    <div class="acc-h-lang-label">Chinese</div>
+                  </a>
+                </li>
+                <li>
+                  <a href="#" class="acc-h-lang-item dd-item">
+                    <div class="acc-h-lang-icon">
+                      <img src="./assets/static/rus.svg" alt="russian" />
+                    </div>
+                    <div class="acc-h-lang-label">Russian</div>
+                  </a>
+                </li>
+              </ul>
+            </div>
 
-          <div class="acc-rul-box acc-box">
-            <p>
-              1 .It is pleasant, citizens, to observe how the supporters of totalitarianism in science will be functionally separated into independent elements. Ideological highest order, as well as the basic vector of development, largely determine the importance of the positions taken by the participants in relation to the sks set.
-            </p>
-            <p>
-              2. And there is no doubt that the actions of the opposition representatives, who are a vivid example of the continental European type of political culture whole clusters of their own kind! And there is no doubt that independent states are anathema to social democracy. Just as consulting with aet does choice but to determine the timely completion of a super task.
-            </p>
-            <p>
-              3. It should be noted that the implementation of the planned targets ensures the relevance of further development directions. The claritobvious: a deep level of immersion requires an analysis of standard approaches.
-            </p>
-            <p>
-              <b>The high level of involvement of <a href="#">representatives of the target</a> audience</b>
-            </p>
-            <p>
-              is a clear proof of a simple fact: the strengthening and development of the internal structure directly depends on the clustering of efforts. of a future project allows you to evaluate the value of thoughtful reasoning.
-            </p>
-            <p>
-              <i class="_lighten">Each of us understands the obvious thing: the implementation of the planned tasks provides a wide range of (specialists) participation in the formation of process management. Preliminary conclusions are disappointing: the high quality of positional research determines the high demand for favorable.</i>
-            </p>
-            <p>
-              But entrepreneurs on the Internet will be exposed. There is something to think about: the relationship diagrams are ambiguous and will be indicated of key factors. In general, of course, the cohesion of a team of professionals plays a decisive role for favorable prospects. First of all, the constant scope of our activity entails the process of implementing and modernizing the progress of the professional community.
-            </p>
-            <p>
-              However, we should not forget that the economic agenda of today provides ample opportunities for innovative methods of process management.
-            </p>
-          </div>
-        </main>
+            <a href="./acc-profile.html" class="btn acc-h-backlink">‹ Go back</a>
 
-        <footer class="acc-f _type2">
-          <div class="acc-f-copy">Proxyma © 2023. All Rights Reserved.</div>
-          <div class="acc-f-disc">
-            The Charter Building, Uxbridge, Middlesex, UB8 1JG, United int Kingdom
-          </div>
-        </footer>
+            <div class="acc-sb-triggerbtn mobile-sidebar-trigger">
+              <svg
+                width="32px"
+                height="32px"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+                mirror-in-rtl="true"
+              >
+                <circle fill="#FF376E" cx="2" cy="2" r="2" />
+                <circle fill="#FF376E" cx="2" cy="8" r="2" />
+                <circle fill="#FF376E" cx="2" cy="20" r="2" />
+                <circle fill="#FF376E" cx="2" cy="14" r="2" />
+                <path
+                  fill="#FF376E"
+                  d="M23.002 3H7.998C7.448 3 7 2.55 7 2.002v-.004c0-.55.45-.998.998-.998H23c.55 0 1 .45 1 .998V2c0 .55-.45 1-.998 1zM23.002 9H7.998C7.448 9 7 8.55 7 8.002v-.004c0-.55.45-.998.998-.998H23c.55 0 1 .45 1 .998V8c0 .55-.45 1-.998 1zM23.002 15H7.998c-.55 0-.998-.45-.998-.998V14c0-.55.45-1 .998-1H23c.55 0 1 .45 1 .998V14c0 .55-.45 1-.998 1zM23.002 21H7.998c-.55 0-.998-.45-.998-.998V20c0-.55.45-1 .998-1H23c.55 0 1 .45 1 .998V20c0 .55-.45 1-.998 1z"
+                />
+              </svg>
+            </div>
+          </header>
+
+          <main class="acc-c">
+            <div class="acc-c-h">
+              <div class="acc-c-h-icon">
+                <img src="./assets/static/acc-c-h-icon-legal.png" alt="icon" />
+              </div>
+              <h1 class="acc-c-h-title">Terms of use of the site</h1>
+            </div>
+
+            <div class="acc-rul-box acc-box">
+              <p>
+                1 .It is pleasant, citizens, to observe how the supporters of totalitarianism in
+                science will be functionally separated into independent elements. Ideological
+                highest order, as well as the basic vector of development, largely determine the
+                importance of the positions taken by the participants in relation to the sks set.
+              </p>
+              <p>
+                2. And there is no doubt that the actions of the opposition representatives, who are
+                a vivid example of the continental European type of political culture whole clusters
+                of their own kind! And there is no doubt that independent states are anathema to
+                social democracy. Just as consulting with aet does choice but to determine the
+                timely completion of a super task.
+              </p>
+              <p>
+                3. It should be noted that the implementation of the planned targets ensures the
+                relevance of further development directions. The claritobvious: a deep level of
+                immersion requires an analysis of standard approaches.
+              </p>
+              <p>
+                <b
+                  >The high level of involvement of
+                  <a href="#">representatives of the target</a> audience</b
+                >
+              </p>
+              <p>
+                is a clear proof of a simple fact: the strengthening and development of the internal
+                structure directly depends on the clustering of efforts. of a future project allows
+                you to evaluate the value of thoughtful reasoning.
+              </p>
+              <p>
+                <i class="_lighten"
+                  >Each of us understands the obvious thing: the implementation of the planned tasks
+                  provides a wide range of (specialists) participation in the formation of process
+                  management. Preliminary conclusions are disappointing: the high quality of
+                  positional research determines the high demand for favorable.</i
+                >
+              </p>
+              <p>
+                But entrepreneurs on the Internet will be exposed. There is something to think
+                about: the relationship diagrams are ambiguous and will be indicated of key factors.
+                In general, of course, the cohesion of a team of professionals plays a decisive role
+                for favorable prospects. First of all, the constant scope of our activity entails
+                the process of implementing and modernizing the progress of the professional
+                community.
+              </p>
+              <p>
+                However, we should not forget that the economic agenda of today provides ample
+                opportunities for innovative methods of process management.
+              </p>
+            </div>
+          </main>
+
+          <footer class="acc-f _type2">
+            <div class="acc-f-copy">Proxyma © 2023. All Rights Reserved.</div>
+            <div class="acc-f-disc">
+              The Charter Building, Uxbridge, Middlesex, UB8 1JG, United int Kingdom
+            </div>
+          </footer>
+        </div>
       </div>
     </div>
-  </div>
-</body>
+  </body>
 </html>

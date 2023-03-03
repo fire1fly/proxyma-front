@@ -14345,16 +14345,16 @@ input[type=number] {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  gap: 7px;
+  gap: 6px;
   font-family: "Geometria Bold";
   font-size: 18px;
   color: #706a7f;
 }
 .acc-sb-nav-label .arrow {
-  -webkit-transform: rotate(45deg);
-      -ms-transform: rotate(45deg);
-          transform: rotate(45deg);
-  font-size: 9px;
+  -webkit-transform: rotate(45deg) translateY(-1px);
+      -ms-transform: rotate(45deg) translateY(-1px);
+          transform: rotate(45deg) translateY(-1px);
+  font-size: 6px;
 }
 .acc-sb-nav-item {
   position: relative;
@@ -14759,9 +14759,12 @@ input[type=number] {
 }
 .acc-h._type2 {
   border-bottom: 1px solid #E8F0F6;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+.acc-h._type2 .acc-h-lang {
+  margin-right: auto;
 }
 .acc-h-search {
   border-radius: 25px;
@@ -15498,14 +15501,15 @@ input[type=number] {
   font-size: 13px;
   color: #c6c5d5;
 }
-.acc-not-item-icon {
+.acc-not-item-status {
   -webkit-box-flex: 0;
       -ms-flex: 0 0 auto;
           flex: 0 0 auto;
   width: 24px;
   line-height: 0;
+  cursor: pointer;
 }
-.acc-not-item-icon img, .acc-not-item-icon svg {
+.acc-not-item-status img, .acc-not-item-status svg {
   width: 100%;
 }
 .acc-rul-box {
@@ -15893,9 +15897,6 @@ input[type=number] {
     padding-left: 20px;
     font-size: 16px;
   }
-  .acc-sb-nav-label .arrow {
-    font-size: 8px;
-  }
   .acc-sb-nav-item {
     padding: 8px 8px 8px 20px;
   }
@@ -15946,7 +15947,7 @@ input[type=number] {
     width: calc(100% - 250px);
     height: 100px;
     padding: 0 20px;
-    gap: 20px;
+    gap: 15px;
   }
   .acc-h-search__wrapper {
     max-width: 300px;
@@ -16056,6 +16057,7 @@ input[type=number] {
   }
   .acc-topline {
     margin-top: 100px;
+    padding: 15px 30px;
   }
   .acc-not-h {
     padding: 20px;
@@ -16195,12 +16197,12 @@ input[type=number] {
     padding-top: 0;
   }
   .acc-sb-triggerbtn {
-    position: absolute;
-    top: 180px;
-    right: -60px;
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 auto;
+            flex: 0 0 auto;
     border-radius: 50%;
-    width: 45px;
-    height: 45px;
+    width: 42px;
+    height: 42px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -16210,16 +16212,14 @@ input[type=number] {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    background-color: #FFFFFF;
-    -webkit-box-shadow: 0 0 25px 3px rgba(0, 0, 0, 0.2);
-            box-shadow: 0 0 25px 3px rgba(0, 0, 0, 0.2);
+    background-color: #F3F3F9;
     cursor: pointer;
     -webkit-transition: 0.3s;
     -o-transition: 0.3s;
     transition: 0.3s;
   }
   .acc-sb-triggerbtn img, .acc-sb-triggerbtn svg {
-    width: 25px;
+    width: 20px;
     -webkit-transition: 0.3s;
     -o-transition: 0.3s;
     transition: 0.3s;
@@ -16600,23 +16600,25 @@ input[type=number] {
   }
 }
 @media (max-width: 520px) {
-  .acc-sb-triggerbtn {
-    right: -50px;
-    width: 36px;
-    height: 36px;
-  }
-  .acc-sb-triggerbtn img, .acc-sb-triggerbtn svg {
-    width: 18px;
-  }
   .acc-sb-h {
     height: 60px;
   }
   .acc-sb-h-logo {
     width: 140px;
   }
+  .acc-sb-nav-label {
+    gap: 4px;
+  }
+  .acc-sb-nav-label .arrow {
+    font-size: 6px;
+    -webkit-transform: rotate(45deg);
+        -ms-transform: rotate(45deg);
+            transform: rotate(45deg);
+  }
   .acc-h {
     height: 60px;
     padding: 0 15px;
+    gap: 10px;
   }
   .acc-h._topline {
     height: 60px;
@@ -16631,6 +16633,7 @@ input[type=number] {
     width: 100%;
     grid-template-columns: 1fr auto -webkit-min-content;
     grid-template-columns: 1fr auto min-content;
+    gap: 0 10px;
   }
   .acc-h-bar-name {
     grid-column: 1/2;
@@ -17178,6 +17181,9 @@ input[type=number] {
 .table td._red {
   color: #F54C6B;
 }
+.table td._blue {
+  color: #007eff;
+}
 .table td._bold {
   font-family: "Geometria Extra Bold";
 }
@@ -17188,13 +17194,13 @@ input[type=number] {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
-  gap: 8px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  gap: 8px;
 }
 .table tbody td:nth-of-type(1) {
   text-align: left;
