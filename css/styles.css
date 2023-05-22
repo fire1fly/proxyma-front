@@ -111,6 +111,14 @@ input[type=number] {
   padding: 0 15px;
 }
 
+._scroll-lock-y {
+  overflow-y: hidden;
+}
+
+._text-center {
+  text-align: center;
+}
+
 .dd {
   position: relative;
   -webkit-user-select: none;
@@ -8167,6 +8175,103 @@ input[type=number] {
   }
   .rv-card-text {
     font-size: 16px;
+  }
+}
+.m {
+  border-radius: 10px;
+  background-color: #FFFFFF;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 auto;
+          flex: 0 1 auto;
+  max-width: 830px;
+  width: 100%;
+  -webkit-box-shadow: 0px 19px 49px 0px rgba(36, 34, 43, 0.5);
+          box-shadow: 0px 19px 49px 0px rgba(36, 34, 43, 0.5);
+}
+.m__wrapper {
+  position: fixed;
+  top: -5000px;
+  left: 0;
+  overflow-x: hidden;
+  overflow-y: auto;
+  width: 100%;
+  height: 100%;
+  padding: 220px 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  background-color: rgba(56, 49, 63, 0.8);
+  visibility: hidden;
+  opacity: 0;
+  -webkit-transition: opacity 0.2s, visibility 0.2s;
+  -o-transition: opacity 0.2s, visibility 0.2s;
+  transition: opacity 0.2s, visibility 0.2s;
+  z-index: 10;
+}
+.m__wrapper.active {
+  visibility: visible;
+  opacity: 1;
+  top: 0;
+}
+.m__inner {
+  padding: 20px 25px 60px;
+}
+.m-btn-close {
+  margin-left: auto;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 auto;
+          flex: 0 0 auto;
+  width: 18px;
+  height: 18px;
+  cursor: pointer;
+  line-height: 0;
+}
+.m-btn-close svg {
+  max-width: 100%;
+  max-height: 100%;
+}
+.m-h {
+  padding-top: 30px;
+}
+.m-title {
+  font-family: "Geometria Bold";
+  font-size: 21px;
+  color: #38313f;
+}
+.m-b {
+  margin-top: 30px;
+  padding: 0 30px;
+}
+.m-text {
+  font-family: "Geometria Medium";
+  font-size: 17px;
+  line-height: 1.3;
+  color: #9f9db3;
+}
+
+@media (max-width: 991px) {
+  .m__inner {
+    padding: 15px 15px 30px;
+  }
+  .m-h {
+    padding-top: 15px;
+  }
+  .m-b {
+    padding: 0;
+  }
+}
+@media (max-width: 520px) {
+  .m-title {
+    font-size: 18px;
+  }
+  .m-text {
+    font-size: 14px;
   }
 }
 .pagemain-pc {
