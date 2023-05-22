@@ -3219,7 +3219,8 @@ input[type=number] {
           flex: 1 1 910px;
 }
 .ft1-card-thumb {
-  width: 85px;
+  width: 65px;
+  height: 65px;
   line-height: 0;
 }
 .ft1-card-thumb img {
